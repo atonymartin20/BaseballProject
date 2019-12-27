@@ -8,7 +8,8 @@ exports.up = function (knex, Promise) {
         shortStop.string('throws', 1);
         shortStop.string('currentTeam', 50);
         shortStop.string('imageURL', 500);
-        shortStop.string('otherPostions', 50);
+        shortStop.string('primaryPosition', 50);
+        shortStop.string('otherPositions', 50);
         shortStop.string('2017GamesPlayed', 50);
         shortStop.string('2017BA', 50);
         shortStop.string('2017OBP', 50);

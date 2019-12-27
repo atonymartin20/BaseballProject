@@ -8,7 +8,8 @@ exports.up = function (knex, Promise) {
         thirdBase.string('throws', 1);
         thirdBase.string('currentTeam', 50);
         thirdBase.string('imageURL', 500);
-        thirdBase.string('otherPostions', 50);
+        thirdBase.string('primaryPosition', 50);
+        thirdBase.string('otherPositions', 50);
         thirdBase.string('2017GamesPlayed', 50);
         thirdBase.string('2017BA', 50);
         thirdBase.string('2017OBP', 50);

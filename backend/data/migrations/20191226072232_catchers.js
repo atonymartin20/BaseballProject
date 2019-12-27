@@ -8,7 +8,8 @@ exports.up = function (knex, Promise) {
         catchers.string('throws', 1);
         catchers.string('currentTeam', 50);
         catchers.string('imageURL', 500);
-        catchers.string('otherPostions', 50);
+        catchers.string('primaryPosition', 50);
+        catchers.string('otherPositions', 50);
         catchers.string('2017GamesPlayed', 50);
         catchers.string('2017BA', 50);
         catchers.string('2017OBP', 50);

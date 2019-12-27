@@ -8,7 +8,8 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('throws', 1);
         designatedHitter.string('currentTeam', 50);
         designatedHitter.string('imageURL', 500);
-        designatedHitter.string('otherPostions', 50);
+        designatedHitter.string('primaryPosition', 50);
+        designatedHitter.string('otherPositions', 50);
         designatedHitter.string('2017GamesPlayed', 50);
         designatedHitter.string('2017BA', 50);
         designatedHitter.string('2017OBP', 50);
