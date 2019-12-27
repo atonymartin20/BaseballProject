@@ -1,6 +1,6 @@
-# Contacts App
+# Baseball Project
 
-This was just a quick and small project.
+This is a project I have wanted to build for a while.  The point of this project is to grab data from multiple baseball websites and aggregate them into one site.
 
 ## Tech Stack
 ### Frontend
@@ -12,9 +12,6 @@ This was just a quick and small project.
 * Node.js
 * PostgresQL
 
-# Contributing
-Please do not put anyone's actual contact details in this app.  This app is designed as a project only and not to be used to actually store your contacts.
-
 # Resources
-* [Front End Site - Hosted on Netlify](https://contacts-app-adm.netlify.com/)
-* [Back End Site - Hosted on Heroku](https://contacts-app-adm.herokuapp.com/)
+* [Front End Site - Hosted on Netlify](https://baseball-project-adm.netlify.com/)
+* [Back End Site - Hosted on Heroku](https://baseball-project-adm.herokuapp.com/)
