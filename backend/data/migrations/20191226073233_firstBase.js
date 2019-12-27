@@ -3,6 +3,7 @@ exports.up = function (knex, Promise) {
         firstBase.increments();
         firstBase.string('firstName', 50);
         firstBase.string('lastName', 50);
+        firstBase.string('birthday', 50);
         firstBase.string('bats', 1);
         firstBase.string('throws', 1);
         firstBase.string('currentTeam', 50);

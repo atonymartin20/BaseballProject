@@ -1,8 +1,9 @@
-exports.up = function(knex, Promise) {
+exports.up = function (knex, Promise) {
     return knex.schema.createTable('shortStop', shortStop => {
         shortStop.increments();
         shortStop.string('firstName', 50);
         shortStop.string('lastName', 50);
+        shortStop.string('birthday', 50);
         shortStop.string('bats', 1);
         shortStop.string('throws', 1);
         shortStop.string('currentTeam', 50);
@@ -131,6 +132,6 @@ exports.up = function(knex, Promise) {
     })
 };
 
-exports.down = function(knex, Promise) {
+exports.down = function (knex, Promise) {
     return knex.schema.dropTableIfExists('shortStop');
 };

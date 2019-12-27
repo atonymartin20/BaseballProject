@@ -1,8 +1,9 @@
-exports.up = function(knex, Promise) {
+exports.up = function (knex, Promise) {
     return knex.schema.createTable('secondBase', secondBase => {
         secondBase.increments();
         secondBase.string('firstName', 50);
         secondBase.string('lastName', 50);
+        secondBase.string('birthday', 50);
         secondBase.string('bats', 1);
         secondBase.string('throws', 1);
         secondBase.string('currentTeam', 50);
@@ -131,6 +132,6 @@ exports.up = function(knex, Promise) {
     })
 };
 
-exports.down = function(knex, Promise) {
+exports.down = function (knex, Promise) {
     return knex.schema.dropTableIfExists('secondBase');
 };

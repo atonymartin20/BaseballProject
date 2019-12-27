@@ -1,8 +1,9 @@
-exports.up = function(knex, Promise) {
+exports.up = function (knex, Promise) {
     return knex.schema.createTable('designatedHitter', designatedHitter => {
         designatedHitter.increments();
         designatedHitter.string('firstName', 50);
         designatedHitter.string('lastName', 50);
+        designatedHitter.string('birthday', 50);
         designatedHitter.string('bats', 1);
         designatedHitter.string('throws', 1);
         designatedHitter.string('currentTeam', 50);
@@ -131,6 +132,6 @@ exports.up = function(knex, Promise) {
     })
 };
 
-exports.down = function(knex, Promise) {
+exports.down = function (knex, Promise) {
     return knex.schema.dropTableIfExists('designatedHitter');
 };
