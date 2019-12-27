@@ -2,7 +2,6 @@ const express = require('express');
 require("dotenv").config();
 const app = express();
 
-// Add Routers
 const catcherRouter = require('./routers/catcherRouter');
 const firstBaseRouter = require('./routers/firstBaseRouter');
 const secondBaseRouter = require('./routers/secondBaseRouter');
