@@ -3,13 +3,20 @@ exports.up = function(knex, Promise) {
         secondBase.increments();
         secondBase.string('firstName', 50);
         secondBase.string('lastName', 50);
+        secondBase.string('bats', 1);
+        secondBase.string('throws', 1);
+        secondBase.string('currentTeam', 50);
+        secondBase.string('imageURL', 500);
         secondBase.string('otherPostions', 50);
+        secondBase.string('2017GamesPlayed', 50);
         secondBase.string('2017BA', 50);
         secondBase.string('2017OBP', 50);
         secondBase.string('2017SLG', 50);
         secondBase.string('2017PA', 50);
         secondBase.string('20172B', 50);
         secondBase.string('2017HR', 50);
+        secondBase.string('2017Runs', 50);
+        secondBase.string('2017RBI', 50);
         secondBase.string('2017LineupSlot', 50);
         secondBase.string('2017GB%', 50);
         secondBase.string('2017LD%', 50);
@@ -20,6 +27,7 @@ exports.up = function(knex, Promise) {
         secondBase.string('2017HR/FB%', 50);
         secondBase.string('2017HardHit%', 50);
         secondBase.string('2017ExitVelo', 50);
+        secondBase.string('2017FlyBallLineDriveExitVelo', 50);
         secondBase.string('2017Barrel%', 50);
         secondBase.string('2017BABIP', 50);
         secondBase.string('2017WOBA', 50);
@@ -36,12 +44,16 @@ exports.up = function(knex, Promise) {
         secondBase.string('2017SprintSpeed', 50);
         secondBase.string('2017StolenBases', 50);
         secondBase.string('2017StolenBase%', 50);
+        secondBase.string('2017FWAR', 50);
+        secondBase.string('2018GamesPlayed', 50);
         secondBase.string('2018BA', 50);
         secondBase.string('2018OBP', 50);
         secondBase.string('2018SLG', 50);
         secondBase.string('2018PA', 50);
         secondBase.string('20182B', 50);
         secondBase.string('2018HR', 50);
+        secondBase.string('2018Runs', 50);
+        secondBase.string('2018RBI', 50);
         secondBase.string('2018LineupSlot', 50);
         secondBase.string('2018GB%', 50);
         secondBase.string('2018LD%', 50);
@@ -52,6 +64,7 @@ exports.up = function(knex, Promise) {
         secondBase.string('2018HR/FB%', 50);
         secondBase.string('2018HardHit%', 50);
         secondBase.string('2018ExitVelo', 50);
+        secondBase.string('2018FlyBallLineDriveExitVelo', 50);
         secondBase.string('2018Barrel%', 50);
         secondBase.string('2018BABIP', 50);
         secondBase.string('2018WOBA', 50);
@@ -68,12 +81,16 @@ exports.up = function(knex, Promise) {
         secondBase.string('2018SprintSpeed', 50);
         secondBase.string('2018StolenBases', 50);
         secondBase.string('2018StolenBase%', 50);
+        secondBase.string('2018FWAR', 50);
+        secondBase.string('2019GamesPlayed', 50);
         secondBase.string('2019BA', 50);
         secondBase.string('2019OBP', 50);
         secondBase.string('2019SLG', 50);
         secondBase.string('2019PA', 50);
         secondBase.string('20192B', 50);
         secondBase.string('2019HR', 50);
+        secondBase.string('2019Runs', 50);
+        secondBase.string('2019RBI', 50);
         secondBase.string('2019LineupSlot', 50);
         secondBase.string('2019GB%', 50);
         secondBase.string('2019LD%', 50);
@@ -84,6 +101,7 @@ exports.up = function(knex, Promise) {
         secondBase.string('2019HR/FB%', 50);
         secondBase.string('2019HardHit%', 50);
         secondBase.string('2019ExitVelo', 50);
+        secondBase.string('2019FlyBallLineDriveExitVelo', 50);
         secondBase.string('2019Barrel%', 50);
         secondBase.string('2019BABIP', 50);
         secondBase.string('2019WOBA', 50);
@@ -100,14 +118,16 @@ exports.up = function(knex, Promise) {
         secondBase.string('2019SprintSpeed', 50);
         secondBase.string('2019StolenBases', 50);
         secondBase.string('2019StolenBase%', 50);
+        secondBase.string('2019FWAR', 50);
         secondBase.string('2020SteamerPAProjection', 50);
         secondBase.string('2020SteamerAVGProjection', 50);
         secondBase.string('2020SteamerOBPProjection', 50);
         secondBase.string('2020SteamerSLGProjection', 50);
         secondBase.string('2020SteamerHRProjection', 50);
-        secondBase.string('2020SteamerRProjection', 50);
+        secondBase.string('2020SteamerRunsProjection', 50);
         secondBase.string('2020SteamerRBIProjection', 50);
         secondBase.string('2020SteamerSBProjection', 50);
+        secondBase.string('2020SteamerFWARProjection', 50);
     })
 };
 

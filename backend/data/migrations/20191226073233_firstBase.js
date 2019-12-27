@@ -3,8 +3,12 @@ exports.up = function (knex, Promise) {
         firstBase.increments();
         firstBase.string('firstName', 50);
         firstBase.string('lastName', 50);
+        firstBase.string('bats', 1);
+        firstBase.string('throws', 1);
+        firstBase.string('currentTeam', 50);
         firstBase.string('imageURL', 500);
         firstBase.string('otherPostions', 50);
+        firstBase.string('2017GamesPlayed', 50);
         firstBase.string('2017BA', 50);
         firstBase.string('2017OBP', 50);
         firstBase.string('2017SLG', 50);
@@ -41,6 +45,7 @@ exports.up = function (knex, Promise) {
         firstBase.string('2017StolenBases', 50);
         firstBase.string('2017StolenBase%', 50);
         firstBase.string('2017FWAR', 50);
+        firstBase.string('2018GamesPlayed', 50);
         firstBase.string('2018BA', 50);
         firstBase.string('2018OBP', 50);
         firstBase.string('2018SLG', 50);
@@ -77,6 +82,7 @@ exports.up = function (knex, Promise) {
         firstBase.string('2018StolenBases', 50);
         firstBase.string('2018StolenBase%', 50);
         firstBase.string('2018FWAR', 50);
+        firstBase.string('2019GamesPlayed', 50);
         firstBase.string('2019BA', 50);
         firstBase.string('2019OBP', 50);
         firstBase.string('2019SLG', 50);

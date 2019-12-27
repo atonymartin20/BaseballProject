@@ -3,8 +3,12 @@ exports.up = function (knex, Promise) {
         catchers.increments();
         catchers.string('firstName', 50);
         catchers.string('lastName', 50);
+        catchers.string('bats', 1);
+        catchers.string('throws', 1);
+        catchers.string('currentTeam', 50);
         catchers.string('imageURL', 500);
         catchers.string('otherPostions', 50);
+        catchers.string('2017GamesPlayed', 50);
         catchers.string('2017BA', 50);
         catchers.string('2017OBP', 50);
         catchers.string('2017SLG', 50);
@@ -41,6 +45,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2017StolenBases', 50);
         catchers.string('2017StolenBase%', 50);
         catchers.string('2017FWAR', 50);
+        catchers.string('2018GamesPlayed', 50);
         catchers.string('2018BA', 50);
         catchers.string('2018OBP', 50);
         catchers.string('2018SLG', 50);
@@ -77,6 +82,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2018StolenBases', 50);
         catchers.string('2018StolenBase%', 50);
         catchers.string('2018FWAR', 50);
+        catchers.string('2019GamesPlayed', 50);
         catchers.string('2019BA', 50);
         catchers.string('2019OBP', 50);
         catchers.string('2019SLG', 50);
