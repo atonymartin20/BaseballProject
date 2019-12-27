@@ -5,6 +5,6 @@ module.exports = {
         return db('reliefPitchers').where({ id }).first();
     },
     getReliefPitchers() {
-        return db('reliefPitchers').orderBy('firstName');
+        return db('reliefPitchers').orderBy('2020SteamerFWARProjection');
     }
 }

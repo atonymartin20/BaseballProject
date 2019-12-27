@@ -5,6 +5,6 @@ module.exports = {
         return db('outfield').where({ id }).first();
     },
     getOutfield() {
-        return db('outfield').orderBy('firstName');
+        return db('outfield').orderBy('2020SteamerFWARProjection');
     }
 }

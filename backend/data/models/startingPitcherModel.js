@@ -5,6 +5,6 @@ module.exports = {
         return db('startingPitchers').where({ id }).first();
     },
     getStartingPitchers() {
-        return db('startingPitchers').orderBy('firstName');
+        return db('startingPitchers').orderBy('2020SteamerFWARProjection');
     }
 }
