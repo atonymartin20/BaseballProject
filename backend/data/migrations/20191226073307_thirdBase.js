@@ -29,6 +29,7 @@ exports.up = function (knex, Promise) {
         thirdBase.string('2017HardHit%', 50);
         thirdBase.string('2017ExitVelo', 50);
         thirdBase.string('2017FlyBallLineDriveExitVelo', 50);
+        thirdBase.string('2017LaunchAngle', 50);
         thirdBase.string('2017Barrel%', 50);
         thirdBase.string('2017BABIP', 50);
         thirdBase.string('2017WOBA', 50);
@@ -66,6 +67,7 @@ exports.up = function (knex, Promise) {
         thirdBase.string('2018HardHit%', 50);
         thirdBase.string('2018ExitVelo', 50);
         thirdBase.string('2018FlyBallLineDriveExitVelo', 50);
+        thirdBase.string('2018LaunchAngle', 50);
         thirdBase.string('2018Barrel%', 50);
         thirdBase.string('2018BABIP', 50);
         thirdBase.string('2018WOBA', 50);
@@ -103,6 +105,7 @@ exports.up = function (knex, Promise) {
         thirdBase.string('2019HardHit%', 50);
         thirdBase.string('2019ExitVelo', 50);
         thirdBase.string('2019FlyBallLineDriveExitVelo', 50);
+        thirdBase.string('2019LaunchAngle', 50);
         thirdBase.string('2019Barrel%', 50);
         thirdBase.string('2019BABIP', 50);
         thirdBase.string('2019WOBA', 50);
