@@ -3,7 +3,7 @@ exports.up = function (knex, Promise) {
         catchers.increments();
         catchers.string('firstName', 50);
         catchers.string('lastName', 50);
-        catchers.string('birthday', 50);
+        catchers.date('birthday');
         catchers.string('bats', 1);
         catchers.string('throws', 1);
         catchers.string('currentTeam', 50);
@@ -129,7 +129,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2020SteamerRunsProjection', 50);
         catchers.string('2020SteamerRBIProjection', 50);
         catchers.string('2020SteamerSBProjection', 50);
-        catchers.string('2020SteamerFWARProjection');
+        catchers.string('2020SteamerFWARProjection', 50);
     })
 };
 
