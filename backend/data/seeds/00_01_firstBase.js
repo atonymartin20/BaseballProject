@@ -128,8 +128,8 @@ exports.seed = function(knex, Promise) {
             '2020SteamerHRProjection': '',
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
-            '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerSBProjection': 0,
+            '2020SteamerFWARProjection': 0,
         },
     ]);
 };
