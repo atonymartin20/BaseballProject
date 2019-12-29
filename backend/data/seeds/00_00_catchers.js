@@ -1188,7 +1188,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 10
             'firstName': 'Victor',
             'lastName': 'Caratini',
@@ -1320,7 +1320,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 11
             'firstName': 'Curt',
             'lastName': 'Casali',
@@ -1452,7 +1452,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 12
             'firstName': 'Welington',
             'lastName': 'Castillo',
@@ -1584,7 +1584,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 13
             'firstName': 'Jason',
             'lastName': 'Castro',
@@ -1716,7 +1716,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 14
             'firstName': 'Francisco',
             'lastName': 'Cervelli',
@@ -1848,7 +1848,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 15
             'firstName': 'Robinson',
             'lastName': 'Chirinos',
@@ -1980,7 +1980,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 16
             'firstName': 'Willson',
             'lastName': 'Contreras',
@@ -2112,7 +2112,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 17
             'firstName': 'Travis',
             'lastName': 'd\'Arnaud',
@@ -2244,7 +2244,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 18
             'firstName': 'Elias',
             'lastName': 'Diaz',
@@ -2376,7 +2376,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 19
             'firstName': 'Tyler',
             'lastName': 'Flowers',
@@ -2508,7 +2508,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 20
             'firstName': 'Cam',
             'lastName': 'Gallagher',
@@ -2640,7 +2640,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 21
             'firstName': 'Aramis',
             'lastName': 'Garcia',
@@ -2772,7 +2772,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 22
             'firstName': 'Dustin',
             'lastName': 'Garneau',
@@ -2904,7 +2904,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 23
             'firstName': 'Mitch',
             'lastName': 'Garver',
@@ -3036,7 +3036,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 24
             'firstName': 'Yan',
             'lastName': 'Gomes',
@@ -3168,7 +3168,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 25
             'firstName': 'Yasmani',
             'lastName': 'Grandal',
@@ -3300,7 +3300,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 26
             'firstName': 'Grayson',
             'lastName': 'Greiner',
@@ -3432,7 +3432,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 27
             'firstName': 'Austin',
             'lastName': 'Hedges',
@@ -3564,7 +3564,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 28
             'firstName': 'Chris',
             'lastName': 'Herrmann',
@@ -3696,7 +3696,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 29
             'firstName': 'Kyle',
             'lastName': 'Higashioka',
@@ -3828,7 +3828,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 30
             'firstName': 'Nick',
             'lastName': 'Hundley',
@@ -3960,7 +3960,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 31
             'firstName': 'Chris',
             'lastName': 'Iannetta',
@@ -4092,7 +4092,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 32
             'firstName': 'Danny',
             'lastName': 'Jansen',
@@ -4224,7 +4224,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 33
             'firstName': 'Caleb',
             'lastName': 'Joseph',
@@ -4356,7 +4356,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 34
             'firstName': 'Carson',
             'lastName': 'Kelly',
@@ -4488,7 +4488,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 35
             'firstName': 'Isiah',
             'lastName': 'Kiner-Falefa',
@@ -4620,7 +4620,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 36
             'firstName': 'Andrew',
             'lastName': 'Knizner',
@@ -4752,7 +4752,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 37
             'firstName': 'Sandy',
             'lastName': 'Leon',
@@ -4884,7 +4884,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
+        {
             // id 38
             'firstName': 'Jonathan',
             'lastName': 'Lucroy',
@@ -5016,10 +5016,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 39
+            'firstName': 'Luke',
+            'lastName': 'Maile',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5148,10 +5148,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 40
+            'firstName': 'Martin',
+            'lastName': 'Maldonado',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5280,10 +5280,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 41
+            'firstName': 'Russell',
+            'lastName': 'Martin',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5412,10 +5412,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 42
+            'firstName': 'Jeff',
+            'lastName': 'Mathis',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5544,10 +5544,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 43
+            'firstName': 'James',
+            'lastName': 'McCann',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5676,10 +5676,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 44
+            'firstName': 'Reese',
+            'lastName': 'McGuire',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5808,10 +5808,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 45
+            'firstName': 'Francisco',
+            'lastName': 'Mejia',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5940,10 +5940,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 46
+            'firstName': 'Yadier',
+            'lastName': 'Molina',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6072,10 +6072,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 47
+            'firstName': 'Tom',
+            'lastName': 'Murphy',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6204,10 +6204,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 48
+            'firstName': 'Omar',
+            'lastName': 'Narvaez',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6336,10 +6336,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 49
+            'firstName': 'Tomas',
+            'lastName': 'Nido',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6468,10 +6468,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 50
+            'firstName': 'Michael',
+            'lastName': 'Perez',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6600,10 +6600,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 51
+            'firstName': 'Roberto',
+            'lastName': 'Perez',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6732,10 +6732,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 52
+            'firstName': 'Salvador',
+            'lastName': 'Perez',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6864,10 +6864,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 53
+            'firstName': 'Josh',
+            'lastName': 'Phegley',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -6996,10 +6996,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 54
+            'firstName': 'Manny',
+            'lastName': 'Pina',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7128,10 +7128,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 55
+            'firstName': 'Kevin',
+            'lastName': 'Plawecki',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7260,10 +7260,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 56
+            'firstName': 'Buster',
+            'lastName': 'Posey',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7392,10 +7392,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 57
+            'firstName': 'Wilson',
+            'lastName': 'Ramos',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7524,10 +7524,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 58
+            'firstName': 'J.T.',
+            'lastName': 'Realmuto',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7656,10 +7656,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 59
+            'firstName': 'Austin',
+            'lastName': 'Romine',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7788,10 +7788,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 60
+            'firstName': 'Gary',
+            'lastName': 'Sanchez',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -7920,10 +7920,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 61
+            'firstName': 'Pedro',
+            'lastName': 'Severino',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8052,10 +8052,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 62
+            'firstName': 'Chance',
+            'lastName': 'Sisco',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8184,10 +8184,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 63
+            'firstName': 'Kevan',
+            'lastName': 'Smith',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8316,10 +8316,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 64
+            'firstName': 'Will',
+            'lastName': 'Smith',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8448,10 +8448,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 65
+            'firstName': 'Jacob',
+            'lastName': 'Stallings',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8580,10 +8580,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 66
+            'firstName': 'Max',
+            'lastName': 'Stassi',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8712,10 +8712,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 67
+            'firstName': 'Garrett',
+            'lastName': 'Stubbs',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8844,10 +8844,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 68
+            'firstName': 'Kurt',
+            'lastName': 'Suzuki',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -8976,10 +8976,10 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-                {
-            // id 
-            'firstName': '',
-            'lastName': '',
+        {
+            // id 69
+            'firstName': 'Jose',
+            'lastName': 'Trevino',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -9108,6 +9108,665 @@ exports.seed = function (knex, Promise) {
             '2020SteamerSBProjection': '',
             '2020SteamerFWARProjection': '',
         },
-        
+        {
+            // id 70
+            'firstName': 'Christian',
+            'lastName': 'Vazquez',
+            'birthday': '',
+            'bats': '',
+            'throws': '',
+            'currentTeam': '',
+            'imageURL': '',
+            'primaryPosition': 'catcher',
+            'otherPositions': '',
+            '2017GamesPlayed': '',
+            '2017BA': '',
+            '2017OBP': '',
+            '2017SLG': '',
+            '2017PA': '',
+            '20172B': '',
+            '2017HR': '',
+            '2017Runs': '',
+            '2017RBI': '',
+            '2017LineupSlot': '',
+            '2017GB%': '',
+            '2017LD%': '',
+            '2017FB%': '',
+            '2017Pull%': '',
+            '2017Center%': '',
+            '2017Oppo%': '',
+            '2017HR/FB%': '',
+            '2017HardHit%': '',
+            '2017ExitVelo': '',
+            '2017FlyBallLineDriveExitVelo': '',
+            '2017LaunchAngle': '',
+            '2017Barrel%': '',
+            '2017BABIP': '',
+            '2017WOBA': '',
+            '2017xWOBA': '',
+            '2017xBA': '',
+            '2017AvgHRDistance': '',
+            '2017WRC+': '',
+            '2017OPS+': '',
+            '2017BB%': '',
+            '2017K%': '',
+            '2017ChaseRate': '',
+            '2017Contact%': '',
+            '2017SprintSpeed': '',
+            '2017StolenBases': '',
+            '2017StolenBase%': '',
+            '2017FWAR': '',
+            '2018GamesPlayed': '',
+            '2018BA': '',
+            '2018OBP': '',
+            '2018SLG': '',
+            '2018PA': '',
+            '20182B': '',
+            '2018HR': '',
+            '2018Runs': '',
+            '2018RBI': '',
+            '2018LineupSlot': '',
+            '2018GB%': '',
+            '2018LD%': '',
+            '2018FB%': '',
+            '2018Pull%': '',
+            '2018Center%': '',
+            '2018Oppo%': '',
+            '2018HR/FB%': '',
+            '2018HardHit%': '',
+            '2018ExitVelo': '',
+            '2018FlyBallLineDriveExitVelo': '',
+            '2018LaunchAngle': '',
+            '2018Barrel%': '',
+            '2018BABIP': '',
+            '2018WOBA': '',
+            '2018xWOBA': '',
+            '2018xBA': '',
+            '2018AvgHRDistance': '',
+            '2018WRC+': '',
+            '2018OPS+': '',
+            '2018BB%': '',
+            '2018K%': '',
+            '2018ChaseRate': '',
+            '2018Contact%': '',
+            '2018SprintSpeed': '',
+            '2018StolenBases': '',
+            '2018StolenBase%': '',
+            '2018FWAR': '',
+            '2019GamesPlayed': '',
+            '2019BA': '',
+            '2019OBP': '',
+            '2019SLG': '',
+            '2019PA': '',
+            '20192B': '',
+            '2019HR': '',
+            '2019Runs': '',
+            '2019RBI': '',
+            '2019LineupSlot': '',
+            '2019GB%': '',
+            '2019LD%': '',
+            '2019FB%': '',
+            '2019Pull%': '',
+            '2019Center%': '',
+            '2019Oppo%': '',
+            '2019HR/FB%': '',
+            '2019HardHit%': '',
+            '2019ExitVelo': '',
+            '2019FlyBallLineDriveExitVelo': '',
+            '2019LaunchAngle': '',
+            '2019Barrel%': '',
+            '2019BABIP': '',
+            '2019WOBA': '',
+            '2019xWOBA': '',
+            '2019xBA': '',
+            '2019AvgHRDistance': '',
+            '2019WRC+': '',
+            '2019OPS+': '',
+            '2019BB%': '',
+            '2019K%': '',
+            '2019ChaseRate': '',
+            '2019Contact%': '',
+            '2019SprintSpeed': '',
+            '2019StolenBases': '',
+            '2019StolenBase%': '',
+            '2019FWAR': '',
+            '2020SteamerPAProjection': '',
+            '2020SteamerAVGProjection': '',
+            '2020SteamerOBPProjection': '',
+            '2020SteamerSLGProjection': '',
+            '2020SteamerHRProjection': '',
+            '2020SteamerRunsProjection': '',
+            '2020SteamerRBIProjection': '',
+            '2020SteamerSBProjection': '',
+            '2020SteamerFWARProjection': '',
+        },
+        {
+            // id 71
+            'firstName': 'Stephen',
+            'lastName': 'Vogt',
+            'birthday': '',
+            'bats': '',
+            'throws': '',
+            'currentTeam': '',
+            'imageURL': '',
+            'primaryPosition': 'catcher',
+            'otherPositions': '',
+            '2017GamesPlayed': '',
+            '2017BA': '',
+            '2017OBP': '',
+            '2017SLG': '',
+            '2017PA': '',
+            '20172B': '',
+            '2017HR': '',
+            '2017Runs': '',
+            '2017RBI': '',
+            '2017LineupSlot': '',
+            '2017GB%': '',
+            '2017LD%': '',
+            '2017FB%': '',
+            '2017Pull%': '',
+            '2017Center%': '',
+            '2017Oppo%': '',
+            '2017HR/FB%': '',
+            '2017HardHit%': '',
+            '2017ExitVelo': '',
+            '2017FlyBallLineDriveExitVelo': '',
+            '2017LaunchAngle': '',
+            '2017Barrel%': '',
+            '2017BABIP': '',
+            '2017WOBA': '',
+            '2017xWOBA': '',
+            '2017xBA': '',
+            '2017AvgHRDistance': '',
+            '2017WRC+': '',
+            '2017OPS+': '',
+            '2017BB%': '',
+            '2017K%': '',
+            '2017ChaseRate': '',
+            '2017Contact%': '',
+            '2017SprintSpeed': '',
+            '2017StolenBases': '',
+            '2017StolenBase%': '',
+            '2017FWAR': '',
+            '2018GamesPlayed': '',
+            '2018BA': '',
+            '2018OBP': '',
+            '2018SLG': '',
+            '2018PA': '',
+            '20182B': '',
+            '2018HR': '',
+            '2018Runs': '',
+            '2018RBI': '',
+            '2018LineupSlot': '',
+            '2018GB%': '',
+            '2018LD%': '',
+            '2018FB%': '',
+            '2018Pull%': '',
+            '2018Center%': '',
+            '2018Oppo%': '',
+            '2018HR/FB%': '',
+            '2018HardHit%': '',
+            '2018ExitVelo': '',
+            '2018FlyBallLineDriveExitVelo': '',
+            '2018LaunchAngle': '',
+            '2018Barrel%': '',
+            '2018BABIP': '',
+            '2018WOBA': '',
+            '2018xWOBA': '',
+            '2018xBA': '',
+            '2018AvgHRDistance': '',
+            '2018WRC+': '',
+            '2018OPS+': '',
+            '2018BB%': '',
+            '2018K%': '',
+            '2018ChaseRate': '',
+            '2018Contact%': '',
+            '2018SprintSpeed': '',
+            '2018StolenBases': '',
+            '2018StolenBase%': '',
+            '2018FWAR': '',
+            '2019GamesPlayed': '',
+            '2019BA': '',
+            '2019OBP': '',
+            '2019SLG': '',
+            '2019PA': '',
+            '20192B': '',
+            '2019HR': '',
+            '2019Runs': '',
+            '2019RBI': '',
+            '2019LineupSlot': '',
+            '2019GB%': '',
+            '2019LD%': '',
+            '2019FB%': '',
+            '2019Pull%': '',
+            '2019Center%': '',
+            '2019Oppo%': '',
+            '2019HR/FB%': '',
+            '2019HardHit%': '',
+            '2019ExitVelo': '',
+            '2019FlyBallLineDriveExitVelo': '',
+            '2019LaunchAngle': '',
+            '2019Barrel%': '',
+            '2019BABIP': '',
+            '2019WOBA': '',
+            '2019xWOBA': '',
+            '2019xBA': '',
+            '2019AvgHRDistance': '',
+            '2019WRC+': '',
+            '2019OPS+': '',
+            '2019BB%': '',
+            '2019K%': '',
+            '2019ChaseRate': '',
+            '2019Contact%': '',
+            '2019SprintSpeed': '',
+            '2019StolenBases': '',
+            '2019StolenBase%': '',
+            '2019FWAR': '',
+            '2020SteamerPAProjection': '',
+            '2020SteamerAVGProjection': '',
+            '2020SteamerOBPProjection': '',
+            '2020SteamerSLGProjection': '',
+            '2020SteamerHRProjection': '',
+            '2020SteamerRunsProjection': '',
+            '2020SteamerRBIProjection': '',
+            '2020SteamerSBProjection': '',
+            '2020SteamerFWARProjection': '',
+        },
+        {
+            // id 72
+            'firstName': 'Matt',
+            'lastName': 'Wieters',
+            'birthday': '',
+            'bats': '',
+            'throws': '',
+            'currentTeam': '',
+            'imageURL': '',
+            'primaryPosition': 'catcher',
+            'otherPositions': '',
+            '2017GamesPlayed': '',
+            '2017BA': '',
+            '2017OBP': '',
+            '2017SLG': '',
+            '2017PA': '',
+            '20172B': '',
+            '2017HR': '',
+            '2017Runs': '',
+            '2017RBI': '',
+            '2017LineupSlot': '',
+            '2017GB%': '',
+            '2017LD%': '',
+            '2017FB%': '',
+            '2017Pull%': '',
+            '2017Center%': '',
+            '2017Oppo%': '',
+            '2017HR/FB%': '',
+            '2017HardHit%': '',
+            '2017ExitVelo': '',
+            '2017FlyBallLineDriveExitVelo': '',
+            '2017LaunchAngle': '',
+            '2017Barrel%': '',
+            '2017BABIP': '',
+            '2017WOBA': '',
+            '2017xWOBA': '',
+            '2017xBA': '',
+            '2017AvgHRDistance': '',
+            '2017WRC+': '',
+            '2017OPS+': '',
+            '2017BB%': '',
+            '2017K%': '',
+            '2017ChaseRate': '',
+            '2017Contact%': '',
+            '2017SprintSpeed': '',
+            '2017StolenBases': '',
+            '2017StolenBase%': '',
+            '2017FWAR': '',
+            '2018GamesPlayed': '',
+            '2018BA': '',
+            '2018OBP': '',
+            '2018SLG': '',
+            '2018PA': '',
+            '20182B': '',
+            '2018HR': '',
+            '2018Runs': '',
+            '2018RBI': '',
+            '2018LineupSlot': '',
+            '2018GB%': '',
+            '2018LD%': '',
+            '2018FB%': '',
+            '2018Pull%': '',
+            '2018Center%': '',
+            '2018Oppo%': '',
+            '2018HR/FB%': '',
+            '2018HardHit%': '',
+            '2018ExitVelo': '',
+            '2018FlyBallLineDriveExitVelo': '',
+            '2018LaunchAngle': '',
+            '2018Barrel%': '',
+            '2018BABIP': '',
+            '2018WOBA': '',
+            '2018xWOBA': '',
+            '2018xBA': '',
+            '2018AvgHRDistance': '',
+            '2018WRC+': '',
+            '2018OPS+': '',
+            '2018BB%': '',
+            '2018K%': '',
+            '2018ChaseRate': '',
+            '2018Contact%': '',
+            '2018SprintSpeed': '',
+            '2018StolenBases': '',
+            '2018StolenBase%': '',
+            '2018FWAR': '',
+            '2019GamesPlayed': '',
+            '2019BA': '',
+            '2019OBP': '',
+            '2019SLG': '',
+            '2019PA': '',
+            '20192B': '',
+            '2019HR': '',
+            '2019Runs': '',
+            '2019RBI': '',
+            '2019LineupSlot': '',
+            '2019GB%': '',
+            '2019LD%': '',
+            '2019FB%': '',
+            '2019Pull%': '',
+            '2019Center%': '',
+            '2019Oppo%': '',
+            '2019HR/FB%': '',
+            '2019HardHit%': '',
+            '2019ExitVelo': '',
+            '2019FlyBallLineDriveExitVelo': '',
+            '2019LaunchAngle': '',
+            '2019Barrel%': '',
+            '2019BABIP': '',
+            '2019WOBA': '',
+            '2019xWOBA': '',
+            '2019xBA': '',
+            '2019AvgHRDistance': '',
+            '2019WRC+': '',
+            '2019OPS+': '',
+            '2019BB%': '',
+            '2019K%': '',
+            '2019ChaseRate': '',
+            '2019Contact%': '',
+            '2019SprintSpeed': '',
+            '2019StolenBases': '',
+            '2019StolenBase%': '',
+            '2019FWAR': '',
+            '2020SteamerPAProjection': '',
+            '2020SteamerAVGProjection': '',
+            '2020SteamerOBPProjection': '',
+            '2020SteamerSLGProjection': '',
+            '2020SteamerHRProjection': '',
+            '2020SteamerRunsProjection': '',
+            '2020SteamerRBIProjection': '',
+            '2020SteamerSBProjection': '',
+            '2020SteamerFWARProjection': '',
+        },
+        {
+            // id 73
+            'firstName': 'Tony',
+            'lastName': 'Wolters',
+            'birthday': '',
+            'bats': '',
+            'throws': '',
+            'currentTeam': '',
+            'imageURL': '',
+            'primaryPosition': 'catcher',
+            'otherPositions': '',
+            '2017GamesPlayed': '',
+            '2017BA': '',
+            '2017OBP': '',
+            '2017SLG': '',
+            '2017PA': '',
+            '20172B': '',
+            '2017HR': '',
+            '2017Runs': '',
+            '2017RBI': '',
+            '2017LineupSlot': '',
+            '2017GB%': '',
+            '2017LD%': '',
+            '2017FB%': '',
+            '2017Pull%': '',
+            '2017Center%': '',
+            '2017Oppo%': '',
+            '2017HR/FB%': '',
+            '2017HardHit%': '',
+            '2017ExitVelo': '',
+            '2017FlyBallLineDriveExitVelo': '',
+            '2017LaunchAngle': '',
+            '2017Barrel%': '',
+            '2017BABIP': '',
+            '2017WOBA': '',
+            '2017xWOBA': '',
+            '2017xBA': '',
+            '2017AvgHRDistance': '',
+            '2017WRC+': '',
+            '2017OPS+': '',
+            '2017BB%': '',
+            '2017K%': '',
+            '2017ChaseRate': '',
+            '2017Contact%': '',
+            '2017SprintSpeed': '',
+            '2017StolenBases': '',
+            '2017StolenBase%': '',
+            '2017FWAR': '',
+            '2018GamesPlayed': '',
+            '2018BA': '',
+            '2018OBP': '',
+            '2018SLG': '',
+            '2018PA': '',
+            '20182B': '',
+            '2018HR': '',
+            '2018Runs': '',
+            '2018RBI': '',
+            '2018LineupSlot': '',
+            '2018GB%': '',
+            '2018LD%': '',
+            '2018FB%': '',
+            '2018Pull%': '',
+            '2018Center%': '',
+            '2018Oppo%': '',
+            '2018HR/FB%': '',
+            '2018HardHit%': '',
+            '2018ExitVelo': '',
+            '2018FlyBallLineDriveExitVelo': '',
+            '2018LaunchAngle': '',
+            '2018Barrel%': '',
+            '2018BABIP': '',
+            '2018WOBA': '',
+            '2018xWOBA': '',
+            '2018xBA': '',
+            '2018AvgHRDistance': '',
+            '2018WRC+': '',
+            '2018OPS+': '',
+            '2018BB%': '',
+            '2018K%': '',
+            '2018ChaseRate': '',
+            '2018Contact%': '',
+            '2018SprintSpeed': '',
+            '2018StolenBases': '',
+            '2018StolenBase%': '',
+            '2018FWAR': '',
+            '2019GamesPlayed': '',
+            '2019BA': '',
+            '2019OBP': '',
+            '2019SLG': '',
+            '2019PA': '',
+            '20192B': '',
+            '2019HR': '',
+            '2019Runs': '',
+            '2019RBI': '',
+            '2019LineupSlot': '',
+            '2019GB%': '',
+            '2019LD%': '',
+            '2019FB%': '',
+            '2019Pull%': '',
+            '2019Center%': '',
+            '2019Oppo%': '',
+            '2019HR/FB%': '',
+            '2019HardHit%': '',
+            '2019ExitVelo': '',
+            '2019FlyBallLineDriveExitVelo': '',
+            '2019LaunchAngle': '',
+            '2019Barrel%': '',
+            '2019BABIP': '',
+            '2019WOBA': '',
+            '2019xWOBA': '',
+            '2019xBA': '',
+            '2019AvgHRDistance': '',
+            '2019WRC+': '',
+            '2019OPS+': '',
+            '2019BB%': '',
+            '2019K%': '',
+            '2019ChaseRate': '',
+            '2019Contact%': '',
+            '2019SprintSpeed': '',
+            '2019StolenBases': '',
+            '2019StolenBase%': '',
+            '2019FWAR': '',
+            '2020SteamerPAProjection': '',
+            '2020SteamerAVGProjection': '',
+            '2020SteamerOBPProjection': '',
+            '2020SteamerSLGProjection': '',
+            '2020SteamerHRProjection': '',
+            '2020SteamerRunsProjection': '',
+            '2020SteamerRBIProjection': '',
+            '2020SteamerSBProjection': '',
+            '2020SteamerFWARProjection': '',
+        },
+        {
+            // id 74
+            'firstName': 'Mike',
+            'lastName': 'Zunino',
+            'birthday': '',
+            'bats': '',
+            'throws': '',
+            'currentTeam': '',
+            'imageURL': '',
+            'primaryPosition': 'catcher',
+            'otherPositions': '',
+            '2017GamesPlayed': '',
+            '2017BA': '',
+            '2017OBP': '',
+            '2017SLG': '',
+            '2017PA': '',
+            '20172B': '',
+            '2017HR': '',
+            '2017Runs': '',
+            '2017RBI': '',
+            '2017LineupSlot': '',
+            '2017GB%': '',
+            '2017LD%': '',
+            '2017FB%': '',
+            '2017Pull%': '',
+            '2017Center%': '',
+            '2017Oppo%': '',
+            '2017HR/FB%': '',
+            '2017HardHit%': '',
+            '2017ExitVelo': '',
+            '2017FlyBallLineDriveExitVelo': '',
+            '2017LaunchAngle': '',
+            '2017Barrel%': '',
+            '2017BABIP': '',
+            '2017WOBA': '',
+            '2017xWOBA': '',
+            '2017xBA': '',
+            '2017AvgHRDistance': '',
+            '2017WRC+': '',
+            '2017OPS+': '',
+            '2017BB%': '',
+            '2017K%': '',
+            '2017ChaseRate': '',
+            '2017Contact%': '',
+            '2017SprintSpeed': '',
+            '2017StolenBases': '',
+            '2017StolenBase%': '',
+            '2017FWAR': '',
+            '2018GamesPlayed': '',
+            '2018BA': '',
+            '2018OBP': '',
+            '2018SLG': '',
+            '2018PA': '',
+            '20182B': '',
+            '2018HR': '',
+            '2018Runs': '',
+            '2018RBI': '',
+            '2018LineupSlot': '',
+            '2018GB%': '',
+            '2018LD%': '',
+            '2018FB%': '',
+            '2018Pull%': '',
+            '2018Center%': '',
+            '2018Oppo%': '',
+            '2018HR/FB%': '',
+            '2018HardHit%': '',
+            '2018ExitVelo': '',
+            '2018FlyBallLineDriveExitVelo': '',
+            '2018LaunchAngle': '',
+            '2018Barrel%': '',
+            '2018BABIP': '',
+            '2018WOBA': '',
+            '2018xWOBA': '',
+            '2018xBA': '',
+            '2018AvgHRDistance': '',
+            '2018WRC+': '',
+            '2018OPS+': '',
+            '2018BB%': '',
+            '2018K%': '',
+            '2018ChaseRate': '',
+            '2018Contact%': '',
+            '2018SprintSpeed': '',
+            '2018StolenBases': '',
+            '2018StolenBase%': '',
+            '2018FWAR': '',
+            '2019GamesPlayed': '',
+            '2019BA': '',
+            '2019OBP': '',
+            '2019SLG': '',
+            '2019PA': '',
+            '20192B': '',
+            '2019HR': '',
+            '2019Runs': '',
+            '2019RBI': '',
+            '2019LineupSlot': '',
+            '2019GB%': '',
+            '2019LD%': '',
+            '2019FB%': '',
+            '2019Pull%': '',
+            '2019Center%': '',
+            '2019Oppo%': '',
+            '2019HR/FB%': '',
+            '2019HardHit%': '',
+            '2019ExitVelo': '',
+            '2019FlyBallLineDriveExitVelo': '',
+            '2019LaunchAngle': '',
+            '2019Barrel%': '',
+            '2019BABIP': '',
+            '2019WOBA': '',
+            '2019xWOBA': '',
+            '2019xBA': '',
+            '2019AvgHRDistance': '',
+            '2019WRC+': '',
+            '2019OPS+': '',
+            '2019BB%': '',
+            '2019K%': '',
+            '2019ChaseRate': '',
+            '2019Contact%': '',
+            '2019SprintSpeed': '',
+            '2019StolenBases': '',
+            '2019StolenBase%': '',
+            '2019FWAR': '',
+            '2020SteamerPAProjection': '',
+            '2020SteamerAVGProjection': '',
+            '2020SteamerOBPProjection': '',
+            '2020SteamerSLGProjection': '',
+            '2020SteamerHRProjection': '',
+            '2020SteamerRunsProjection': '',
+            '2020SteamerRBIProjection': '',
+            '2020SteamerSBProjection': '',
+            '2020SteamerFWARProjection': '',
+        },
     ]);
 };
