@@ -130,7 +130,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '40',
             '2020SteamerRBIProjection': '47',
             '2020SteamerSBProjection': '4',
-            '2020SteamerFWARProjection': '1.1',
+            '2020SteamerFWARProjection': 1.1,
         },
         {
             // id 2
@@ -262,7 +262,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '23',
             '2020SteamerRBIProjection': '24',
             '2020SteamerSBProjection': '1',
-            '2020SteamerFWARProjection': '0.5',
+            '2020SteamerFWARProjection': 0.5,
         },
         {
             // id 3
@@ -394,7 +394,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '13',
             '2020SteamerRBIProjection': '14',
             '2020SteamerSBProjection': '1',
-            '2020SteamerFWARProjection': '0.3',
+            '2020SteamerFWARProjection': 0.3,
         },
         {
             // id 4
@@ -526,7 +526,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '29',
             '2020SteamerRBIProjection': '26',
             '2020SteamerSBProjection': '1',
-            '2020SteamerFWARProjection': '1.1',
+            '2020SteamerFWARProjection': 1.1,
         },
         {
             // id 5
@@ -658,7 +658,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '13',
             '2020SteamerRBIProjection': '14',
             '2020SteamerSBProjection': '1',
-            '2020SteamerFWARProjection': '0.1',
+            '2020SteamerFWARProjection': 0.1,
         },
         {
             // id 6
@@ -790,7 +790,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '21',
             '2020SteamerRBIProjection': '20',
             '2020SteamerSBProjection': '2',
-            '2020SteamerFWARProjection': '1.2',
+            '2020SteamerFWARProjection': 1.2,
         },
         {
             // id 7
@@ -922,7 +922,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '34',
             '2020SteamerRBIProjection': '34',
             '2020SteamerSBProjection': '2',
-            '2020SteamerFWARProjection': '0.7',
+            '2020SteamerFWARProjection': 0.7,
         },
         {
             // id 8
@@ -1054,7 +1054,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '25',
             '2020SteamerRBIProjection': '24',
             '2020SteamerSBProjection': '2',
-            '2020SteamerFWARProjection': '0.7',
+            '2020SteamerFWARProjection': 0.7,
         },
         {
             // id 9
@@ -1186,7 +1186,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 10
@@ -1318,7 +1318,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 11
@@ -1450,7 +1450,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 12
@@ -1582,7 +1582,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 13
@@ -1714,7 +1714,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 14
@@ -1846,7 +1846,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 15
@@ -1978,7 +1978,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 16
@@ -2110,7 +2110,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 17
@@ -2242,7 +2242,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 18
@@ -2374,7 +2374,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 19
@@ -2506,7 +2506,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 20
@@ -2638,7 +2638,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 21
@@ -2770,7 +2770,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 22
@@ -2902,7 +2902,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 23
@@ -3034,7 +3034,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 24
@@ -3166,7 +3166,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 25
@@ -3298,7 +3298,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 26
@@ -3430,7 +3430,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 27
@@ -3562,7 +3562,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 28
@@ -3694,7 +3694,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 29
@@ -3826,7 +3826,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 30
@@ -3958,7 +3958,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 31
@@ -4090,7 +4090,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 32
@@ -4222,7 +4222,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 33
@@ -4354,7 +4354,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 34
@@ -4486,7 +4486,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 35
@@ -4618,7 +4618,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 36
@@ -4750,7 +4750,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 37
@@ -4882,7 +4882,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 38
@@ -5014,7 +5014,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 39
@@ -5146,7 +5146,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 40
@@ -5278,7 +5278,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 41
@@ -5410,7 +5410,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 42
@@ -5542,7 +5542,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 43
@@ -5674,7 +5674,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 44
@@ -5806,7 +5806,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 45
@@ -5938,7 +5938,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 46
@@ -6070,7 +6070,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 47
@@ -6202,7 +6202,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 48
@@ -6334,7 +6334,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 49
@@ -6466,7 +6466,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 50
@@ -6598,7 +6598,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 51
@@ -6730,7 +6730,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 52
@@ -6862,7 +6862,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 53
@@ -6994,7 +6994,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 54
@@ -7126,7 +7126,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 55
@@ -7258,7 +7258,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 56
@@ -7390,7 +7390,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 57
@@ -7522,7 +7522,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 58
@@ -7654,7 +7654,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 59
@@ -7786,7 +7786,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 60
@@ -7918,7 +7918,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 61
@@ -8050,7 +8050,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 62
@@ -8182,7 +8182,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0
         },
         {
             // id 63
@@ -8314,7 +8314,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 64
@@ -8446,7 +8446,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 65
@@ -8578,7 +8578,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 66
@@ -8710,7 +8710,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 67
@@ -8842,7 +8842,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 68
@@ -8974,7 +8974,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 69
@@ -9106,7 +9106,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 70
@@ -9238,7 +9238,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 71
@@ -9370,7 +9370,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 72
@@ -9502,7 +9502,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 73
@@ -9634,7 +9634,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
         {
             // id 74
@@ -9766,7 +9766,7 @@ exports.seed = function (knex, Promise) {
             '2020SteamerRunsProjection': '',
             '2020SteamerRBIProjection': '',
             '2020SteamerSBProjection': '',
-            '2020SteamerFWARProjection': '',
+            '2020SteamerFWARProjection': 0,
         },
     ]);
 };
