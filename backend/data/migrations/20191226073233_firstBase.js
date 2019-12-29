@@ -128,8 +128,8 @@ exports.up = function (knex, Promise) {
         firstBase.string('2020SteamerHRProjection', 50);
         firstBase.string('2020SteamerRunsProjection', 50);
         firstBase.string('2020SteamerRBIProjection', 50);
-        firstBase.string('2020SteamerSBProjection', 50);
-        firstBase.string('2020SteamerFWARProjection', 50);
+        firstBase.decimal('2020SteamerSBProjection');
+        firstBase.decimal('2020SteamerFWARProjection');
     })
 };
 
