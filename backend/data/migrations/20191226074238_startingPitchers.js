@@ -8,10 +8,13 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('throws', 1);
         startingPitchers.string('currentTeam', 50);
         startingPitchers.string('imageURL', 500);
-        startingPitchers.string('otherPostions', 50);
+        startingPitchers.string('primaryPosition', 50);
+        startingPitchers.string('otherPositions', 50);
         startingPitchers.string('2017games', 50);
         startingPitchers.string('2017gamesStarted', 50);
         startingPitchers.string('2017inningsPitched', 50);
+        startingPitchers.string('2017InningsPitchedPerGameStarted', 50);
+        startingPitchers.string('2017QS', 50);
         startingPitchers.string('2017ERA', 50);
         startingPitchers.string('2017ERA+', 50);
         startingPitchers.string('2017FIP', 50);
@@ -56,6 +59,8 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('2018games', 50);
         startingPitchers.string('2018gamesStarted', 50);
         startingPitchers.string('2018inningsPitched', 50);
+        startingPitchers.string('2018InningsPitchedPerGameStarted', 50);
+        startingPitchers.string('2018QS', 50);
         startingPitchers.string('2018ERA', 50);
         startingPitchers.string('2018ERA+', 50);
         startingPitchers.string('2018FIP', 50);
@@ -100,6 +105,8 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('2019games', 50);
         startingPitchers.string('2019gamesStarted', 50);
         startingPitchers.string('2019inningsPitched', 50);
+        startingPitchers.string('2019InningsPitchedPerGameStarted', 50);
+        startingPitchers.string('2019QS', 50);
         startingPitchers.string('2019ERA', 50);
         startingPitchers.string('2019ERA+', 50);
         startingPitchers.string('2019FIP', 50);

@@ -8,7 +8,8 @@ exports.up = function (knex, Promise) {
         catchers.string('throws', 1);
         catchers.string('currentTeam', 50);
         catchers.string('imageURL', 500);
-        catchers.string('otherPostions', 50);
+        catchers.string('primaryPosition', 50);
+        catchers.string('otherPositions', 50);
         catchers.string('2017GamesPlayed', 50);
         catchers.string('2017BA', 50);
         catchers.string('2017OBP', 50);
@@ -34,7 +35,6 @@ exports.up = function (knex, Promise) {
         catchers.string('2017BABIP', 50);
         catchers.string('2017WOBA', 50);
         catchers.string('2017xWOBA', 50);
-        catchers.string('2017XOPS', 50);
         catchers.string('2017xBA', 50);
         catchers.string('2017AvgHRDistance', 50);
         catchers.string('2017WRC+', 50);
@@ -72,7 +72,6 @@ exports.up = function (knex, Promise) {
         catchers.string('2018BABIP', 50);
         catchers.string('2018WOBA', 50);
         catchers.string('2018xWOBA', 50);
-        catchers.string('2018XOPS', 50);
         catchers.string('2018xBA', 50);
         catchers.string('2018AvgHRDistance', 50);
         catchers.string('2018WRC+', 50);
@@ -110,7 +109,6 @@ exports.up = function (knex, Promise) {
         catchers.string('2019BABIP', 50);
         catchers.string('2019WOBA', 50);
         catchers.string('2019xWOBA', 50);
-        catchers.string('2019XOPS', 50);
         catchers.string('2019xBA', 50);
         catchers.string('2019AvgHRDistance', 50);
         catchers.string('2019WRC+', 50);
