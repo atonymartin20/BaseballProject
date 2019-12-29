@@ -5,6 +5,6 @@ module.exports = {
         return db('catchers').where({ id }).first();
     },
     getCatchers() {
-        return db('catchers').orderBy('2020SteamerFWARProjection', DESC);
+        return db('catchers').orderBy('2020SteamerFWARProjection', 'DESC');
     }
 }
