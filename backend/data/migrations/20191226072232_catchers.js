@@ -128,7 +128,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2020SteamerHRProjection', 50);
         catchers.string('2020SteamerRunsProjection', 50);
         catchers.string('2020SteamerRBIProjection', 50);
-        catchers.decimal('2020SteamerSBProjection');
+        catchers.string('2020SteamerSBProjection', 50);
         catchers.decimal('2020SteamerFWARProjection');
     })
 };
