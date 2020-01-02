@@ -45,7 +45,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2017Contact%', 50);
         catchers.decimal('2017SprintSpeed', 8, 1);
         catchers.integer('2017StolenBases');
-        catchers.string('2017StolenBase%', 4);
+        catchers.string('2017StolenBase%', 50);
         catchers.decimal('2017FWAR', 8, 1);
         catchers.integer('2018GamesPlayed');
         catchers.decimal('2018BA', 8, 1);
@@ -82,7 +82,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2018Contact%', 50);
         catchers.decimal('2018SprintSpeed', 8, 1);
         catchers.integer('2018StolenBases');
-        catchers.string('2018StolenBase%', 4);
+        catchers.string('2018StolenBase%', 50);
         catchers.decimal('2018FWAR', 8, 1);
         catchers.integer('2019GamesPlayed');
         catchers.decimal('2019BA', 8, 1);
@@ -119,7 +119,7 @@ exports.up = function (knex, Promise) {
         catchers.string('2019Contact%', 50);
         catchers.decimal('2019SprintSpeed', 8, 1);
         catchers.integer('2019StolenBases');
-        catchers.string('2019StolenBase%', 4);
+        catchers.string('2019StolenBase%', 50);
         catchers.decimal('2019FWAR', 8, 1);
         catchers.integer('2020SteamerPAProjection');
         catchers.decimal('2020SteamerAVGProjection', 8, 3);
