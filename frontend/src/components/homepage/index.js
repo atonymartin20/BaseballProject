@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../navbar';
 import Links from '../navbar/links.js';
 import withStyles from '@material-ui/core/styles/withStyles';
+import { Link } from 'react-router-dom';
 
 const styles = theme => ({
     homepageDiv: {
@@ -22,8 +23,10 @@ const styles = theme => ({
         alignItems: 'center',
         flexDirection: 'column',
         padding: 20,
-
     },
+    websiteLinks: {
+        
+    }
 });
 
 class Homepage extends React.Component {
@@ -35,7 +38,7 @@ class Homepage extends React.Component {
                 <Navbar />
                 <div className={classes.homepageSpacingDiv}>
                 <Links />
-                    <h1>test</h1>
+                    <h1>Welcome to my baseball project.  This project is designed to hold statistical data from <Link to='https://www.fangraphs.com/' className={classes.websiteLinks}>Fangraphs</Link> </h1>
                 <Links />
                 </div>
             </div>
