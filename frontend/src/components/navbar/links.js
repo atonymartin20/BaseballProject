@@ -14,7 +14,7 @@ const styles = theme => ({
         margin: '0px',
         listStyle: 'none',
         width: '100%',
-        // flexDirection: "column",
+        flexWrap: 'wrap',
     },
     drawerListItem: {
         float: "left",
@@ -24,14 +24,7 @@ const styles = theme => ({
         alignItems: 'center',
         margin: "0",
         padding: "0",
-        width: '100%',
-        // borderBottom: '1px solid #C2C2C2',
-        // borderRight: '1px solid #C2C2C2',
-        // backgroundColor: '#DDDDDD',
-        // "& ul": {
-        //     maxHeight: "400px",
-        //     overflow: "scroll"
-        // }
+        width: 'auto',
     },
     drawerNavLink: {
         color: "inherit",
@@ -42,14 +35,9 @@ const styles = theme => ({
         lineHeight: "20px",
         textDecoration: "none",
         display: "inline-flex",
-        width: "100%",
         height: 60,
-        paddingLeft: 15,
-        textAlign: "left",
+        textAlign: "center",
         textTransform: "none",
-        "& > span:first-child": {
-            justifyContent: "flex-start"
-        },
         "&:hover,&:focus": {
             backgroundColor: "#AA1649",
             color: "white"

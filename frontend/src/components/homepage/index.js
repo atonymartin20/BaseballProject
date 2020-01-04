@@ -25,6 +25,10 @@ const styles = theme => ({
         fontSize: '2.0rem',
         lineHeight: 1.25,
     },
+    homepageText: {
+        marginTop: 20,
+        marginBottom: 20,
+    },
     websiteLinks: {
         textDecoration: 'none',
         color: 'black',
@@ -40,7 +44,7 @@ class Homepage extends React.Component {
                 <Navbar />
                 <div className={classes.homepageSpacingDiv}>
                     <Links />
-                    <h1>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank'>Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'>Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank'>Baseball Reference</a>.  Then, all the data can be found in one location.  All 2020 projected stats are from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank'>Steamer</a>.<br /><br />Catchers will be released first, and then other positions will be added as they are completed.  All players in the database are projected for at least 100 plate appearances, 10 starts, or 40 innings in 2020.</h1>
+                    <h1 className={classes.homepageText}>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'rel="noopener noreferrer">Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Baseball Reference</a>.  Then, all the data can be found in one location.  All 2020 projected stats are from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.<br /><br />Catchers will be released first, and then other positions will be added as they are completed.  All players in the database are projected for at least 100 plate appearances, 10 starts, or 40 innings in 2020.</h1>
                     <Links />
                 </div>
             </div>
