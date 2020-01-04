@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../navbar';
 import Links from '../navbar/links.js';
 import withStyles from '@material-ui/core/styles/withStyles';
-import { Link } from 'react-router-dom';
 
 const styles = theme => ({
     homepageDiv: {
@@ -25,7 +24,11 @@ const styles = theme => ({
         padding: 20,
     },
     websiteLinks: {
-
+        textDecoration: 'none',
+        // width: '100%',
+        color: 'black',
+        // display: 'flex',
+        // justifyContent: 'center',
     }
 });
 
