@@ -25,7 +25,7 @@ const styles = theme => ({
         padding: 20,
     },
     websiteLinks: {
-        
+
     }
 });
 
@@ -37,9 +37,9 @@ class Homepage extends React.Component {
             <div className={classes.homepageDiv}>
                 <Navbar />
                 <div className={classes.homepageSpacingDiv}>
-                <Links />
-                    <h1>Welcome to my baseball project.  This project is designed to hold statistical data from <Link to='https://www.fangraphs.com/' className={classes.websiteLinks}>Fangraphs</Link> </h1>
-                <Links />
+                    <Links />
+                    <h1>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank'>Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'>Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank'>Baseball Reference</a> </h1>
+                    <Links />
                 </div>
             </div>
         )
