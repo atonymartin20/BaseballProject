@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Homepage from './components/homepage';
 import { AppContext } from './components/context/appContext.js';
+import Catchers from './components/positions/catchers.js';
 
 class App extends React.Component {
     componentDidMount() {
@@ -13,6 +14,9 @@ class App extends React.Component {
                 <Switch>
                     <Route exact path='/'>
                         <Homepage />
+                    </Route>
+                    <Route exact path='/catchers'>
+                        <Catchers />
                     </Route>
                     {/* <Route path='/addContact' component={AddContact} />*/}
                     <Route>
