@@ -35,7 +35,7 @@ const styles = theme => ({
         lineHeight: "20px",
         textDecoration: "none",
         display: "inline-flex",
-        height: 60,
+        height: 50,
         textAlign: "center",
         textTransform: "none",
         "&:hover,&:focus": {
