@@ -5,6 +5,8 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import { AppContext } from '../context/appContext.js';
+import Grid from '@material-ui/core/Grid';
 
 // import PropTypes from 'prop-types';
 // import clsx from 'clsx';
@@ -153,6 +155,13 @@ class Catchers extends React.Component {
                 {display2020 ? (
                     <div>
                         <h1 className={classes.positionText}>2020 Data here</h1>
+                        {this.context.state.catchers.map((catcher, index) => (
+                                <Grid key={catcher.id} item classes={{
+                                    item: classes.item,
+                                }}>
+                                    {catcher.firstName}, {catcher.lastName}
+                                </Grid>
+                        ))}
                     </div>) : null
                 }
 
@@ -203,4 +212,7 @@ class Catchers extends React.Component {
         )
     }
 }
+
+Catchers.contextType = AppContext;
+
 export default withStyles(styles)(Catchers);
