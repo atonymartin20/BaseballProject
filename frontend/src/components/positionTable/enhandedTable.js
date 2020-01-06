@@ -4,10 +4,8 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TablePagination from '@material-ui/core/TablePagination';
+// import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
-import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import { AppContext } from '../context/appContext.js';
 import EnhancedTableHead from './enhancedTableHead.js';
@@ -85,17 +83,17 @@ function getSorting(order, orderBy) {
     return order === 'desc' ? (a, b) => desc(a, b, orderBy) : (a, b) => -desc(a, b, orderBy);
 }
 
-const headCells = [
-    { id: 'name', numeric: false, disablePadding: false, label: 'Name' },
-    { id: 'PAs', numeric: true, disablePadding: false, label: 'PAs' },
-    { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
-    { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
-    { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
-];
+// const headCells = [
+//     { id: 'name', numeric: false, disablePadding: false, label: 'Name' },
+//     { id: 'PAs', numeric: true, disablePadding: false, label: 'PAs' },
+//     { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
+//     { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
+//     { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
+// ];
 
 class EnhancedTable extends React.Component {
     render() {
-        const classes = useStyles();
+        const classes = this.props;
         const [order, setOrder] = React.useState('asc');
         const [orderBy, setOrderBy] = React.useState('HRs');
         const [selected, setSelected] = React.useState([]);
@@ -107,15 +105,6 @@ class EnhancedTable extends React.Component {
             const isAsc = orderBy === property && order === 'asc';
             setOrder(isAsc ? 'desc' : 'asc');
             setOrderBy(property);
-        };
-
-        const handleSelectAllClick = event => {
-            if (event.target.checked) {
-                const newSelecteds = rows.map(n => n.name);
-                setSelected(newSelecteds);
-                return;
-            }
-            setSelected([]);
         };
 
         const handleClick = (event, name) => {
@@ -138,18 +127,14 @@ class EnhancedTable extends React.Component {
             setSelected(newSelected);
         };
 
-        const handleChangePage = (event, newPage) => {
-            setPage(newPage);
-        };
+        // const handleChangePage = (event, newPage) => {
+        //     setPage(newPage);
+        // };
 
-        const handleChangeRowsPerPage = event => {
-            setRowsPerPage(parseInt(event.target.value, 10));
-            setPage(0);
-        };
-
-        const handleChangeDense = event => {
-            setDense(event.target.checked);
-        };
+        // const handleChangeRowsPerPage = event => {
+        //     setRowsPerPage(parseInt(event.target.value, 10));
+        //     setPage(0);
+        // };
 
         const isSelected = name => selected.indexOf(name) !== -1;
 
