@@ -5,6 +5,6 @@ module.exports = {
         return db('shortStop').where({ id }).first();
     },
     getShortStop() {
-        return db('shortStop').orderBy('2020SteamerFWARProjection');
+        return db('shortStop').orderBy('SteamerFWARProjection');
     }
 }
