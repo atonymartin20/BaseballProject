@@ -7,7 +7,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
 import Grid from '@material-ui/core/Grid';
-import PlayerTable from './playerTable.js';
+import EnhancedTable from '../positionTable/enhandedTable.js';
 
 const styles = theme => ({
     flipDataList: {
@@ -128,7 +128,7 @@ class Catchers extends React.Component {
                 {display2019 ? (
                     <div>
                         <h1 className={classes.positionText}>2019 Data here</h1>
-                        <PlayerTable />
+                        <EnhancedTable />
                     </div>) : null
                 }
 
