@@ -4,14 +4,23 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import { AppContext } from '../context/appContext.js';
+
+const styles = theme => ({
+
+})
 
 class EnhancedTableHead extends React.Component {
     state = {
-
+        headCells: [
+            { id: 'name', numeric: false, disablePadding: false, label: 'Name' },
+            { id: 'PAs', numeric: true, disablePadding: false, label: 'PAs' },
+            { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
+            { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
+            { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
+        ],
     }
     render() {
-        const { classes, order, orderBy, onRequestSort } = props;
+        const { classes, order, orderBy, onRequestSort } = this.props;
         const createSortHandler = property => event => {
             onRequestSort(event, property);
         };
@@ -19,7 +28,7 @@ class EnhancedTableHead extends React.Component {
         return (
             <TableHead>
                 <TableRow>
-                    {headCells.map(headCell => (
+                    {this.state.headCells.map(headCell => (
                         <TableCell
                             key={headCell.id}
                             align={headCell.numeric ? 'right' : 'left'}
