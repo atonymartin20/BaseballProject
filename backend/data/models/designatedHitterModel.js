@@ -5,6 +5,6 @@ module.exports = {
         return db('designatedHitter').where({ id }).first();
     },
     getDesignatedHitter() {
-        return db('designatedHitter').orderBy('2020SteamerFWARProjection');
+        return db('designatedHitter').orderBy('SteamerFWARProjection');
     }
 }
