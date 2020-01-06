@@ -16,7 +16,7 @@ function createData(name, PAs, AVG, OBP, HR) {
 }
 
 const rows = this.context.state.catchers.map((catcher, index) => (
-    createData(`${catcher.firstName} ${catcher.lastName}`, `${catcher.SteamerAVGProjection}`)
+    createData(`${catcher.firstName} ${catcher.lastName}`, `${catcher.SteamerPAProjection}`, `${catcher.SteamerAVGProjection}`, `${catcher.SteamerOBPProjection}`, `${catcher.SteamerHRProjection}`)
 ));
 // {this.context.state.catchers.map((catcher, index) => (
 //     <Grid key={catcher.id} item classes={{
@@ -67,10 +67,10 @@ function getSorting(order, orderBy) {
 
 const headCells = [
   { id: 'name', numeric: false, disablePadding: false, label: 'Name' },
-  { id: 'PAs', numeric: false, disablePadding: false, label: 'PAs' },
+  { id: 'PAs', numeric: true, disablePadding: false, label: 'PAs' },
   { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
   { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
-  { id: 'HR', numeric: true, disablePadding: false, label: 'Protein (HR)' },
+  { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
 ];
 
 function EnhancedTableHead(props) {
