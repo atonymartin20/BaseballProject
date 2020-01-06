@@ -45,7 +45,7 @@ exports.up = function (knex, Promise) {
         shortStop.string('Contact%2017', 50);
         shortStop.decimal('SprintSpeed2017', 8, 1);
         shortStop.integer('StolenBases2017');
-        shortStop.string('StolenBase%2017', 4);
+        shortStop.string('StolenBase%2017', 50);
         shortStop.decimal('FWAR2017', 8, 1);
         shortStop.integer('GamesPlayed2018');
         shortStop.decimal('BA2018', 8, 1);
@@ -82,7 +82,7 @@ exports.up = function (knex, Promise) {
         shortStop.string('Contact%2018', 50);
         shortStop.decimal('SprintSpeed2018', 8, 1);
         shortStop.integer('StolenBases2018');
-        shortStop.string('StolenBase%2018', 4);
+        shortStop.string('StolenBase%2018', 50);
         shortStop.decimal('FWAR2018', 8, 1);
         shortStop.integer('GamesPlayed2019');
         shortStop.decimal('BA2019', 8, 1);
@@ -119,7 +119,7 @@ exports.up = function (knex, Promise) {
         shortStop.string('Contact%2019', 50);
         shortStop.decimal('SprintSpeed2019', 8, 1);
         shortStop.integer('StolenBases2019');
-        shortStop.string('StolenBase%2019', 4);
+        shortStop.string('StolenBase%2019', 50);
         shortStop.decimal('FWAR2019', 8, 1);
         shortStop.integer('SteamerPAProjection');
         shortStop.decimal('SteamerAVGProjection', 8, 3);
