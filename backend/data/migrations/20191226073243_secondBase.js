@@ -45,7 +45,7 @@ exports.up = function (knex, Promise) {
         secondBase.string('Contact%2017', 50);
         secondBase.decimal('SprintSpeed2017', 8, 1);
         secondBase.integer('StolenBases2017');
-        secondBase.string('StolenBase%2017', 4);
+        secondBase.string('StolenBase%2017', 50);
         secondBase.decimal('FWAR2017', 8, 1);
         secondBase.integer('GamesPlayed2018');
         secondBase.decimal('BA2018', 8, 1);
@@ -82,7 +82,7 @@ exports.up = function (knex, Promise) {
         secondBase.string('Contact%2018', 50);
         secondBase.decimal('SprintSpeed2018', 8, 1);
         secondBase.integer('StolenBases2018');
-        secondBase.string('StolenBase%2018', 4);
+        secondBase.string('StolenBase%2018', 50);
         secondBase.decimal('FWAR2018', 8, 1);
         secondBase.integer('GamesPlayed2019');
         secondBase.decimal('BA2019', 8, 1);
@@ -119,7 +119,7 @@ exports.up = function (knex, Promise) {
         secondBase.string('Contact%2019', 50);
         secondBase.decimal('SprintSpeed2019', 8, 1);
         secondBase.integer('StolenBases2019');
-        secondBase.string('StolenBase%2019', 4);
+        secondBase.string('StolenBase%2019', 50);
         secondBase.decimal('FWAR2019', 8, 1);
         secondBase.integer('SteamerPAProjection');
         secondBase.decimal('SteamerAVGProjection', 8, 3);

@@ -45,7 +45,7 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('Contact%2017', 50);
         designatedHitter.decimal('SprintSpeed2017', 8, 1);
         designatedHitter.integer('StolenBases2017');
-        designatedHitter.string('StolenBase%2017', 4);
+        designatedHitter.string('StolenBase%2017', 50);
         designatedHitter.decimal('FWAR2017', 8, 1);
         designatedHitter.integer('GamesPlayed2018');
         designatedHitter.decimal('BA2018', 8, 1);
@@ -82,7 +82,7 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('Contact%2018', 50);
         designatedHitter.decimal('SprintSpeed2018', 8, 1);
         designatedHitter.integer('StolenBases2018');
-        designatedHitter.string('StolenBase%2018', 4);
+        designatedHitter.string('StolenBase%2018', 50);
         designatedHitter.decimal('FWAR2018', 8, 1);
         designatedHitter.integer('GamesPlayed2019');
         designatedHitter.decimal('BA2019', 8, 1);
@@ -119,7 +119,7 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('Contact%2019', 50);
         designatedHitter.decimal('SprintSpeed2019', 8, 1);
         designatedHitter.integer('StolenBases2019');
-        designatedHitter.string('StolenBase%2019', 4);
+        designatedHitter.string('StolenBase%2019', 50);
         designatedHitter.decimal('FWAR2019', 8, 1);
         designatedHitter.integer('SteamerPAProjection');
         designatedHitter.decimal('SteamerAVGProjection', 8, 3);
