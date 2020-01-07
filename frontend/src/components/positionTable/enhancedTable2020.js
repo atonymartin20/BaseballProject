@@ -120,7 +120,7 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('HR');
+    const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
     const [rows, setRows] = React.useState([]);
 

@@ -120,7 +120,7 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('HR');
+    const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
     const [rows, setRows] = React.useState([]);
 
@@ -128,7 +128,7 @@ export default function EnhancedTable(props) {
         if (props.players) {
             console.log(props.players)
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2019, player.BA2019, player.OBP2019, player.HR2019, player.Runs2019, player.RBI2019, player.StolenBases2019, player.SteamerFWARProjection)
+                createData(`${player.firstName} ${player.lastName}`, player.PA2019, player.BA2019, player.OBP2019, player.HR2019, player.Runs2019, player.RBI2019, player.StolenBases2019, player.FWAR2019)
             )))
         }
         else {
