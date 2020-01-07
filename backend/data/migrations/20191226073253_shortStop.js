@@ -11,9 +11,9 @@ exports.up = function (knex, Promise) {
         shortStop.string('primaryPosition', 50);
         shortStop.string('otherPositions', 50);
         shortStop.integer('GamesPlayed2017');
-        shortStop.decimal('BA2017', 8, 1);
-        shortStop.decimal('OBP2017', 8, 1);
-        shortStop.decimal('SLG2017', 8, 1);
+        shortStop.decimal('BA2017', 8, 3);
+        shortStop.decimal('OBP2017', 8, 3);
+        shortStop.decimal('SLG2017', 8, 3);
         shortStop.integer('PA2017');
         shortStop.integer('Doubles2017');
         shortStop.integer('HR2017');
@@ -48,9 +48,9 @@ exports.up = function (knex, Promise) {
         shortStop.string('StolenBase%2017', 50);
         shortStop.decimal('FWAR2017', 8, 1);
         shortStop.integer('GamesPlayed2018');
-        shortStop.decimal('BA2018', 8, 1);
-        shortStop.decimal('OBP2018', 8, 1);
-        shortStop.decimal('SLG2018', 8, 1);
+        shortStop.decimal('BA2018', 8, 3);
+        shortStop.decimal('OBP2018', 8, 3);
+        shortStop.decimal('SLG2018', 8, 3);
         shortStop.integer('PA2018');
         shortStop.integer('Doubles2018');
         shortStop.integer('HR2018');
@@ -85,9 +85,9 @@ exports.up = function (knex, Promise) {
         shortStop.string('StolenBase%2018', 50);
         shortStop.decimal('FWAR2018', 8, 1);
         shortStop.integer('GamesPlayed2019');
-        shortStop.decimal('BA2019', 8, 1);
-        shortStop.decimal('OBP2019', 8, 1);
-        shortStop.decimal('SLG2019', 8, 1);
+        shortStop.decimal('BA2019', 8, 3);
+        shortStop.decimal('OBP2019', 8, 3);
+        shortStop.decimal('SLG2019', 8, 3);
         shortStop.integer('PA2019');
         shortStop.integer('Doubles2019');
         shortStop.integer('HR2019');

@@ -11,9 +11,9 @@ exports.up = function (knex, Promise) {
         thirdBase.string('primaryPosition', 50);
         thirdBase.string('otherPositions', 50);
         thirdBase.integer('GamesPlayed2017');
-        thirdBase.decimal('BA2017', 8, 1);
-        thirdBase.decimal('OBP2017', 8, 1);
-        thirdBase.decimal('SLG2017', 8, 1);
+        thirdBase.decimal('BA2017', 8, 3);
+        thirdBase.decimal('OBP2017', 8, 3);
+        thirdBase.decimal('SLG2017', 8, 3);
         thirdBase.integer('PA2017');
         thirdBase.integer('Doubles2017');
         thirdBase.integer('HR2017');
@@ -48,9 +48,9 @@ exports.up = function (knex, Promise) {
         thirdBase.string('StolenBase%2017', 50);
         thirdBase.decimal('FWAR2017', 8, 1);
         thirdBase.integer('GamesPlayed2018');
-        thirdBase.decimal('BA2018', 8, 1);
-        thirdBase.decimal('OBP2018', 8, 1);
-        thirdBase.decimal('SLG2018', 8, 1);
+        thirdBase.decimal('BA2018', 8, 3);
+        thirdBase.decimal('OBP2018', 8, 3);
+        thirdBase.decimal('SLG2018', 8, 3);
         thirdBase.integer('PA2018');
         thirdBase.integer('Doubles2018');
         thirdBase.integer('HR2018');
@@ -85,9 +85,9 @@ exports.up = function (knex, Promise) {
         thirdBase.string('StolenBase%2018', 50);
         thirdBase.decimal('FWAR2018', 8, 1);
         thirdBase.integer('GamesPlayed2019');
-        thirdBase.decimal('BA2019', 8, 1);
-        thirdBase.decimal('OBP2019', 8, 1);
-        thirdBase.decimal('SLG2019', 8, 1);
+        thirdBase.decimal('BA2019', 8, 3);
+        thirdBase.decimal('OBP2019', 8, 3);
+        thirdBase.decimal('SLG2019', 8, 3);
         thirdBase.integer('PA2019');
         thirdBase.integer('Doubles2019');
         thirdBase.integer('HR2019');

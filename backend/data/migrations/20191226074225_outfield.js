@@ -11,9 +11,9 @@ exports.up = function (knex, Promise) {
         outfield.string('primaryPosition', 50);
         outfield.string('otherPositions', 50);
         outfield.integer('GamesPlayed2017');
-        outfield.decimal('BA2017', 8, 1);
-        outfield.decimal('OBP2017', 8, 1);
-        outfield.decimal('SLG2017', 8, 1);
+        outfield.decimal('BA2017', 8, 3);
+        outfield.decimal('OBP2017', 8, 3);
+        outfield.decimal('SLG2017', 8, 3);
         outfield.integer('PA2017');
         outfield.integer('Doubles2017');
         outfield.integer('HR2017');
@@ -48,9 +48,9 @@ exports.up = function (knex, Promise) {
         outfield.string('StolenBase%2017', 50);
         outfield.decimal('FWAR2017', 8, 1);
         outfield.integer('GamesPlayed2018');
-        outfield.decimal('BA2018', 8, 1);
-        outfield.decimal('OBP2018', 8, 1);
-        outfield.decimal('SLG2018', 8, 1);
+        outfield.decimal('BA2018', 8, 3);
+        outfield.decimal('OBP2018', 8, 3);
+        outfield.decimal('SLG2018', 8, 3);
         outfield.integer('PA2018');
         outfield.integer('Doubles2018');
         outfield.integer('HR2018');
@@ -85,9 +85,9 @@ exports.up = function (knex, Promise) {
         outfield.string('StolenBase%2018', 50);
         outfield.decimal('FWAR2018', 8, 1);
         outfield.integer('GamesPlayed2019');
-        outfield.decimal('BA2019', 8, 1);
-        outfield.decimal('OBP2019', 8, 1);
-        outfield.decimal('SLG2019', 8, 1);
+        outfield.decimal('BA2019', 8, 3);
+        outfield.decimal('OBP2019', 8, 3);
+        outfield.decimal('SLG2019', 8, 3);
         outfield.integer('PA2019');
         outfield.integer('Doubles2019');
         outfield.integer('HR2019');
