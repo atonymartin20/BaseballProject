@@ -126,7 +126,6 @@ export default function EnhancedTable(props) {
 
     React.useEffect(() => {
         if (props.players) {
-            console.log(props.players)
             setRows(props.players.map((player, index) => (
                 createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection)
             )))
