@@ -144,9 +144,9 @@ class Catchers extends React.Component {
                 {display2020 ? (
                     <div>
                         <h1 className={classes.positionText}>2020 Data here</h1>
-                        {this.context.state.catchers.map((catcher, index) => (
+                        {/* {this.context.state.catchers.map((catcher, index) => (
                                     <p>{catcher.firstName} {catcher.lastName}</p>
-                        ))}
+                        ))} */}
                     </div>) : null
                 }
 
