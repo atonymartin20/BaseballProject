@@ -143,7 +143,7 @@ export default function EnhancedTable(props) {
         if (props.players) {
             console.log(props.players)
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, `${player.SteamerPAProjection}`, `${player.SteamerAVGProjection}`, `${player.SteamerOBPProjection}`, `${player.SteamerHRProjection}`)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, `${player.SteamerAVGProjection}`, `${player.SteamerOBPProjection}`, `${player.SteamerHRProjection}`)
             )))
         }
         else {
