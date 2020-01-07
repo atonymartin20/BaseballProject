@@ -6,7 +6,6 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import Grid from '@material-ui/core/Grid';
 import EnhancedTable from '../positionTable/enhandedTable.js';
 
 const styles = theme => ({
@@ -55,6 +54,7 @@ class Catchers extends React.Component {
         display2018: false,
         display2019: false,
         display2020: true,
+        catchers: [],
     }
 
     changeYear2017 = event => {
@@ -96,6 +96,13 @@ class Catchers extends React.Component {
             display2020: true
         })
     }
+
+    componentDidMount() {
+        this.setState({
+            catchers: this.context.state.catchers || []
+        })
+    }
+
     render() {
         const { classes } = this.props;
         const { display2017, display2018, display2019, display2020, } = this.state;
@@ -128,7 +135,9 @@ class Catchers extends React.Component {
                 {display2019 ? (
                     <div>
                         <h1 className={classes.positionText}>2019 Data here</h1>
-                        <EnhancedTable />
+                        <EnhancedTable
+                            players={this.state.catchers}
+                        />
                     </div>) : null
                 }
 
@@ -136,11 +145,7 @@ class Catchers extends React.Component {
                     <div>
                         <h1 className={classes.positionText}>2020 Data here</h1>
                         {this.context.state.catchers.map((catcher, index) => (
-                                <Grid key={catcher.id} item classes={{
-                                    item: classes.item,
-                                }}>
-                                    {catcher.firstName}, {catcher.lastName}
-                                </Grid>
+                                    <p>{catcher.firstName} {catcher.lastName}</p>
                         ))}
                     </div>) : null
                 }

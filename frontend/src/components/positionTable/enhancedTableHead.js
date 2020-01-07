@@ -6,7 +6,17 @@ import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 
 const styles = theme => ({
-
+    visuallyHidden: {
+        border: 0,
+        clip: 'rect(0 0 0 0)',
+        height: 1,
+        margin: -1,
+        overflow: 'hidden',
+        padding: 0,
+        position: 'absolute',
+        top: 20,
+        width: 1,
+    },
 })
 
 class EnhancedTableHead extends React.Component {
@@ -17,6 +27,9 @@ class EnhancedTableHead extends React.Component {
             { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
             { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
             { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
+            { id: 'runs', numeric: true, disablePadding: false, label: 'Runs' },
+            { id: 'RBIs', numeric: true, disablePadding: false, label: 'RBIs' },
+            { id: 'SBs', numeric: true, disablePadding: false, label: 'SBs' },
         ],
     }
     render() {
