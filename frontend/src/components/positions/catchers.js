@@ -6,7 +6,11 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import EnhancedTable from '../positionTable/enhandedTable.js';
+import EnhancedTable2020 from '../positionTable/enhancedTable2020.js';
+import EnhancedTable2019 from '../positionTable/enhancedTable2019.js';
+import EnhancedTable2018 from '../positionTable/enhancedTable2018.js';
+import EnhancedTable2017 from '../positionTable/enhancedTable2017.js';
+
 
 const styles = theme => ({
     flipDataList: {
@@ -123,19 +127,25 @@ class Catchers extends React.Component {
                 {display2017 ? (
                     <div>
                         <h1 className={classes.positionText}>2017 Data here</h1>
+                        <EnhancedTable2017
+                            players={this.state.catchers}
+                        />
                     </div>) : null
                 }
 
                 {display2018 ? (
                     <div>
                         <h1 className={classes.positionText}>2018 Data here</h1>
+                        <EnhancedTable2018
+                            players={this.state.catchers}
+                        />
                     </div>) : null
                 }
 
                 {display2019 ? (
                     <div>
                         <h1 className={classes.positionText}>2019 Data here</h1>
-                        <EnhancedTable
+                        <EnhancedTable2019
                             players={this.state.catchers}
                         />
                     </div>) : null
@@ -144,9 +154,9 @@ class Catchers extends React.Component {
                 {display2020 ? (
                     <div>
                         <h1 className={classes.positionText}>2020 Data here</h1>
-                        {/* {this.context.state.catchers.map((catcher, index) => (
-                                    <p>{catcher.firstName} {catcher.lastName}</p>
-                        ))} */}
+                        <EnhancedTable2020
+                            players={this.state.catchers}
+                        />
                     </div>) : null
                 }
 

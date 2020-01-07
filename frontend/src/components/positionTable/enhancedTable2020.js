@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 
 
-function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs };
+function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR) {
+    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
 }
 
 function desc(a, b, orderBy) {
@@ -48,6 +48,7 @@ const headCells = [
     { id: 'runs', numeric: true, disablePadding: false, label: 'Runs' },
     { id: 'RBIs', numeric: true, disablePadding: false, label: 'RBIs' },
     { id: 'SBs', numeric: true, disablePadding: false, label: 'SBs' },
+    { id: 'FWAR', numeric: true, disablePadding: false, label: 'FWAR' },
 ];
 
 function EnhancedTableHead(props) {
@@ -119,7 +120,7 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('HR');
+    const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
     const [rows, setRows] = React.useState([]);
 
@@ -127,7 +128,7 @@ export default function EnhancedTable(props) {
         if (props.players) {
             console.log(props.players)
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection)
             )))
         }
         else {
@@ -219,6 +220,7 @@ export default function EnhancedTable(props) {
                                             <TableCell align="right">{row.runs}</TableCell>
                                             <TableCell align="right">{row.RBIs}</TableCell>
                                             <TableCell align="right">{row.SBs}</TableCell>
+                                            <TableCell align="right">{row.FWAR}</TableCell>
                                         </TableRow>
                                     );
                                 })}
