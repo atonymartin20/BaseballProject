@@ -11,9 +11,9 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('primaryPosition', 50);
         designatedHitter.string('otherPositions', 50);
         designatedHitter.integer('GamesPlayed2017');
-        designatedHitter.decimal('BA2017', 8, 1);
-        designatedHitter.decimal('OBP2017', 8, 1);
-        designatedHitter.decimal('SLG2017', 8, 1);
+        designatedHitter.decimal('BA2017', 8, 3);
+        designatedHitter.decimal('OBP2017', 8, 3);
+        designatedHitter.decimal('SLG2017', 8, 3);
         designatedHitter.integer('PA2017');
         designatedHitter.integer('Doubles2017');
         designatedHitter.integer('HR2017');
@@ -48,9 +48,9 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('StolenBase%2017', 50);
         designatedHitter.decimal('FWAR2017', 8, 1);
         designatedHitter.integer('GamesPlayed2018');
-        designatedHitter.decimal('BA2018', 8, 1);
-        designatedHitter.decimal('OBP2018', 8, 1);
-        designatedHitter.decimal('SLG2018', 8, 1);
+        designatedHitter.decimal('BA2018', 8, 3);
+        designatedHitter.decimal('OBP2018', 8, 3);
+        designatedHitter.decimal('SLG2018', 8, 3);
         designatedHitter.integer('PA2018');
         designatedHitter.integer('Doubles2018');
         designatedHitter.integer('HR2018');
@@ -85,9 +85,9 @@ exports.up = function (knex, Promise) {
         designatedHitter.string('StolenBase%2018', 50);
         designatedHitter.decimal('FWAR2018', 8, 1);
         designatedHitter.integer('GamesPlayed2019');
-        designatedHitter.decimal('BA2019', 8, 1);
-        designatedHitter.decimal('OBP2019', 8, 1);
-        designatedHitter.decimal('SLG2019', 8, 1);
+        designatedHitter.decimal('BA2019', 8, 3);
+        designatedHitter.decimal('OBP2019', 8, 3);
+        designatedHitter.decimal('SLG2019', 8, 3);
         designatedHitter.integer('PA2019');
         designatedHitter.integer('Doubles2019');
         designatedHitter.integer('HR2019');

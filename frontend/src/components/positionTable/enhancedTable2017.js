@@ -149,7 +149,6 @@ export default function EnhancedTable(props) {
         }
     }, [props.players])
 
-
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
         setOrder(isAsc ? 'desc' : 'asc');
