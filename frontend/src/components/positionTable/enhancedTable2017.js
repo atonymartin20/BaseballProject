@@ -12,7 +12,10 @@ import Paper from '@material-ui/core/Paper';
 
 
 function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
+    if (PAs > 0) {
+        return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
+    }
+    return
 }
 
 function desc(a, b, orderBy) {
