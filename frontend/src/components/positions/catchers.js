@@ -45,6 +45,7 @@ const styles = theme => ({
     positionText: {
         marginTop: 20,
         marginBottom: 20,
+        width: '100%',
     },
     websiteLinks: {
         textDecoration: 'none',
@@ -123,19 +124,18 @@ class Catchers extends React.Component {
         }
 
         const data = (
-            <div>
+            <div className={classes.dataDiv}>
                 {display2017 ? (
                     <div>
-                        <h1 className={classes.positionText}>2017 Data here</h1>
                         <EnhancedTable2017
                             players={this.state.catchers}
                         />
-                    </div>) : null
+                    </div>
+                ) : null
                 }
 
                 {display2018 ? (
                     <div>
-                        <h1 className={classes.positionText}>2018 Data here</h1>
                         <EnhancedTable2018
                             players={this.state.catchers}
                         />
@@ -144,7 +144,6 @@ class Catchers extends React.Component {
 
                 {display2019 ? (
                     <div>
-                        <h1 className={classes.positionText}>2019 Data here</h1>
                         <EnhancedTable2019
                             players={this.state.catchers}
                         />
@@ -153,7 +152,7 @@ class Catchers extends React.Component {
 
                 {display2020 ? (
                     <div>
-                        <h1 className={classes.positionText}>2020 Data here</h1>
+                        <h1 className={classes.positionText}>2020 Projected Stats</h1>
                         <EnhancedTable2020
                             players={this.state.catchers}
                         />
@@ -169,25 +168,25 @@ class Catchers extends React.Component {
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2017}>
                         <Button
                             style={display2017 ? flipDataButtonSelected : flipDataButton}>
-                            2017
+                            2017 Stats
                             </Button>
                     </ListItem>
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2018}>
                         <Button
                             style={display2018 ? flipDataButtonSelected : flipDataButton}>
-                            2018
+                            2018 Stats
                             </Button>
                     </ListItem>
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2019}>
                         <Button
                             style={display2019 ? flipDataButtonSelected : flipDataButton}>
-                            2019
+                            2019 Stats
                             </Button>
                     </ListItem>
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2020}>
                         <Button
                             style={display2020 ? flipDataButtonSelected : flipDataButton}>
-                            2020
+                            2020 Stats
                             </Button>
                     </ListItem>
                 </List>
