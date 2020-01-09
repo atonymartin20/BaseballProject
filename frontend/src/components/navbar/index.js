@@ -118,6 +118,10 @@ const styles = theme => ({
         backgroundColor: '#E2E2E2',
         color: 'black',
     },
+    home: {
+        textDecoration: 'none',
+        color: 'white',
+    },
     linkStyling: {
         textDecoration: 'none',
         width: '100%',
@@ -317,7 +321,7 @@ class Navbar extends React.Component {
                                 <MenuIcon className={classes.menuIconStyling} />
                             </IconButton>
                         </Hidden>
-                        <h1 className={classes.logo}>Baseball Project</h1>
+                        <Link to='/' className={classes.home}><h1 className={classes.logo}>Baseball Project</h1></Link>
                     </Toolbar>
                 </AppBar>
 

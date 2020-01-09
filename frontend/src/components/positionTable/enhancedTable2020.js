@@ -10,7 +10,6 @@ import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 
-
 function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR) {
     return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
 }
@@ -40,19 +39,20 @@ function getSorting(order, orderBy) {
 }
 
 const headCells = [
-    { id: 'name', numeric: false, disablePadding: false, label: 'Name' },
-    { id: 'PAs', numeric: true, disablePadding: false, label: 'PAs' },
-    { id: 'AVG', numeric: true, disablePadding: false, label: 'AVG' },
-    { id: 'OBP', numeric: true, disablePadding: false, label: 'OBP' },
-    { id: 'HR', numeric: true, disablePadding: false, label: 'HR' },
-    { id: 'runs', numeric: true, disablePadding: false, label: 'Runs' },
-    { id: 'RBIs', numeric: true, disablePadding: false, label: 'RBIs' },
-    { id: 'SBs', numeric: true, disablePadding: false, label: 'SBs' },
-    { id: 'FWAR', numeric: true, disablePadding: false, label: 'FWAR' },
+    { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
+    { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
+    { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
+    { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
+    { id: 'runs', numeric: true, label: 'Runs', info: 'Runs' },
+    { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
+    { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
+    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function EnhancedTableHead(props) {
     const { classes, order, orderBy, onRequestSort } = props;
+
     const createSortHandler = property => event => {
         onRequestSort(event, property);
     };
@@ -64,8 +64,8 @@ function EnhancedTableHead(props) {
                     <TableCell
                         key={headCell.id}
                         align={headCell.numeric ? 'right' : 'left'}
-                        padding={headCell.disablePadding ? 'none' : 'default'}
                         sortDirection={orderBy === headCell.id ? order : false}
+                        className={classes.tableCell}
                     >
                         <TableSortLabel
                             active={orderBy === headCell.id}
@@ -102,7 +102,16 @@ const useStyles = makeStyles(theme => ({
         marginBottom: theme.spacing(2),
     },
     table: {
-        minWidth: 750,
+        width: '100%',
+    },
+    tableCell: {
+        fontSize: '1.4rem',
+    },
+    tableRow: {
+        fontSize: '1.4rem',
+        '&:nth-of-type(even)':{
+            backgroundColor: '#e0e3df',
+        }
     },
     visuallyHidden: {
         border: 0,
@@ -209,18 +218,19 @@ export default function EnhancedTable(props) {
                                             tabIndex={-1}
                                             key={row.name}
                                             selected={isItemSelected}
+                                            className={classes.tableRow}
                                         >
-                                            <TableCell component="th" id={labelId} scope="row" padding="none">
+                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
                                                 {row.name}
                                             </TableCell>
-                                            <TableCell align="right">{row.PAs}</TableCell>
-                                            <TableCell align="right">{row.AVG}</TableCell>
-                                            <TableCell align="right">{row.OBP}</TableCell>
-                                            <TableCell align="right">{row.HR}</TableCell>
-                                            <TableCell align="right">{row.runs}</TableCell>
-                                            <TableCell align="right">{row.RBIs}</TableCell>
-                                            <TableCell align="right">{row.SBs}</TableCell>
-                                            <TableCell align="right">{row.FWAR}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
                                         </TableRow>
                                     );
                                 }
@@ -228,7 +238,6 @@ export default function EnhancedTable(props) {
                                     return false;
                                 }
                                 })}
-
                         </TableBody>
                     </Table>
                 </TableContainer>
