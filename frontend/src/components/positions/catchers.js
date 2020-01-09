@@ -16,10 +16,13 @@ const styles = theme => ({
     flipDataList: {
         display: 'flex',
         marginTop: 0,
+        flexWrap: 'wrap',
+        flexDirection: 'row',
     },
     flipDataListItem: {
         paddingLeft: 8,
         paddingRight: 8,
+        width: 'auto',
     },
     positionDiv: {
         width: '100%',
@@ -152,7 +155,7 @@ class Catchers extends React.Component {
 
                 {display2020 ? (
                     <div>
-                        <h1 className={classes.positionText}>2020 Projected Stats</h1>
+                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a></h1>
                         <EnhancedTable2020
                             players={this.state.catchers}
                         />
