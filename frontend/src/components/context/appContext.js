@@ -5,7 +5,7 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
-        contacts: JSON.parse(localStorage.getItem('catchers')) || [],
+        catchers: JSON.parse(localStorage.getItem('catchers')) || [],
     };
 
     render() {
