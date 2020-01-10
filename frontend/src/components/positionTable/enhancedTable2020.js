@@ -9,9 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
+import PlayerCard from '../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
+function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index) {
+    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -94,6 +95,10 @@ EnhancedTableHead.propTypes = {
 };
 
 const useStyles = makeStyles(theme => ({
+    linkStyling: {
+        textDecoration: 'none',
+        color: 'black',
+    },
     root: {
         width: '100%',
     },
@@ -109,7 +114,7 @@ const useStyles = makeStyles(theme => ({
     },
     tableRow: {
         fontSize: '1.4rem',
-        '&:nth-of-type(even)':{
+        '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
         }
     },
@@ -131,29 +136,32 @@ export default function EnhancedTable(props) {
     const [order, setOrder] = React.useState('desc');
     const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
+    const [ grabIndex, setGrabIndex] = React.useState();
+    const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
+    console.log(playerCard);
 
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection, player.id, index)
             )))
         }
         else {
             setRows([
-                createData('Cupcake', 305, 3.7, 67, 4.3, 7, 7, 7, 7),
-                createData('Donut', 452, 25.0, 51, 4.9, 10, 10, 10, 10),
-                createData('Eclair', 262, 16.0, 24, 6.0, 5, 5, 5, 5),
-                createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 4, 4, 4, 4),
-                createData('Gingerbread', 356, 16.0, 49, 3.9, 3, 3, 3, 3),
-                createData('Honeycomb', 408, 3.2, 87, 6.5, 6.5, 6.5, 6.5, 6.5),
-                createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.5, 4.5, 4.5, 4.5),
-                createData('Jelly Bean', 375, 0.0, 94, 0.0, 7, 7, 7, 7),
-                createData('KitKat', 518, 26.0, 65, 7.0, 8, 8, 8, 8),
-                createData('Lollipop', 392, 0.2, 98, 0.0, 9, 9, 9, 9),
-                createData('Marshmallow', 318, 0, 81, 2.0, 11, 11, 11, 12),
-                createData('Nougat', 360, 19.0, 9, 37.0, 33, 33, 33, 33),
-                createData('Oreo', 437, 18.0, 63, 4.0, 2, 2, 2, 2),
+                createData('Cupcake', 305, 3.7, 67, 4.3, 7, 7, 7, 7, 1, 0),
+                createData('Donut', 452, 25.0, 51, 4.9, 10, 10, 10, 10, 2, 1),
+                createData('Eclair', 262, 16.0, 24, 6.0, 5, 5, 5, 5, 3, 2),
+                createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 4, 4, 4, 4, 4, 3),
+                createData('Gingerbread', 356, 16.0, 49, 3.9, 3, 3, 3, 3, 5, 4),
+                createData('Honeycomb', 408, 3.2, 87, 6.5, 6.5, 6.5, 6.5, 6.5, 6, 5),
+                createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.5, 4.5, 4.5, 4.5, 7, 6),
+                createData('Jelly Bean', 375, 0.0, 94, 0.0, 7, 7, 7, 7, 8, 7),
+                createData('KitKat', 518, 26.0, 65, 7.0, 8, 8, 8, 8, 9, 8),
+                createData('Lollipop', 392, 0.2, 98, 0.0, 9, 9, 9, 9, 10, 9),
+                createData('Marshmallow', 318, 0, 81, 2.0, 11, 11, 11, 12, 11, 10),
+                createData('Nougat', 360, 19.0, 9, 37.0, 33, 33, 33, 33, 12, 11),
+                createData('Oreo', 437, 18.0, 63, 4.0, 2, 2, 2, 2, 13, 12),
             ])
         }
     }, [props.players])
@@ -188,6 +196,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
+                    { playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} index={grabIndex} /> : null }
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
@@ -207,36 +216,36 @@ export default function EnhancedTable(props) {
                             {stableSort(rows, getSorting(order, orderBy))
                                 .map((row, index) => {
                                     if (row.PAs > 0) {
-                                    const isItemSelected = isSelected(row.name);
-                                    const labelId = `enhanced-table-checkbox-${index}`;
+                                        const isItemSelected = isSelected(row.name);
+                                        const labelId = `enhanced-table-checkbox-${index}`;
 
-                                    return (
-                                        <TableRow
-                                            hover
-                                            onClick={event => handleClick(event, row.name)}
-                                            aria-checked={isItemSelected}
-                                            tabIndex={-1}
-                                            key={row.name}
-                                            selected={isItemSelected}
-                                            className={classes.tableRow}
-                                        >
-                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
-                                                {row.name}
-                                            </TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                        </TableRow>
-                                    );
-                                }
-                                else {
-                                    return false;
-                                }
+                                        return (
+                                            <TableRow
+                                                hover
+                                                onClick={event => handleClick(event, row.name)}
+                                                aria-checked={isItemSelected}
+                                                tabIndex={-1}
+                                                key={row.name}
+                                                selected={isItemSelected}
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => {setPlayerCard(!playerCard); setGrabIndex(index)}}>
+                                                    {row.name}
+                                                </TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                            </TableRow>
+                                        );
+                                    }
+                                    else {
+                                        return false;
+                                    }
                                 })}
                         </TableBody>
                     </Table>

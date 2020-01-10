@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Homepage from './components/homepage';
 import { AppContext } from './components/context/appContext.js';
 import Catchers from './components/positions/catchers.js';
+import PlayerCard from './components/players/playerCard.js';
 
 class App extends React.Component {
     componentDidMount() {
@@ -15,10 +16,12 @@ class App extends React.Component {
                     <Route exact path='/'>
                         <Homepage />
                     </Route>
-                    <Route path='/catchers'>
+                    <Route exact path='/catchers'>
                         <Catchers />
                     </Route>
-                    {/* <Route path='/addContact' component={AddContact} />*/}
+                    <Route path='/catchers/:id' render={props => 
+                        <PlayerCard {...props} />
+                    } />
                     <Route>
                         <Homepage />
                     </Route>
