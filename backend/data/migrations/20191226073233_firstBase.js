@@ -26,7 +26,7 @@ exports.up = function (knex, Promise) {
         firstBase.string('Pull%2017', 50);
         firstBase.string('Center%2017', 50);
         firstBase.string('Oppo%2017', 50);
-        firstBase.string('HR/FB%2017', 50);
+        firstBase.string('HRPerFB2017', 50);
         firstBase.string('HardHit%2017', 50);
         firstBase.decimal('ExitVelo2017', 8, 1);
         firstBase.decimal('FlyBallLineDriveExitVelo2017', 8, 1);
@@ -63,7 +63,7 @@ exports.up = function (knex, Promise) {
         firstBase.string('Pull%2018', 50);
         firstBase.string('Center%2018', 50);
         firstBase.string('Oppo%2018', 50);
-        firstBase.string('HR/FB%2018', 50);
+        firstBase.string('HRPerFB2018', 50);
         firstBase.string('HardHit%2018', 50);
         firstBase.decimal('ExitVelo2018', 8, 1);
         firstBase.decimal('FlyBallLineDriveExitVelo2018', 8, 1);
@@ -100,7 +100,7 @@ exports.up = function (knex, Promise) {
         firstBase.string('Pull%2019', 50);
         firstBase.string('Center%2019', 50);
         firstBase.string('Oppo%2019', 50);
-        firstBase.string('HR/FB%2019', 50);
+        firstBase.string('HRPerFB2019', 50);
         firstBase.string('HardHit%2019', 50);
         firstBase.decimal('ExitVelo2019', 8, 1);
         firstBase.decimal('FlyBallLineDriveExitVelo2019', 8, 1);

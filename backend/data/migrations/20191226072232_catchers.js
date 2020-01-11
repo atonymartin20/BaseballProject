@@ -26,7 +26,7 @@ exports.up = function (knex, Promise) {
         catchers.string('Pull%2017', 50);
         catchers.string('Center%2017', 50);
         catchers.string('Oppo%2017', 50);
-        catchers.string('HR/FB%2017', 50);
+        catchers.string('HRPerFB2017', 50);
         catchers.string('HardHit%2017', 50);
         catchers.decimal('ExitVelo2017', 8, 1);
         catchers.decimal('FlyBallLineDriveExitVelo2017', 8, 1);
@@ -63,7 +63,7 @@ exports.up = function (knex, Promise) {
         catchers.string('Pull%2018', 50);
         catchers.string('Center%2018', 50);
         catchers.string('Oppo%2018', 50);
-        catchers.string('HR/FB%2018', 50);
+        catchers.string('HRPerFB2018', 50);
         catchers.string('HardHit%2018', 50);
         catchers.decimal('ExitVelo2018', 8, 1);
         catchers.decimal('FlyBallLineDriveExitVelo2018', 8, 1);
@@ -100,7 +100,7 @@ exports.up = function (knex, Promise) {
         catchers.string('Pull%2019', 50);
         catchers.string('Center%2019', 50);
         catchers.string('Oppo%2019', 50);
-        catchers.string('HR/FB%2019', 50);
+        catchers.string('HRPerFB2019', 50);
         catchers.string('HardHit%2019', 50);
         catchers.decimal('ExitVelo2019', 8, 1);
         catchers.decimal('FlyBallLineDriveExitVelo2019', 8, 1);
