@@ -30,7 +30,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('2017K-BB%', 50);
         reliefPitchers.string('2017BABIP', 50);
         reliefPitchers.string('2017LOB%', 50);
-        reliefPitchers.string('2017HR/FB%', 50);
+        reliefPitchers.string('2017HRPerFB', 50);
         reliefPitchers.string('2017GB/FB', 50);
         reliefPitchers.string('2017GB%', 50);
         reliefPitchers.string('2017LD%', 50);
@@ -74,7 +74,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('2018K-BB%', 50);
         reliefPitchers.string('2018BABIP', 50);
         reliefPitchers.string('2018LOB%', 50);
-        reliefPitchers.string('2018HR/FB%', 50);
+        reliefPitchers.string('2018HRPerFB', 50);
         reliefPitchers.string('2018GB/FB', 50);
         reliefPitchers.string('2018GB%', 50);
         reliefPitchers.string('2018LD%', 50);
@@ -118,7 +118,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('2019K-BB%', 50);
         reliefPitchers.string('2019BABIP', 50);
         reliefPitchers.string('2019LOB%', 50);
-        reliefPitchers.string('2019HR/FB%', 50);
+        reliefPitchers.string('2019HRPerFB', 50);
         reliefPitchers.string('2019GB/FB', 50);
         reliefPitchers.string('2019GB%', 50);
         reliefPitchers.string('2019LD%', 50);
