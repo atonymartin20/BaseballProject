@@ -37,8 +37,8 @@ exports.up = function (knex, Promise) {
         secondBase.decimal('xWOBA2017', 8, 3);
         secondBase.decimal('xBA2017', 8, 3);
         secondBase.integer('AvgHRDistance2017');
-        secondBase.integer('WRC+2017');
-        secondBase.integer('OPS+2017');
+        secondBase.integer('WRCPlus2017');
+        secondBase.integer('OPSPlus2017');
         secondBase.string('BBPercent2017', 50);
         secondBase.string('KPercent2017', 50);
         secondBase.string('ChaseRate2017', 50);
@@ -74,8 +74,8 @@ exports.up = function (knex, Promise) {
         secondBase.decimal('xWOBA2018', 8, 3);
         secondBase.decimal('xBA2018', 8, 3);
         secondBase.integer('AvgHRDistance2018');
-        secondBase.integer('WRC+2018');
-        secondBase.integer('OPS+2018');
+        secondBase.integer('WRCPlus2018');
+        secondBase.integer('OPSPlus2018');
         secondBase.string('BBPercent2018', 50);
         secondBase.string('KPercent2018', 50);
         secondBase.string('ChaseRate2018', 50);
@@ -111,8 +111,8 @@ exports.up = function (knex, Promise) {
         secondBase.decimal('xWOBA2019', 8, 3);
         secondBase.decimal('xBA2019', 8, 3);
         secondBase.integer('AvgHRDistance2019');
-        secondBase.integer('WRC+2019');
-        secondBase.integer('OPS+2019');
+        secondBase.integer('WRCPlus2019');
+        secondBase.integer('OPSPlus2019');
         secondBase.string('BBPercent2019', 50);
         secondBase.string('KPercent2019', 50);
         secondBase.string('ChaseRate2019', 50);

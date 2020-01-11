@@ -37,8 +37,8 @@ exports.up = function (knex, Promise) {
         outfield.decimal('xWOBA2017', 8, 3);
         outfield.decimal('xBA2017', 8, 3);
         outfield.integer('AvgHRDistance2017');
-        outfield.integer('WRC+2017');
-        outfield.integer('OPS+2017');
+        outfield.integer('WRCPlus2017');
+        outfield.integer('OPSPlus2017');
         outfield.string('BBPercent2017', 50);
         outfield.string('KPercent2017', 50);
         outfield.string('ChaseRate2017', 50);
@@ -74,8 +74,8 @@ exports.up = function (knex, Promise) {
         outfield.decimal('xWOBA2018', 8, 3);
         outfield.decimal('xBA2018', 8, 3);
         outfield.integer('AvgHRDistance2018');
-        outfield.integer('WRC+2018');
-        outfield.integer('OPS+2018');
+        outfield.integer('WRCPlus2018');
+        outfield.integer('OPSPlus2018');
         outfield.string('BBPercent2018', 50);
         outfield.string('KPercent2018', 50);
         outfield.string('ChaseRate2018', 50);
@@ -111,8 +111,8 @@ exports.up = function (knex, Promise) {
         outfield.decimal('xWOBA2019', 8, 3);
         outfield.decimal('xBA2019', 8, 3);
         outfield.integer('AvgHRDistance2019');
-        outfield.integer('WRC+2019');
-        outfield.integer('OPS+2019');
+        outfield.integer('WRCPlus2019');
+        outfield.integer('OPSPlus2019');
         outfield.string('BBPercent2019', 50);
         outfield.string('KPercent2019', 50);
         outfield.string('ChaseRate2019', 50);

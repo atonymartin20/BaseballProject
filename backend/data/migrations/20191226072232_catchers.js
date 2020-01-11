@@ -37,8 +37,8 @@ exports.up = function (knex, Promise) {
         catchers.decimal('xWOBA2017', 8, 3);
         catchers.decimal('xBA2017', 8, 3);
         catchers.integer('AvgHRDistance2017');
-        catchers.integer('WRC+2017');
-        catchers.integer('OPS+2017');
+        catchers.integer('WRCPlus2017');
+        catchers.integer('OPSPlus2017');
         catchers.string('BBPercent2017', 50);
         catchers.string('KPercent2017', 50);
         catchers.string('ChaseRate2017', 50);
@@ -74,8 +74,8 @@ exports.up = function (knex, Promise) {
         catchers.decimal('xWOBA2018', 8, 3);
         catchers.decimal('xBA2018', 8, 3);
         catchers.integer('AvgHRDistance2018');
-        catchers.integer('WRC+2018');
-        catchers.integer('OPS+2018');
+        catchers.integer('WRCPlus2018');
+        catchers.integer('OPSPlus2018');
         catchers.string('BBPercent2018', 50);
         catchers.string('KPercent2018', 50);
         catchers.string('ChaseRate2018', 50);
@@ -111,8 +111,8 @@ exports.up = function (knex, Promise) {
         catchers.decimal('xWOBA2019', 8, 3);
         catchers.decimal('xBA2019', 8, 3);
         catchers.integer('AvgHRDistance2019');
-        catchers.integer('WRC+2019');
-        catchers.integer('OPS+2019');
+        catchers.integer('WRCPlus2019');
+        catchers.integer('OPSPlus2019');
         catchers.string('BBPercent2019', 50);
         catchers.string('KPercent2019', 50);
         catchers.string('ChaseRate2019', 50);

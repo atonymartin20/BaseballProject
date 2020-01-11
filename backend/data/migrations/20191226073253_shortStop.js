@@ -37,8 +37,8 @@ exports.up = function (knex, Promise) {
         shortStop.decimal('xWOBA2017', 8, 3);
         shortStop.decimal('xBA2017', 8, 3);
         shortStop.integer('AvgHRDistance2017');
-        shortStop.integer('WRC+2017');
-        shortStop.integer('OPS+2017');
+        shortStop.integer('WRCPlus2017');
+        shortStop.integer('OPSPlus2017');
         shortStop.string('BBPercent2017', 50);
         shortStop.string('KPercent2017', 50);
         shortStop.string('ChaseRate2017', 50);
@@ -74,8 +74,8 @@ exports.up = function (knex, Promise) {
         shortStop.decimal('xWOBA2018', 8, 3);
         shortStop.decimal('xBA2018', 8, 3);
         shortStop.integer('AvgHRDistance2018');
-        shortStop.integer('WRC+2018');
-        shortStop.integer('OPS+2018');
+        shortStop.integer('WRCPlus2018');
+        shortStop.integer('OPSPlus2018');
         shortStop.string('BBPercent2018', 50);
         shortStop.string('KPercent2018', 50);
         shortStop.string('ChaseRate2018', 50);
@@ -111,8 +111,8 @@ exports.up = function (knex, Promise) {
         shortStop.decimal('xWOBA2019', 8, 3);
         shortStop.decimal('xBA2019', 8, 3);
         shortStop.integer('AvgHRDistance2019');
-        shortStop.integer('WRC+2019');
-        shortStop.integer('OPS+2019');
+        shortStop.integer('WRCPlus2019');
+        shortStop.integer('OPSPlus2019');
         shortStop.string('BBPercent2019', 50);
         shortStop.string('KPercent2019', 50);
         shortStop.string('ChaseRate2019', 50);

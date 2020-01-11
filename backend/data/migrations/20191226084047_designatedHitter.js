@@ -37,8 +37,8 @@ exports.up = function (knex, Promise) {
         designatedHitter.decimal('xWOBA2017', 8, 3);
         designatedHitter.decimal('xBA2017', 8, 3);
         designatedHitter.integer('AvgHRDistance2017');
-        designatedHitter.integer('WRC+2017');
-        designatedHitter.integer('OPS+2017');
+        designatedHitter.integer('WRCPlus2017');
+        designatedHitter.integer('OPSPlus2017');
         designatedHitter.string('BBPercent2017', 50);
         designatedHitter.string('KPercent2017', 50);
         designatedHitter.string('ChaseRate2017', 50);
@@ -74,8 +74,8 @@ exports.up = function (knex, Promise) {
         designatedHitter.decimal('xWOBA2018', 8, 3);
         designatedHitter.decimal('xBA2018', 8, 3);
         designatedHitter.integer('AvgHRDistance2018');
-        designatedHitter.integer('WRC+2018');
-        designatedHitter.integer('OPS+2018');
+        designatedHitter.integer('WRCPlus2018');
+        designatedHitter.integer('OPSPlus2018');
         designatedHitter.string('BBPercent2018', 50);
         designatedHitter.string('KPercent2018', 50);
         designatedHitter.string('ChaseRate2018', 50);
@@ -111,8 +111,8 @@ exports.up = function (knex, Promise) {
         designatedHitter.decimal('xWOBA2019', 8, 3);
         designatedHitter.decimal('xBA2019', 8, 3);
         designatedHitter.integer('AvgHRDistance2019');
-        designatedHitter.integer('WRC+2019');
-        designatedHitter.integer('OPS+2019');
+        designatedHitter.integer('WRCPlus2019');
+        designatedHitter.integer('OPSPlus2019');
         designatedHitter.string('BBPercent2019', 50);
         designatedHitter.string('KPercent2019', 50);
         designatedHitter.string('ChaseRate2019', 50);
