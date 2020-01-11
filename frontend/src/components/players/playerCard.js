@@ -5,6 +5,13 @@ import Card from '@material-ui/core/Card';
 // import { Link } from 'react-router-dom';
 import { AppContext } from '../context/appContext.js';
 import CloseIcon from "@material-ui/icons/Close";
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import TableSortLabel from '@material-ui/core/TableSortLabel';
 
 const styles = theme => ({
     closeIconStyling: {
@@ -112,8 +119,8 @@ class PlayerCard extends React.Component {
         xWOBA2017: this.context.state.catchers[this.props.index].xWOBA2017,
         xBA2017: this.context.state.catchers[this.props.index].xBA2017,
         AvgHRDistance2017: this.context.state.catchers[this.props.index].AvgHRDistance2017,
-        WRCPLUS2017: this.context.state.catchers[this.props.index].WRCPLUS2017,
-        OPSPLUS2017: this.context.state.catchers[this.props.index].OPSPLUS2017,
+        WRCPlus2017: this.context.state.catchers[this.props.index].WRCPlus2017,
+        OPSPlus2017: this.context.state.catchers[this.props.index].OPSPlus2017,
         BBPercent2017: this.context.state.catchers[this.props.index].BBPercent2017,
         KPercent2017: this.context.state.catchers[this.props.index].KPercent2017,
         ChaseRate2017: this.context.state.catchers[this.props.index].ChaseRate2017,
@@ -149,8 +156,8 @@ class PlayerCard extends React.Component {
         xWOBA2018: this.context.state.catchers[this.props.index].xWOBA2018,
         xBA2018: this.context.state.catchers[this.props.index].xBA2018,
         AvgHRDistance2018: this.context.state.catchers[this.props.index].AvgHRDistance2018,
-        WRCPLUS2018: this.context.state.catchers[this.props.index].WRCPLUS2018,
-        OPSPLUS2018: this.context.state.catchers[this.props.index].OPSPLUS2018,
+        WRCPlus2018: this.context.state.catchers[this.props.index].WRCPlus2018,
+        OPSPlus2018: this.context.state.catchers[this.props.index].OPSPlus2018,
         BBPercent2018: this.context.state.catchers[this.props.index].BBPercent2018,
         KPercent2018: this.context.state.catchers[this.props.index].KPercent2018,
         ChaseRate2018: this.context.state.catchers[this.props.index].ChaseRate2018,
@@ -186,8 +193,8 @@ class PlayerCard extends React.Component {
         xWOBA2019: this.context.state.catchers[this.props.index].xWOBA2019,
         xBA2019: this.context.state.catchers[this.props.index].xBA2019,
         AvgHRDistance2019: this.context.state.catchers[this.props.index].AvgHRDistance2019,
-        WRCPLUS2019: this.context.state.catchers[this.props.index].WRCPLUS2019,
-        OPSPLUS2019: this.context.state.catchers[this.props.index].OPSPLUS2019,
+        WRCPlus2019: this.context.state.catchers[this.props.index].WRCPlus2019,
+        OPSPlus2019: this.context.state.catchers[this.props.index].OPSPlus2019,
         BBPercent2019: this.context.state.catchers[this.props.index].BBPercent2019,
         KPercent2019: this.context.state.catchers[this.props.index].KPercent2019,
         ChaseRate2019: this.context.state.catchers[this.props.index].ChaseRate2019,
@@ -206,6 +213,10 @@ class PlayerCard extends React.Component {
         SteamerSBProjection: this.context.state.catchers[this.props.index].SteamerSBProjection,
         SteamerFWARProjection: this.context.state.catchers[this.props.index].SteamerFWARProjection,
         index: this.props.index,
+        traditionalStats: true,
+        battedBallStats: false,
+        expectedStats: false,
+        baseRunningStats: false,
     }
 
     componentDidMount() {
@@ -216,12 +227,153 @@ class PlayerCard extends React.Component {
         const { classes } = this.props;
         const { id, firstName, lastName } = this.state;
         console.log(this.props.index, this.state.index, this.state.id, this.state.firstName, this.state.StolenBasePercent2019)
+
+        const playerCard = (
+            <div className={classes.internalPlayerCard}>
+                {traditionalStats ? (
+                    <div>
+                        {/* 
+                            Games Played
+                            BA
+                            OBP
+                            SLG
+                            PAs
+                            Doubles
+                            HRs
+                            Runs
+                            RBIs
+                            FWAR
+                            SBs
+                        */}
+                    </div>
+                ) : null
+                }
+
+                {battedBallStats ? (
+                    <div>
+                        {/* 
+                            GBPercent2017
+                            LDPercent2017
+                            FBPercent2017
+                            PullPercent2017
+                            CenterPercent2017
+                            OppoPercent2017
+                            HRPERFB2017
+                            HardHitPercent2017
+                            ExitVelo2017
+                            FlyBallLineDriveExitVelo2017
+                            LaunchAngle2017
+                            BarrelPercent2017
+                            AvgHRDistance2017
+                            ChaseRate2017
+                            ContactPercent2017
+                        */}
+                    </div>
+                ) : null
+                }
+
+                {expectedStats ? (
+                    <div>
+                        {/* 
+                            BA
+                            xBA
+                            BABIP
+                            OBP
+                            SLG
+                            WOBA2017
+                            xWOBA2017
+                            LineupSlot2017
+                            WRC2017
+                            OPS2017
+                            BBPercent2017
+                            KPercent2017
+                        */}
+                    </div>
+                ) : null
+                }
+
+                {baseRunningStats ? (
+                    <div>
+                        {/* 
+                            SprintSpeed2017
+                            StolenBases2017
+                            StolenBasePercent2017
+                        */}
+                    </div>
+                ) : null
+                }
+
+
+            </div>
+        )
+
+        const traditionalCardInfo = (
+            <div>
+                {/* firstName lastName
+                    imageURL
+                    throws
+                    bats
+                    birthday
+                    primaryPosition
+                    otherPostions
+                    currentTeam
+                */}
+            </div>
+        )
+
         return (
             <>
                 <Card className={classes.container}>
                     <div className={classes.playerCardContainer}>
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
+                        <TableContainer>
+                            <Table
+                                className={classes.table}
+                                aria-labelledby="tableTitle"
+                                size={'small'}
+                                aria-label="enhanced table"
+                            >
+                                <TableHead>
+                                    <TableRow>
+                                        {headCells.map(headCell => (
+                                            <TableCell
+                                                key={headCell.id}
+                                                align={headCell.numeric ? 'right' : 'left'}
+                                                sortDirection={orderBy === headCell.id ? order : false}
+                                                className={classes.tableCell}
+                                            >
+                                                <TableSortLabel>
+                                                    {headCell.label}
+                                                </TableSortLabel>
+                                            </TableCell>
+                                        ))}
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key={row.name}
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
+                                                {firstName} {lastName}
+                                            </TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                        </TableRow>
 
+                                    }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 </Card>
             </>
