@@ -136,7 +136,7 @@ export default function EnhancedTable(props) {
     const [order, setOrder] = React.useState('desc');
     const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
-    const [ grabIndex, setGrabIndex] = React.useState();
+    const [ grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
@@ -195,7 +195,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-                    { playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} index={grabIndex} /> : null }
+                    { playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null }
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
@@ -228,7 +228,7 @@ export default function EnhancedTable(props) {
                                                 selected={isItemSelected}
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => {setPlayerCard(!playerCard); setGrabIndex(index)}}>
+                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => {setPlayerCard(!playerCard); setGrabId(row.id)}}>
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
