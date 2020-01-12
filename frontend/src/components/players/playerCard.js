@@ -333,10 +333,10 @@ class PlayerCard extends React.Component {
                                         <TableRow
                                             hover
                                             tabIndex={-1}
-                                            key={row.name}
+                                            key=''
                                             className={classes.tableRow}
                                         >
-                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
+                                            {/* <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
                                                 {firstName} {lastName}
                                             </TableCell>
                                             <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
@@ -346,7 +346,7 @@ class PlayerCard extends React.Component {
                                             <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
                                             <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                             <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell> */}
                                         </TableRow>
 
                                     }
@@ -434,8 +434,8 @@ class PlayerCard extends React.Component {
                 <Card className={classes.container}>
                     <div className={classes.playerCardContainer}>
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
-                        <TableContainer>
-                            <Table
+                        {/* <TableContainer> */}
+                            {/* <Table
                                 className={classes.table}
                                 aria-labelledby="tableTitle"
                                 size={'small'}
@@ -459,29 +459,29 @@ class PlayerCard extends React.Component {
                                 </TableHead>
                                 <TableBody>
                                     {
-                                        <TableRow
-                                            hover
-                                            tabIndex={-1}
-                                            key={row.name}
-                                            className={classes.tableRow}
-                                        >
-                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
-                                                {firstName} {lastName}
-                                            </TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                        </TableRow>
+                                        // <TableRow
+                                        //     hover
+                                        //     tabIndex={-1}
+                                        //     key={row.name}
+                                        //     className={classes.tableRow}
+                                        // >
+                                        //     <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
+                                        //         {firstName} {lastName}
+                                        //     </TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                        //     <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                        // </TableRow>
 
                                     }
                                 </TableBody>
-                            </Table>
-                        </TableContainer>
+                            </Table> */}
+                        {/* </TableContainer> */}
                     </div>
                 </Card>
             </>
