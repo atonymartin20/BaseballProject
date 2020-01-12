@@ -417,6 +417,7 @@ class PlayerCard extends React.Component {
 
         const traditionalCardInfo = (
             <div>
+                <h1>{firstName} {lastName}</h1>
                 {/* firstName lastName
                     imageURL
                     throws
@@ -434,6 +435,8 @@ class PlayerCard extends React.Component {
                 <Card className={classes.container}>
                     <div className={classes.playerCardContainer}>
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
+                        {traditionalCardInfo}
+                        {playerCard}
                         {/* <TableContainer> */}
                             {/* <Table
                                 className={classes.table}
