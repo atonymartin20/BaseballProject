@@ -225,26 +225,134 @@ class PlayerCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { id, firstName, lastName } = this.state;
+        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPERFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRC2017, OPS2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPERFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRC2018, OPS2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPERFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRC2019, OPS2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, index, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
+
         console.log(this.props.index, this.state.index, this.state.id, this.state.firstName, this.state.StolenBasePercent2019)
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
                 {traditionalStats ? (
                     <div>
-                        {/* 
-                            Games Played
-                            BA
-                            OBP
-                            SLG
-                            PAs
-                            Doubles
-                            HRs
-                            Runs
-                            RBIs
-                            FWAR
-                            SBs
-                        */}
+                        <TableContainer>
+                            <Table
+                                className={classes.table}
+                                aria-labelledby="tableTitle"
+                                size={'small'}
+                                aria-label="traditinal stats table"
+                            >
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell
+                                            key='traditionalStatsYear'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>Year</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsGamesPlayed'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>Games Played</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsBA'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>BA</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsOBP'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>OBP</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsSLG'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>SLG</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsPAs'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>PAs</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsDoubles'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>Doubles</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsHRs'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>HRs</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsRuns'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>Runs</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsRBIs'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>RBIs</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsSBs'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>SBs</TableSortLabel>
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsFWAR'
+                                            className={classes.tableCell}
+                                        >
+                                            <TableSortLabel>FWAR</TableSortLabel>
+                                        </TableCell>
+                                    </TableRow>
+                                </TableHead>
+
+                                <TableBody>
+                                    {
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key={row.name}
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
+                                                {firstName} {lastName}
+                                            </TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                        </TableRow>
+
+                                    }
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 ) : null
                 }
