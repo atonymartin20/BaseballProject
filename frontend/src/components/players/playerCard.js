@@ -31,6 +31,9 @@ const styles = theme => ({
         overflow: 'auto',
         backgroundColor: 'rgba(43, 43, 43, 0.3)',
     },
+    fullWidth: {
+        width: '100%',
+    },
     linkStyling: {
         width: '100%',
         textDecoration: 'none',
@@ -52,6 +55,8 @@ const styles = theme => ({
     },
     playerCardContainer: {
         width: '98%',
+        width: 800,
+        minWidth: 650,
         border: '1px solid #888888',
         borderRadius: '4px',
         backgroundColor: '#FEFEFE',
@@ -61,22 +66,73 @@ const styles = theme => ({
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column',
-        [theme.breakpoints.down(750)]: {
-            width: '100%'
+        [theme.breakpoints.down(800)]: {
+            width: '100%',
         },
     },
     playerPhoto: {
         height: 180,
+    },
+    table: {
+        width: 'auto',
+    },
+    tableCell: {
+        fontSize: '1.4rem',
+        borderLeft: '1px solid black',
+        padding: 0,
+        margin: 0,
+        paddingLeft: '8px',
+        paddingRight: '8px',
+        width: 'fit-content',
+        textAlign: 'center',
+        '&:last-child': {
+            borderRight: '1px solid black',
+        },
+        [theme.breakpoints.up(850)]: {
+            fontSize: '1.7rem',
+        },
+    },
+    tableCellNoPA: {
+        fontSize: '1.4rem',
+        padding: 0,
+        margin: 0,
+        paddingLeft: '8px',
+        paddingRight: '8px',
+        width: 'fit-content',
+        textAlign: 'center',
+        [theme.breakpoints.up(850)]: {
+            fontSize: '1.7rem',
+        },
+    },
+    tableRow: {
+        fontSize: '1.4rem',
+        margin: 0,
+        padding: 0,
+        height: '25px',
+        '&:nth-of-type(even)': {
+            backgroundColor: '#e0e3df',
+        }
+    },
+    tableSortLabel: {
+        padding: 0,
+        margin: 0,
+        fontSize: '1.4rem',
+        width: 'fit-content',
+        backgroundColor: 'yellow',
     },
     traditionalCardInfoDiv: {
         display: 'flex',
         flexWrap: 'wrap',
         alignItems: 'flex-start',
     },
+    traditionalCardInfoInnerDiv: {
+        display: 'flex',
+        width: '100%',
+    },
     traditionalCardInfoText: {
         paddingLeft: '2%',
         height: 180,
-        width: '80%',
+        width: '100%',
         lineHeight: '1.5',
         marginBottom: 25,
     },
@@ -367,119 +423,206 @@ class PlayerCard extends React.Component {
                             <Table
                                 className={classes.table}
                                 aria-labelledby="tableTitle"
-                                size={'small'}
+                                // size={'small'}
                                 aria-label="traditinal stats table"
                             >
                                 <TableHead>
-                                    <TableRow>
+                                    <TableRow className={classes.tableRow}>
                                         <TableCell
                                             key='traditionalStatsYear'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>Year</TableSortLabel>
+                                            Year
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsGamesPlayed'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>Games Played</TableSortLabel>
-                                        </TableCell>
-
-                                        <TableCell
-                                            key='traditionalStatsBA'
-                                            className={classes.tableCell}
-                                        >
-                                            <TableSortLabel>BA</TableSortLabel>
-                                        </TableCell>
-
-                                        <TableCell
-                                            key='traditionalStatsOBP'
-                                            className={classes.tableCell}
-                                        >
-                                            <TableSortLabel>OBP</TableSortLabel>
-                                        </TableCell>
-
-                                        <TableCell
-                                            key='traditionalStatsSLG'
-                                            className={classes.tableCell}
-                                        >
-                                            <TableSortLabel>SLG</TableSortLabel>
+                                            Games Played
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsPAs'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>PAs</TableSortLabel>
+                                            PAs
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsBA'
+                                            className={classes.tableCell}
+                                        >
+                                            BA
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsOBP'
+                                            className={classes.tableCell}
+                                        >
+                                            OBP
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsSLG'
+                                            className={classes.tableCell}
+                                        >
+                                            SLG
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsDoubles'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>Doubles</TableSortLabel>
+                                            Doubles
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsHRs'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>HRs</TableSortLabel>
+                                            HRs
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsRuns'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>Runs</TableSortLabel>
+                                            Runs
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsRBIs'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>RBIs</TableSortLabel>
+                                            RBIs
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsSBs'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>SBs</TableSortLabel>
+                                            SBs
                                         </TableCell>
 
                                         <TableCell
                                             key='traditionalStatsFWAR'
                                             className={classes.tableCell}
                                         >
-                                            <TableSortLabel>FWAR</TableSortLabel>
+                                            FWAR
                                         </TableCell>
                                     </TableRow>
                                 </TableHead>
 
                                 <TableBody>
-                                    {
+                                    {(PA2017 > 0) ? (
+                                        <TableRow
+                                            tabIndex={-1}
+                                            key='2017'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2017</TableCell>
+                                            <TableCell className={classes.tableCell}>{GamesPlayed2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{PA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OBP2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{SLG2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Doubles2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{HR2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Runs2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{RBI2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{StolenBases2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{FWAR2017}</TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2018 > 0) ? (
                                         <TableRow
                                             hover
                                             tabIndex={-1}
-                                            key=''
+                                            key='2018'
                                             className={classes.tableRow}
                                         >
-                                            {/* <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
-                                                {firstName} {lastName}
-                                            </TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                            <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell> */}
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2018</TableCell>
+                                            <TableCell className={classes.tableCell}>{GamesPlayed2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{PA2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BA2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OBP2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{SLG2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Doubles2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{HR2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Runs2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{RBI2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{StolenBases2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{FWAR2018}</TableCell>
                                         </TableRow>
+                                    ) : null}
 
-                                    }
+                                    {(PA2018 === 0 && PA2017 > 0) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2018'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2018</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 > 0) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2019'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2019</TableCell>
+                                            <TableCell className={classes.tableCell}>{GamesPlayed2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{PA2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BA2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OBP2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{SLG2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Doubles2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{HR2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Runs2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{RBI2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{StolenBases2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{FWAR2019}</TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 === 0 && PA2017 > 0) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2019'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2019</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
                                 </TableBody>
                             </Table>
                         </TableContainer>
@@ -548,12 +691,10 @@ class PlayerCard extends React.Component {
         const traditionalCardInfo = (
             <div className={classes.traditionalCardInfoDiv}>
                 <h1 className={classes.name}>{firstName} {lastName}</h1>
-                <img src={imageURL} className={classes.playerPhoto} />
-                <h3 className={classes.traditionalCardInfoText}>Bats: {bats} Throws: {throws}<br/>Primary Position: {primaryPosition}<br/>Other Positions: {otherPositions || 'None'}<br/>Birthday: {birthday}<br/>Current Team: {currentTeam}</h3>
-                {/* <h1 className={classes.traditionalCardInfoText}>Primary Position: {primaryPosition}</h1>
-                <h1 className={classes.traditionalCardInfoText}>Other Positions: {otherPositions || 'None'}</h1>
-                <h1 className={classes.traditionalCardInfoText}>Birthday: {birthday}</h1>
-                <h1 className={classes.traditionalCardInfoText}>Current Team: {currentTeam}</h1> */}
+                <div className={classes.traditionalCardInfoInnerDiv}>
+                    <img src={imageURL} className={classes.playerPhoto} />
+                    <h3 className={classes.traditionalCardInfoText}>Bats: {bats} Throws: {throws}<br />Primary Position: {primaryPosition}<br />Other Positions: {otherPositions || 'None'}<br />Birthday: {birthday}<br />Current Team: {currentTeam}</h3>
+                </div>
             </div>
         )
 
