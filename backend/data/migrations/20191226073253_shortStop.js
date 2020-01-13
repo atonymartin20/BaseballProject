@@ -125,6 +125,7 @@ exports.up = function (knex, Promise) {
         shortStop.decimal('SteamerAVGProjection', 8, 3);
         shortStop.decimal('SteamerOBPProjection', 8, 3);
         shortStop.decimal('SteamerSLGProjection', 8, 3);
+        shortStop.integer('SteamerDoublesProjection', 50);
         shortStop.integer('SteamerHRProjection', 50);
         shortStop.integer('SteamerRunsProjection', 50);
         shortStop.integer('SteamerRBIProjection', 50);
