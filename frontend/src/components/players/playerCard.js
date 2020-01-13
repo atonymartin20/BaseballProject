@@ -265,8 +265,8 @@ class PlayerCard extends React.Component {
         SteamerFWARProjection: '',
         traditionalStats: true,
         battedBallStats: true,
-        expectedStats: false,
-        baseRunningStats: false,
+        expectedStats: true,
+        baseRunningStats: true,
     }
 
     componentDidMount() {
@@ -406,7 +406,7 @@ class PlayerCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRC2017, OPS2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRC2018, OPS2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRC2019, OPS2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
+        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -878,20 +878,222 @@ class PlayerCard extends React.Component {
 
                 {expectedStats ? (
                     <div>
-                        {/* 
-                            BA
-                            xBA
-                            BABIP
-                            OBP
-                            SLG
-                            WOBA2017
-                            xWOBA2017
-                            LineupSlot2017
-                            WRC2017
-                            OPS2017
-                            BBPercent2017
-                            KPercent2017
-                        */}
+                        <TableContainer>
+                            <Table
+                                className={classes.table}
+                                aria-labelledby="Expected Stats Table"
+                                aria-label="Expected Stats Table"
+                            >
+                                <TableHead>
+                                    <TableRow className={classes.tableRow}>
+                                        <TableCell
+                                            key='expectedStatsYear'
+                                            className={classes.tableCell}
+                                        >
+                                            Year
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsBA'
+                                            className={classes.tableCell}
+                                        >
+                                            BA
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsxBA'
+                                            className={classes.tableCell}
+                                        >
+                                            xBA
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsBABIP'
+                                            className={classes.tableCell}
+                                        >
+                                            BABIP
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsOBP'
+                                            className={classes.tableCell}
+                                        >
+                                            OBP
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='texpectedStatsSLG'
+                                            className={classes.tableCell}
+                                        >
+                                            SLG
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsWOBA'
+                                            className={classes.tableCell}
+                                        >
+                                            WOBA
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsxWOBA'
+                                            className={classes.tableCell}
+                                        >
+                                            xWOBA
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsLineupSlot'
+                                            className={classes.tableCell}
+                                        >
+                                            Lineup Slot
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsWRCPlus'
+                                            className={classes.tableCell}
+                                        >
+                                            WRC+
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsOPSPlus'
+                                            className={classes.tableCell}
+                                        >
+                                            OPS+
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsBBPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            BB%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='expectedStatsKPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            K%
+                                        </TableCell>
+                                    </TableRow>
+                                </TableHead>
+
+                                <TableBody>
+                                    {(PA2017 > 0) ? (
+                                        <TableRow
+                                            tabIndex={-1}
+                                            key='2017'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2017</TableCell>
+                                            <TableCell className={classes.tableCell}>{BA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{xBA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BABIP2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OBP2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{SLG2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{WOBA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{xWOBA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{LineupSlot2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{WRCPlus2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OPSPlus2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BBPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{KPercent2017}</TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2018 > 0) ? (
+                                        <TableRow
+                                        tabIndex={-1}
+                                        key='2018'
+                                        className={classes.tableRow}
+                                    >
+                                        <TableCell component="th" scope="row" className={classes.tableCell}>2018</TableCell>
+                                        <TableCell className={classes.tableCell}>{BA2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{xBA2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BABIP2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OBP2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SLG2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{WOBA2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{xWOBA2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LineupSlot2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{WRCPlus2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OPSPlus2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BBPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{KPercent2018}</TableCell>
+                                    </TableRow>
+                                    ) : null}
+
+                                    {(PA2018 === 0 && PA2017 > 0) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2018'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2018</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 > 0) ? (
+                                        <TableRow
+                                        tabIndex={-1}
+                                        key='2019'
+                                        className={classes.tableRow}
+                                    >
+                                        <TableCell component="th" scope="row" className={classes.tableCell}>2019</TableCell>
+                                        <TableCell className={classes.tableCell}>{BA2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{xBA2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BABIP2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OBP2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SLG2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{WOBA2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{xWOBA2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LineupSlot2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{WRCPlus2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OPSPlus2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BBPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{KPercent2019}</TableCell>
+                                    </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 === 0 && (PA2018 > 0 || PA2017 > 0)) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2019'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2019</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 ) : null
                 }
