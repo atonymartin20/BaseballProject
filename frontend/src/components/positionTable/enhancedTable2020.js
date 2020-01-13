@@ -136,7 +136,7 @@ export default function EnhancedTable(props) {
     const [order, setOrder] = React.useState('desc');
     const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
-    const [ grabId, setGrabId] = React.useState();
+    const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
@@ -148,19 +148,7 @@ export default function EnhancedTable(props) {
         }
         else {
             setRows([
-                createData('Cupcake', 305, 3.7, 67, 4.3, 7, 7, 7, 7, 1, 0),
-                createData('Donut', 452, 25.0, 51, 4.9, 10, 10, 10, 10, 2, 1),
-                createData('Eclair', 262, 16.0, 24, 6.0, 5, 5, 5, 5, 3, 2),
-                createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 4, 4, 4, 4, 4, 3),
-                createData('Gingerbread', 356, 16.0, 49, 3.9, 3, 3, 3, 3, 5, 4),
-                createData('Honeycomb', 408, 3.2, 87, 6.5, 6.5, 6.5, 6.5, 6.5, 6, 5),
-                createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.5, 4.5, 4.5, 4.5, 7, 6),
-                createData('Jelly Bean', 375, 0.0, 94, 0.0, 7, 7, 7, 7, 8, 7),
-                createData('KitKat', 518, 26.0, 65, 7.0, 8, 8, 8, 8, 9, 8),
-                createData('Lollipop', 392, 0.2, 98, 0.0, 9, 9, 9, 9, 10, 9),
-                createData('Marshmallow', 318, 0, 81, 2.0, 11, 11, 11, 12, 11, 10),
-                createData('Nougat', 360, 19.0, 9, 37.0, 33, 33, 33, 33, 12, 11),
-                createData('Oreo', 437, 18.0, 63, 4.0, 2, 2, 2, 2, 13, 12),
+                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
             ])
         }
     }, [props.players])
@@ -187,7 +175,6 @@ export default function EnhancedTable(props) {
                 selected.slice(selectedIndex + 1),
             );
         }
-
         setSelected(newSelected);
     };
 
@@ -195,7 +182,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-                    { playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null }
+            {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
@@ -228,7 +215,7 @@ export default function EnhancedTable(props) {
                                                 selected={isItemSelected}
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => {setPlayerCard(!playerCard); setGrabId(row.id)}}>
+                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
