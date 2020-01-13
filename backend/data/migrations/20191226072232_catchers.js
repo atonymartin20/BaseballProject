@@ -125,6 +125,7 @@ exports.up = function (knex, Promise) {
         catchers.decimal('SteamerAVGProjection', 8, 3);
         catchers.decimal('SteamerOBPProjection', 8, 3);
         catchers.decimal('SteamerSLGProjection', 8, 3);
+        catchers.integer('SteamerDoublesProjection', 50);
         catchers.integer('SteamerHRProjection', 50);
         catchers.integer('SteamerRunsProjection', 50);
         catchers.integer('SteamerRBIProjection', 50);

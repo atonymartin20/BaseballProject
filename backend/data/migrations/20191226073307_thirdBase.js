@@ -125,6 +125,7 @@ exports.up = function (knex, Promise) {
         thirdBase.decimal('SteamerAVGProjection', 8, 3);
         thirdBase.decimal('SteamerOBPProjection', 8, 3);
         thirdBase.decimal('SteamerSLGProjection', 8, 3);
+        thirdBase.integer('SteamerDoublesProjection', 50);
         thirdBase.integer('SteamerHRProjection', 50);
         thirdBase.integer('SteamerRunsProjection', 50);
         thirdBase.integer('SteamerRBIProjection', 50);
