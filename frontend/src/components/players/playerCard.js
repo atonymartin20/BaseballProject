@@ -258,6 +258,7 @@ class PlayerCard extends React.Component {
         SteamerAVGProjection: '',
         SteamerOBPProjection: '',
         SteamerSLGProjection: '',
+        SteamerDoublesProjection: '',
         SteamerHRProjection: '',
         SteamerRunsProjection: '',
         SteamerRBIProjection: '',
@@ -396,6 +397,7 @@ class PlayerCard extends React.Component {
             SteamerAVGProjection: this.context.state.catchers[foundIndex].SteamerAVGProjection,
             SteamerOBPProjection: this.context.state.catchers[foundIndex].SteamerOBPProjection,
             SteamerSLGProjection: this.context.state.catchers[foundIndex].SteamerSLGProjection,
+            SteamerDoublesProjection: this.context.state.catchers[foundIndex].SteamerDoublesProjection,
             SteamerHRProjection: this.context.state.catchers[foundIndex].SteamerHRProjection,
             SteamerRunsProjection: this.context.state.catchers[foundIndex].SteamerRunsProjection,
             SteamerRBIProjection: this.context.state.catchers[foundIndex].SteamerRBIProjection,
@@ -406,7 +408,7 @@ class PlayerCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -611,6 +613,24 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
                                         </TableRow>
                                     ) : null}
+                                    <TableRow
+                                        tabIndex={-1}
+                                        key='Projected 2020'
+                                        className={classes.tableRow}
+                                    >
+                                        <TableCell component="th" scope="row" className={classes.tableCell}>2020</TableCell>
+                                        <TableCell className={classes.tableCell}>Projections</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerPAProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerAVGProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerOBPProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerSLGProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerDoublesProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerHRProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerRunsProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerRBIProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
+                                    </TableRow>
                                 </TableBody>
                             </Table>
                         </TableContainer>
@@ -1218,7 +1238,7 @@ class PlayerCard extends React.Component {
             <div className={classes.traditionalCardInfoDiv}>
                 <h1 className={classes.name}>{firstName} {lastName}</h1>
                 <div className={classes.traditionalCardInfoInnerDiv}>
-                    <img src={imageURL} className={classes.playerPhoto} />
+                    <img src={imageURL} className={classes.playerPhoto} alt='Player' />
                     <h3 className={classes.traditionalCardInfoText}>Bats: {bats} Throws: {throws}<br />Primary Position: {primaryPosition}<br />Other Positions: {otherPositions || 'None'}<br />Birthday: {birthday}<br />Current Team: {currentTeam}</h3>
                 </div>
             </div>
