@@ -9,9 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
+import PlayerCard from '../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR };
+function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index) {
+    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -61,25 +62,25 @@ function EnhancedTableHead(props) {
         <TableHead>
             <TableRow>
                 {headCells.map(headCell => (
-                        <TableCell
-                            key={headCell.id}
-                            align={headCell.numeric ? 'right' : 'left'}
-                            sortDirection={orderBy === headCell.id ? order : false}
-                            className={classes.tableCell}
+                    <TableCell
+                        key={headCell.id}
+                        align={headCell.numeric ? 'right' : 'left'}
+                        sortDirection={orderBy === headCell.id ? order : false}
+                        className={classes.tableCell}
+                    >
+                        <TableSortLabel
+                            active={orderBy === headCell.id}
+                            direction={orderBy === headCell.id ? order : 'asc'}
+                            onClick={createSortHandler(headCell.id)}
                         >
-                            <TableSortLabel
-                                active={orderBy === headCell.id}
-                                direction={orderBy === headCell.id ? order : 'asc'}
-                                onClick={createSortHandler(headCell.id)}
-                            >
-                                {headCell.label}
-                                {orderBy === headCell.id ? (
-                                    <span className={classes.visuallyHidden}>
-                                        {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
-                                    </span>
-                                ) : null}
-                            </TableSortLabel>
-                        </TableCell>
+                            {headCell.label}
+                            {orderBy === headCell.id ? (
+                                <span className={classes.visuallyHidden}>
+                                    {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
+                                </span>
+                            ) : null}
+                        </TableSortLabel>
+                    </TableCell>
                 ))}
             </TableRow>
         </TableHead>
@@ -94,6 +95,10 @@ EnhancedTableHead.propTypes = {
 };
 
 const useStyles = makeStyles(theme => ({
+    linkStyling: {
+        textDecoration: 'none',
+        color: 'black',
+    },
     root: {
         width: '100%',
     },
@@ -109,7 +114,7 @@ const useStyles = makeStyles(theme => ({
     },
     tableRow: {
         fontSize: '1.4rem',
-        '&:nth-of-type(even)':{
+        '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
         }
     },
@@ -131,29 +136,19 @@ export default function EnhancedTable(props) {
     const [order, setOrder] = React.useState('desc');
     const [orderBy, setOrderBy] = React.useState('FWAR');
     const [selected, setSelected] = React.useState([]);
+    const [grabId, setGrabId] = React.useState();
+    const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection, player.id, index)
             )))
         }
         else {
             setRows([
-                createData('Cupcake', 305, 3.7, 67, 4.3, 7, 7, 7, 7),
-                createData('Donut', 452, 25.0, 51, 4.9, 10, 10, 10, 10),
-                createData('Eclair', 262, 16.0, 24, 6.0, 5, 5, 5, 5),
-                createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 4, 4, 4, 4),
-                createData('Gingerbread', 356, 16.0, 49, 3.9, 3, 3, 3, 3),
-                createData('Honeycomb', 408, 3.2, 87, 6.5, 6.5, 6.5, 6.5, 6.5),
-                createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.5, 4.5, 4.5, 4.5),
-                createData('Jelly Bean', 375, 0.0, 94, 0.0, 7, 7, 7, 7),
-                createData('KitKat', 518, 26.0, 65, 7.0, 8, 8, 8, 8),
-                createData('Lollipop', 392, 0.2, 98, 0.0, 9, 9, 9, 9),
-                createData('Marshmallow', 318, 0, 81, 2.0, 11, 11, 11, 12),
-                createData('Nougat', 360, 19.0, 9, 37.0, 33, 33, 33, 33),
-                createData('Oreo', 437, 18.0, 63, 4.0, 2, 2, 2, 2),
+                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
             ])
         }
     }, [props.players])
@@ -180,7 +175,6 @@ export default function EnhancedTable(props) {
                 selected.slice(selectedIndex + 1),
             );
         }
-
         setSelected(newSelected);
     };
 
@@ -188,6 +182,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
+            {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
@@ -216,11 +211,11 @@ export default function EnhancedTable(props) {
                                                 onClick={event => handleClick(event, row.name)}
                                                 aria-checked={isItemSelected}
                                                 tabIndex={-1}
-                                                key={row.index}
+                                                key={row.name}
                                                 selected={isItemSelected}
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
+                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
