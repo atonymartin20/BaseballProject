@@ -9,6 +9,9 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
 
 const styles = theme => ({
     closeIconStyling: {
@@ -28,14 +31,8 @@ const styles = theme => ({
         overflow: 'auto',
         backgroundColor: 'rgba(43, 43, 43, 0.3)',
     },
-    fullWidth: {
-        width: '100%',
-    },
-    linkStyling: {
-        width: '100%',
-        textDecoration: 'none',
-        color: 'black',
-        display: 'inline-block',
+    internalPlayerCard: {
+        marginTop: 10,
     },
     name: {
         fontSize: '3.5rem',
@@ -65,6 +62,14 @@ const styles = theme => ({
     },
     playerPhoto: {
         height: 180,
+    },
+    selectText: {
+        fontSize: '1.5rem',
+        backgroundColor: '#F1F1F1',
+        fontFamily: 'Roboto, sans-serif',
+        paddingRight: 0,
+        letterSpacing: '1px',
+        paddingLeft: 10,
     },
     table: {
         width: 'auto',
@@ -104,14 +109,7 @@ const styles = theme => ({
         height: '25px',
         '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
-        }
-    },
-    tableSortLabel: {
-        padding: 0,
-        margin: 0,
-        fontSize: '1.4rem',
-        width: 'fit-content',
-        backgroundColor: 'yellow',
+        },
     },
     traditionalCardInfoDiv: {
         display: 'flex',
@@ -265,9 +263,10 @@ class PlayerCard extends React.Component {
         SteamerSBProjection: '',
         SteamerFWARProjection: '',
         traditionalStats: true,
-        battedBallStats: true,
-        expectedStats: true,
-        baseRunningStats: true,
+        battedBallStats: false,
+        expectedStats: false,
+        baseRunningStats: false,
+        labelValue: 'traditionalStats',
     }
 
     componentDidMount() {
@@ -406,9 +405,24 @@ class PlayerCard extends React.Component {
         })
     }
 
+    cardDataChange = (event) => {
+        event.preventDefault();
+        console.log(event.target.value)
+        this.setState({
+            traditionalStats: false,
+            battedBallStats: false,
+            expectedStats: false,
+            baseRunningStats: false,
+        })
+        this.setState({
+            labelValue: [event.target.value],
+            [event.target.value]: true,
+        })
+    }
+
     render() {
         const { classes } = this.props;
-        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats, labelValue } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -1250,6 +1264,16 @@ class PlayerCard extends React.Component {
                     <div className={classes.playerCardContainer}>
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
                         {traditionalCardInfo}
+
+                        <FormControl>
+                            <Select classes={{ root: classes.selectText }} onChange={this.cardDataChange} value={labelValue}>
+                                <MenuItem classes={{ root: classes.selectText, }} value='traditionalStats'>Traditional Data</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="battedBallStats">Batted Ball Data</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="expectedStats">Expected Stats</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="baseRunningStats">Base Running Stats</MenuItem>
+                            </Select>
+                        </FormControl>
+
                         {playerCard}
                         {battedBallStats}
                         {expectedStats}
