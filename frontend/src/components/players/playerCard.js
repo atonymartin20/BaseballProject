@@ -1,8 +1,6 @@
 import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Card from '@material-ui/core/Card';
-// import Button from '@material-ui/core/Button';
-// import { Link } from 'react-router-dom';
 import { AppContext } from '../context/appContext.js';
 import CloseIcon from "@material-ui/icons/Close";
 import Table from '@material-ui/core/Table';
@@ -11,7 +9,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import TableSortLabel from '@material-ui/core/TableSortLabel';
 
 const styles = theme => ({
     closeIconStyling: {
@@ -54,8 +51,7 @@ const styles = theme => ({
         },
     },
     playerCardContainer: {
-        width: '98%',
-        width: 800,
+        width: 'fit-content',
         minWidth: 650,
         border: '1px solid #888888',
         borderRadius: '4px',
@@ -66,9 +62,6 @@ const styles = theme => ({
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'column',
-        [theme.breakpoints.down(800)]: {
-            width: '100%',
-        },
     },
     playerPhoto: {
         height: 180,
@@ -271,7 +264,7 @@ class PlayerCard extends React.Component {
         SteamerSBProjection: '',
         SteamerFWARProjection: '',
         traditionalStats: true,
-        battedBallStats: false,
+        battedBallStats: true,
         expectedStats: false,
         baseRunningStats: false,
     }
@@ -304,7 +297,7 @@ class PlayerCard extends React.Component {
             PullPercent2017: this.context.state.catchers[foundIndex].PullPercent2017,
             CenterPercent2017: this.context.state.catchers[foundIndex].CenterPercent2017,
             OppoPercent2017: this.context.state.catchers[foundIndex].OppoPercent2017,
-            HRPERFB2017: this.context.state.catchers[foundIndex].HRPerFB2017,
+            HRPerFB2017: this.context.state.catchers[foundIndex].HRPerFB2017,
             HardHitPercent2017: this.context.state.catchers[foundIndex].HardHitPercent2017,
             ExitVelo2017: this.context.state.catchers[foundIndex].ExitVelo2017,
             FlyBallLineDriveExitVelo2017: this.context.state.catchers[foundIndex].FlyBallLineDriveExitVelo2017,
@@ -341,7 +334,7 @@ class PlayerCard extends React.Component {
             PullPercent2018: this.context.state.catchers[foundIndex].PullPercent2018,
             CenterPercent2018: this.context.state.catchers[foundIndex].CenterPercent2018,
             OppoPercent2018: this.context.state.catchers[foundIndex].OppoPercent2018,
-            HRPERFB2018: this.context.state.catchers[foundIndex].HRPERFB2018,
+            HRPerFB2018: this.context.state.catchers[foundIndex].HRPerFB2018,
             HardHitPercent2018: this.context.state.catchers[foundIndex].HardHitPercent2018,
             ExitVelo2018: this.context.state.catchers[foundIndex].ExitVelo2018,
             FlyBallLineDriveExitVelo2018: this.context.state.catchers[foundIndex].FlyBallLineDriveExitVelo2018,
@@ -378,7 +371,7 @@ class PlayerCard extends React.Component {
             PullPercent2019: this.context.state.catchers[foundIndex].PullPercent2019,
             CenterPercent2019: this.context.state.catchers[foundIndex].CenterPercent2019,
             OppoPercent2019: this.context.state.catchers[foundIndex].OppoPercent2019,
-            HRPERFB2019: this.context.state.catchers[foundIndex].HRPERFB2019,
+            HRPerFB2019: this.context.state.catchers[foundIndex].HRPerFB2019,
             HardHitPercent2019: this.context.state.catchers[foundIndex].HardHitPercent2019,
             ExitVelo2019: this.context.state.catchers[foundIndex].ExitVelo2019,
             FlyBallLineDriveExitVelo2019: this.context.state.catchers[foundIndex].FlyBallLineDriveExitVelo2019,
@@ -413,7 +406,7 @@ class PlayerCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPERFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRC2017, OPS2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPERFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRC2018, OPS2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPERFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRC2019, OPS2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
+        const { id, firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRC2017, OPS2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRC2018, OPS2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRC2019, OPS2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -422,8 +415,7 @@ class PlayerCard extends React.Component {
                         <TableContainer>
                             <Table
                                 className={classes.table}
-                                aria-labelledby="tableTitle"
-                                // size={'small'}
+                                aria-labelledby="traditionalStatsTable"
                                 aria-label="traditinal stats table"
                             >
                                 <TableHead>
@@ -538,7 +530,6 @@ class PlayerCard extends React.Component {
 
                                     {(PA2018 > 0) ? (
                                         <TableRow
-                                            hover
                                             tabIndex={-1}
                                             key='2018'
                                             className={classes.tableRow}
@@ -560,7 +551,6 @@ class PlayerCard extends React.Component {
 
                                     {(PA2018 === 0 && PA2017 > 0) ? (
                                         <TableRow
-                                            hover
                                             tabIndex={-1}
                                             key='2018'
                                             className={classes.tableRow}
@@ -582,7 +572,6 @@ class PlayerCard extends React.Component {
 
                                     {(PA2019 > 0) ? (
                                         <TableRow
-                                            hover
                                             tabIndex={-1}
                                             key='2019'
                                             className={classes.tableRow}
@@ -602,9 +591,8 @@ class PlayerCard extends React.Component {
                                         </TableRow>
                                     ) : null}
 
-                                    {(PA2019 === 0 && PA2017 > 0) ? (
+                                    {(PA2019 === 0 && (PA2018 > 0 || PA2017 > 0)) ? (
                                         <TableRow
-                                            hover
                                             tabIndex={-1}
                                             key='2019'
                                             className={classes.tableRow}
@@ -632,23 +620,258 @@ class PlayerCard extends React.Component {
 
                 {battedBallStats ? (
                     <div>
-                        {/* 
-                            GBPercent2017
-                            LDPercent2017
-                            FBPercent2017
-                            PullPercent2017
-                            CenterPercent2017
-                            OppoPercent2017
-                            HRPERFB2017
-                            HardHitPercent2017
-                            ExitVelo2017
-                            FlyBallLineDriveExitVelo2017
-                            LaunchAngle2017
-                            BarrelPercent2017
-                            AvgHRDistance2017
-                            ChaseRate2017
-                            ContactPercent2017
-                        */}
+                        <TableContainer>
+                            <Table
+                                className={classes.table}
+                                aria-labelledby="Batted Ball Data Table"
+                                aria-label="Batted Ball Data Table"
+                            >
+                                <TableHead>
+                                    <TableRow className={classes.tableRow}>
+                                        <TableCell
+                                            key='battedBallStatsYear'
+                                            className={classes.tableCell}
+                                        >
+                                            Year
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsGBPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            GB%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsLDPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            LD%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsFBPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            FB%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsPullPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Pull%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='tbattedBallStatsCenterPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Center%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsOppoPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Oppo%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsHRPerFB'
+                                            className={classes.tableCell}
+                                        >
+                                            HR/FB
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsHardHitPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Hard Hit%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsExitVelo'
+                                            className={classes.tableCell}
+                                        >
+                                            Exit Velo
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsFlyBallLineDriveExitVelo'
+                                            className={classes.tableCell}
+                                        >
+                                            FB/LD Exit Velo
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsLaunchAngle'
+                                            className={classes.tableCell}
+                                        >
+                                            Launch Angle
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsBarrelPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Barrel%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsAvgHRDistance'
+                                            className={classes.tableCell}
+                                        >
+                                            AVG HR Dist
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsChaseRate'
+                                            className={classes.tableCell}
+                                        >
+                                            Chase%
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='battedBallStatsContactPercent'
+                                            className={classes.tableCell}
+                                        >
+                                            Contact%
+                                        </TableCell>
+                                    </TableRow>
+                                </TableHead>
+
+                                <TableBody>
+                                    {(PA2017 > 0) ? (
+                                        <TableRow
+                                            tabIndex={-1}
+                                            key='2017'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2017</TableCell>
+                                            <TableCell className={classes.tableCell}>{GBPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{LDPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{FBPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{PullPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{CenterPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{OppoPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{HRPerFB2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{HardHitPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{ExitVelo2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{FlyBallLineDriveExitVelo2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{LaunchAngle2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{BarrelPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{AvgHRDistance2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{ChaseRate2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{ContactPercent2017}</TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2018 > 0) ? (
+                                        <TableRow
+                                        tabIndex={-1}
+                                        key='2018'
+                                        className={classes.tableRow}
+                                    >
+                                        <TableCell component="th" scope="row" className={classes.tableCell}>2018</TableCell>
+                                        <TableCell className={classes.tableCell}>{GBPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LDPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{FBPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{PullPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{CenterPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OppoPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{HRPerFB2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{HardHitPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ExitVelo2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{FlyBallLineDriveExitVelo2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LaunchAngle2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BarrelPercent2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{AvgHRDistance2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ChaseRate2018}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ContactPercent2018}</TableCell>
+                                    </TableRow>
+                                    ) : null}
+
+                                    {(PA2018 === 0 && PA2017 > 0) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2018'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2018</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 > 0) ? (
+                                        <TableRow
+                                        tabIndex={-1}
+                                        key='2019'
+                                        className={classes.tableRow}
+                                    >
+                                        <TableCell component="th" scope="row" className={classes.tableCell}>2019</TableCell>
+                                        <TableCell className={classes.tableCell}>{GBPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LDPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{FBPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{PullPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{CenterPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{OppoPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{HRPerFB2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{HardHitPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ExitVelo2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{FlyBallLineDriveExitVelo2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{LaunchAngle2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{BarrelPercent2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{AvgHRDistance2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ChaseRate2019}</TableCell>
+                                        <TableCell className={classes.tableCell}>{ContactPercent2019}</TableCell>
+                                    </TableRow>
+                                    ) : null}
+
+                                    {(PA2019 === 0 && (PA2018 > 0 || PA2017 > 0)) ? (
+                                        <TableRow
+                                            hover
+                                            tabIndex={-1}
+                                            key='2019'
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2019</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                        </TableRow>
+                                    ) : null}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
                     </div>
                 ) : null
                 }
@@ -705,6 +928,9 @@ class PlayerCard extends React.Component {
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
                         {traditionalCardInfo}
                         {playerCard}
+                        {battedBallStats}
+                        {expectedStats}
+                        {baseRunningStats}
                     </div>
                 </Card>
             </>
