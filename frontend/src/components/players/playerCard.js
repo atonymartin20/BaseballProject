@@ -18,6 +18,8 @@ const styles = theme => ({
         width: '20px',
         height: '20px',
         cursor: "pointer",
+        marginRight: '2%',
+        alignSelf: 'flex-end',
     },
     container: {
         position: 'fixed',
@@ -29,54 +31,54 @@ const styles = theme => ({
         overflow: 'auto',
         backgroundColor: 'rgba(43, 43, 43, 0.3)',
     },
-    email: {
-        width: '22.5%',
-        textAlign: 'center',
-        fontSize: '1.5rem',
-        overflowWrap: 'break-word',
-        padding: '5px 10px',
-        [theme.breakpoints.down(1400)]: {
-            width: '30%'
-        },
-        [theme.breakpoints.down(1052)]: {
-            display: 'none',
-        },
-    },
-    icons: {
-        width: '5%',
-        textAlign: 'center',
-        padding: '5px 10px',
-        [theme.breakpoints.down(1400)]: {
-            width: '7.5%'
-        },
-        [theme.breakpoints.down(1052)]: {
-            width: '10%',
-        },
-        [theme.breakpoints.down(950)]: {
-            display: 'none',
-        },
-    },
-    iconStyling: {
-        width: 25,
-        height: 25,
-    },
     linkStyling: {
         width: '100%',
         textDecoration: 'none',
         color: 'black',
         display: 'inline-block',
     },
+    name: {
+        fontSize: '3.5rem',
+        width: '100%',
+        height: 55,
+        margin: 0,
+        padding: 0,
+        paddingLeft: 60,
+        paddingBottom: 15,
+        [theme.breakpoints.down(550)]: {
+            paddingBottom: 0,
+            paddingLeft: 0,
+        },
+    },
     playerCardContainer: {
-        width: '85%',
+        width: '98%',
         border: '1px solid #888888',
         borderRadius: '4px',
         backgroundColor: '#FEFEFE',
         margin: '20vh auto',
         padding: 20,
         zIndex: 20000,
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'column',
         [theme.breakpoints.down(750)]: {
             width: '100%'
         },
+    },
+    playerPhoto: {
+        height: 180,
+    },
+    traditionalCardInfoDiv: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        alignItems: 'flex-start',
+    },
+    traditionalCardInfoText: {
+        paddingLeft: '2%',
+        height: 180,
+        width: '80%',
+        lineHeight: '1.5',
+        marginBottom: 25,
     },
 });
 
@@ -544,19 +546,14 @@ class PlayerCard extends React.Component {
         )
 
         const traditionalCardInfo = (
-            <div>
-                <h1>{firstName} {lastName}</h1>
-                <h3>Bats: {bats} Throws: {throws}</h3>
-                <h1>Primary Position: {primaryPosition}</h1>
-                <h1>Other Positions: {otherPositions || 'None'}</h1>
-                <h1>Birthday: {birthday}</h1>
-                <h1>Current Team: {currentTeam}</h1>
-                <img src={imageURL} />
-                {/* 
-                    imageURL
-                    birthday
-                    currentTeam
-                */}
+            <div className={classes.traditionalCardInfoDiv}>
+                <h1 className={classes.name}>{firstName} {lastName}</h1>
+                <img src={imageURL} className={classes.playerPhoto} />
+                <h3 className={classes.traditionalCardInfoText}>Bats: {bats} Throws: {throws}<br/>Primary Position: {primaryPosition}<br/>Other Positions: {otherPositions || 'None'}<br/>Birthday: {birthday}<br/>Current Team: {currentTeam}</h3>
+                {/* <h1 className={classes.traditionalCardInfoText}>Primary Position: {primaryPosition}</h1>
+                <h1 className={classes.traditionalCardInfoText}>Other Positions: {otherPositions || 'None'}</h1>
+                <h1 className={classes.traditionalCardInfoText}>Birthday: {birthday}</h1>
+                <h1 className={classes.traditionalCardInfoText}>Current Team: {currentTeam}</h1> */}
             </div>
         )
 
@@ -567,54 +564,6 @@ class PlayerCard extends React.Component {
                         <CloseIcon onClick={() => { this.props.close() }} className={classes.closeIconStyling} />
                         {traditionalCardInfo}
                         {playerCard}
-                        {/* <TableContainer> */}
-                            {/* <Table
-                                className={classes.table}
-                                aria-labelledby="tableTitle"
-                                size={'small'}
-                                aria-label="enhanced table"
-                            >
-                                <TableHead>
-                                    <TableRow>
-                                        {headCells.map(headCell => (
-                                            <TableCell
-                                                key={headCell.id}
-                                                align={headCell.numeric ? 'right' : 'left'}
-                                                sortDirection={orderBy === headCell.id ? order : false}
-                                                className={classes.tableCell}
-                                            >
-                                                <TableSortLabel>
-                                                    {headCell.label}
-                                                </TableSortLabel>
-                                            </TableCell>
-                                        ))}
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    {
-                                        // <TableRow
-                                        //     hover
-                                        //     tabIndex={-1}
-                                        //     key={row.name}
-                                        //     className={classes.tableRow}
-                                        // >
-                                        //     <TableCell component="th" id={labelId} scope="row" className={classes.tableRow}>
-                                        //         {firstName} {lastName}
-                                        //     </TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                        //     <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                        // </TableRow>
-
-                                    }
-                                </TableBody>
-                            </Table> */}
-                        {/* </TableContainer> */}
                     </div>
                 </Card>
             </>
