@@ -121,6 +121,7 @@ const styles = theme => ({
     home: {
         textDecoration: 'none',
         color: 'white',
+        margin: '0 auto'
     },
     linkStyling: {
         textDecoration: 'none',
@@ -132,9 +133,6 @@ const styles = theme => ({
     logo: {
         fontFamily: "Rye, cursive",
         fontSize: "3.0rem",
-        [theme.breakpoints.down(710)]: {
-            margin: '0 auto',
-        },
         [theme.breakpoints.down(500)]: {
             fontSize: "2.5rem",
         },
@@ -149,6 +147,7 @@ const styles = theme => ({
     },
     show710: {
         display: 'flex',
+        left: '50px',
         [theme.breakpoints.up(710)]: {
             display: 'none'
         }
@@ -159,9 +158,6 @@ const styles = theme => ({
         width: '100%',
         justifyContent: "center",
         alignItems: "center",
-        [theme.breakpoints.down(600)]: {
-            justifyContent: 'flex-start'
-        },
     }
 })
 
@@ -202,6 +198,15 @@ class Navbar extends React.Component {
                                 className={classes.drawerNavLink}
                             >
                                 Home
+                        </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem className={classes.drawerListItem}>
+                        <Link to='/glossary' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Glossary
                         </Button>
                         </Link>
                     </ListItem>
