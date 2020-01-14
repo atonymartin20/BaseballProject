@@ -165,62 +165,62 @@ class Homepage extends React.Component {
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Doubles'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Doubles</TableCell>
+                                    <TableCell className={classes.tableCell}>Doubles</TableCell>
+                                    <TableCell className={classes.tableCell}>The amount of times a batter has hit a ball into play and reached second base.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='HRs'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>HRs</TableCell>
+                                    <TableCell className={classes.tableCell}>Home Runs</TableCell>
+                                    <TableCell className={classes.tableCell}>When a batter hits the ball and is able to circle the bases and reach home safely.  Typically this is when the batter hits a fly ball over the outfield fence.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Runs'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Runs</TableCell>
+                                    <TableCell className={classes.tableCell}>Runs</TableCell>
+                                    <TableCell className={classes.tableCell}>Awarded when a player corsses home plate to score his team a run.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='RBIs'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>RBIs</TableCell>
+                                    <TableCell className={classes.tableCell}>Runs Batted In</TableCell>
+                                    <TableCell className={classes.tableCell}>When a batter's plate appearance results in a run being scored.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='SBs'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SBs</TableCell>
+                                    <TableCell className={classes.tableCell}>Stolen Bases</TableCell>
+                                    <TableCell className={classes.tableCell}>A stolen base occurs when a runner advances to a base to which he is not entitled, and the official scorer rules that the advance should be credited to the action of the runner.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='FWAR'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FWAR</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
@@ -262,152 +262,152 @@ class Homepage extends React.Component {
                             <TableBody>
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='GB%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>GB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Ground Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits on the ground.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='LD%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>LD%</TableCell>
+                                    <TableCell className={classes.tableCell}>Line Drive Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits in the air at a close to 0 degree angle.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='FB%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Fly Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits on the fly.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Pull%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Pull%</TableCell>
+                                    <TableCell className={classes.tableCell}>Pull Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits to the side of the field they bat from.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Center%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Center%</TableCell>
+                                    <TableCell className={classes.tableCell}>Center Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits to the center of the field.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Oppo%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Oppo%</TableCell>
+                                    <TableCell className={classes.tableCell}>Opposite Field Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls a player hits to the opposite side of the field they bat from.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='HR/FB'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>HR/FB</TableCell>
+                                    <TableCell className={classes.tableCell}>Homers per Fly Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of fly balls a player hits that results in home runs.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Hard Hit%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Hard Hit%</TableCell>
+                                    <TableCell className={classes.tableCell}>Hard Hit Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>A ball that Baseball Info Solutions grades as a hard hit ball.  Balls are categorized as soft, medium, or hard.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Exit Velo'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Exit Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Exit Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>How fast in miles per hour the player hits a pitched ball.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='FB/LD Exit Velo'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FB/LD Exit Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Fly Ball and Line Drive Exit Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>How fast in miles per hour the player hits a pitched ball for a line drive or fly ball.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Launch Angle'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Launch Angle</TableCell>
+                                    <TableCell className={classes.tableCell}>Launch Angle</TableCell>
+                                    <TableCell className={classes.tableCell}>How high in degrees a ball is hit by the player on average.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Barrel %'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Barrel %</TableCell>
+                                    <TableCell className={classes.tableCell}>Barrel Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of times a player's batted ball is barreled.  A barrel is the perfect combination of exit velocity and launch angle.  A barrel must have an exit velocity of at least 98 miles per hour and a launch angle of about 20 to 35 degrees.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='AVG HR Dist'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>AVG HR Dist</TableCell>
+                                    <TableCell className={classes.tableCell}>Average Home Run Distance</TableCell>
+                                    <TableCell className={classes.tableCell}>The average distance a player's home runs traveled in a given season.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Chase%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Chase %</TableCell>
+                                    <TableCell className={classes.tableCell}>Chase Rate</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of times a player swang at a pitch outside the strike zone in a given season.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Contact %'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Contact %</TableCell>
+                                    <TableCell className={classes.tableCell}>Contact Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of times a batter makes contact when they swing in a given season.</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
@@ -449,121 +449,121 @@ class Homepage extends React.Component {
                             <TableBody>
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='BA'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BA</TableCell>
+                                    <TableCell className={classes.tableCell}>Batting Average</TableCell>
+                                    <TableCell className={classes.tableCell}>The amount of hits divided by a player's at bats.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='xBA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>xBA</TableCell>
+                                    <TableCell className={classes.tableCell}>Expected Batting Average</TableCell>
+                                    <TableCell className={classes.tableCell}>The likelihood that a batted ball becomes a hit.  This is based on exit velocity, launch angle, batted ball type, and sprint speed.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='BABIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BABIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Batting Average on Balls In Play</TableCell>
+                                    <TableCell className={classes.tableCell}>The batting average on balls put in play.  This excludes strike outs and home runs to give a better understanding of a player's results on balls hit in play.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='OBP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>OBP</TableCell>
+                                    <TableCell className={classes.tableCell}>On Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>How often a player reaches base.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SLG'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SLG</TableCell>
+                                    <TableCell className={classes.tableCell}>Slugging Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The total number of bases a player has per a player's at bats.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='WOBA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>WOBA</TableCell>
+                                    <TableCell className={classes.tableCell}>Weighted On-Base Average</TableCell>
+                                    <TableCell className={classes.tableCell}>A statistic created by Tom Tango that attempts to measure a player's offensive contributions per plate appearance.  WOBA values how a player reached base and not just if the player reached base.  An extra base hit is more valuable than a single or a walk.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='xWOBA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>xWOBA</TableCell>
+                                    <TableCell className={classes.tableCell}>expected Weighted On-Base Average</TableCell>
+                                    <TableCell className={classes.tableCell}>The likelihood that a player reaches base based on exit velocity, launch angle, batted ball type, and sprint Speed. </TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='Lineup Slot'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Lineup Slot</TableCell>
+                                    <TableCell className={classes.tableCell}>Primary Lineup Slot</TableCell>
+                                    <TableCell className={classes.tableCell}>The primary lineup slot a player appeared in during a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='WRC+'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>WRC+</TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='OPS+'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>OPS+</TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='BB%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Walk Percentage</TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='K%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                </TableRow>
-
-                                <TableRow
-                                    tabIndex={-1}
-                                    key=''
-                                    className={classes.tableRow}
-                                >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>K%</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeout Percentage</TableCell>
                                     <TableCell className={classes.tableCell}></TableCell>
                                 </TableRow>
                             </TableBody>
