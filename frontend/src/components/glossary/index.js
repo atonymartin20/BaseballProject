@@ -149,7 +149,7 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>OBP</TableCell>
-                                    <TableCell className={classes.tableCell}>On Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>On-Base Percentage</TableCell>
                                     <TableCell className={classes.tableCell}>How often a player reaches base.</TableCell>
                                 </TableRow>
 
@@ -483,7 +483,7 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>OBP</TableCell>
-                                    <TableCell className={classes.tableCell}>On Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>On-Base Percentage</TableCell>
                                     <TableCell className={classes.tableCell}>How often a player reaches base.</TableCell>
                                 </TableRow>
 
@@ -533,8 +533,8 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>WRC+</TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell className={classes.tableCell}>Weighted Runs Created Plus</TableCell>
+                                    <TableCell className={classes.tableCell}>A weighted statistic where 100 is average.  This takes the runs created statistic, adjusts it for external factors including ballpark and era, and then adjusts it to fit the scale.</TableCell>
                                 </TableRow>
 
                                 <TableRow
@@ -543,8 +543,8 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>OPS+</TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell className={classes.tableCell}>On-Base Plus Slugging Plus</TableCell>
+                                    <TableCell className={classes.tableCell}>A weighted statistic where 100 is average.  This adds a batter's on-base percentage and slugging percentage, adjusts it for external factors including ballpark and era, and then adjusts it to fit the scale.</TableCell>
                                 </TableRow>
 
                                 <TableRow
@@ -554,7 +554,7 @@ class Homepage extends React.Component {
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>BB%</TableCell>
                                     <TableCell className={classes.tableCell}>Walk Percentage</TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the batter walked in a given year.</TableCell>
                                 </TableRow>
 
                                 <TableRow
@@ -564,7 +564,7 @@ class Homepage extends React.Component {
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>K%</TableCell>
                                     <TableCell className={classes.tableCell}>Strikeout Percentage</TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the batter struck out in a given year.</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
@@ -606,32 +606,32 @@ class Homepage extends React.Component {
                             <TableBody>
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='Sprint Speed'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Sprint Speed</TableCell>
+                                    <TableCell className={classes.tableCell}>Sprint Speed</TableCell>
+                                    <TableCell className={classes.tableCell}>A measurement of a player's top speed in feet per second.  This is determined in a player's fastest one second window.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='SBs'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SBs</TableCell>
+                                    <TableCell className={classes.tableCell}>Stolen Bases</TableCell>
+                                    <TableCell className={classes.tableCell}>A stolen base occurs when a runner advances to a base to which he is not entitled, and the official scorer rules that the advance should be credited to the action of the runner.</TableCell>
                                 </TableRow>
 
                                 <TableRow
                                     tabIndex={-1}
-                                    key=''
+                                    key='SB%'
                                     className={classes.tableRow}
                                 >
-                                    <TableCell component="th" scope="row" className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
-                                    <TableCell className={classes.tableCell}></TableCell>
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Stolen Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of attempts that a baserunner attempts that are successful in a given year.</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>
