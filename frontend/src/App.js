@@ -4,6 +4,7 @@ import Homepage from './components/homepage';
 import { AppContext } from './components/context/appContext.js';
 import Catchers from './components/positions/catchers.js';
 import PlayerCard from './components/players/playerCard.js';
+import Glossary from './components/glossary';
 
 class App extends React.Component {
     componentDidMount() {
@@ -22,6 +23,9 @@ class App extends React.Component {
                     <Route path='/catchers/:id' render={props => 
                         <PlayerCard {...props} />
                     } />
+                    <Route exact path='/glossary'>
+                        <Glossary />
+                    </Route>
                     <Route>
                         <Homepage />
                     </Route>

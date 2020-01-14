@@ -407,7 +407,6 @@ class PlayerCard extends React.Component {
 
     cardDataChange = (event) => {
         event.preventDefault();
-        console.log(event.target.value)
         this.setState({
             traditionalStats: false,
             battedBallStats: false,
