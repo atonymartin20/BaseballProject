@@ -18,5 +18,3 @@ ReactDOM.render(
     </AppProvider>,
     document.getElementById('root')
 );
-
-// Add something like Tooltips that isn't blurry

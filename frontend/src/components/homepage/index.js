@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../navbar';
 import Links from '../navbar/links.js';
 import withStyles from '@material-ui/core/styles/withStyles';
+import { Link } from 'react-router-dom';
 
 const styles = theme => ({
     homepageDiv: {
@@ -44,7 +45,7 @@ class Homepage extends React.Component {
                 <Navbar />
                 <div className={classes.homepageSpacingDiv}>
                     <Links />
-                    <h1 className={classes.homepageText}>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'rel="noopener noreferrer">Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Baseball Reference</a>.  Then, all the data can be found in one location.  All 2020 projected stats are from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.<br /><br />Catchers will be released first, and then other positions will be added as they are completed.  All players in the database are projected for at least 100 plate appearances, 10 starts, or 40 innings in 2020.</h1>
+                    <h1 className={classes.homepageText}>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'rel="noopener noreferrer">Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Baseball Reference</a>.  Then, all the data can be found in one location.  All 2020 projected stats are from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.<br /><br />Catchers will be released first, and then other positions will be added as they are completed.  All players in the database are projected for at least 100 plate appearances, 10 starts, or 40 innings in 2020.<br/><br/>A glossary explaing all the stats used can be found <Link to='/glossary' className={classes.websiteLinks}>here</Link>.</h1>
                     <Links />
                 </div>
             </div>
