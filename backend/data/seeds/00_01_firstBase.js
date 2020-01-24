@@ -1207,7 +1207,7 @@ exports.seed = function (knex, Promise) {
             'currentTeam': '',
             'imageURL': '',
             'primaryPosition': 'First Base',
-            'otherPositions': '',
+            'otherPositions': 'Second Base',
             'GamesPlayed2017': 0,
             'BA2017': 0,
             'OBP2017': 0,
