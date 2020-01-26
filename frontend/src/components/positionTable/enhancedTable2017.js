@@ -229,8 +229,8 @@ export default function EnhancedTable(props) {
                                                 <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.POBP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );
                                     }
