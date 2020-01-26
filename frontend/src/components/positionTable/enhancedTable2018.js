@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index };
+function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
+    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -45,10 +45,12 @@ const headCells = [
     { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
     { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
     { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
-    { id: 'runs', numeric: true, label: 'Runs', info: 'Runs' },
+    { id: 'Runs', numeric: true, label: 'Runs', info: 'Runs' },
     { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
     { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
+    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
+    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
 ];
 
 function EnhancedTableHead(props) {
@@ -134,7 +136,7 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('FWAR');
+    const [orderBy, setOrderBy] = React.useState('POBP');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
@@ -143,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2018, player.BA2018, player.OBP2018, player.HR2018, player.Runs2018, player.RBI2018, player.StolenBases2018, player.FWAR2018,player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
             )))
         }
         else {
@@ -222,10 +224,12 @@ export default function EnhancedTable(props) {
                                                 <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.runs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );
                                     }
