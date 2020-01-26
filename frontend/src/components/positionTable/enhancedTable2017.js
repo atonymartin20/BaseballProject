@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index) {
-    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, id, index };
+function createData(name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, PROF, id, index) {
+    return { name, PAs, AVG, OBP, HR, runs, RBIs, SBs, FWAR, PROF, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -49,6 +49,7 @@ const headCells = [
     { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
     { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
+    { id: 'PROF', numeric: true, label: 'PROF', info: 'PROF Fantasy Based Statistic' },
 ];
 
 function EnhancedTableHead(props) {
@@ -143,7 +144,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (5 * player.HR2017) + (8 * player.StolenBases2017) + ((player.PA2017 * player.BA2017) / 3)) / 8), player.id, index)
             )))
         }
         else {
@@ -226,6 +227,7 @@ export default function EnhancedTable(props) {
                                                 <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PROF}</TableCell>
                                             </TableRow>
                                         );
                                     }
