@@ -9,7 +9,7 @@ exports.seed = function (knex, Promise) {
             'throws': '',
             'currentTeam': '',
             'imageURL': '',
-            'primaryPosition': '',
+            'primaryPosition': 'Outfield',
             'otherPositions': '',
             'GamesPlayed2017': 0,
             'BA2017': 0,
