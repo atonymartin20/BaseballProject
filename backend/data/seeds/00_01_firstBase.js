@@ -3059,7 +3059,6 @@ exports.seed = function (knex, Promise) {
             'SteamerSBProjection': 0,
             'SteamerFWARProjection': 0,
         },
-        v
         {
             // id
             'firstName': '',
