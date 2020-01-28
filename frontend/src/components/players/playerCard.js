@@ -518,6 +518,18 @@ class PlayerCard extends React.Component {
                                         >
                                             FWAR
                                         </TableCell>
+                                        <TableCell
+                                            key='traditionalStatsPAVG'
+                                            className={classes.tableCell}
+                                        >
+                                            PAVG
+                                        </TableCell>
+                                        <TableCell
+                                            key='traditionalStatsPOBP'
+                                            className={classes.tableCell}
+                                        >
+                                            POBP
+                                        </TableCell>
                                     </TableRow>
                                 </TableHead>
 
