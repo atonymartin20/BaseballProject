@@ -222,6 +222,26 @@ class Homepage extends React.Component {
                                     <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
                                     <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
                                 </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='PAVG'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>PAVG</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='POBP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>POBP</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
+                                </TableRow>
                             </TableBody>
                         </Table>
                     </TableContainer>
@@ -645,6 +665,3 @@ class Homepage extends React.Component {
 }
 
 export default withStyles(styles)(Homepage);
-
-// Need to Add PAVG
-// Need to Add POBP
