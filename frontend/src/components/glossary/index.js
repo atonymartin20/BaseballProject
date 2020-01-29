@@ -229,7 +229,7 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>PAVG</TableCell>
-                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>PROF Fantasy Based Statistic Using Average</TableCell>
                                     <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
                                 </TableRow>
 
@@ -239,7 +239,7 @@ class Homepage extends React.Component {
                                     className={classes.tableRow}
                                 >
                                     <TableCell component="th" scope="row" className={classes.tableCell}>POBP</TableCell>
-                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>PROF Fantasy Based Statistic Using On Base Percentage</TableCell>
                                     <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
                                 </TableRow>
                             </TableBody>
