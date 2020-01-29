@@ -222,6 +222,26 @@ class Homepage extends React.Component {
                                     <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
                                     <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
                                 </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='PAVG'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>PAVG</TableCell>
+                                    <TableCell className={classes.tableCell}>PROF Fantasy Based Statistic Using Average</TableCell>
+                                    <TableCell className={classes.tableCell}>My Fantasy Baseball Statistic which helps to rate players based on their Batting Average, Home Runs, Runs, RBIs, and Stolen Bases.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='POBP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>POBP</TableCell>
+                                    <TableCell className={classes.tableCell}>PROF Fantasy Based Statistic Using On Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>My Fantasy Baseball Statistic which helps to rate players based on their On Base Percentage, Home Runs, Runs, RBIs, and Stolen Bases.</TableCell>
+                                </TableRow>
                             </TableBody>
                         </Table>
                     </TableContainer>

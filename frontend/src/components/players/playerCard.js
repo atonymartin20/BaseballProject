@@ -518,6 +518,18 @@ class PlayerCard extends React.Component {
                                         >
                                             FWAR
                                         </TableCell>
+                                        <TableCell
+                                            key='traditionalStatsPAVG'
+                                            className={classes.tableCell}
+                                        >
+                                            PAVG
+                                        </TableCell>
+                                        <TableCell
+                                            key='traditionalStatsPOBP'
+                                            className={classes.tableCell}
+                                        >
+                                            POBP
+                                        </TableCell>
                                     </TableRow>
                                 </TableHead>
 
@@ -540,6 +552,8 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCell}>{RBI2017}</TableCell>
                                             <TableCell className={classes.tableCell}>{StolenBases2017}</TableCell>
                                             <TableCell className={classes.tableCell}>{FWAR2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * BA2017))) / 6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * OBP2017))) / 6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     ) : null}
 
@@ -561,6 +575,8 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCell}>{RBI2018}</TableCell>
                                             <TableCell className={classes.tableCell}>{StolenBases2018}</TableCell>
                                             <TableCell className={classes.tableCell}>{FWAR2018}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2018 + RBI2018 + (6 * HR2018) + (6.5 * StolenBases2018) + ((PA2018 * BA2018))) / 6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2018 + RBI2018 + (6 * HR2018) + (6.5 * StolenBases2018) + ((PA2018 * OBP2018))) / 6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     ) : null}
 
@@ -576,6 +592,8 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCellNoPA}>League</TableCell>
                                             <TableCell className={classes.tableCellNoPA}>At</TableCell>
                                             <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
@@ -603,6 +621,8 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCell}>{RBI2019}</TableCell>
                                             <TableCell className={classes.tableCell}>{StolenBases2019}</TableCell>
                                             <TableCell className={classes.tableCell}>{FWAR2019}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2019 + RBI2019 + (6 * HR2019) + (6.5 * StolenBases2019) + ((PA2019 * BA2019))) / 6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((Runs2019 + RBI2019 + (6 * HR2019) + (6.5 * StolenBases2019) + ((PA2019 * OBP2019))) / 6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     ) : null}
 
@@ -618,6 +638,8 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCellNoPA}>League</TableCell>
                                             <TableCell className={classes.tableCellNoPA}>At</TableCell>
                                             <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
                                             <TableCell className={classes.tableCellNoPA}></TableCell>
@@ -643,6 +665,8 @@ class PlayerCard extends React.Component {
                                         <TableCell className={classes.tableCell}>{SteamerRBIProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerAVGProjection))) / 6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerOBPProjection))) / 6).toFixed(1)}</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
