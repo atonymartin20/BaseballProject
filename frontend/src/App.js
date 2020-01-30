@@ -32,6 +32,12 @@ class App extends React.Component {
                     <Route path='/firstBase/:id' render={props =>
                         <PlayerCard {...props} />
                     } />
+                    <Route exact path='/secondBase'>
+                        <SecondBase />
+                    </Route>
+                    <Route path='/secondBase/:id' render={props =>
+                        <PlayerCard {...props} />
+                    } />
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
