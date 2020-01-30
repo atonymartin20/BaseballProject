@@ -27,6 +27,9 @@ class App extends React.Component {
                     <Route exact path='/firstBase'>
                         <FirstBase />
                     </Route>
+                    <Route path='/firstBase/:id' render={props =>
+                        <PlayerCard {...props} />
+                    } />
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
