@@ -59,6 +59,12 @@ class App extends React.Component {
                     <Route path='/outfield/:id' render={props =>
                         <PlayerCard {...props} />
                     } />
+                    <Route exact path='/designatedHitter'>
+                        <DesignatedHitter />
+                    </Route>
+                    <Route path='/designatedHitter/:id' render={props =>
+                        <PlayerCard {...props} />
+                    } />
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
