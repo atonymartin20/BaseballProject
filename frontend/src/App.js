@@ -6,6 +6,9 @@ import Catchers from './components/positions/catchers.js';
 import FirstBase from './components/positions/firstBase.js';
 import SecondBase from './components/positions/secondBase.js';
 import ThirdBase from './components/positions/thirdBase.js';
+import ShortStop from './components/positions/shortStop.js';
+import Outfield from './components/positions/outfield.js';
+import DesignatedHitter from './components/positions/designatedHitter.js';
 import PlayerCard from './components/players/playerCard.js';
 import Glossary from './components/glossary';
 
