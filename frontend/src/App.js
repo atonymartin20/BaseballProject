@@ -47,6 +47,13 @@ class App extends React.Component {
                     <Route path='/thirdBase/:id' render={props =>
                         <PlayerCard {...props} />
                     } />
+                    <Route exact path='/shortStop'>
+                        <ShortStop />
+                    </Route>
+                    <Route path='/shortStop/:id' render={props =>
+                        <PlayerCard {...props} />
+                    } />
+
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
