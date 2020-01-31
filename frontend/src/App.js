@@ -74,6 +74,12 @@ class App extends React.Component {
                     <Route path='/startingPitcher/:id' render={props =>
                         <PitcherPlayerCard {...props} />
                     } />
+                    <Route exact path='/reliefPitcher'>
+                        <ReliefPitchers />
+                    </Route>
+                    <Route path='/reliefPitcher/:id' render={props =>
+                        <PitcherPlayerCard {...props} />
+                    } />
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
