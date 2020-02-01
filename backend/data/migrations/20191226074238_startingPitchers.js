@@ -12,7 +12,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('otherPositions', 50);
         startingPitchers.integer('Games2017');
         startingPitchers.integer('GamesStarted2017');
-        startingPitchers.string('InningsPitched2017', 50);
+        startingPitchers.decimal('InningsPitched2017', 8, 2);
         startingPitchers.decimal('InningsPitchedPerGameStarted2017', 8, 2);
         startingPitchers.integer('QS2017', 50);
         startingPitchers.decimal('ERA2017', 8, 2);
@@ -57,7 +57,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('FWAR2017', 8, 1);
         startingPitchers.integer('Games2018');
         startingPitchers.integer('GamesStarted2018');
-        startingPitchers.string('InningsPitched2018', 50);
+        startingPitchers.decimal('InningsPitched2018', 8, 2);
         startingPitchers.decimal('InningsPitchedPerGameStarted2018', 8, 2);
         startingPitchers.integer('QS2018', 50);
         startingPitchers.decimal('ERA2018', 8, 2);
@@ -102,7 +102,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('FWAR2018', 8, 1);
         startingPitchers.integer('Games2019');
         startingPitchers.integer('GamesStarted2019');
-        startingPitchers.string('InningsPitched2019', 50);
+        startingPitchers.decimal('InningsPitched2019', 8, 2);
         startingPitchers.decimal('InningsPitchedPerGameStarted2019', 8, 2);
         startingPitchers.integer('QS2019', 50);
         startingPitchers.decimal('ERA2019', 8, 2);
@@ -147,7 +147,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('FWAR2019', 8, 1);
         startingPitchers.integer('SteamerGamesProjection');
         startingPitchers.integer('SteamerGamesStartedProjection');
-        startingPitchers.string('SteamerInningsPitchedProjection', 50);
+        startingPitchers.decimal('SteamerInningsPitchedProjection', 8, 2);
         startingPitchers.decimal('SteamerERAProjection', 8, 2);
         startingPitchers.decimal('SteamerFIPProjection', 8, 2);
         startingPitchers.decimal('SteamerxFIPProjection', 8, 2);

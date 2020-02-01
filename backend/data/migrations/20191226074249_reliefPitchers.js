@@ -12,7 +12,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('otherPositions', 50);
         reliefPitchers.integer('Games2017');
         reliefPitchers.integer('GamesStarted2017');
-        reliefPitchers.string('InningsPitched2017', 50);
+        reliefPitchers.decimal('InningsPitched2017', 8, 2);
         reliefPitchers.decimal('InningsPitchedPerGameStarted2017', 8, 2);
         reliefPitchers.integer('QS2017', 50);
         reliefPitchers.decimal('ERA2017', 8, 2);
@@ -57,7 +57,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('FWAR2017', 8, 1);
         reliefPitchers.integer('Games2018');
         reliefPitchers.integer('GamesStarted2018');
-        reliefPitchers.string('InningsPitched2018', 50);
+        reliefPitchers.decimal('InningsPitched2018', 8, 2);
         reliefPitchers.decimal('InningsPitchedPerGameStarted2018', 8, 2);
         reliefPitchers.integer('QS2018', 50);
         reliefPitchers.decimal('ERA2018', 8, 2);
@@ -102,7 +102,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('FWAR2018', 8, 1);
         reliefPitchers.integer('Games2019');
         reliefPitchers.integer('GamesStarted2019');
-        reliefPitchers.string('InningsPitched2019', 50);
+        reliefPitchers.decimal('InningsPitched2019', 8, 2);
         reliefPitchers.decimal('InningsPitchedPerGameStarted2019', 8, 2);
         reliefPitchers.integer('QS2019', 50);
         reliefPitchers.decimal('ERA2019', 8, 2);
@@ -147,7 +147,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('FWAR2019', 8, 1);
         reliefPitchers.integer('SteamerGamesProjection');
         reliefPitchers.integer('SteamerGamesStartedProjection');
-        reliefPitchers.string('SteamerInningsPitchedProjection', 50);
+        reliefPitchers.decimal('SteamerInningsPitchedProjection', 8, 2);
         reliefPitchers.decimal('SteamerERAProjection', 8, 2);
         reliefPitchers.decimal('SteamerFIPProjection', 8, 2);
         reliefPitchers.decimal('SteamerxFIPProjection', 8, 2);
