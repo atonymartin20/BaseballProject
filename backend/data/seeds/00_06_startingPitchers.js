@@ -148,6 +148,7 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesProjection': 0,
             'SteamerGamesStartedProjection': 0,
             'SteamerInningsPitchedProjection': 0.0,
+            'SteamerQSProjection': 0.0,
             'SteamerERAProjection': 0.0,
             'SteamerFIPProjection': 0.0,
             'SteamerxFIPProjection': 0.0,
