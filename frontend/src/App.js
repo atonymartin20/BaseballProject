@@ -9,7 +9,10 @@ import ThirdBase from './components/positions/thirdBase.js';
 import ShortStop from './components/positions/shortStop.js';
 import Outfield from './components/positions/outfield.js';
 import DesignatedHitter from './components/positions/designatedHitter.js';
+import StartingPitchers from './components/positions/startingPitchers.js';
+import ReliefPitchers from './components/positions/reliefPitchers.js';
 import PlayerCard from './components/players/playerCard.js';
+import PitcherPlayerCard from './components/players/pitcherPlayerCard.js';
 import Glossary from './components/glossary';
 
 class App extends React.Component {
@@ -64,6 +67,18 @@ class App extends React.Component {
                     </Route>
                     <Route path='/designatedHitter/:id' render={props =>
                         <PlayerCard {...props} />
+                    } />
+                    <Route exact path='/startingPitcher'>
+                        <StartingPitchers />
+                    </Route>
+                    <Route path='/startingPitcher/:id' render={props =>
+                        <PitcherPlayerCard {...props} />
+                    } />
+                    <Route exact path='/reliefPitcher'>
+                        <ReliefPitchers />
+                    </Route>
+                    <Route path='/reliefPitcher/:id' render={props =>
+                        <PitcherPlayerCard {...props} />
                     } />
                     <Route exact path='/glossary'>
                         <Glossary />
