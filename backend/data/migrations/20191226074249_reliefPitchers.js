@@ -40,6 +40,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('SoftContactPercent2017', 50);
         reliefPitchers.string('MediumContactPercent2017', 50);
         reliefPitchers.string('HardContactPercent2017', 50);
+        reliefPitchers.string('FirstStrikePercent2017', 50);
         reliefPitchers.decimal('ExitVelo2017', 8, 1);
         reliefPitchers.decimal('FlyBallLineDriveExitVelo2017', 8, 1);
         reliefPitchers.string('BarrelPercent2017', 50);
@@ -85,6 +86,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('SoftContactPercent2018', 50);
         reliefPitchers.string('MediumContactPercent2018', 50);
         reliefPitchers.string('HardContactPercent2018', 50);
+        reliefPitchers.string('FirstStrikePercent2018', 50);
         reliefPitchers.decimal('ExitVelo2018', 8, 1);
         reliefPitchers.decimal('FlyBallLineDriveExitVelo2018', 8, 1);
         reliefPitchers.string('BarrelPercent2018', 50);
@@ -130,6 +132,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.string('SoftContactPercent2019', 50);
         reliefPitchers.string('MediumContactPercent2019', 50);
         reliefPitchers.string('HardContactPercent2019', 50);
+        reliefPitchers.string('FirstStrikePercent2019', 50);
         reliefPitchers.decimal('ExitVelo2019', 8, 1);
         reliefPitchers.decimal('FlyBallLineDriveExitVelo2019', 8, 1);
         reliefPitchers.string('BarrelPercent2019', 50);

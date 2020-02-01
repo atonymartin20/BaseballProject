@@ -40,6 +40,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('SoftContactPercent2017', 50);
         startingPitchers.string('MediumContactPercent2017', 50);
         startingPitchers.string('HardContactPercent2017', 50);
+        startingPitchers.string('FirstStrikePercent2017', 50);
         startingPitchers.decimal('ExitVelo2017', 8, 1);
         startingPitchers.decimal('FlyBallLineDriveExitVelo2017', 8, 1);
         startingPitchers.string('BarrelPercent2017', 50);
@@ -85,6 +86,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('SoftContactPercent2018', 50);
         startingPitchers.string('MediumContactPercent2018', 50);
         startingPitchers.string('HardContactPercent2018', 50);
+        startingPitchers.string('FirstStrikePercent2018', 50);
         startingPitchers.decimal('ExitVelo2018', 8, 1);
         startingPitchers.decimal('FlyBallLineDriveExitVelo2018', 8, 1);
         startingPitchers.string('BarrelPercent2018', 50);
@@ -130,6 +132,7 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('SoftContactPercent2019', 50);
         startingPitchers.string('MediumContactPercent2019', 50);
         startingPitchers.string('HardContactPercent2019', 50);
+        startingPitchers.string('FirstStrikePercent2019', 50);
         startingPitchers.decimal('ExitVelo2019', 8, 1);
         startingPitchers.decimal('FlyBallLineDriveExitVelo2019', 8, 1);
         startingPitchers.string('BarrelPercent2019', 50);
