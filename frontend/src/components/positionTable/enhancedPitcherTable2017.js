@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PitcherPlayerCard from '../players/pitcherPlayerCard.js';
 
-function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, SIERA, Saves, FWAR, PTotal, id, index) {
-    return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, SIERA, Saves, FWAR, PTotal, id, index };
+function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -48,7 +48,7 @@ const headCells = [
 
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
     { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
-    { id: 'SIERA', numeric: true, label: 'SIERA', info: 'SIERA' },
+    { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched'},
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
     { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
@@ -143,12 +143,10 @@ export default function EnhancedTable(props) {
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
-    name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, SIERA, Saves, FWAR, PTotal, 
-    
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.Games2017, player.InningsPitched2017, player.QS2017, player.KPer92017, player.ERA2017, player.FIP2017, player.WHIP2017, player.Saves2017, player.FWAR2017, (((4 * player.QS2017) + ((player.InningsPitched2017 / player.KPer92017) * 2) + (2 * player.Saves2017) + ((player.InningsPitched2017 / player.WHIP2017) / 3) + ((player.InningsPitched2017 / player.ERA2017) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -223,16 +221,16 @@ export default function EnhancedTable(props) {
                                                 <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
                                                     {row.name}
                                                 </TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.KPer9}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FIP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.WHIP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.Saves}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PTotal.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );
                                     }
