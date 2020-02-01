@@ -143,10 +143,10 @@ export default function EnhancedTable(props) {
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.InningsPitched2017, player.QS2017, player.KPer92017, player.ERA2017, player.FIP2017, player.WHIP2017, player.Saves2017, player.FWAR2017, (((4 * player.QS2017) + ((player.InningsPitched2017 / player.KPer92017) * 2) + (2 * player.Saves2017) + ((player.InningsPitched2017 / player.WHIP2017) / 3) + ((player.InningsPitched2017 / player.ERA2017) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.SteamerInningsPitchedProjection, player.SteamerQSProjection, player.SteamerKPer9Projection, player.SteamerERAProjection, player.SteamerFIPProjection, player.SteamerWHIPProjection, player.SteamerSavesProjection, player.SteamerFWARProjection, (((4 * player.SteamerQSProjection) + ((player.SteamerInningsPitchedProjection/ player.SteamerKPer9Projection) * 2) + (2 * player.SteamerSavesProjection) + ((player.SteamerInningsPitchedProjection / player.SteamerWHIPProjection) / 3) + ((player.SteamerInningsPitchedProjection / player.SteamerERAProjection) / 3)) / 6), player.id, index)
             )))
         }
         else {
