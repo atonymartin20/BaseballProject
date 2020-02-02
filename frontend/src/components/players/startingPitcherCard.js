@@ -294,176 +294,176 @@ class StartingPitcherCard extends React.Component {
         SteamerLOBPercentProjection: '',
         SteamerFWARProjection: 0.0,
         traditionalStats: true,
-        battedBallStats: false,
+        opponentContactStats: false,
         expectedStats: false,
-        baseRunningStats: false,
+        pitchUsageStats: false,
         labelValue: 'traditionalStats',
     }
 
     componentDidMount() {
-        const foundIndex = this.context.state.catchers.findIndex(x => x.id === this.props.id);
+        const foundIndex = this.context.state.startingpitchers.findIndex(x => x.id === this.props.id);
         this.setState({
-            firstName: this.context.state.catchers[foundIndex].firstName,
-            lastName: this.context.state.catchers[foundIndex].lastName,
-            birthday: this.context.state.catchers[foundIndex].birthday,
-            bats: this.context.state.catchers[foundIndex].bats,
-            throws: this.context.state.catchers[foundIndex].throws,
-            currentTeam: this.context.state.catchers[foundIndex].currentTeam,
-            imageURL: this.context.state.catchers[foundIndex].imageURL,
-            primaryPosition: this.context.state.catchers[foundIndex].primaryPosition,
-            otherPositions: this.context.state.catchers[foundIndex].otherPositions,
-            Games2017: 0,
-            GamesStarted2017: 0,
-            InningsPitched2017: 0.0,
-            InningsPitchedPerGameStarted2017: 0.0,
-            QS2017: 0,
-            ERA2017: 0.0,
-            ERAPlus2017: 0,
-            FIP2017: 0.0,
-            xFIP2017: 0.0,
-            SIERA2017: 0.0,
-            WHIP2017: 0.0,
-            HitsPer92017: 0.0,
-            HRsPer92017: 0.0,
-            BBPer92017: 0.0,
-            KPer92017: 0.0,
-            KDividedByBB2017: 0.0,
-            Saves2017: 0,
-            KPercent2017: '',
-            BBPercent2017: '',
-            KMinusBBPercent2017: '',
-            BABIP2017: .0,
-            LOBPercent2017: '',
-            HRPerFBPercent2017: '',
-            GBPercent2017: '',
-            LDPercent2017: '',
-            FBPercent2017: '',
-            IFFBPercent2017: '',
-            SoftContactPercent2017: '',
-            MediumContactPercent2017: '',
-            HardContactPercent2017: '',
-            FirstStrikePercent2017: '',
-            ExitVelo2017: 0.0,
-            FlyBallLineDriveExitVelo2017: 0.0,
-            BarrelPercent2017: '',
-            LaunchAngle2017: 0.0,
-            AVGFastballVelo2017: 0.0,
-            MaxFastballVelo2017: 0.0,
-            FourSeamFastballUsagePercent2017: '',
-            SinkerUsagePercent2017: '',
-            CutterUsagePercent2017: '',
-            SliderUsagePercent2017: '',
-            ChangeupUsagePercent2017: '',
-            CurveUsagePercent2017: '',
-            SplitterUsagePercent2017: '',
-            KnuckleCurveUsagePercent2017: '',
-            FWAR2017: 0.0,
-            Games2018: 0,
-            GamesStarted2018: 0,
-            InningsPitched2018: 0.0,
-            InningsPitchedPerGameStarted2018: 0.0,
-            QS2018: 0,
-            ERA2018: 0.0,
-            ERAPlus2018: 0,
-            FIP2018: 0.0,
-            xFIP2018: 0.0,
-            SIERA2018: 0.0,
-            WHIP2018: 0.0,
-            HitsPer92018: 0.0,
-            HRsPer92018: 0.0,
-            BBPer92018: 0.0,
-            KPer92018: 0.0,
-            KDividedByBB2018: 0.0,
-            Saves2018: 0,
-            KPercent2018: '',
-            BBPercent2018: '',
-            KMinusBBPercent2018: '',
-            BABIP2018: .0,
-            LOBPercent2018: '',
-            HRPerFBPercent2018: '',
-            GBPercent2018: '',
-            LDPercent2018: '',
-            FBPercent2018: '',
-            IFFBPercent2018: '',
-            SoftContactPercent2018: '',
-            MediumContactPercent2018: '',
-            HardContactPercent2018: '',
-            FirstStrikePercent2018: '',
-            ExitVelo2018: 0.0,
-            FlyBallLineDriveExitVelo2018: 0.0,
-            BarrelPercent2018: '',
-            LaunchAngle2018: 0.0,
-            AVGFastballVelo2018: 0.0,
-            MaxFastballVelo2018: 0.0,
-            FourSeamFastballUsagePercent2018: '',
-            SinkerUsagePercent2018: '',
-            CutterUsagePercent2018: '',
-            SliderUsagePercent2018: '',
-            ChangeupUsagePercent2018: '',
-            CurveUsagePercent2018: '',
-            SplitterUsagePercent2018: '',
-            KnuckleCurveUsagePercent2018: '',
-            FWAR2018: 0.0,
-            Games2019: 0,
-            GamesStarted2019: 0,
-            InningsPitched2019: 0.0,
-            InningsPitchedPerGameStarted2019: 0.0,
-            QS2019: 0,
-            ERA2019: 0.0,
-            ERAPlus2019: 0,
-            FIP2019: 0.0,
-            xFIP2019: 0.0,
-            SIERA2019: 0.0,
-            WHIP2019: 0.0,
-            HitsPer92019: 0.0,
-            HRsPer92019: 0.0,
-            BBPer92019: 0.0,
-            KPer92019: 0.0,
-            KDividedByBB2019: 0.0,
-            Saves2019: 0,
-            KPercent2019: '',
-            BBPercent2019: '',
-            KMinusBBPercent2019: '',
-            BABIP2019: .0,
-            LOBPercent2019: '',
-            HRPerFBPercent2019: '',
-            GBPercent2019: '',
-            LDPercent2019: '',
-            FBPercent2019: '',
-            IFFBPercent2019: '',
-            SoftContactPercent2019: '',
-            MediumContactPercent2019: '',
-            HardContactPercent2019: '',
-            FirstStrikePercent2019: '',
-            ExitVelo2019: 0.0,
-            FlyBallLineDriveExitVelo2019: 0.0,
-            BarrelPercent2019: '',
-            LaunchAngle2019: 0.0,
-            AVGFastballVelo2019: 0.0,
-            MaxFastballVelo2019: 0.0,
-            FourSeamFastballUsagePercent2019: '',
-            SinkerUsagePercent2019: '',
-            CutterUsagePercent2019: '',
-            SliderUsagePercent2019: '',
-            ChangeupUsagePercent2019: '',
-            CurveUsagePercent2019: '',
-            SplitterUsagePercent2019: '',
-            KnuckleCurveUsagePercent2019: '',
-            FWAR2019: 0.0,
-            SteamerGamesProjection: 0,
-            SteamerGamesStartedProjection: 0,
-            SteamerInningsPitchedProjection: 0.0,
-            SteamerQSProjection: 0.0,
-            SteamerERAProjection: 0.0,
-            SteamerFIPProjection: 0.0,
-            SteamerxFIPProjection: 0.0,
-            SteamerSIERAProjection: 0.0,
-            SteamerWHIPProjection: 0.0,
-            SteamerKPer9Projection: 0.0,
-            SteamerSavesProjection: 0,
-            SteamerBABIPProjection: .0,
-            SteamerLOBPercentProjection: '',
-            SteamerFWARProjection: 0.0,
+            firstName: this.context.state.startingpitchers[foundIndex].firstName,
+            lastName: this.context.state.startingpitchers[foundIndex].lastName,
+            birthday: this.context.state.startingpitchers[foundIndex].birthday,
+            bats: this.context.state.startingpitchers[foundIndex].bats,
+            throws: this.context.state.startingpitchers[foundIndex].throws,
+            currentTeam: this.context.state.startingpitchers[foundIndex].currentTeam,
+            imageURL: this.context.state.startingpitchers[foundIndex].imageURL,
+            primaryPosition: this.context.state.startingpitchers[foundIndex].primaryPosition,
+            otherPositions: this.context.state.startingpitchers[foundIndex].otherPositions,
+            Games2017: this.context.state.startingpitchers[foundIndex].Games2017,
+            GamesStarted2017: this.context.state.startingpitchers[foundIndex].GamesStarted2017,
+            InningsPitched2017: this.context.state.startingpitchers[foundIndex].InningsPitched2017,
+            InningsPitchedPerGameStarted2017: this.context.state.startingpitchers[foundIndex].InningsPitchedPerGameStarted2017,
+            QS2017: this.context.state.startingpitchers[foundIndex].QS2017,
+            ERA2017: this.context.state.startingpitchers[foundIndex].ERA2017,
+            ERAPlus2017: this.context.state.startingpitchers[foundIndex].ERAPlus2017,
+            FIP2017: this.context.state.startingpitchers[foundIndex].FIP2017,
+            xFIP2017: this.context.state.startingpitchers[foundIndex].xFIP2017,
+            SIERA2017: this.context.state.startingpitchers[foundIndex].SIERA2017,
+            WHIP2017: this.context.state.startingpitchers[foundIndex].WHIP2017,
+            HitsPer92017: this.context.state.startingpitchers[foundIndex].HitsPer92017,
+            HRsPer92017: this.context.state.startingpitchers[foundIndex].HRsPer92017,
+            BBPer92017: this.context.state.startingpitchers[foundIndex].BBPer92017,
+            KPer92017: this.context.state.startingpitchers[foundIndex].KPer92017,
+            KDividedByBB2017: this.context.state.startingpitchers[foundIndex].KDividedByBB2017,
+            Saves2017: this.context.state.startingpitchers[foundIndex].Saves2017,
+            KPercent2017: this.context.state.startingpitchers[foundIndex].KPercent2017,
+            BBPercent2017: this.context.state.startingpitchers[foundIndex].BBPercent2017,
+            KMinusBBPercent2017: this.context.state.startingpitchers[foundIndex].KMinusBBPercent2017,
+            BABIP2017: this.context.state.startingpitchers[foundIndex].BABIP2017,
+            LOBPercent2017: this.context.state.startingpitchers[foundIndex].LOBPercent2017,
+            HRPerFBPercent2017: this.context.state.startingpitchers[foundIndex].HRPerFBPercent2017,
+            GBPercent2017: this.context.state.startingpitchers[foundIndex].GBPercent2017,
+            LDPercent2017: this.context.state.startingpitchers[foundIndex].LDPercent2017,
+            FBPercent2017: this.context.state.startingpitchers[foundIndex].FBPercent2017,
+            IFFBPercent2017: this.context.state.startingpitchers[foundIndex].IFFBPercent2017,
+            SoftContactPercent2017: this.context.state.startingpitchers[foundIndex].SoftContactPercent2017,
+            MediumContactPercent2017: this.context.state.startingpitchers[foundIndex].MediumContactPercent2017,
+            HardContactPercent2017: this.context.state.startingpitchers[foundIndex].HardContactPercent2017,
+            FirstStrikePercent2017: this.context.state.startingpitchers[foundIndex].FirstStrikePercent2017,
+            ExitVelo2017: this.context.state.startingpitchers[foundIndex].ExitVelo2017,
+            FlyBallLineDriveExitVelo2017: this.context.state.startingpitchers[foundIndex].FlyBallLineDriveExitVelo2017,
+            BarrelPercent2017: this.context.state.startingpitchers[foundIndex].BarrelPercent2017,
+            LaunchAngle2017: this.context.state.startingpitchers[foundIndex].LaunchAngle2017,
+            AVGFastballVelo2017: this.context.state.startingpitchers[foundIndex].AVGFastballVelo2017,
+            MaxFastballVelo2017: this.context.state.startingpitchers[foundIndex].MaxFastballVelo2017,
+            FourSeamFastballUsagePercent2017: this.context.state.startingpitchers[foundIndex].FourSeamFastballUsagePercent2017,
+            SinkerUsagePercent2017: this.context.state.startingpitchers[foundIndex].SinkerUsagePercent2017,
+            CutterUsagePercent2017: this.context.state.startingpitchers[foundIndex].CutterUsagePercent2017,
+            SliderUsagePercent2017: this.context.state.startingpitchers[foundIndex].SliderUsagePercent2017,
+            ChangeupUsagePercent2017: this.context.state.startingpitchers[foundIndex].ChangeupUsagePercent2017,
+            CurveUsagePercent2017: this.context.state.startingpitchers[foundIndex].CurveUsagePercent2017,
+            SplitterUsagePercent2017: this.context.state.startingpitchers[foundIndex].SplitterUsagePercent2017,
+            KnuckleCurveUsagePercent2017: this.context.state.startingpitchers[foundIndex].KnuckleCurveUsagePercent2017,
+            FWAR2017: this.context.state.startingpitchers[foundIndex].FWAR2017,
+            Games2018: this.context.state.startingpitchers[foundIndex].Games2018,
+            GamesStarted2018: this.context.state.startingpitchers[foundIndex].GamesStarted2018,
+            InningsPitched2018: this.context.state.startingpitchers[foundIndex].InningsPitched2018,
+            InningsPitchedPerGameStarted2018: this.context.state.startingpitchers[foundIndex].InningsPitchedPerGameStarted2018,
+            QS2018: this.context.state.startingpitchers[foundIndex].QS2018,
+            ERA2018: this.context.state.startingpitchers[foundIndex].ERA2018,
+            ERAPlus2018: this.context.state.startingpitchers[foundIndex].ERAPlus2018,
+            FIP2018: this.context.state.startingpitchers[foundIndex].FIP2018,
+            xFIP2018: this.context.state.startingpitchers[foundIndex].xFIP2018,
+            SIERA2018: this.context.state.startingpitchers[foundIndex].SIERA2018,
+            WHIP2018: this.context.state.startingpitchers[foundIndex].WHIP2018,
+            HitsPer92018: this.context.state.startingpitchers[foundIndex].HitsPer92018,
+            HRsPer92018: this.context.state.startingpitchers[foundIndex].HRsPer92018,
+            BBPer92018: this.context.state.startingpitchers[foundIndex].BBPer92018,
+            KPer92018: this.context.state.startingpitchers[foundIndex].KPer92018,
+            KDividedByBB2018: this.context.state.startingpitchers[foundIndex].KDividedByBB2018,
+            Saves2018: this.context.state.startingpitchers[foundIndex].Saves2018,
+            KPercent2018: this.context.state.startingpitchers[foundIndex].KPercent2018,
+            BBPercent2018: this.context.state.startingpitchers[foundIndex].BBPercent2018,
+            KMinusBBPercent2018: this.context.state.startingpitchers[foundIndex].KMinusBBPercent2018,
+            BABIP2018: this.context.state.startingpitchers[foundIndex].BABIP2018,
+            LOBPercent2018: this.context.state.startingpitchers[foundIndex].LOBPercent2018,
+            HRPerFBPercent2018: this.context.state.startingpitchers[foundIndex].HRPerFBPercent2018,
+            GBPercent2018: this.context.state.startingpitchers[foundIndex].GBPercent2018,
+            LDPercent2018: this.context.state.startingpitchers[foundIndex].LDPercent2018,
+            FBPercent2018: this.context.state.startingpitchers[foundIndex].FBPercent2018,
+            IFFBPercent2018: this.context.state.startingpitchers[foundIndex].IFFBPercent2018,
+            SoftContactPercent2018: this.context.state.startingpitchers[foundIndex].SoftContactPercent2018,
+            MediumContactPercent2018: this.context.state.startingpitchers[foundIndex].MediumContactPercent2018,
+            HardContactPercent2018: this.context.state.startingpitchers[foundIndex].HardContactPercent2018,
+            FirstStrikePercent2018: this.context.state.startingpitchers[foundIndex].FirstStrikePercent2018,
+            ExitVelo2018: this.context.state.startingpitchers[foundIndex].ExitVelo2018,
+            FlyBallLineDriveExitVelo2018: this.context.state.startingpitchers[foundIndex].FlyBallLineDriveExitVelo2018,
+            BarrelPercent2018: this.context.state.startingpitchers[foundIndex].BarrelPercent2018,
+            LaunchAngle2018: this.context.state.startingpitchers[foundIndex].LaunchAngle2018,
+            AVGFastballVelo2018: this.context.state.startingpitchers[foundIndex].AVGFastballVelo2018,
+            MaxFastballVelo2018: this.context.state.startingpitchers[foundIndex].MaxFastballVelo2018,
+            FourSeamFastballUsagePercent2018: this.context.state.startingpitchers[foundIndex].FourSeamFastballUsagePercent2018,
+            SinkerUsagePercent2018: this.context.state.startingpitchers[foundIndex].SinkerUsagePercent2018,
+            CutterUsagePercent2018: this.context.state.startingpitchers[foundIndex].CutterUsagePercent2018,
+            SliderUsagePercent2018: this.context.state.startingpitchers[foundIndex].SliderUsagePercent2018,
+            ChangeupUsagePercent2018: this.context.state.startingpitchers[foundIndex].ChangeupUsagePercent2018,
+            CurveUsagePercent2018: this.context.state.startingpitchers[foundIndex].CurveUsagePercent2018,
+            SplitterUsagePercent2018: this.context.state.startingpitchers[foundIndex].SplitterUsagePercent2018,
+            KnuckleCurveUsagePercent2018: this.context.state.startingpitchers[foundIndex].KnuckleCurveUsagePercent2018,
+            FWAR2018: this.context.state.startingpitchers[foundIndex].FWAR2018,
+            Games2019: this.context.state.startingpitchers[foundIndex].Games2019,
+            GamesStarted2019: this.context.state.startingpitchers[foundIndex].GamesStarted2019,
+            InningsPitched2019: this.context.state.startingpitchers[foundIndex].InningsPitched2019,
+            InningsPitchedPerGameStarted2019: this.context.state.startingpitchers[foundIndex].InningsPitchedPerGameStarted2019,
+            QS2019: this.context.state.startingpitchers[foundIndex].QS2019,
+            ERA2019: this.context.state.startingpitchers[foundIndex].ERA2019,
+            ERAPlus2019: this.context.state.startingpitchers[foundIndex].ERAPlus2019,
+            FIP2019: this.context.state.startingpitchers[foundIndex].FIP2019,
+            xFIP2019: this.context.state.startingpitchers[foundIndex].xFIP2019,
+            SIERA2019: this.context.state.startingpitchers[foundIndex].SIERA2019,
+            WHIP2019: this.context.state.startingpitchers[foundIndex].WHIP2019,
+            HitsPer92019: this.context.state.startingpitchers[foundIndex].HitsPer92019,
+            HRsPer92019: this.context.state.startingpitchers[foundIndex].HRsPer92019,
+            BBPer92019: this.context.state.startingpitchers[foundIndex].BBPer92019,
+            KPer92019: this.context.state.startingpitchers[foundIndex].KPer92019,
+            KDividedByBB2019: this.context.state.startingpitchers[foundIndex].KDividedByBB2019,
+            Saves2019: this.context.state.startingpitchers[foundIndex].Saves2019,
+            KPercent2019: this.context.state.startingpitchers[foundIndex].KPercent2019,
+            BBPercent2019: this.context.state.startingpitchers[foundIndex].BBPercent2019,
+            KMinusBBPercent2019: this.context.state.startingpitchers[foundIndex].KMinusBBPercent2019,
+            BABIP2019: this.context.state.startingpitchers[foundIndex].BABIP2019,
+            LOBPercent2019: this.context.state.startingpitchers[foundIndex].LOBPercent2019,
+            HRPerFBPercent2019: this.context.state.startingpitchers[foundIndex].HRPerFBPercent2019,
+            GBPercent2019: this.context.state.startingpitchers[foundIndex].GBPercent2019,
+            LDPercent2019: this.context.state.startingpitchers[foundIndex].LDPercent2019,
+            FBPercent2019: this.context.state.startingpitchers[foundIndex].FBPercent2019,
+            IFFBPercent2019: this.context.state.startingpitchers[foundIndex].IFFBPercent2019,
+            SoftContactPercent2019: this.context.state.startingpitchers[foundIndex].SoftContactPercent2019,
+            MediumContactPercent2019: this.context.state.startingpitchers[foundIndex].MediumContactPercent2019,
+            HardContactPercent2019: this.context.state.startingpitchers[foundIndex].HardContactPercent2019,
+            FirstStrikePercent2019: this.context.state.startingpitchers[foundIndex].FirstStrikePercent2019,
+            ExitVelo2019: this.context.state.startingpitchers[foundIndex].ExitVelo2019,
+            FlyBallLineDriveExitVelo2019: this.context.state.startingpitchers[foundIndex].FlyBallLineDriveExitVelo2019,
+            BarrelPercent2019: this.context.state.startingpitchers[foundIndex].BarrelPercent2019,
+            LaunchAngle2019: this.context.state.startingpitchers[foundIndex].LaunchAngle2019,
+            AVGFastballVelo2019: this.context.state.startingpitchers[foundIndex].AVGFastballVelo2019,
+            MaxFastballVelo2019: this.context.state.startingpitchers[foundIndex].MaxFastballVelo2019,
+            FourSeamFastballUsagePercent2019: this.context.state.startingpitchers[foundIndex].FourSeamFastballUsagePercent2019,
+            SinkerUsagePercent2019: this.context.state.startingpitchers[foundIndex].SinkerUsagePercent2019,
+            CutterUsagePercent2019: this.context.state.startingpitchers[foundIndex].CutterUsagePercent2019,
+            SliderUsagePercent2019: this.context.state.startingpitchers[foundIndex].SliderUsagePercent2019,
+            ChangeupUsagePercent2019: this.context.state.startingpitchers[foundIndex].ChangeupUsagePercent2019,
+            CurveUsagePercent2019: this.context.state.startingpitchers[foundIndex].CurveUsagePercent2019,
+            SplitterUsagePercent2019: this.context.state.startingpitchers[foundIndex].SplitterUsagePercent2019,
+            KnuckleCurveUsagePercent2019: this.context.state.startingpitchers[foundIndex].KnuckleCurveUsagePercent2019,
+            FWAR2019: this.context.state.startingpitchers[foundIndex].FWAR2019,
+            SteamerGamesProjection: this.context.state.startingpitchers[foundIndex].SteamerGamesProjection,
+            SteamerGamesStartedProjection: this.context.state.startingpitchers[foundIndex].SteamerGamesStartedProjection,
+            SteamerInningsPitchedProjection: this.context.state.startingpitchers[foundIndex].SteamerInningsPitchedProjection,
+            SteamerQSProjection: this.context.state.startingpitchers[foundIndex].SteamerQSProjection,
+            SteamerERAProjection: this.context.state.startingpitchers[foundIndex].SteamerERAProjection,
+            SteamerFIPProjection: this.context.state.startingpitchers[foundIndex].SteamerFIPProjection,
+            SteamerxFIPProjection: this.context.state.startingpitchers[foundIndex].SteamerxFIPProjection,
+            SteamerSIERAProjection: this.context.state.startingpitchers[foundIndex].SteamerSIERAProjection,
+            SteamerWHIPProjection: this.context.state.startingpitchers[foundIndex].SteamerWHIPProjection,
+            SteamerKPer9Projection: this.context.state.startingpitchers[foundIndex].SteamerKPer9Projection,
+            SteamerSavesProjection: this.context.state.startingpitchers[foundIndex].SteamerSavesProjection,
+            SteamerBABIPProjection: this.context.state.startingpitchers[foundIndex].SteamerBABIPProjection,
+            SteamerLOBPercentProjection: this.context.state.startingpitchers[foundIndex].SteamerLOBPercentProjection,
+            SteamerFWARProjection: this.context.state.startingpitchers[foundIndex].SteamerFWARProjection,
         })
     }
 
@@ -471,9 +471,9 @@ class StartingPitcherCard extends React.Component {
         event.preventDefault();
         this.setState({
             traditionalStats: false,
-            battedBallStats: false,
+            opponentContactStats: false,
             expectedStats: false,
-            baseRunningStats: false,
+            pitchUsageStats: false,
         })
         this.setState({
             labelValue: [event.target.value],
@@ -483,7 +483,7 @@ class StartingPitcherCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, traditionalStats, battedBallStats, expectedStats, baseRunningStats, labelValue } = this.state;
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, KPercent2017, BBPercent2017, KMinusBBPercent2017, BABIP2017, LOBPercent2017, HRPerFBPercent2017, GBPercent2017, LDPercent2017, FBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, BarrelPercent2017, LaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, FWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, KPercent2018, BBPercent2018, KMinusBBPercent2018, BABIP2018, LOBPercent2018, HRPerFBPercent2018, GBPercent2018, LDPercent2018, FBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, BarrelPercent2018, LaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, FWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, KPercent2019, BBPercent2019, KMinusBBPercent2019, BABIP2019, LOBPercent2019, HRPerFBPercent2019, GBPercent2019, LDPercent2019, FBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, BarrelPercent2019, LaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, FWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerxFIPProjection, SteamerSIERAProjection, SteamerWHIPProjection, SteamerKPer9Projection, SteamerSavesProjection, SteamerBABIPProjection, SteamerLOBPercentProjection, SteamerFWARProjection, traditionalStats, opponentContactStats, expectedStats, pitchUsageStats, labelValue } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -509,6 +509,13 @@ class StartingPitcherCard extends React.Component {
                                             className={classes.tableCell}
                                         >
                                             Games Played
+                                        </TableCell>
+
+                                        <TableCell
+                                            key='traditionalStatsGamesPlayed'
+                                            className={classes.tableCell}
+                                        >
+                                            Starts
                                         </TableCell>
 
                                         <TableCell
@@ -737,7 +744,7 @@ class StartingPitcherCard extends React.Component {
                 ) : null
                 }
 
-                {battedBallStats ? (
+                {opponentContactStats ? (
                     <div>
                         <TableContainer>
                             <Table
@@ -748,112 +755,112 @@ class StartingPitcherCard extends React.Component {
                                 <TableHead>
                                     <TableRow className={classes.tableRow}>
                                         <TableCell
-                                            key='battedBallStatsYear'
+                                            key='opponentContactStatsYear'
                                             className={classes.tableCell}
                                         >
                                             Year
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsGBPercent'
+                                            key='opponentContactStatsGBPercent'
                                             className={classes.tableCell}
                                         >
                                             GB%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsLDPercent'
+                                            key='opponentContactStatsLDPercent'
                                             className={classes.tableCell}
                                         >
                                             LD%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsFBPercent'
+                                            key='opponentContactStatsFBPercent'
                                             className={classes.tableCell}
                                         >
                                             FB%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsPullPercent'
+                                            key='opponentContactStatsPullPercent'
                                             className={classes.tableCell}
                                         >
                                             Pull%
                                         </TableCell>
 
                                         <TableCell
-                                            key='tbattedBallStatsCenterPercent'
+                                            key='topponentContactStatsCenterPercent'
                                             className={classes.tableCell}
                                         >
                                             Center%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsOppoPercent'
+                                            key='opponentContactStatsOppoPercent'
                                             className={classes.tableCell}
                                         >
                                             Oppo%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsHRPerFB'
+                                            key='opponentContactStatsHRPerFB'
                                             className={classes.tableCell}
                                         >
                                             HR/FB
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsHardHitPercent'
+                                            key='opponentContactStatsHardHitPercent'
                                             className={classes.tableCell}
                                         >
                                             Hard Hit%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsExitVelo'
+                                            key='opponentContactStatsExitVelo'
                                             className={classes.tableCell}
                                         >
                                             Exit Velo
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsFlyBallLineDriveExitVelo'
+                                            key='opponentContactStatsFlyBallLineDriveExitVelo'
                                             className={classes.tableCell}
                                         >
                                             FB/LD Exit Velo
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsLaunchAngle'
+                                            key='opponentContactStatsLaunchAngle'
                                             className={classes.tableCell}
                                         >
                                             Launch Angle
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsBarrelPercent'
+                                            key='opponentContactStatsBarrelPercent'
                                             className={classes.tableCell}
                                         >
                                             Barrel%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsAvgHRDistance'
+                                            key='opponentContactStatsAvgHRDistance'
                                             className={classes.tableCell}
                                         >
                                             AVG HR Dist
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsChaseRate'
+                                            key='opponentContactStatsChaseRate'
                                             className={classes.tableCell}
                                         >
                                             Chase%
                                         </TableCell>
 
                                         <TableCell
-                                            key='battedBallStatsContactPercent'
+                                            key='opponentContactStatsContactPercent'
                                             className={classes.tableCell}
                                         >
                                             Contact%
@@ -1217,7 +1224,7 @@ class StartingPitcherCard extends React.Component {
                 ) : null
                 }
 
-                {baseRunningStats ? (
+                {pitchUsageStats ? (
                     <div>
                         <TableContainer>
                             <Table
@@ -1228,28 +1235,28 @@ class StartingPitcherCard extends React.Component {
                                 <TableHead>
                                     <TableRow className={classes.tableRow}>
                                         <TableCell
-                                            key='baseRunningStatsYear'
+                                            key='pitchUsageStatsYear'
                                             className={classes.tableCell}
                                         >
                                             Year
                                         </TableCell>
 
                                         <TableCell
-                                            key='baseRunningStatsSprintSpeed'
+                                            key='pitchUsageStatsSprintSpeed'
                                             className={classes.tableCell}
                                         >
                                             SprintSpeed
                                         </TableCell>
 
                                         <TableCell
-                                            key='baseRunningStatsStolenBases'
+                                            key='pitchUsageStatsStolenBases'
                                             className={classes.tableCell}
                                         >
                                             SBs
                                         </TableCell>
 
                                         <TableCell
-                                            key='baseRunningStatsStolenBasePercent'
+                                            key='pitchUsageStatsStolenBasePercent'
                                             className={classes.tableCell}
                                         >
                                             SB%
@@ -1353,16 +1360,16 @@ class StartingPitcherCard extends React.Component {
                         <FormControl>
                             <Select classes={{ root: classes.selectText }} onChange={this.cardDataChange} value={labelValue}>
                                 <MenuItem classes={{ root: classes.selectText, }} value='traditionalStats'>Traditional Data</MenuItem>
-                                <MenuItem classes={{ root: classes.selectText, }} value="battedBallStats">Batted Ball Data</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="opponentContactStats">Batted Ball Data</MenuItem>
                                 <MenuItem classes={{ root: classes.selectText, }} value="expectedStats">Expected Stats</MenuItem>
-                                <MenuItem classes={{ root: classes.selectText, }} value="baseRunningStats">Base Running Stats</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="pitchUsageStats">Base Running Stats</MenuItem>
                             </Select>
                         </FormControl>
 
                         {playerCard}
-                        {battedBallStats}
+                        {opponentContactStats}
                         {expectedStats}
-                        {baseRunningStats}
+                        {pitchUsageStats}
                     </div>
                 </Card>
             </>
