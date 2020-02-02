@@ -129,7 +129,7 @@ const styles = theme => ({
     },
 });
 
-class PlayerCard extends React.Component {
+class ShortStopCard extends React.Component {
     state = {
         id: this.props.id,
         firstName: '',
@@ -666,7 +666,7 @@ class PlayerCard extends React.Component {
                                         <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerAVGProjection))) / 6).toFixed(1)}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerOBPProjection))) / 6).toFixed(1)}</TableCell>
+                                        <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerOBPProjection))) / 6).toFixed(1)}</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
@@ -1308,6 +1308,6 @@ class PlayerCard extends React.Component {
     }
 }
 
-PlayerCard.contextType = AppContext;
+ShortStopCard.contextType = AppContext;
 
-export default withStyles(styles)(PlayerCard);
+export default withStyles(styles)(ShortStopCard);

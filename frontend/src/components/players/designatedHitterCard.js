@@ -129,7 +129,7 @@ const styles = theme => ({
     },
 });
 
-class PlayerCard extends React.Component {
+class DesignatedHitterCard extends React.Component {
     state = {
         id: this.props.id,
         firstName: '',
@@ -1308,6 +1308,6 @@ class PlayerCard extends React.Component {
     }
 }
 
-PlayerCard.contextType = AppContext;
+DesignatedHitterCard.contextType = AppContext;
 
-export default withStyles(styles)(PlayerCard);
+export default withStyles(styles)(DesignatedHitterCard);
