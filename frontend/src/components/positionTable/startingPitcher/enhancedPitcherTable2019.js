@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import StartingPitcherCard from '../../players/startingPitcherCard.js';
 
-function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
-    return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
+function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -44,8 +44,7 @@ const headCells = [
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
     { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
-    { id: 'KPer9', numeric: true, label: 'K/9', info: 'K Per 9' },
-
+    { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
     { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched'},
@@ -146,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.Games2019, player.InningsPitched2019, player.QS2019, player.KPer92019, player.ERA2019, player.FIP2019, player.WHIP2019, player.Saves2019, player.FWAR2019, (((4 * player.QS2019) + ((player.InningsPitched2019 / player.KPer92019) * 2) + (2 * player.Saves2019) + ((player.InningsPitched2019 / player.WHIP2019) / 3) + ((player.InningsPitched2019 / player.ERA2019) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.Games2019, player.InningsPitched2019, player.QS2019, player.RawKs2019, player.ERA2019, player.FIP2019, player.WHIP2019, player.Saves2019, player.FWAR2019, (((4 * player.QS2019) + (player.RawKs2019 / 3) + (2 * player.Saves2019) + ((player.InningsPitched2019 / player.WHIP2019) / 3) + ((player.InningsPitched2019 / player.ERA2019) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -224,7 +223,7 @@ export default function EnhancedTable(props) {
                                                 <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.KPer9}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FIP}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.WHIP}</TableCell>
