@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PitcherPlayerCard from '../players/pitcherPlayerCard.js';
+import StartingPitcherCard from '../../players/startingPitcherCard.js';
 
 function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
     return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
@@ -146,7 +146,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.Games2017, player.InningsPitched2017, player.QS2017, player.KPer92017, player.ERA2017, player.FIP2017, player.WHIP2017, player.Saves2017, player.FWAR2017, (((4 * player.QS2017) + ((player.InningsPitched2017 / player.KPer92017) * 2) + (2 * player.Saves2017) + ((player.InningsPitched2017 / player.WHIP2017) / 3) + ((player.InningsPitched2017 / player.ERA2017) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.Games2019, player.InningsPitched2019, player.QS2019, player.KPer92019, player.ERA2019, player.FIP2019, player.WHIP2019, player.Saves2019, player.FWAR2019, (((4 * player.QS2019) + ((player.InningsPitched2019 / player.KPer92019) * 2) + (2 * player.Saves2019) + ((player.InningsPitched2019 / player.WHIP2019) / 3) + ((player.InningsPitched2019 / player.ERA2019) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -185,7 +185,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <PitcherPlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <StartingPitcherCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table

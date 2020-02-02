@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PitcherPlayerCard from '../players/pitcherPlayerCard.js';
+import ReliefPitcherCard from '../../players/reliefPitcherCard.js';
 
 function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
     return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
@@ -185,7 +185,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <PitcherPlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <ReliefPitcherCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table

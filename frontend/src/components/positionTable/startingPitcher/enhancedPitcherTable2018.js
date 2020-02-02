@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PitcherPlayerCard from '../players/pitcherPlayerCard.js';
+import StartingPitcherCard from '../../players/startingPitcherCard.js';
 
 function createData(name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
     return { name, Games, InningsPitched, QualityStarts, KPer9, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
@@ -48,7 +48,7 @@ const headCells = [
 
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
     { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
-    { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched'},
+    { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
     { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
@@ -185,7 +185,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <PitcherPlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <StartingPitcherCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
