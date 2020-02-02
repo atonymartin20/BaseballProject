@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import CatcherCard from '../../players/catcherCard.js';
+import FirstBaseCard from '../../players/firstBaseCard.js';
 
 function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
     return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.PA2018, player.BA2018, player.OBP2018, player.HR2018, player.Runs2018, player.RBI2018, player.StolenBases2018, player.FWAR2018, ((player.Runs2018 + player.RBI2018 + (6 * player.HR2018) + (6.5 * player.StolenBases2018) + ((player.PA2018 * player.BA2018))) / 6), ((player.Runs2018 + player.RBI2018 + (6 * player.HR2018) + (6.5 * player.StolenBases2018) + ((player.PA2018 * player.OBP2018))) / 6),player.id, index)
             )))
         }
         else {
@@ -184,7 +184,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <CatcherCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <FirstBaseCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
