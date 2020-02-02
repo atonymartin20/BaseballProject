@@ -6,10 +6,10 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import EnhancedTable2020 from '../positionTable/enhancedTable2020.js';
-import EnhancedTable2019 from '../positionTable/enhancedTable2019.js';
-import EnhancedTable2018 from '../positionTable/enhancedTable2018.js';
-import EnhancedTable2017 from '../positionTable/enhancedTable2017.js';
+import EnhancedTable2020 from '../positionTable/secondBase/enhancedTable2020.js';
+import EnhancedTable2019 from '../positionTable/secondBase/enhancedTable2019.js';
+import EnhancedTable2018 from '../positionTable/secondBase/enhancedTable2018.js';
+import EnhancedTable2017 from '../positionTable/secondBase/enhancedTable2017.js';
 
 
 const styles = theme => ({
