@@ -152,6 +152,7 @@ class StartingPitcherCard extends React.Component {
         xFIP2017: 0.0,
         SIERA2017: 0.0,
         WHIP2017: 0.0,
+        RawKs2017: 0,
         HitsPer92017: 0.0,
         HRsPer92017: 0.0,
         BBPer92017: 0.0,
@@ -198,6 +199,7 @@ class StartingPitcherCard extends React.Component {
         xFIP2018: 0.0,
         SIERA2018: 0.0,
         WHIP2018: 0.0,
+        RawKs2018: 0,
         HitsPer92018: 0.0,
         HRsPer92018: 0.0,
         BBPer92018: 0.0,
@@ -244,6 +246,7 @@ class StartingPitcherCard extends React.Component {
         xFIP2019: 0.0,
         SIERA2019: 0.0,
         WHIP2019: 0.0,
+        RawKs2019: 0,
         HitsPer92019: 0.0,
         HRsPer92019: 0.0,
         BBPer92019: 0.0,
@@ -288,14 +291,15 @@ class StartingPitcherCard extends React.Component {
         SteamerxFIPProjection: 0.0,
         SteamerSIERAProjection: 0.0,
         SteamerWHIPProjection: 0.0,
+        SteamerRawKsProjection: 0,
         SteamerKPer9Projection: 0.0,
         SteamerSavesProjection: 0,
         SteamerBABIPProjection: .0,
         SteamerLOBPercentProjection: '',
         SteamerFWARProjection: 0.0,
         traditionalStats: true,
+        advancedStats: false,
         opponentContactStats: false,
-        expectedStats: false,
         pitchUsageStats: false,
         labelValue: 'traditionalStats',
     }
@@ -323,6 +327,7 @@ class StartingPitcherCard extends React.Component {
             xFIP2017: this.context.state.startingpitchers[foundIndex].xFIP2017,
             SIERA2017: this.context.state.startingpitchers[foundIndex].SIERA2017,
             WHIP2017: this.context.state.startingpitchers[foundIndex].WHIP2017,
+            RawKs2017: this.context.state.startingPitchers[foundIndex].RawKs2017,
             HitsPer92017: this.context.state.startingpitchers[foundIndex].HitsPer92017,
             HRsPer92017: this.context.state.startingpitchers[foundIndex].HRsPer92017,
             BBPer92017: this.context.state.startingpitchers[foundIndex].BBPer92017,
@@ -369,6 +374,7 @@ class StartingPitcherCard extends React.Component {
             xFIP2018: this.context.state.startingpitchers[foundIndex].xFIP2018,
             SIERA2018: this.context.state.startingpitchers[foundIndex].SIERA2018,
             WHIP2018: this.context.state.startingpitchers[foundIndex].WHIP2018,
+            RawKs2018: this.context.state.startingPitchers[foundIndex].RawKs2018,
             HitsPer92018: this.context.state.startingpitchers[foundIndex].HitsPer92018,
             HRsPer92018: this.context.state.startingpitchers[foundIndex].HRsPer92018,
             BBPer92018: this.context.state.startingpitchers[foundIndex].BBPer92018,
@@ -415,6 +421,7 @@ class StartingPitcherCard extends React.Component {
             xFIP2019: this.context.state.startingpitchers[foundIndex].xFIP2019,
             SIERA2019: this.context.state.startingpitchers[foundIndex].SIERA2019,
             WHIP2019: this.context.state.startingpitchers[foundIndex].WHIP2019,
+            RawKs2019: this.context.state.startingPitchers[foundIndex].RawKs2019,
             HitsPer92019: this.context.state.startingpitchers[foundIndex].HitsPer92019,
             HRsPer92019: this.context.state.startingpitchers[foundIndex].HRsPer92019,
             BBPer92019: this.context.state.startingpitchers[foundIndex].BBPer92019,
@@ -459,6 +466,7 @@ class StartingPitcherCard extends React.Component {
             SteamerxFIPProjection: this.context.state.startingpitchers[foundIndex].SteamerxFIPProjection,
             SteamerSIERAProjection: this.context.state.startingpitchers[foundIndex].SteamerSIERAProjection,
             SteamerWHIPProjection: this.context.state.startingpitchers[foundIndex].SteamerWHIPProjection,
+            SteamerRawKsProjection: this.context.state.startingPitchers[foundIndex].SteamerRawKsProjection,
             SteamerKPer9Projection: this.context.state.startingpitchers[foundIndex].SteamerKPer9Projection,
             SteamerSavesProjection: this.context.state.startingpitchers[foundIndex].SteamerSavesProjection,
             SteamerBABIPProjection: this.context.state.startingpitchers[foundIndex].SteamerBABIPProjection,
@@ -471,8 +479,8 @@ class StartingPitcherCard extends React.Component {
         event.preventDefault();
         this.setState({
             traditionalStats: false,
+            advancedStats: false,
             opponentContactStats: false,
-            expectedStats: false,
             pitchUsageStats: false,
         })
         this.setState({
@@ -483,7 +491,7 @@ class StartingPitcherCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, KPercent2017, BBPercent2017, KMinusBBPercent2017, BABIP2017, LOBPercent2017, HRPerFBPercent2017, GBPercent2017, LDPercent2017, FBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, BarrelPercent2017, LaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, FWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, KPercent2018, BBPercent2018, KMinusBBPercent2018, BABIP2018, LOBPercent2018, HRPerFBPercent2018, GBPercent2018, LDPercent2018, FBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, BarrelPercent2018, LaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, FWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, KPercent2019, BBPercent2019, KMinusBBPercent2019, BABIP2019, LOBPercent2019, HRPerFBPercent2019, GBPercent2019, LDPercent2019, FBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, BarrelPercent2019, LaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, FWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerxFIPProjection, SteamerSIERAProjection, SteamerWHIPProjection, SteamerKPer9Projection, SteamerSavesProjection, SteamerBABIPProjection, SteamerLOBPercentProjection, SteamerFWARProjection, traditionalStats, opponentContactStats, expectedStats, pitchUsageStats, labelValue } = this.state;
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, KPercent2017, BBPercent2017, KMinusBBPercent2017, BABIP2017, LOBPercent2017, HRPerFBPercent2017, GBPercent2017, LDPercent2017, FBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, BarrelPercent2017, LaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, FWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, KPercent2018, BBPercent2018, KMinusBBPercent2018, BABIP2018, LOBPercent2018, HRPerFBPercent2018, GBPercent2018, LDPercent2018, FBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, BarrelPercent2018, LaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, FWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, KPercent2019, BBPercent2019, KMinusBBPercent2019, BABIP2019, LOBPercent2019, HRPerFBPercent2019, GBPercent2019, LDPercent2019, FBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, BarrelPercent2019, LaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, FWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerxFIPProjection, SteamerSIERAProjection, SteamerWHIPProjection, SteamerRawKsProjection, SteamerKPer9Projection, SteamerSavesProjection, SteamerBABIPProjection, SteamerLOBPercentProjection, SteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -512,73 +520,59 @@ class StartingPitcherCard extends React.Component {
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsGamesPlayed'
+                                            key='traditionalStatsStarts'
                                             className={classes.tableCell}
                                         >
                                             Starts
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsPAs'
+                                            key='traditionalStatsInningsPitched'
                                             className={classes.tableCell}
                                         >
-                                            PAs
+                                            Innings Pitched
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsBA'
+                                            key='traditionalStatsQS'
                                             className={classes.tableCell}
                                         >
-                                            BA
+                                            QS
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsOBP'
+                                            key='traditionalStatsRawKs'
                                             className={classes.tableCell}
                                         >
-                                            OBP
+                                            Ks
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsSLG'
+                                            key='traditionalStatsERA'
                                             className={classes.tableCell}
                                         >
-                                            SLG
+                                            ERA
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsDoubles'
+                                            key='traditionalStatsWHIP'
                                             className={classes.tableCell}
                                         >
-                                            Doubles
+                                            WHIP
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsHRs'
+                                            key='traditionalStatsLOBPercent'
                                             className={classes.tableCell}
                                         >
-                                            HRs
+                                            LOB%
                                         </TableCell>
 
                                         <TableCell
-                                            key='traditionalStatsRuns'
+                                            key='traditionalSaves'
                                             className={classes.tableCell}
                                         >
-                                            Runs
-                                        </TableCell>
-
-                                        <TableCell
-                                            key='traditionalStatsRBIs'
-                                            className={classes.tableCell}
-                                        >
-                                            RBIs
-                                        </TableCell>
-
-                                        <TableCell
-                                            key='traditionalStatsSBs'
-                                            className={classes.tableCell}
-                                        >
-                                            SBs
+                                            Saves
                                         </TableCell>
 
                                         <TableCell
@@ -587,17 +581,13 @@ class StartingPitcherCard extends React.Component {
                                         >
                                             FWAR
                                         </TableCell>
+
+
                                         <TableCell
-                                            key='traditionalStatsPAVG'
+                                            key='traditionalStatsPTotal'
                                             className={classes.tableCell}
                                         >
-                                            PAVG
-                                        </TableCell>
-                                        <TableCell
-                                            key='traditionalStatsPOBP'
-                                            className={classes.tableCell}
-                                        >
-                                            POBP
+                                            PTotal
                                         </TableCell>
                                     </TableRow>
                                 </TableHead>
@@ -610,18 +600,16 @@ class StartingPitcherCard extends React.Component {
                                             className={classes.tableRow}
                                         >
                                             <TableCell component="th" scope="row" className={classes.tableCell}>2017</TableCell>
-                                            <TableCell className={classes.tableCell}>{GamesPlayed2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{PA2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{BA2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{OBP2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SLG2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{Doubles2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{HR2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{Runs2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{RBI2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{StolenBases2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Games2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{GamesStarted2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{InningsPitched2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{QS2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{RawKs2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{ERA2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{WHIP2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{LOBPercent2017}</TableCell>
+                                            <TableCell className={classes.tableCell}>{Saves2017}</TableCell>
                                             <TableCell className={classes.tableCell}>{FWAR2017}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * BA2017))) / 6).toFixed(1)}</TableCell>
                                             <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * OBP2017))) / 6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     ) : null}
@@ -1002,7 +990,7 @@ class StartingPitcherCard extends React.Component {
                 ) : null
                 }
 
-                {expectedStats ? (
+                {advancedStats ? (
                     <div>
                         <TableContainer>
                             <Table
@@ -1013,91 +1001,91 @@ class StartingPitcherCard extends React.Component {
                                 <TableHead>
                                     <TableRow className={classes.tableRow}>
                                         <TableCell
-                                            key='expectedStatsYear'
+                                            key='advancedStatsYear'
                                             className={classes.tableCell}
                                         >
                                             Year
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsBA'
+                                            key='advancedStatsBA'
                                             className={classes.tableCell}
                                         >
                                             BA
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsxBA'
+                                            key='advancedStatsxBA'
                                             className={classes.tableCell}
                                         >
                                             xBA
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsBABIP'
+                                            key='advancedStatsBABIP'
                                             className={classes.tableCell}
                                         >
                                             BABIP
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsOBP'
+                                            key='advancedStatsOBP'
                                             className={classes.tableCell}
                                         >
                                             OBP
                                         </TableCell>
 
                                         <TableCell
-                                            key='texpectedStatsSLG'
+                                            key='tadvancedStatsSLG'
                                             className={classes.tableCell}
                                         >
                                             SLG
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsWOBA'
+                                            key='advancedStatsWOBA'
                                             className={classes.tableCell}
                                         >
                                             WOBA
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsxWOBA'
+                                            key='advancedStatsxWOBA'
                                             className={classes.tableCell}
                                         >
                                             xWOBA
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsLineupSlot'
+                                            key='advancedStatsLineupSlot'
                                             className={classes.tableCell}
                                         >
                                             Lineup Slot
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsWRCPlus'
+                                            key='advancedStatsWRCPlus'
                                             className={classes.tableCell}
                                         >
                                             WRC+
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsOPSPlus'
+                                            key='advancedStatsOPSPlus'
                                             className={classes.tableCell}
                                         >
                                             OPS+
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsBBPercent'
+                                            key='advancedStatsBBPercent'
                                             className={classes.tableCell}
                                         >
                                             BB%
                                         </TableCell>
 
                                         <TableCell
-                                            key='expectedStatsKPercent'
+                                            key='advancedStatsKPercent'
                                             className={classes.tableCell}
                                         >
                                             K%
@@ -1361,14 +1349,14 @@ class StartingPitcherCard extends React.Component {
                             <Select classes={{ root: classes.selectText }} onChange={this.cardDataChange} value={labelValue}>
                                 <MenuItem classes={{ root: classes.selectText, }} value='traditionalStats'>Traditional Data</MenuItem>
                                 <MenuItem classes={{ root: classes.selectText, }} value="opponentContactStats">Batted Ball Data</MenuItem>
-                                <MenuItem classes={{ root: classes.selectText, }} value="expectedStats">Expected Stats</MenuItem>
+                                <MenuItem classes={{ root: classes.selectText, }} value="advancedStats">Expected Stats</MenuItem>
                                 <MenuItem classes={{ root: classes.selectText, }} value="pitchUsageStats">Base Running Stats</MenuItem>
                             </Select>
                         </FormControl>
 
                         {playerCard}
                         {opponentContactStats}
-                        {expectedStats}
+                        {advancedStats}
                         {pitchUsageStats}
                     </div>
                 </Card>
