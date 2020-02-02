@@ -25,6 +25,14 @@ import Glossary from './components/glossary';
 class App extends React.Component {
     componentDidMount() {
         this.context.getCatchers();
+        this.context.getFirstBase();
+        this.context.getSecondBase();
+        this.context.getThirdBase();
+        this.context.getShortStop();
+        this.context.getOutfield();
+        this.context.getDesignatedHitters();
+        this.context.getStartingPitchers();
+        this.context.getReliefPitchers();
     }
     render() {
         return (
