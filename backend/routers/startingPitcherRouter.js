@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     startingPitcherModel
-        .getStartingPitcher()
+        .getStartingPitchers()
         .then(startingPitcher => {
             res.json(startingPitcher);
         })
