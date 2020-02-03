@@ -5,6 +5,6 @@ module.exports = {
         return db('firstBase').where({ id }).first();
     },
     getFirstBase() {
-        return db('firstBase').orderBy('SteamerFWARProjection');
+        return db('firstBase');
     }
 }
