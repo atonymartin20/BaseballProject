@@ -11,13 +11,28 @@ import Outfield from './components/positions/outfield.js';
 import DesignatedHitter from './components/positions/designatedHitter.js';
 import StartingPitchers from './components/positions/startingPitchers.js';
 import ReliefPitchers from './components/positions/reliefPitchers.js';
-import PlayerCard from './components/players/playerCard.js';
-import PitcherPlayerCard from './components/players/pitcherPlayerCard.js';
+import CatcherCard from './components/players/catcherCard.js';
+import FirstBaseCard from './components/players/firstBaseCard.js';
+import SecondBaseCard from './components/players/secondBaseCard.js';
+import ShortStopCard from './components/players/shortStopCard.js';
+import ThirdBaseCard from './components/players/thirdBaseCard.js';
+import OutfieldCard from './components/players/outfieldCard.js';
+import DesignatedHitterCard from './components/players/designatedHitterCard.js';
+import StartingPitcherCard from './components/players/startingPitcherCard.js';
+import ReliefPitcherCard from './components/players/reliefPitcherCard.js';
 import Glossary from './components/glossary';
 
 class App extends React.Component {
     componentDidMount() {
         this.context.getCatchers();
+        this.context.getFirstBase();
+        this.context.getSecondBase();
+        this.context.getThirdBase();
+        this.context.getShortStop();
+        this.context.getOutfield();
+        this.context.getDesignatedHitters();
+        this.context.getStartingPitchers();
+        this.context.getReliefPitchers();
     }
     render() {
         return (
@@ -30,55 +45,55 @@ class App extends React.Component {
                         <Catchers />
                     </Route>
                     <Route path='/catchers/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <CatcherCard {...props} />
                     } />
                     <Route exact path='/firstBase'>
                         <FirstBase />
                     </Route>
                     <Route path='/firstBase/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <FirstBaseCard {...props} />
                     } />
                     <Route exact path='/secondBase'>
                         <SecondBase />
                     </Route>
                     <Route path='/secondBase/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <SecondBaseCard {...props} />
                     } />
                     <Route exact path='/thirdBase'>
                         <ThirdBase />
                     </Route>
                     <Route path='/thirdBase/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <ThirdBaseCard {...props} />
                     } />
                     <Route exact path='/shortStop'>
                         <ShortStop />
                     </Route>
                     <Route path='/shortStop/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <ShortStopCard {...props} />
                     } />
                     <Route exact path='/outfield'>
                         <Outfield />
                     </Route>
                     <Route path='/outfield/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <OutfieldCard {...props} />
                     } />
                     <Route exact path='/designatedHitter'>
                         <DesignatedHitter />
                     </Route>
                     <Route path='/designatedHitter/:id' render={props =>
-                        <PlayerCard {...props} />
+                        <DesignatedHitterCard {...props} />
                     } />
                     <Route exact path='/startingPitcher'>
                         <StartingPitchers />
                     </Route>
                     <Route path='/startingPitcher/:id' render={props =>
-                        <PitcherPlayerCard {...props} />
+                        <StartingPitcherCard {...props} />
                     } />
                     <Route exact path='/reliefPitcher'>
                         <ReliefPitchers />
                     </Route>
                     <Route path='/reliefPitcher/:id' render={props =>
-                        <PitcherPlayerCard {...props} />
+                        <ReliefPitcherCard {...props} />
                     } />
                     <Route exact path='/glossary'>
                         <Glossary />

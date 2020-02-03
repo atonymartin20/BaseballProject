@@ -21,6 +21,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('xFIP2017', 8, 2);
         reliefPitchers.decimal('SIERA2017', 8, 2);
         reliefPitchers.decimal('WHIP2017', 8, 2);
+        reliefPitchers.integer('RawKs2017');
         reliefPitchers.decimal('HitsPer92017', 8, 2);
         reliefPitchers.decimal('HRsPer92017', 8, 2);
         reliefPitchers.decimal('BBPer92017', 8, 2);
@@ -67,6 +68,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('xFIP2018', 8, 2);
         reliefPitchers.decimal('SIERA2018', 8, 2);
         reliefPitchers.decimal('WHIP2018', 8, 2);
+        reliefPitchers.integer('RawKs2018');
         reliefPitchers.decimal('HitsPer92018', 8, 2);
         reliefPitchers.decimal('HRsPer92018', 8, 2);
         reliefPitchers.decimal('BBPer92018', 8, 2);
@@ -113,6 +115,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('xFIP2019', 8, 2);
         reliefPitchers.decimal('SIERA2019', 8, 2);
         reliefPitchers.decimal('WHIP2019', 8, 2);
+        reliefPitchers.integer('RawKs2019');
         reliefPitchers.decimal('HitsPer92019', 8, 2);
         reliefPitchers.decimal('HRsPer92019', 8, 2);
         reliefPitchers.decimal('BBPer92019', 8, 2);
@@ -157,6 +160,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('SteamerxFIPProjection', 8, 2);
         reliefPitchers.decimal('SteamerSIERAProjection', 8, 2);
         reliefPitchers.decimal('SteamerWHIPProjection', 8, 2);
+        reliefPitchers.integer('SteamerRawKsProjection');
         reliefPitchers.decimal('SteamerKPer9Projection', 8, 2);
         reliefPitchers.integer('SteamerSavesProjection');
         reliefPitchers.decimal('SteamerBABIPProjection', 8, 3);
