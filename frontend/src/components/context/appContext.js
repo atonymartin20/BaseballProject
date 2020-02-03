@@ -128,7 +128,7 @@ export default class AppProvider extends Component {
                             });
                     },
                     getStartingPitchers: () => {
-                        const endpoint = '/startingPitchers';
+                        const endpoint = '/startingPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
@@ -143,7 +143,7 @@ export default class AppProvider extends Component {
                             });
                     },
                     getReliefPitchers: () => {
-                        const endpoint = '/reliefPitchers';
+                        const endpoint = '/reliefPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
