@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     reliefPitcherModel
-        .getReliefPitcher()
+        .getReliefPitchers()
         .then(reliefPitcher => {
             res.json(reliefPitcher);
         })
