@@ -1331,9 +1331,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 11
+            'firstName': 'Ji-Man',
+            'lastName': 'Choi',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -1464,9 +1464,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 12
+            'firstName': 'Garrett',
+            'lastName': 'Cooper',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -1597,9 +1597,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 13
+            'firstName': 'C.J.',
+            'lastName': 'Cron',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -1730,9 +1730,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 14
+            'firstName': 'Chris',
+            'lastName': 'Davis',
             'birthday': '',
             'bats': '',
             'throws': '',
