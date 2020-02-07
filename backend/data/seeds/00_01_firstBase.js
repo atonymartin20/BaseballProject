@@ -401,7 +401,7 @@ exports.seed = function (knex, Promise) {
         },
         {
             // id 4
-            'firstName': 'Peter',
+            'firstName': 'Pete',
             'lastName': 'Alonso',
             'birthday': '',
             'bats': '',
