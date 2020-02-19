@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import CatcherCard from '../../players/catcherCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
-    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
+function createData(firstName, lastName, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
+    return { firstName, lastName, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
+                createData(player.firstName, player.lastName, player.PA2017, player.BA2017, player.OBP2017, player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, player.FWAR2017, ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
             )))
         }
         else {
@@ -218,7 +218,7 @@ export default function EnhancedTable(props) {
                                                 className={classes.tableRow}
                                             >
                                                 <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
-                                                    {row.name}
+                                                    {row.firstName} {row.lastName}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
