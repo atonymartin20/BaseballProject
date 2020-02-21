@@ -3991,9 +3991,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 31
+            'firstName': 'Brandon',
+            'lastName': 'Lowe',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4124,9 +4124,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 32
+            'firstName': 'Jed',
+            'lastName': 'Lowrie',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4257,9 +4257,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 33
+            'firstName': 'Gavin',
+            'lastName': 'Lux',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4390,9 +4390,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 34
+            'firstName': 'Nick',
+            'lastName': 'Madrigal',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4523,9 +4523,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 35
+            'firstName': 'Ryan',
+            'lastName': 'McMahon',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4656,9 +4656,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 36
+            'firstName': 'Whit',
+            'lastName': 'Merrifield',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4789,9 +4789,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 37
+            'firstName': 'Max',
+            'lastName': 'Muncy',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -4922,9 +4922,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 38
+            'firstName': 'Sheldon',
+            'lastName': 'Neuse',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5055,9 +5055,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 39
+            'firstName': 'Rougned',
+            'lastName': 'Odor',
             'birthday': '',
             'bats': '',
             'throws': '',
@@ -5188,9 +5188,9 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0,
         },
         {
-            // id
-            'firstName': '',
-            'lastName': '',
+            // id 40
+            'firstName': 'Joe',
+            'lastName': 'Panik',
             'birthday': '',
             'bats': '',
             'throws': '',
