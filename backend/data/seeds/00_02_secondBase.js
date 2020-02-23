@@ -6785,3 +6785,5 @@ exports.seed = function (knex, Promise) {
         },
     ]);
 };
+
+// g1
