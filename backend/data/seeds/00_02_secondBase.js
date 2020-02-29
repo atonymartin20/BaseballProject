@@ -6785,5 +6785,3 @@ exports.seed = function (knex, Promise) {
         },
     ]);
 };
-
-// G3
