@@ -6786,4 +6786,4 @@ exports.seed = function (knex, Promise) {
     ]);
 };
 
-// G1
+// G2
