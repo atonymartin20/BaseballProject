@@ -2260,7 +2260,7 @@ exports.seed = function (knex, Promise) {
             'SteamerRBIProjection': 0,
             'SteamerSBProjection': 0,
             'SteamerFWARProjection': 0,
-        },
+        },//G2
         {
             // id 18
             'firstName': 'Dee',
