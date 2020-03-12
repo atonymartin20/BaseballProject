@@ -2317,7 +2317,7 @@ exports.seed = function (knex, Promise) {
             'Doubles2018': 17,
             'HR2018': 4,
             'Runs2018': 62,
-            'RBI2018': .6,
+            'RBI2018': 36,
             'LineupSlot2018': '1st',
             'GBPercent2018': '55.2%',
             'LDPercent2018': '22.4%',
