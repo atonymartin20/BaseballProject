@@ -221,22 +221,21 @@ class Navbar extends React.Component {
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/firstBase' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            First Base
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                First Base
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/secondBase' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            Second Base
+                        <Link to='/secondBase' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Second Base
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         {/* <Link to='/shortStop' className={classes.linkStyling}> */}
