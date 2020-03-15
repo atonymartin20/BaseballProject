@@ -114,7 +114,6 @@ class Navbar extends React.Component {
                         <Link to='/secondBase' className={classes.linkStyling}>
                         <Button
                             className={classes.drawerNavLink}
-                            disabled
                         >
                             2B
                             </Button>
