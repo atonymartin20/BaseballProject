@@ -155,7 +155,7 @@ class Catchers extends React.Component {
 
                 {display2020 ? (
                     <div>
-                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 1/9/2020.</h1>
+                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/15/2020.</h1>
                         <EnhancedTable2020
                             players={this.state.catchers}
                         />

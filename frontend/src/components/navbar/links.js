@@ -129,14 +129,13 @@ class Navbar extends React.Component {
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/thirdBase' className={classes.linkStyling}> */}
+                        <Link to='/thirdBase' className={classes.linkStyling}>
                         <Button
                             className={classes.drawerNavLink}
-                            disabled
                         >
                             3B
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         {/* <Link to='/outfield' className={classes.linkStyling}> */}
