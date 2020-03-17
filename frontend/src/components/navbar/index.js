@@ -256,14 +256,13 @@ class Navbar extends React.Component {
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/outfield' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            Outfield
+                        <Link to='/outfield' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Outfield
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/designatedHitter' className={classes.linkStyling}>
