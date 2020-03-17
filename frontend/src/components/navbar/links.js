@@ -103,59 +103,57 @@ class Navbar extends React.Component {
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/firstBase' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            1B
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                1B
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/secondBase' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            2B
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                2B
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/shortStop' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            SS
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                SS
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/thirdBase' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            3B
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                3B
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/outfield' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            OF
+                        <Link to='/outfield' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                OF
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/designatedHitter' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            DH
+                        <Link to='/designatedHitter' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                DH
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         {/* <Link to='/startingPitcher' className={classes.linkStyling}> */}

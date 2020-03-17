@@ -239,41 +239,39 @@ class Navbar extends React.Component {
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/shortStop' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            Shortstop
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Shortstop
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         <Link to='/thirdBase' className={classes.linkStyling}>
-                        <Button
-                            className={classes.drawerNavLink}
-                        >
-                            Third Base
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Third Base
                             </Button>
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/outfield' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            Outfield
+                        <Link to='/outfield' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Outfield
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/designatedHitter' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            Designated Hitter
+                        <Link to='/designatedHitter' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Designated Hitter
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         {/* <Link to='/startingPitcher' className={classes.linkStyling}> */}
