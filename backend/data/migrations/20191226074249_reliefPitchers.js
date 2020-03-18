@@ -154,7 +154,6 @@ exports.up = function (knex, Promise) {
         reliefPitchers.integer('SteamerGamesProjection');
         reliefPitchers.integer('SteamerGamesStartedProjection');
         reliefPitchers.decimal('SteamerInningsPitchedProjection', 8, 2);
-        reliefPitchers.decimal('SteamerQSProjection', 8, 1);
         reliefPitchers.decimal('SteamerERAProjection', 8, 2);
         reliefPitchers.decimal('SteamerFIPProjection', 8, 2);
         reliefPitchers.decimal('SteamerWHIPProjection', 8, 2);
