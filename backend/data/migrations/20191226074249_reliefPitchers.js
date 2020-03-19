@@ -157,14 +157,10 @@ exports.up = function (knex, Promise) {
         reliefPitchers.decimal('SteamerQSProjection', 8, 1);
         reliefPitchers.decimal('SteamerERAProjection', 8, 2);
         reliefPitchers.decimal('SteamerFIPProjection', 8, 2);
-        reliefPitchers.decimal('SteamerxFIPProjection', 8, 2);
-        reliefPitchers.decimal('SteamerSIERAProjection', 8, 2);
         reliefPitchers.decimal('SteamerWHIPProjection', 8, 2);
         reliefPitchers.integer('SteamerRawKsProjection');
         reliefPitchers.decimal('SteamerKPer9Projection', 8, 2);
         reliefPitchers.integer('SteamerSavesProjection');
-        reliefPitchers.decimal('SteamerBABIPProjection', 8, 3);
-        reliefPitchers.string('SteamerLOBPercentProjection', 50);
         reliefPitchers.decimal('SteamerFWARProjection', 8, 1);
     })
 };

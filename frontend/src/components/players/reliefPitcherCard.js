@@ -288,14 +288,10 @@ class ReliefPitcherCard extends React.Component {
         SteamerQSProjection: 0.0,
         SteamerERAProjection: 0.0,
         SteamerFIPProjection: 0.0,
-        SteamerxFIPProjection: 0.0,
-        SteamerSIERAProjection: 0.0,
         SteamerWHIPProjection: 0.0,
         SteamerRawKsProjection: 0,
         SteamerKPer9Projection: 0.0,
         SteamerSavesProjection: 0,
-        SteamerBABIPProjection: .0,
-        SteamerLOBPercentProjection: '',
         SteamerFWARProjection: 0.0,
         traditionalStats: true,
         advancedStats: false,
@@ -463,14 +459,10 @@ class ReliefPitcherCard extends React.Component {
             SteamerQSProjection: this.context.state.reliefPitchers[foundIndex].SteamerQSProjection,
             SteamerERAProjection: this.context.state.reliefPitchers[foundIndex].SteamerERAProjection,
             SteamerFIPProjection: this.context.state.reliefPitchers[foundIndex].SteamerFIPProjection,
-            SteamerxFIPProjection: this.context.state.reliefPitchers[foundIndex].SteamerxFIPProjection,
-            SteamerSIERAProjection: this.context.state.reliefPitchers[foundIndex].SteamerSIERAProjection,
             SteamerWHIPProjection: this.context.state.reliefPitchers[foundIndex].SteamerWHIPProjection,
             SteamerRawKsProjection: this.context.state.reliefPitchers[foundIndex].SteamerRawKsProjection,
             SteamerKPer9Projection: this.context.state.reliefPitchers[foundIndex].SteamerKPer9Projection,
             SteamerSavesProjection: this.context.state.reliefPitchers[foundIndex].SteamerSavesProjection,
-            SteamerBABIPProjection: this.context.state.reliefPitchers[foundIndex].SteamerBABIPProjection,
-            SteamerLOBPercentProjection: this.context.state.reliefPitchers[foundIndex].SteamerLOBPercentProjection,
             SteamerFWARProjection: this.context.state.reliefPitchers[foundIndex].SteamerFWARProjection,
         })
     }
@@ -491,7 +483,7 @@ class ReliefPitcherCard extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, KPercent2017, BBPercent2017, KMinusBBPercent2017, BABIP2017, LOBPercent2017, HRPerFBPercent2017, GBPercent2017, LDPercent2017, FBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, BarrelPercent2017, LaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, FWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, KPercent2018, BBPercent2018, KMinusBBPercent2018, BABIP2018, LOBPercent2018, HRPerFBPercent2018, GBPercent2018, LDPercent2018, FBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, BarrelPercent2018, LaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, FWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, KPercent2019, BBPercent2019, KMinusBBPercent2019, BABIP2019, LOBPercent2019, HRPerFBPercent2019, GBPercent2019, LDPercent2019, FBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, BarrelPercent2019, LaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, FWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerxFIPProjection, SteamerSIERAProjection, SteamerWHIPProjection, SteamerRawKsProjection, SteamerKPer9Projection, SteamerSavesProjection, SteamerLOBPercentProjection, SteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue } = this.state;
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, KPercent2017, BBPercent2017, KMinusBBPercent2017, BABIP2017, LOBPercent2017, HRPerFBPercent2017, GBPercent2017, LDPercent2017, FBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, BarrelPercent2017, LaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, FWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, KPercent2018, BBPercent2018, KMinusBBPercent2018, BABIP2018, LOBPercent2018, HRPerFBPercent2018, GBPercent2018, LDPercent2018, FBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, BarrelPercent2018, LaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, FWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, KPercent2019, BBPercent2019, KMinusBBPercent2019, BABIP2019, LOBPercent2019, HRPerFBPercent2019, GBPercent2019, LDPercent2019, FBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, BarrelPercent2019, LaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, FWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerWHIPProjection, SteamerRawKsProjection, SteamerKPer9Projection, SteamerSavesProjection, SteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue } = this.state;
 
         const playerCard = (
             <div className={classes.internalPlayerCard}>
@@ -710,7 +702,7 @@ class ReliefPitcherCard extends React.Component {
                                         <TableCell className={classes.tableCell}>{SteamerRawKsProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
-                                        <TableCell className={classes.tableCell}>{SteamerLOBPercentProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}></TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerSavesProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{(((4 * SteamerQSProjection) + (SteamerRawKsProjection / 3) + (2 * SteamerSavesProjection) + ((SteamerInningsPitchedProjection / SteamerWHIPProjection) / 3) + ((SteamerInningsPitchedProjection / SteamerERAProjection) / 3)) / 6).toFixed(1)}</TableCell>
@@ -1006,8 +998,8 @@ class ReliefPitcherCard extends React.Component {
                                         <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerFIPProjection}</TableCell>
-                                        <TableCell className={classes.tableCell}>{SteamerxFIPProjection}</TableCell>
-                                        <TableCell className={classes.tableCell}>{SteamerSIERAProjection}</TableCell>
+                                        <TableCell className={classes.tableCell}></TableCell>
+                                        <TableCell className={classes.tableCell}></TableCell>
                                         <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
                                         <TableCell className={classes.tableCell}></TableCell>
                                         <TableCell className={classes.tableCell}></TableCell>

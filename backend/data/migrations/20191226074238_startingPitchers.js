@@ -153,18 +153,14 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('FWAR2019', 8, 1);
         startingPitchers.integer('SteamerGamesProjection');
         startingPitchers.integer('SteamerGamesStartedProjection');
-        startingPitchers.decimal('SteamerInningsPitchedProjection', 8, 2);
+        startingPitchers.decimal('SteamerInningsPitchedProjection', 8, 1);
         startingPitchers.decimal('SteamerQSProjection', 8, 1);
         startingPitchers.decimal('SteamerERAProjection', 8, 2);
         startingPitchers.decimal('SteamerFIPProjection', 8, 2);
-        startingPitchers.decimal('SteamerxFIPProjection', 8, 2);
-        startingPitchers.decimal('SteamerSIERAProjection', 8, 2);
-        startingPitchers.decimal('SteamerWHIPProjection', 8, 2);
+         startingPitchers.decimal('SteamerWHIPProjection', 8, 2);
         startingPitchers.integer('SteamerRawKsProjection');
         startingPitchers.decimal('SteamerKPer9Projection', 8, 2);
         startingPitchers.integer('SteamerSavesProjection');
-        startingPitchers.decimal('SteamerBABIPProjection', 8, 3);
-        startingPitchers.string('SteamerLOBPercentProjection', 50);
         startingPitchers.decimal('SteamerFWARProjection', 8, 1);
     })
 };
