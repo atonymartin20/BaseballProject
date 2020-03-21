@@ -301,7 +301,7 @@ class StartingPitcherCard extends React.Component {
     }
 
     componentDidMount() {
-        const foundIndex = this.context.state.startingpitchers.findIndex(x => x.id === this.props.id);
+        const foundIndex = this.context.state.startingPitchers.findIndex(x => x.id === this.props.id);
         this.setState({
             firstName: this.context.state.startingPitchers[foundIndex].firstName,
             lastName: this.context.state.startingPitchers[foundIndex].lastName,

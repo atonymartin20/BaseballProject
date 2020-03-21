@@ -301,7 +301,7 @@ class ReliefPitcherCard extends React.Component {
     }
 
     componentDidMount() {
-        const foundIndex = this.context.state.startingpitchers.findIndex(x => x.id === this.props.id);
+        const foundIndex = this.context.state.reliefPitchers.findIndex(x => x.id === this.props.id);
         this.setState({
             firstName: this.context.state.reliefPitchers[foundIndex].firstName,
             lastName: this.context.state.reliefPitchers[foundIndex].lastName,

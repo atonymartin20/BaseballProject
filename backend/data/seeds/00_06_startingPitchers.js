@@ -15568,7 +15568,7 @@ exports.seed = function (knex, Promise) {
             'SplitterUsagePercent2019': '',
             'KnuckleCurveUsagePercent2019': '',
             'FWAR2019': 0.0,
-            'SteamerGamesProjection': 291,
+            'SteamerGamesProjection': 29,
             'SteamerGamesStartedProjection': 29,
             'SteamerInningsPitchedProjection': 175.0,
             'SteamerQSProjection': 13.9,
