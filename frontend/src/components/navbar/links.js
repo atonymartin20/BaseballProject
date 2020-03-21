@@ -156,24 +156,22 @@ class Navbar extends React.Component {
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/startingPitcher' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            SP
+                        <Link to='/startingPitcher' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                SP
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/reliefPitcher' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            RP
+                        <Link to='/reliefPitcher' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                RP
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
                         {/* <Link to='/overall' className={classes.linkStyling}> */}

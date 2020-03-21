@@ -30997,6 +30997,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.6,
         },
         // {
+        //     // id 
         //     'firstName': '',
         //     'lastName': '',
         //     'birthday': '',
