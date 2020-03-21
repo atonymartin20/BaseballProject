@@ -203,7 +203,7 @@ export default function EnhancedTable(props) {
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy))
                                 .map((row, index) => {
-                                    if (row.PAs > 0) {
+                                    if (row.InningsPitched > 0) {
                                         const isItemSelected = isSelected(row.name);
                                         const labelId = `enhanced-table-checkbox-${index}`;
 
