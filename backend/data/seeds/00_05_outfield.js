@@ -1596,7 +1596,7 @@ exports.seed = function (knex, Promise) {
             'SteamerSBProjection': 8,
             'SteamerFWARProjection': 1.8,
         },
-        // g3
+        // g4
         {
             // id 13
             'firstName': 'Jackie',
