@@ -5,15 +5,27 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
+        primaryCatchers: [],
         catchers: JSON.parse(localStorage.getItem('catchers')) || [],
+        primaryFirstBase: [],
         firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
+        primarySecondBase: [],
         secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
+        primaryThirdBase: [],
         thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
+        primaryShortStop: [],
         shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
+        primaryOutfield: [],
         outfield: JSON.parse(localStorage.getItem('outfield')) || [],
+        primaryDesignatedHitters: [],
         designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
+        primaryStartingPitchers: [],
         startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
+        primaryReliefPitchers: [],
         reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
+        hitters: JSON.parse(localStorage.getItem('hitters')) || [],
+        pitchers: JSON.parse(localStorage.getItem('pitchers')) || [],
+        allPlayers: JSON.parse(localStorage.getItem('allPlayers')) || [],
     };
 
     render() {
@@ -22,141 +34,216 @@ export default class AppProvider extends Component {
             <AppContext.Provider
                 value={{
                     state: this.state,
-                    getCatchers: () => {
+                    getPrimaryCatchers: () => {
                         const endpoint = '/catchers';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const catchers = res.data;
-                                localStorage.setItem('catchers', JSON.stringify(catchers));
+                                const primaryCatchers = res.data;
                                 this.setState({
-                                    catchers
+                                    primaryCatchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting catchers', err)
                             });
                     },
-                    getFirstBase: () => {
+                    getPrimaryFirstBase: () => {
                         const endpoint = '/firstBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const firstBase = res.data;
-                                localStorage.setItem('firstBase', JSON.stringify(firstBase));
+                                const primaryFirstBase = res.data;
+                                // localStorage.setItem('firstBase', JSON.stringify(firstBase));
                                 this.setState({
-                                    firstBase
+                                    primaryFirstBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting firstBase', err)
                             });
                     },
-                    getSecondBase: () => {
+                    getPrimarySecondBase: () => {
                         const endpoint = '/secondBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const secondBase = res.data;
-                                localStorage.setItem('secondBase', JSON.stringify(secondBase));
+                                const primarySecondBase = res.data;
+                                // localStorage.setItem('secondBase', JSON.stringify(secondBase));
                                 this.setState({
-                                    secondBase
+                                    primarySecondBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting secondBase', err)
                             });
                     },
-                    getThirdBase: () => {
+                    getPrimaryThirdBase: () => {
                         const endpoint = '/thirdBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const thirdBase = res.data;
-                                localStorage.setItem('thirdBase', JSON.stringify(thirdBase));
+                                const primaryThirdBase = res.data;
+                                // localStorage.setItem('thirdBase', JSON.stringify(thirdBase));
                                 this.setState({
-                                    thirdBase
+                                    primaryThirdBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting thirdBase', err)
                             });
                     },
-                    getShortStop: () => {
+                    getPrimaryShortStop: () => {
                         const endpoint = '/shortStop';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const shortStop = res.data;
-                                localStorage.setItem('shortStop', JSON.stringify(shortStop));
+                                const primaryShortStop = res.data;
+                                // localStorage.setItem('shortStop', JSON.stringify(shortStop));
                                 this.setState({
-                                    shortStop
+                                    primaryShortStop
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting shortStop', err)
                             });
                     },
-                    getOutfield: () => {
+                    getPrimaryOutfield: () => {
                         const endpoint = '/outfield';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const outfield = res.data;
-                                localStorage.setItem('outfield', JSON.stringify(outfield));
+                                const primaryOutfield = res.data;
+                                // localStorage.setItem('outfield', JSON.stringify(outfield));
                                 this.setState({
-                                    outfield
+                                    primaryOutfield
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting outfield', err)
                             });
                     },
-                    getDesignatedHitters: () => {
+                    getPrimaryDesignatedHitters: () => {
                         const endpoint = '/designatedHitter';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const designatedHitters = res.data;
-                                localStorage.setItem('designatedHitters', JSON.stringify(designatedHitters));
+                                const primaryDesignatedHitters = res.data;
+                                // localStorage.setItem('designatedHitters', JSON.stringify(designatedHitters));
                                 this.setState({
-                                    designatedHitters
+                                    primaryDesignatedHitters
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting designatedHitters', err)
                             });
                     },
-                    getStartingPitchers: () => {
+                    getPrimaryStartingPitchers: () => {
                         const endpoint = '/startingPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const startingPitchers = res.data;
-                                localStorage.setItem('startingPitchers', JSON.stringify(startingPitchers));
+                                const primaryStartingPitchers = res.data;
+                                // localStorage.setItem('startingPitchers', JSON.stringify(startingPitchers));
                                 this.setState({
-                                    startingPitchers
+                                    primaryStartingPitchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting startingPitchers', err)
                             });
                     },
-                    getReliefPitchers: () => {
+                    getPrimaryReliefPitchers: () => {
                         const endpoint = '/reliefPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const reliefPitchers = res.data;
-                                localStorage.setItem('reliefPitchers', JSON.stringify(reliefPitchers));
+                                const primaryReliefPitchers = res.data;
+                                // localStorage.setItem('reliefPitchers', JSON.stringify(reliefPitchers));
                                 this.setState({
-                                    reliefPitchers
+                                    primaryReliefPitchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting reliefPitchers', err)
                             });
                     },
+                    getHitters: () => {
+                        const hitters = []
+                        console.log(hitters)
+                        hitters.concat(this.state.primaryCatchers)
+                        console.log(hitters)
+                        hitters.concat(this.state.primaryFirstBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.primarySecondBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryShortStop)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryThirdBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryOutfield)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryDesignatedHitters)
+                        console.log(hitters)
+                        localStorage.setItem('hitters', JSON.stringify(hitters));
+                        this.setState({
+                            hitters
+                        });
+                    },
+                    getAllCatchers: () => {
+                        let catchers = this.state.primaryCatchers;
+
+                        this.state.primaryFirstBase.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primarySecondBase.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryShortStop.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryThirdBase.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryOutfield.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+                        this.state.primaryDesignatedHitters.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+                        localStorage.setItem('catchers', JSON.stringify(catchers));
+                        this.setState({
+                            catchers
+                        });
+                    }
                 }}
             >
                 {this.props.children}
