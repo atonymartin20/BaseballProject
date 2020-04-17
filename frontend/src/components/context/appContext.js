@@ -193,9 +193,12 @@ export default class AppProvider extends Component {
                     },
                     getAllCatchers: () => {
                         catchers = this.state.primaryCatchers;
-                        this.state.primaryFirstBase.forEach(player, index) {
+                        this.state.primaryFirstBase.forEach((player, index) => {
                             console.log(player)
-                        }
+                            if( player.otherPositions.contains('Catcher')) {
+                                console.log('Yes', player.id)
+                            }
+                        })
                     }
                 }}
             >
