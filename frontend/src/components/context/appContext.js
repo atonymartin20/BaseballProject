@@ -5,14 +5,23 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
+        onlyCatchers: [],
         catchers: JSON.parse(localStorage.getItem('catchers')) || [],
+        onlyFirstBase: [],
         firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
+        onlySecondBase: [],
         secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
+        onlyThirdBase: [],
         thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
+        onlyShortStop: [],
         shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
+        onlyOutfield: [],
         outfield: JSON.parse(localStorage.getItem('outfield')) || [],
+        onlyDesignatedHitters: [],
         designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
+        onlyStartingPitchers: [],
         startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
+        onlyReliefPitchers: [],
         reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
     };
 
@@ -22,7 +31,7 @@ export default class AppProvider extends Component {
             <AppContext.Provider
                 value={{
                     state: this.state,
-                    getCatchers: () => {
+                    getOnlyCatchers: () => {
                         const endpoint = '/catchers';
                         axios
                             .get(endpoint)
@@ -37,7 +46,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting catchers', err)
                             });
                     },
-                    getFirstBase: () => {
+                    getOnlyFirstBase: () => {
                         const endpoint = '/firstBase';
                         axios
                             .get(endpoint)
@@ -52,7 +61,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting firstBase', err)
                             });
                     },
-                    getSecondBase: () => {
+                    getOnlySecondBase: () => {
                         const endpoint = '/secondBase';
                         axios
                             .get(endpoint)
@@ -67,7 +76,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting secondBase', err)
                             });
                     },
-                    getThirdBase: () => {
+                    getOnlyThirdBase: () => {
                         const endpoint = '/thirdBase';
                         axios
                             .get(endpoint)
@@ -82,7 +91,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting thirdBase', err)
                             });
                     },
-                    getShortStop: () => {
+                    getOnlyShortStop: () => {
                         const endpoint = '/shortStop';
                         axios
                             .get(endpoint)
@@ -97,7 +106,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting shortStop', err)
                             });
                     },
-                    getOutfield: () => {
+                    getOnlyOutfield: () => {
                         const endpoint = '/outfield';
                         axios
                             .get(endpoint)
@@ -112,7 +121,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting outfield', err)
                             });
                     },
-                    getDesignatedHitters: () => {
+                    getOnlyDesignatedHitters: () => {
                         const endpoint = '/designatedHitter';
                         axios
                             .get(endpoint)
@@ -127,7 +136,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting designatedHitters', err)
                             });
                     },
-                    getStartingPitchers: () => {
+                    getOnlyStartingPitchers: () => {
                         const endpoint = '/startingPitcher';
                         axios
                             .get(endpoint)
@@ -142,7 +151,7 @@ export default class AppProvider extends Component {
                                 console.log('error getting startingPitchers', err)
                             });
                     },
-                    getReliefPitchers: () => {
+                    getOnlyReliefPitchers: () => {
                         const endpoint = '/reliefPitcher';
                         axios
                             .get(endpoint)
