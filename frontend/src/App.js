@@ -24,15 +24,17 @@ import Glossary from './components/glossary';
 
 class App extends React.Component {
     componentDidMount() {
-        this.context.getOnlyCatchers();
-        this.context.getOnlyFirstBase();
-        this.context.getOnlySecondBase();
-        this.context.getOnlyThirdBase();
-        this.context.getOnlyShortStop();
-        this.context.getOnlyOutfield();
-        this.context.getOnlyDesignatedHitters();
-        this.context.getOnlyStartingPitchers();
-        this.context.getOnlyReliefPitchers();
+        this.context.getPrimaryCatchers();
+        this.context.getPrimaryFirstBase();
+        this.context.getPrimarySecondBase();
+        this.context.getPrimaryThirdBase();
+        this.context.getPrimaryShortStop();
+        this.context.getPrimaryOutfield();
+        this.context.getPrimaryDesignatedHitters();
+        this.context.getPrimaryStartingPitchers();
+        this.context.getPrimaryReliefPitchers();
+        this.context.getHitters();
+        this.context.getAllCatchers();
     }
     render() {
         return (

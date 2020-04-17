@@ -5,24 +5,27 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
-        onlyCatchers: [],
+        primaryCatchers: [],
         catchers: JSON.parse(localStorage.getItem('catchers')) || [],
-        onlyFirstBase: [],
+        primaryFirstBase: [],
         firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
-        onlySecondBase: [],
+        primarySecondBase: [],
         secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
-        onlyThirdBase: [],
+        primaryThirdBase: [],
         thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
-        onlyShortStop: [],
+        primaryShortStop: [],
         shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
-        onlyOutfield: [],
+        primaryOutfield: [],
         outfield: JSON.parse(localStorage.getItem('outfield')) || [],
-        onlyDesignatedHitters: [],
+        primaryDesignatedHitters: [],
         designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
-        onlyStartingPitchers: [],
+        primaryStartingPitchers: [],
         startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
-        onlyReliefPitchers: [],
+        primaryReliefPitchers: [],
         reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
+        hitters: JSON.parse(localStorage.getItem('hitters')) || [],
+        pitchers: JSON.parse(localStorage.getItem('pitchers')) || [],
+        allPlayers: JSON.parse(localStorage.getItem('allPlayers')) || [],
     };
 
     render() {
@@ -31,141 +34,169 @@ export default class AppProvider extends Component {
             <AppContext.Provider
                 value={{
                     state: this.state,
-                    getOnlyCatchers: () => {
+                    getPrimaryCatchers: () => {
                         const endpoint = '/catchers';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const catchers = res.data;
-                                localStorage.setItem('catchers', JSON.stringify(catchers));
+                                const primaryCatchers = res.data;
+                                // localStorage.setItem('catchers', JSON.stringify(catchers));
                                 this.setState({
-                                    catchers
+                                    primaryCatchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting catchers', err)
                             });
                     },
-                    getOnlyFirstBase: () => {
+                    getPrimaryFirstBase: () => {
                         const endpoint = '/firstBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const firstBase = res.data;
-                                localStorage.setItem('firstBase', JSON.stringify(firstBase));
+                                const primaryFirstBase = res.data;
+                                // localStorage.setItem('firstBase', JSON.stringify(firstBase));
                                 this.setState({
-                                    firstBase
+                                    primaryFirstBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting firstBase', err)
                             });
                     },
-                    getOnlySecondBase: () => {
+                    getPrimarySecondBase: () => {
                         const endpoint = '/secondBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const secondBase = res.data;
-                                localStorage.setItem('secondBase', JSON.stringify(secondBase));
+                                const primarySecondBase = res.data;
+                                // localStorage.setItem('secondBase', JSON.stringify(secondBase));
                                 this.setState({
-                                    secondBase
+                                    primarySecondBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting secondBase', err)
                             });
                     },
-                    getOnlyThirdBase: () => {
+                    getPrimaryThirdBase: () => {
                         const endpoint = '/thirdBase';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const thirdBase = res.data;
-                                localStorage.setItem('thirdBase', JSON.stringify(thirdBase));
+                                const primaryThirdBase = res.data;
+                                // localStorage.setItem('thirdBase', JSON.stringify(thirdBase));
                                 this.setState({
-                                    thirdBase
+                                    primaryThirdBase
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting thirdBase', err)
                             });
                     },
-                    getOnlyShortStop: () => {
+                    getPrimaryShortStop: () => {
                         const endpoint = '/shortStop';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const shortStop = res.data;
-                                localStorage.setItem('shortStop', JSON.stringify(shortStop));
+                                const primaryShortStop = res.data;
+                                // localStorage.setItem('shortStop', JSON.stringify(shortStop));
                                 this.setState({
-                                    shortStop
+                                    primaryShortStop
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting shortStop', err)
                             });
                     },
-                    getOnlyOutfield: () => {
+                    getPrimaryOutfield: () => {
                         const endpoint = '/outfield';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const outfield = res.data;
-                                localStorage.setItem('outfield', JSON.stringify(outfield));
+                                const primaryOutfield = res.data;
+                                // localStorage.setItem('outfield', JSON.stringify(outfield));
                                 this.setState({
-                                    outfield
+                                    primaryOutfield
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting outfield', err)
                             });
                     },
-                    getOnlyDesignatedHitters: () => {
+                    getPrimaryDesignatedHitters: () => {
                         const endpoint = '/designatedHitter';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const designatedHitters = res.data;
-                                localStorage.setItem('designatedHitters', JSON.stringify(designatedHitters));
+                                const primaryDesignatedHitters = res.data;
+                                // localStorage.setItem('designatedHitters', JSON.stringify(designatedHitters));
                                 this.setState({
-                                    designatedHitters
+                                    primaryDesignatedHitters
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting designatedHitters', err)
                             });
                     },
-                    getOnlyStartingPitchers: () => {
+                    getPrimaryStartingPitchers: () => {
                         const endpoint = '/startingPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const startingPitchers = res.data;
-                                localStorage.setItem('startingPitchers', JSON.stringify(startingPitchers));
+                                const primaryStartingPitchers = res.data;
+                                // localStorage.setItem('startingPitchers', JSON.stringify(startingPitchers));
                                 this.setState({
-                                    startingPitchers
+                                    primaryStartingPitchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting startingPitchers', err)
                             });
                     },
-                    getOnlyReliefPitchers: () => {
+                    getPrimaryReliefPitchers: () => {
                         const endpoint = '/reliefPitcher';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const reliefPitchers = res.data;
-                                localStorage.setItem('reliefPitchers', JSON.stringify(reliefPitchers));
+                                const primaryReliefPitchers = res.data;
+                                // localStorage.setItem('reliefPitchers', JSON.stringify(reliefPitchers));
                                 this.setState({
-                                    reliefPitchers
+                                    primaryReliefPitchers
                                 });
                             })
                             .catch(err => {
                                 console.log('error getting reliefPitchers', err)
                             });
                     },
+                    getHitters: () => {
+                        const hitters = []
+                        console.log(hitters)
+                        hitters.concat(this.state.primaryCatchers)
+                        console.log(hitters)
+                        hitters.concat(this.state.primaryFirstBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.primarySecondBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryShortStop)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryThirdBase)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryOutfield)
+                        console.log(hitters)
+                        hitters.concat(this.state.getPrimaryDesignatedHitters)
+                        console.log(hitters)
+                        localStorage.setItem('hitters', JSON.stringify(hitters));
+                        this.setState({
+                            hitters
+                        });
+                    },
+                    getAllCatchers: () => {
+                        catchers = this.state.primaryCatchers;
+                        this.state.primaryFirstBase.forEach(player, index) {
+                            console.log(player)
+                        }
+                    }
                 }}
             >
                 {this.props.children}
