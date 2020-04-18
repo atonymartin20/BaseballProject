@@ -35,13 +35,13 @@ class App extends React.Component {
         this.context.getPrimaryReliefPitchers();
         setTimeout(() => {
             this.context.getHitters();
-        }, 2500);
+        }, 3500);
         setTimeout(() => {
             this.context.getAllCatchers();
-        }, 2500);
+        }, 3500);
         setTimeout(() => {
             this.context.getAllFirstBase();
-        }, 2500);
+        }, 3500);
     }
     render() {
         return (

@@ -5,25 +5,25 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
-        primaryCatchers: [],
+        primaryCatchers: JSON.parse(localStorage.getItem('primaryCatchers')) || [],
         catchers: JSON.parse(localStorage.getItem('catchers')) || [],
-        primaryFirstBase: [],
+        primaryFirstBase: JSON.parse(localStorage.getItem('primaryFirstBase')) || [],
         firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
-        primarySecondBase: [],
+        primarySecondBase: JSON.parse(localStorage.getItem('primarySecondBase')) || [],
         secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
-        primaryThirdBase: [],
+        primaryThirdBase: JSON.parse(localStorage.getItem('primaryThirdBase')) || [],
         thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
-        primaryShortStop: [],
+        primaryShortStop: JSON.parse(localStorage.getItem('primaryShortStop')) || [],
         shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
-        primaryOutfield: [],
+        primaryOutfield: JSON.parse(localStorage.getItem('primaryOutfield')) || [],
         outfield: JSON.parse(localStorage.getItem('outfield')) || [],
-        primaryDesignatedHitters: [],
+        primaryDesignatedHitters: JSON.parse(localStorage.getItem('primaryDesignatedHitters')) || [],
         designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
-        primaryStartingPitchers: [],
-        startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
-        primaryReliefPitchers: [],
-        reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
         hitters: JSON.parse(localStorage.getItem('hitters')) || [],
+        primaryStartingPitchers: JSON.parse(localStorage.getItem('primaryStartingPitchers')) || [],
+        startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
+        primaryReliefPitchers: JSON.parse(localStorage.getItem('primaryReliefPitchers')) || [],
+        reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
         pitchers: JSON.parse(localStorage.getItem('pitchers')) || [],
         allPlayers: JSON.parse(localStorage.getItem('allPlayers')) || [],
     };
@@ -40,6 +40,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryCatchers = res.data;
+                                localStorage.setItem('primaryCatchers', JSON.stringify(primaryCatchers));
                                 this.setState({
                                     primaryCatchers
                                 });
@@ -54,6 +55,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryFirstBase = res.data;
+                                localStorage.setItem('primaryFirstBase', JSON.stringify(primaryFirstBase));
                                 this.setState({
                                     primaryFirstBase
                                 });
@@ -68,6 +70,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primarySecondBase = res.data;
+                                localStorage.setItem('primarySecondBase', JSON.stringify(primarySecondBase));
                                 this.setState({
                                     primarySecondBase
                                 });
@@ -82,6 +85,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryThirdBase = res.data;
+                                localStorage.setItem('primaryThirdBase', JSON.stringify(primaryThirdBase));
                                 this.setState({
                                     primaryThirdBase
                                 });
@@ -96,6 +100,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryShortStop = res.data;
+                                localStorage.setItem('primaryShortStop', JSON.stringify(primaryShortStop));
                                 this.setState({
                                     primaryShortStop
                                 });
@@ -110,6 +115,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryOutfield = res.data;
+                                localStorage.setItem('primaryOutfield', JSON.stringify(primaryOutfield));
                                 this.setState({
                                     primaryOutfield
                                 });
@@ -124,6 +130,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryDesignatedHitters = res.data;
+                                localStorage.setItem('primaryDesignatedHitters', JSON.stringify(primaryDesignatedHitters));
                                 this.setState({
                                     primaryDesignatedHitters
                                 });
@@ -138,7 +145,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryStartingPitchers = res.data;
-                                // localStorage.setItem('startingPitchers', JSON.stringify(startingPitchers));
+                                localStorage.setItem('primaryStartingPitchers', JSON.stringify(primaryStartingPitchers));
                                 this.setState({
                                     primaryStartingPitchers
                                 });
@@ -153,7 +160,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryReliefPitchers = res.data;
-                                // localStorage.setItem('reliefPitchers', JSON.stringify(reliefPitchers));
+                                localStorage.setItem('primaryReliefPitchers', JSON.stringify(primaryReliefPitchers));
                                 this.setState({
                                     primaryReliefPitchers
                                 });
