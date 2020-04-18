@@ -163,20 +163,34 @@ export default class AppProvider extends Component {
                             });
                     },
                     getHitters: () => {
-                        let hitters = []
-                        hitters = hitters.concat(this.state.primaryCatchers)
-                        hitters = hitters.concat(this.state.primaryFirstBase)
-                        hitters = hitters.concat(this.state.primarySecondBase)
-                        hitters = hitters.concat(this.state.primaryShortStop)
-                        hitters = hitters.concat(this.state.primaryThirdBase)
-                        hitters = hitters.concat(this.state.primaryOutfield)
-                        hitters = hitters.concat(this.state.primaryDesignatedHitters)
-
-                        localStorage.setItem('hitters', JSON.stringify(hitters));
-                        this.setState({
-                            hitters
-                        });
+                        const endpoint = '/hitters';
+                        axios
+                            .get(endpoint)
+                            .then(res => {
+                                const hitters = res.data;
+                                this.setState({
+                                    hitters
+                                });
+                            })
+                            .catch(err => {
+                                console.log('error getting hitters', err)
+                            });
                     },
+                    // getHitters: () => {
+                    //     let hitters = []
+                    //     hitters = hitters.concat(this.state.primaryCatchers)
+                    //     hitters = hitters.concat(this.state.primaryFirstBase)
+                    //     hitters = hitters.concat(this.state.primarySecondBase)
+                    //     hitters = hitters.concat(this.state.primaryShortStop)
+                    //     hitters = hitters.concat(this.state.primaryThirdBase)
+                    //     hitters = hitters.concat(this.state.primaryOutfield)
+                    //     hitters = hitters.concat(this.state.primaryDesignatedHitters)
+
+                    //     localStorage.setItem('hitters', JSON.stringify(hitters));
+                    //     this.setState({
+                    //         hitters
+                    //     });
+                    // },
                     getAllCatchers: () => {
                         let catchers = this.state.primaryCatchers;
 
