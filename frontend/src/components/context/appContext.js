@@ -418,6 +418,7 @@ export default class AppProvider extends Component {
                     },
                     getAllOutfield: () => {
                         let outfield = this.state.primaryOutfield;
+                        console.log(outfield)
                         console.log('C')
                         this.state.primaryCatchers.forEach(player => {
                             console.log(player, player.otherPositions)
@@ -426,6 +427,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
+                        console.log(outfield)
                         console.log('1B')
                         this.state.primaryFirstBase.forEach(player => {
                             console.log(player, player.otherPositions)
@@ -434,6 +436,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
+                        console.log(outfield)
                         console.log('2B')
                         this.state.primarySecondBase.forEach(player => {
                             console.log(player, player.otherPositions)
@@ -442,6 +445,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
+                        console.log(outfield)
                         console.log('SS')
                         this.state.primaryShortStop.forEach(player => {
                             console.log(player, player.otherPositions)
@@ -450,6 +454,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
+                        console.log(outfield)
                         console.log('3B')
                         this.state.primaryThirdBase.forEach(player => {
                             console.log(player, player.otherPositions)
@@ -458,7 +463,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
-
+                        console.log(outfield)
                         localStorage.setItem('outfield', JSON.stringify(outfield));
                         this.setState({
                             outfield
