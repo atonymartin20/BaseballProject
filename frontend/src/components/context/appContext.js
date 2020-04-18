@@ -170,7 +170,7 @@ export default class AppProvider extends Component {
                             });
                     },
                     getHitters: () => {
-                        const hitters = []
+                        let hitters = []
                         console.log(hitters)
                         this.state.primaryCatchers.forEach(player => {
                             hitters.concat(player)
@@ -232,7 +232,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primarySecondBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
@@ -240,7 +240,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryShortStop.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
@@ -248,7 +248,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryThirdBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
@@ -256,14 +256,14 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryOutfield.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
                             }
                         })
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
@@ -278,7 +278,7 @@ export default class AppProvider extends Component {
                         let firstBase = this.state.primaryFirstBase;
 
                         this.state.primaryCatchers.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
@@ -286,7 +286,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primarySecondBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
@@ -294,7 +294,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryShortStop.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
@@ -302,7 +302,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryThirdBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
@@ -310,14 +310,14 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryOutfield.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
                             }
                         })
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('First Base')) {
                                 console.log('Yes', player.id)
                                 firstBase.concat(player)
@@ -332,7 +332,7 @@ export default class AppProvider extends Component {
                         let secondBase = this.state.primarySecondBase;
 
                         this.state.primaryCatchers.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
@@ -340,7 +340,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryFirstBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
@@ -348,7 +348,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryShortStop.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
@@ -356,7 +356,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryThirdBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
@@ -364,14 +364,14 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryOutfield.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
                             }
                         })
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Second Base')) {
                                 console.log('Yes', player.id)
                                 secondBase.concat(player)
@@ -386,7 +386,7 @@ export default class AppProvider extends Component {
                         let shortStop = this.state.primaryShortStop;
 
                         this.state.primaryCatchers.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
@@ -394,7 +394,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryFirstBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
@@ -402,7 +402,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primarySecondBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
@@ -410,7 +410,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryThirdBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
@@ -418,14 +418,14 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryOutfield.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
                             }
                         })
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Shortstop')) {
                                 console.log('Yes', player.id)
                                 shortStop.concat(player)
@@ -440,7 +440,7 @@ export default class AppProvider extends Component {
                         let thirdBase = this.state.primaryThirdBase;
 
                         this.state.primaryCatchers.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
@@ -448,7 +448,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryFirstBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
@@ -456,7 +456,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primarySecondBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
@@ -464,7 +464,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryShortStop.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
@@ -472,14 +472,14 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryOutfield.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
                             }
                         })
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Third Base')) {
                                 console.log('Yes', player.id)
                                 thirdBase.concat(player)
@@ -494,7 +494,7 @@ export default class AppProvider extends Component {
                         let outfield = this.state.primaryOutfield;
 
                         this.state.primaryCatchers.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
@@ -502,7 +502,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryFirstBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
@@ -510,7 +510,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primarySecondBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
@@ -518,7 +518,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryShortStop.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
@@ -526,7 +526,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryThirdBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
@@ -534,7 +534,7 @@ export default class AppProvider extends Component {
                         })
 
                         this.state.primaryDesignatedHitters.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Outfield')) {
                                 console.log('Yes', player.id)
                                 outfield.concat(player)
