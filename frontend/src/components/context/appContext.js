@@ -174,6 +174,7 @@ export default class AppProvider extends Component {
                         console.log(hitters)
                         hitters.concat(this.state.primaryCatchers)
                         console.log(hitters)
+                        console.log(this.state.primaryFirstBase, JSON.parse(localStorage.getItem('primaryFirstBase')))
                         hitters.concat(this.state.primaryFirstBase)
                         console.log(hitters)
                         hitters.concat(this.state.primarySecondBase)
@@ -195,7 +196,7 @@ export default class AppProvider extends Component {
                         let catchers = this.state.primaryCatchers;
 
                         this.state.primaryFirstBase.forEach(player => {
-                            console.log(player)
+                            console.log(player, player.otherPositions)
                             if (player.otherPositions.contains('Catcher')) {
                                 console.log('Yes', player.id)
                                 catchers.concat(player)
