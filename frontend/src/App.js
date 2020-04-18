@@ -33,8 +33,15 @@ class App extends React.Component {
         this.context.getPrimaryDesignatedHitters();
         this.context.getPrimaryStartingPitchers();
         this.context.getPrimaryReliefPitchers();
-        this.context.getHitters();
-        this.context.getAllCatchers();
+        setTimeout(() => {
+            this.context.getHitters();
+        }, 2500);
+        setTimeout(() => {
+            this.context.getAllCatchers();
+        }, 2500);
+        setTimeout(() => {
+            this.context.getAllFirstBase();
+        }, 2500);
     }
     render() {
         return (
