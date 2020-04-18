@@ -5,7 +5,7 @@ const hittersModel = require('../data/models/hittersModel.js');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    hitterssModel
+    hittersModel
         .getHitters()
         .then(hitters => {
             res.json(hitters);
