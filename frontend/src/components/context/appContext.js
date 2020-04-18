@@ -175,44 +175,46 @@ export default class AppProvider extends Component {
                         // this.state.primaryCatchers.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.primaryCatchers)
+                        console.log(hitters, this.state.primaryCatchers)
+                        console.log(hitters.concat(this.state.primaryCatchers))
+                        hitters = hitters.concat(this.state.primaryCatchers)
                         console.log(hitters)
 
                         // this.state.primaryFirstBase.forEach(player => {
                         //     hitters.concat(player)
                         // })
                         console.log(this.state.primaryFirstBase, JSON.parse(localStorage.getItem('primaryFirstBase')))
-                        hitters.concat(this.state.primaryFirstBase)
+                        hitters = hitters.concat(this.state.primaryFirstBase)
                         console.log(hitters)
 
                         // this.state.primarySecondBase.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.primarySecondBase)
+                        hitters = hitters.concat(this.state.primarySecondBase)
                         console.log(hitters)
 
                         // this.state.primaryShortStop.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.getPrimaryShortStop)
+                        hitters = hitters.concat(this.state.getPrimaryShortStop)
                         console.log(hitters)
 
                         // this.state.primaryThirdBase.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.getPrimaryThirdBase)
+                        hitters = hitters.concat(this.state.getPrimaryThirdBase)
                         console.log(hitters)
 
                         // this.state.primaryOutfield.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.getPrimaryOutfield)
+                        hitters = hitters.concat(this.state.getPrimaryOutfield)
                         console.log(hitters)
 
                         // this.state.primaryDesignatedHitters.forEach(player => {
                         //     hitters.concat(player)
                         // })
-                        hitters.concat(this.state.getPrimaryDesignatedHitters)
+                        hitters = hitters.concat(this.state.getPrimaryDesignatedHitters)
                         console.log(hitters)
 
                         localStorage.setItem('hitters', JSON.stringify(hitters));
@@ -222,7 +224,7 @@ export default class AppProvider extends Component {
                     },
                     getAllCatchers: () => {
                         let catchers = this.state.primaryCatchers;
-                        console.log('1B')
+
                         this.state.primaryFirstBase.forEach(player => {
                             console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
@@ -230,7 +232,7 @@ export default class AppProvider extends Component {
                                 catchers.concat(player)
                             }
                         })
-                        console.log('2B')
+
                         this.state.primarySecondBase.forEach(player => {
                             console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
@@ -238,7 +240,7 @@ export default class AppProvider extends Component {
                                 catchers.concat(player)
                             }
                         })
-                        console.log('SS')
+
                         this.state.primaryShortStop.forEach(player => {
                             console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
@@ -246,7 +248,7 @@ export default class AppProvider extends Component {
                                 catchers.concat(player)
                             }
                         })
-                        console.log('3B')
+
                         this.state.primaryThirdBase.forEach(player => {
                             console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
@@ -254,7 +256,7 @@ export default class AppProvider extends Component {
                                 catchers.concat(player)
                             }
                         })
-                        console.log('OF')
+
                         this.state.primaryOutfield.forEach(player => {
                             console.log(player, player.otherPositions)
                             if (player.otherPositions.includes('Catcher')) {
@@ -310,7 +312,8 @@ export default class AppProvider extends Component {
                                 firstBase.concat(player)
                             }
                         })
-
+                        console.log(this.state.primaryFirstBase)
+                        console.log(firstBase)
                         localStorage.setItem('firstBase', JSON.stringify(firstBase));
                         this.setState({
                             firstBase
