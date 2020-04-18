@@ -3727,7 +3727,7 @@ exports.seed = function (knex, Promise) {
         {
             // id 29
             'firstName': 'Ryan',
-            'lastName': "'O'Hearn",
+            'lastName': "O'Hearn",
             'birthday': '7/26/1993',
             'bats': 'L',
             'throws': 'L',
