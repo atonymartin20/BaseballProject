@@ -168,6 +168,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const hitters = res.data;
+                                localStorage.setItem('hitters', JSON.stringify(hitters));
                                 this.setState({
                                     hitters
                                 });
