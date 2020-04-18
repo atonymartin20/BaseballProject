@@ -171,40 +171,14 @@ export default class AppProvider extends Component {
                     },
                     getHitters: () => {
                         let hitters = []
-                        console.log('Empty', hitters)
                         hitters = hitters.concat(this.state.primaryCatchers)
-                        console.log(hitters)
-                        console.log('After Catchers')
                         hitters = hitters.concat(this.state.primaryFirstBase)
-                        console.log(hitters)
-                        console.log('After 1B')
                         hitters = hitters.concat(this.state.primarySecondBase)
-                        console.log(hitters)
-                        console.log('After 2B')
-                        // this.state.primaryShortStop.forEach(player => {
-                        //     hitters.concat(player)
-                        // })
                         hitters = hitters.concat(this.state.primaryShortStop)
-                        console.log(hitters)
-                        console.log('After SS')
-                        // this.state.primaryThirdBase.forEach(player => {
-                        //     hitters.concat(player)
-                        // })
                         hitters = hitters.concat(this.state.primaryThirdBase)
-                        console.log(hitters)
-                        console.log('After 3B')
-                        // this.state.primaryOutfield.forEach(player => {
-                        //     hitters.concat(player)
-                        // })
                         hitters = hitters.concat(this.state.primaryOutfield)
-                        console.log(hitters)
-                        console.log('After OF')
-                        // this.state.primaryDesignatedHitters.forEach(player => {
-                        //     hitters.concat(player)
-                        // })
                         hitters = hitters.concat(this.state.primaryDesignatedHitters)
-                        console.log(hitters)
-                        console.log('After DH')
+
                         localStorage.setItem('hitters', JSON.stringify(hitters));
                         this.setState({
                             hitters
