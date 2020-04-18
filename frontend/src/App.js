@@ -33,33 +33,33 @@ class App extends React.Component {
         this.context.getPrimaryDesignatedHitters();
         this.context.getPrimaryStartingPitchers();
         this.context.getPrimaryReliefPitchers();
-        // setTimeout(() => {
-        //     this.context.getHitters();
-        // }, 3000);
-        // setTimeout(() => {
+        setTimeout(() => {
             this.context.getHitters();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
+            this.context.getHitters();
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllCatchers();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllFirstBase();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllSecondBase();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllShortStop();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllThirdBase();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllOutfield();
-        // }, 3000);
-        // setTimeout(() => {
+        }, 3000);
+        setTimeout(() => {
             this.context.getAllDesignatedHitters();
-        // }, 3000);
+        }, 3000);
     }
     render() {
         return (
