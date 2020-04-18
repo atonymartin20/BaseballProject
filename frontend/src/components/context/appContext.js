@@ -54,7 +54,6 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const primaryFirstBase = res.data;
-                                // localStorage.setItem('firstBase', JSON.stringify(firstBase));
                                 this.setState({
                                     primaryFirstBase
                                 });
@@ -243,7 +242,61 @@ export default class AppProvider extends Component {
                         this.setState({
                             catchers
                         });
-                    }
+                    },
+                    getAllFirstBase: () => {
+                        let firstBase = this.state.primaryFirstBase;
+
+                        this.state.primaryCatchers.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primarySecondBase.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryShortStop.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryThirdBase.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+
+                        this.state.primaryOutfield.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+                        this.state.primaryDesignatedHitters.forEach((player, index) => {
+                            console.log(player)
+                            if(player.otherPositions.contains('First Base')) {
+                                console.log('Yes', player.id)
+                                catchers.concat(player)
+                            }
+                        })
+                        localStorage.setItem('firstBase', JSON.stringify(firstBase));
+                        this.setState({
+                            firstBase
+                        });
+                    },
                 }}
             >
                 {this.props.children}
