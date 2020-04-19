@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => { 
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.SteamerInningsPitchedProjection, player.SteamerQSProjection, player.SteamerRawKsProjection, player.SteamerERAProjection, player.SteamerFIPProjection, player.SteamerWHIPProjection, player.SteamerSavesProjection, player.SteamerFWARProjection, (((4 * player.SteamerQSProjection) + (player.SteamerRawKsProjection / 3) + (2 * player.SteamerSavesProjection) + ((player.SteamerInningsPitchedProjection / player.SteamerWHIPProjection) / 3) + ((player.SteamerInningsPitchedProjection / player.SteamerERAProjection) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.SteamerInningsPitchedProjection, player.SteamerQSProjection, player.SteamerRawKsProjection, player.SteamerERAProjection, player.SteamerFIPProjection, player.SteamerWHIPProjection, player.SteamerSavesProjection, player.PitcherSteamerFWARProjection, (((4 * player.SteamerQSProjection) + (player.SteamerRawKsProjection / 3) + (2 * player.SteamerSavesProjection) + ((player.SteamerInningsPitchedProjection / player.SteamerWHIPProjection) / 3) + ((player.SteamerInningsPitchedProjection / player.SteamerERAProjection) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -221,7 +221,7 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>Number({row.InningsPitched})</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
