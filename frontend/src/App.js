@@ -74,6 +74,18 @@ class App extends React.Component {
                     <Route path='/shortStop/:id' render={props =>
                         <ShortStopCard {...props} />
                     } />
+                    <Route exact path='/middleInfield'>
+                        <MiddleInfield />
+                    </Route>
+                    <Route path='/middleInfield/:id' render={props =>
+                        <MiddleInfieldCard {...props} />
+                    } />
+                    <Route exact path='/cornerInfield'>
+                        <CornerInfield />
+                    </Route>
+                    <Route path='/cornerInfield/:id' render={props =>
+                        <CornerInfieldCard {...props} />
+                    } />
                     <Route exact path='/outfield'>
                         <Outfield />
                     </Route>
@@ -86,6 +98,12 @@ class App extends React.Component {
                     <Route path='/designatedHitter/:id' render={props =>
                         <DesignatedHitterCard {...props} />
                     } />
+                    <Route exact path='/hitters'>
+                        <Hitters />
+                    </Route>
+                    <Route path='/designatedHitter/:id' render={props =>
+                        <HittersCard {...props} />
+                    } />
                     <Route exact path='/startingPitcher'>
                         <StartingPitchers />
                     </Route>
@@ -97,6 +115,18 @@ class App extends React.Component {
                     </Route>
                     <Route path='/reliefPitcher/:id' render={props =>
                         <ReliefPitcherCard {...props} />
+                    } />
+                    <Route exact path='/pitchers'>
+                        <Pitchers />
+                    </Route>
+                    <Route path='/designatedHitter/:id' render={props =>
+                        <PitchersCard {...props} />
+                    } />
+                    <Route exact path='/overall'>
+                        <Overall />
+                    </Route>
+                    <Route path='/designatedHitter/:id' render={props =>
+                        <OverallCard {...props} />
                     } />
                     <Route exact path='/glossary'>
                         <Glossary />

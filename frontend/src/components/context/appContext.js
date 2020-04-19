@@ -82,7 +82,7 @@ export default class AppProvider extends Component {
                                 catchers = catchers.concat(player)
                             }
                         })
-                        console.log(`Catchers: ${catchers}`)
+
                         this.setState({
                             catchers
                         });
@@ -95,7 +95,7 @@ export default class AppProvider extends Component {
                                 firstBase = firstBase.concat(player)
                             }
                         })
-                        console.log(`First Base: ${firstBase}`)
+
                         this.setState({
                             firstBase
                         });
@@ -108,7 +108,7 @@ export default class AppProvider extends Component {
                                 secondBase = secondBase.concat(player)
                             }
                         })
-                        console.log(`Second Base: ${secondBase}`)
+
                         this.setState({
                             secondBase
                         });
@@ -121,7 +121,7 @@ export default class AppProvider extends Component {
                                 shortStop = shortStop.concat(player)
                             }
                         })
-                        console.log(`Shortstop: ${shortStop}`)
+
                         this.setState({
                             shortStop
                         });
@@ -134,7 +134,7 @@ export default class AppProvider extends Component {
                                 thirdBase = thirdBase.concat(player)
                             }
                         })
-                        console.log(`Third Base:${thirdBase}`)
+
                         this.setState({
                             thirdBase
                         });
@@ -148,7 +148,7 @@ export default class AppProvider extends Component {
                                 middleInfield = middleInfield.concat(player)
                             }
                         })
-                        console.log(`Middle Infield: ${middleInfield}`)
+
                         this.setState({
                             middleInfield
                         });
@@ -162,7 +162,7 @@ export default class AppProvider extends Component {
                                 cornerInfield = cornerInfield.concat(player)
                             }
                         })
-                        console.log(`Corner Infield: ${cornerInfield}`)
+
                         this.setState({
                             cornerInfield
                         });
@@ -176,7 +176,7 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
-                        console.log(`Outfield: ${outfield}`)
+
                         this.setState({
                             outfield
                         });
@@ -189,7 +189,7 @@ export default class AppProvider extends Component {
                                 designatedHitters = designatedHitters.concat(player)
                             }
                         })
-                        console.log(`Designated Hitters: ${designatedHitters}`)
+
                         this.setState({
                             designatedHitters
                         });
