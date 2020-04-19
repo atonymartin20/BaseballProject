@@ -18,7 +18,7 @@ export default class AppProvider extends Component {
         startingPitchers: [],
         reliefPitchers: [],
         pitchers: [],
-        allPlayers: [],
+        overall: [],
     };
 
     render() {
@@ -32,10 +32,10 @@ export default class AppProvider extends Component {
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const allPlayers = res.data;
+                                const overall = res.data;
 
                                 this.setState({
-                                    allPlayers
+                                    overall
                                 })
                             })
                             .catch(err => {
