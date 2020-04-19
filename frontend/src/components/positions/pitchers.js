@@ -56,13 +56,13 @@ const styles = theme => ({
     }
 });
 
-class ReliefPitchers extends React.Component {
+class Pitchers extends React.Component {
     state = {
         display2017: false,
         display2018: false,
         display2019: false,
         display2020: true,
-        reliefPitchers: [],
+        pitchers: [],
     }
 
     changeYear2017 = event => {
@@ -107,7 +107,7 @@ class ReliefPitchers extends React.Component {
 
     componentDidMount() {
         this.setState({
-            reliefPitchers: this.context.state.reliefPitchers || []
+            pitchers: this.context.state.pitchers || []
         })
     }
 
@@ -131,7 +131,7 @@ class ReliefPitchers extends React.Component {
                 {display2017 ? (
                     <div>
                         <EnhancedPitcherTable2017
-                            players={this.state.reliefPitchers}
+                            players={this.state.pitchers}
                         />
                     </div>
                 ) : null
@@ -140,7 +140,7 @@ class ReliefPitchers extends React.Component {
                 {display2018 ? (
                     <div>
                         <EnhancedPitcherTable2018
-                            players={this.state.reliefPitchers}
+                            players={this.state.pitchers}
                         />
                     </div>) : null
                 }
@@ -148,7 +148,7 @@ class ReliefPitchers extends React.Component {
                 {display2019 ? (
                     <div>
                         <EnhancedPitcherTable2019
-                            players={this.state.reliefPitchers}
+                            players={this.state.pitchers}
                         />
                     </div>) : null
                 }
@@ -157,7 +157,7 @@ class ReliefPitchers extends React.Component {
                     <div>
                         <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/20/2020.</h1>
                         <EnhancedPitcherTable2020
-                            players={this.state.reliefPitchers}
+                            players={this.state.pitchers}
                         />
                     </div>) : null
                 }
@@ -210,6 +210,6 @@ class ReliefPitchers extends React.Component {
     }
 }
 
-ReliefPitchers.contextType = AppContext;
+Pitchers.contextType = AppContext;
 
-export default withStyles(styles)(ReliefPitchers);
+export default withStyles(styles)(Pitchers);

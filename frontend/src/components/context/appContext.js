@@ -5,25 +5,18 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
-        primaryCatchers: [],
         catchers: [],
-        primaryFirstBase: [],
-        firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
-        primarySecondBase: [],
-        secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
-        primaryThirdBase: [],
-        thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
-        primaryShortStop: [],
-        shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
-        primaryOutfield: [],
-        outfield: JSON.parse(localStorage.getItem('outfield')) || [],
-        primaryDesignatedHitters: [],
-        designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
+        firstBase: [],
+        secondBase: [],
+        shortStop: [],
+        thirdBase: [],
+        middleInfield: [],
+        cornerInfield: [],
+        outfield: [],
+        designatedHitters: [],
         hitters: JSON.parse(localStorage.getItem('hitters')) || [],
-        primaryStartingPitchers: JSON.parse(localStorage.getItem('primaryStartingPitchers')) || [],
-        startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
-        primaryReliefPitchers: JSON.parse(localStorage.getItem('primaryReliefPitchers')) || [],
-        reliefPitchers: JSON.parse(localStorage.getItem('reliefPitchers')) || [],
+        startingPitchers: [],
+        reliefPitchers: [],
         pitchers: JSON.parse(localStorage.getItem('pitchers')) || [],
         allPlayers: JSON.parse(localStorage.getItem('allPlayers')) || [],
     };
@@ -34,57 +27,55 @@ export default class AppProvider extends Component {
             <AppContext.Provider
                 value={{
                     state: this.state,
-                    getPrimaryStartingPitchers: () => {
-                        const endpoint = '/startingPitcher';
+                    getAllPlayers: () => {
+                        const endpoint ='/overall';
                         axios
                             .get(endpoint)
                             .then(res => {
-                                const primaryStartingPitchers = res.data;
-                                localStorage.setItem('primaryStartingPitchers', JSON.stringify(primaryStartingPitchers));
+                                const allPlayers = res.data;
+                                localStorage.setItem('allPlayers', JSON.stringify(allPlayers));
                                 this.setState({
-                                    primaryStartingPitchers
-                                });
+                                    allPlayers
+                                })
                             })
                             .catch(err => {
-                                console.log('error getting startingPitchers', err)
-                            });
-                    },
-                    getPrimaryReliefPitchers: () => {
-                        const endpoint = '/reliefPitcher';
-                        axios
-                            .get(endpoint)
-                            .then(res => {
-                                const primaryReliefPitchers = res.data;
-                                localStorage.setItem('primaryReliefPitchers', JSON.stringify(primaryReliefPitchers));
-                                this.setState({
-                                    primaryReliefPitchers
-                                });
-                            })
-                            .catch(err => {
-                                console.log('error getting reliefPitchers', err)
+                                console.log('error getting all players', err)
                             });
                     },
                     getHitters: () => {
-                        const endpoint = '/hitters';
-                        axios
-                            .get(endpoint)
-                            .then(res => {
-                                const hitters = res.data;
-                                localStorage.setItem('hitters', JSON.stringify(hitters));
-                                this.setState({
-                                    hitters
-                                });
-                            })
-                            .catch(err => {
-                                console.log('error getting hitters', err)
-                            });
+                        let hitters = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if(player.otherPositions.includes('Catcher') || player.primaryPosition.includes('Catcher') || player.otherPositions.includes('First Base') || player.primaryPosition.includes('First Base') || player.otherPositions.includes('Second Base') || player.primaryPosition.includes('Second Base') || player.otherPositions.includes('Shortstop') || player.primaryPosition.includes('Shortstop') || player.otherPositions.includes('Third Base') || player.primaryPosition.includes('Third Base') || player.otherPositions.includes('Outfield') || player.primaryPosition.includes('Outfield') || player.otherPositions.includes('Designated Hitter') || player.primaryPosition.includes('Designated Hitter')) {
+                                hitters = hitters.concat(player)
+                            }
+                        })
+
+                        localStorage.setItem('hitters', JSON.stringify(hitters));
+                        this.setState({
+                            hitters
+                        })
+                    },
+                    getPitchers: () => {
+                        let pitchers = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if(player.otherPositions.includes('Starting Pitcher') || player.primaryPosition.includes('Starting Pitcher') || player.otherPositions.includes('Relief Pitcher') || player.primaryPosition.includes('Relief Pitcher')) {
+                                pitchers = pitchers.concat(player)
+                            }
+                        })
+
+                        localStorage.setItem('pitchers', JSON.stringify(pitchers));
+                        this.setState({
+                            pitchers
+                        })
                     },
                     getCatchers: () => {
                         let catchers = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Catcher') || player.primaryPosition.includes('Catcher')) {
-                                catchers.concat(player)
+                                catchers = catchers.concat(player)
                             }
                         })
 
@@ -95,9 +86,9 @@ export default class AppProvider extends Component {
                     getFirstBase: () => {
                         let firstBase = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('First Base') || player.primaryPosition.includes('First Base')) {
-                                firstBase.concat(player)
+                                firstBase = firstBase.concat(player)
                             }
                         })
 
@@ -108,9 +99,9 @@ export default class AppProvider extends Component {
                     getSecondBase: () => {
                         let secondBase = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Second Base') || player.primaryPosition.includes('Second Base')) {
-                                secondBase.concat(player)
+                                secondBase = secondBase.concat(player)
                             }
                         })
 
@@ -121,9 +112,9 @@ export default class AppProvider extends Component {
                     getShortStop: () => {
                         let shortStop = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Shortstop') || player.primaryPosition.includes('Shortstop')) {
-                                shortStop.concat(player)
+                                shortStop = shortStop.concat(player)
                             }
                         })
 
@@ -134,9 +125,9 @@ export default class AppProvider extends Component {
                     getThirdBase: () => {
                         let thirdBase = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Third Base') || player.primaryPosition.includes('Third Base')) {
-                                thirdBase.concat(player)
+                                thirdBase = thirdBase.concat(player)
                             }
                         })
 
@@ -144,12 +135,41 @@ export default class AppProvider extends Component {
                             thirdBase
                         });
                     },
+
+                    getMiddleInfield: () => {
+                        let middleInfield = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if (player.otherPositions.includes('Second Base') || player.primaryPosition.includes('Second Base') || player.otherPositions.includes('Shortstop') || player.primaryPosition.includes('Shortstop')) {
+                                middleInfield = middleInfield.concat(player)
+                            }
+                        })
+
+                        this.setState({
+                            middleInfield
+                        });
+                    },
+
+                    getCornerInfield: () => {
+                        let cornerInfield = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if (player.otherPositions.includes('First Base') || player.primaryPosition.includes('First Base') || player.otherPositions.includes('Third Base') || player.primaryPosition.includes('Third Base')) {
+                                cornerInfield = cornerInfield.concat(player)
+                            }
+                        })
+
+                        this.setState({
+                            cornerInfield
+                        });
+                    },
+
                     getOutfield: () => {
                         let outfield = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Outfield') || player.primaryPosition.includes('Outfield')) {
-                                outfield.concat(player)
+                                outfield = outfield.concat(player)
                             }
                         })
 
@@ -160,15 +180,41 @@ export default class AppProvider extends Component {
                     getDesignatedHitters: () => {
                         let designatedHitters = [];
 
-                        this.state.hitters.forEach(player => {
+                        this.state.allPlayers.forEach(player => {
                             if (player.otherPositions.includes('Designated Hitter') || player.primaryPosition.includes('Designated Hitter')) {
-                                designatedHitters.concat(player)
+                                designatedHitters = designatedHitters.concat(player)
                             }
                         })
 
                         this.setState({
                             designatedHitters
                         });
+                    },
+                    getStartingPitchers: () => {
+                        let startingPitchers = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if(player.otherPositions.includes('Starting Pitcher') || player.primaryPosition.includes('Starting Pitcher')) {
+                                startingPitchers = startingPitchers.concat(player)
+                            }
+                        })
+
+                        this.setState({
+                            startingPitchers
+                        })
+                    },
+                    getReliefPitchers: () => {
+                        let reliefPitchers = [];
+
+                        this.state.allPlayers.forEach(player => {
+                            if(player.otherPositions.includes('Relief Pitcher') || player.primaryPosition.includes('Relief Pitcher')) {
+                                reliefPitchers = reliefPitchers.concat(player)
+                            }
+                        })
+
+                        this.setState({
+                            reliefPitchers
+                        })
                     },
                 }}
             >
