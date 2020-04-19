@@ -1,4 +1,4 @@
-// exports.seed = function (knex, Promise) {
+exports.seed = function (knex, Promise) {
 //   return knex('pitchers').insert([
 //     {
 //       // id 1
@@ -571,4 +571,4 @@
 //       'PitcherSteamerFWARProjection': 2.1,
 //     },
 //   ]);
-// };
+};
