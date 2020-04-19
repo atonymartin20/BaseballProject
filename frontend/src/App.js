@@ -32,6 +32,8 @@ class App extends React.Component {
         this.context.getSecondBase();
         this.context.getThirdBase();
         this.context.getShortStop();
+        this.context.getCornerInfield();
+        this.context.getMiddleInfield();
         this.context.getOutfield();
         this.context.getDesignatedHitters();
     }
