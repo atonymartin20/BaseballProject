@@ -5,20 +5,13 @@ export const AppContext = React.createContext();
 
 export default class AppProvider extends Component {
     state = {
-        primaryCatchers: [],
         catchers: [],
-        primaryFirstBase: [],
-        firstBase: JSON.parse(localStorage.getItem('firstBase')) || [],
-        primarySecondBase: [],
-        secondBase: JSON.parse(localStorage.getItem('secondBase')) || [],
-        primaryThirdBase: [],
-        thirdBase: JSON.parse(localStorage.getItem('thirdBase')) || [],
-        primaryShortStop: [],
-        shortStop: JSON.parse(localStorage.getItem('shortStop')) || [],
-        primaryOutfield: [],
-        outfield: JSON.parse(localStorage.getItem('outfield')) || [],
-        primaryDesignatedHitters: [],
-        designatedHitters: JSON.parse(localStorage.getItem('designatedHitters')) || [],
+        firstBase: [],
+        secondBase: [],
+        thirdBase: [],
+        shortStop: [],
+        outfield: [],
+        designatedHitters: [],
         hitters: JSON.parse(localStorage.getItem('hitters')) || [],
         primaryStartingPitchers: JSON.parse(localStorage.getItem('primaryStartingPitchers')) || [],
         startingPitchers: JSON.parse(localStorage.getItem('startingPitchers')) || [],
@@ -84,7 +77,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Catcher') || player.primaryPosition.includes('Catcher')) {
-                                catchers.concat(player)
+                                catchers = catchers.concat(player)
                             }
                         })
 
@@ -97,7 +90,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('First Base') || player.primaryPosition.includes('First Base')) {
-                                firstBase.concat(player)
+                                firstBase = firstBase.concat(player)
                             }
                         })
 
@@ -110,7 +103,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Second Base') || player.primaryPosition.includes('Second Base')) {
-                                secondBase.concat(player)
+                                secondBase = secondBase.concat(player)
                             }
                         })
 
@@ -123,7 +116,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Shortstop') || player.primaryPosition.includes('Shortstop')) {
-                                shortStop.concat(player)
+                                shortStop = shortStop.concat(player)
                             }
                         })
 
@@ -136,7 +129,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Third Base') || player.primaryPosition.includes('Third Base')) {
-                                thirdBase.concat(player)
+                                thirdBase = thirdBase.concat(player)
                             }
                         })
 
@@ -149,7 +142,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Outfield') || player.primaryPosition.includes('Outfield')) {
-                                outfield.concat(player)
+                                outfield = outfield.concat(player)
                             }
                         })
 
@@ -162,7 +155,7 @@ export default class AppProvider extends Component {
 
                         this.state.hitters.forEach(player => {
                             if (player.otherPositions.includes('Designated Hitter') || player.primaryPosition.includes('Designated Hitter')) {
-                                designatedHitters.concat(player)
+                                designatedHitters = designatedHitters.concat(player)
                             }
                         })
 
