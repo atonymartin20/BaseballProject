@@ -1,5 +1,5 @@
 exports.seed = function (knex, Promise) {
-  return knex('hitters').insert([
+  return knex('overall').insert([
       {
           // id 1
           'firstName': 'Willy',
