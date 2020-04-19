@@ -22,19 +22,45 @@ import Glossary from './components/glossary';
 class App extends React.Component {
     componentDidMount() {
         this.context.getAllPlayers();
-        this.context.getHitters();
-        this.context.getPitchers();
-        this.context.getCatchers();
-        this.context.getFirstBase();
-        this.context.getSecondBase();
-        this.context.getShortStop();
-        this.context.getThirdBase();
-        this.context.getMiddleInfield();
-        this.context.getCornerInfield();
-        this.context.getOutfield();
-        this.context.getDesignatedHitters();
-        this.context.getStartingPitchers();
-        this.context.getReliefPitchers();
+        setTimeout(() => {
+            this.context.getHitters();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getPitchers();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getCatchers();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getFirstBase();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getSecondBase();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getShortStop();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getThirdBase();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getMiddleInfield();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getCornerInfield();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getOutfield();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getDesignatedHitters();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getStartingPitchers();
+        }, 4000)
+        setTimeout(() => {
+            this.context.getReliefPitchers();
+        }, 4000)
     }
     render() {
         return (
