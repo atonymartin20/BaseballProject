@@ -14,11 +14,11 @@ export default class AppProvider extends Component {
         cornerInfield: [],
         outfield: [],
         designatedHitters: [],
-        hitters: JSON.parse(localStorage.getItem('hitters')) || [],
+        hitters: [],
         startingPitchers: [],
         reliefPitchers: [],
-        pitchers: JSON.parse(localStorage.getItem('pitchers')) || [],
-        allPlayers: JSON.parse(localStorage.getItem('allPlayers')) || [],
+        pitchers: [],
+        allPlayers: [],
     };
 
     render() {
@@ -33,7 +33,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const allPlayers = res.data;
-                                localStorage.setItem('allPlayers', JSON.stringify(allPlayers));
+
                                 this.setState({
                                     allPlayers
                                 })
@@ -51,7 +51,6 @@ export default class AppProvider extends Component {
                             }
                         })
 
-                        localStorage.setItem('hitters', JSON.stringify(hitters));
                         this.setState({
                             hitters
                         })
@@ -65,7 +64,6 @@ export default class AppProvider extends Component {
                             }
                         })
 
-                        localStorage.setItem('pitchers', JSON.stringify(pitchers));
                         this.setState({
                             pitchers
                         })
