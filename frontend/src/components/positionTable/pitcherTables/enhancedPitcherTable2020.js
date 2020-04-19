@@ -9,10 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import DesignatedHitterCard from '../../players/designatedHitterCard.js';
+import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
-    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
+function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,16 +41,16 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
-    { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
-    { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
-    { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
-    { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
-    { id: 'Runs', numeric: true, label: 'Runs', info: 'Runs' },
-    { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
-    { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
+    { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
+    { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
+    { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
+    { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
+    { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
+    { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
+    { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched'},
+    { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
-    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
-    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
+    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
 ];
 
 function EnhancedTableHead(props) {
@@ -136,16 +136,16 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('POBP');
+    const [orderBy, setOrderBy] = React.useState('PTotal');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2019, player.BA2019, player.OBP2019, player.HR2019, player.Runs2019, player.RBI2019, player.StolenBases2019, player.FWAR2019, ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.BA2019))) / 6), ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.OBP2019) / 1.25)) / 6),player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.SteamerInningsPitchedProjection, player.SteamerQSProjection, player.SteamerRawKsProjection, player.SteamerERAProjection, player.SteamerFIPProjection, player.SteamerWHIPProjection, player.SteamerSavesProjection, player.SteamerFWARProjection, (((4 * player.SteamerQSProjection) + (player.SteamerRawKsProjection / 3) + (2 * player.SteamerSavesProjection) + ((player.SteamerInningsPitchedProjection / player.SteamerWHIPProjection) / 3) + ((player.SteamerInningsPitchedProjection / player.SteamerERAProjection) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -184,7 +184,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <DesignatedHitterCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
@@ -203,7 +203,7 @@ export default function EnhancedTable(props) {
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy))
                                 .map((row, index) => {
-                                    if (row.PAs > 0) {
+                                    if (row.InningsPitched > 0) {
                                         const isItemSelected = isSelected(row.name);
                                         const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -220,16 +220,16 @@ export default function EnhancedTable(props) {
                                                 <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
                                                     {row.name}
                                                 </TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FIP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.WHIP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.Saves}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.PTotal.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );
                                     }

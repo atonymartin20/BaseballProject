@@ -6,10 +6,10 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import EnhancedPitcherTable2020 from '../positionTable/pitcherTables/enhancedPitcherTable2020.js';
-import EnhancedPitcherTable2019 from '../positionTable/pitcherTables/enhancedPitcherTable2019.js';
-import EnhancedPitcherTable2018 from '../positionTable/pitcherTables/enhancedPitcherTable2018.js';
-import EnhancedPitcherTable2017 from '../positionTable/pitcherTables/enhancedPitcherTable2017.js';
+import EnhancedTable2020 from '../positionTable/hitterTables/enhancedTable2020.js';
+import EnhancedTable2019 from '../positionTable/hitterTables/enhancedTable2019.js';
+import EnhancedTable2018 from '../positionTable/hitterTables/enhancedTable2018.js';
+import EnhancedTable2017 from '../positionTable/hitterTables/enhancedTable2017.js';
 
 
 const styles = theme => ({
@@ -56,13 +56,13 @@ const styles = theme => ({
     }
 });
 
-class ReliefPitchers extends React.Component {
+class MiddleInfield extends React.Component {
     state = {
         display2017: false,
         display2018: false,
         display2019: false,
         display2020: true,
-        reliefPitchers: [],
+        middleInfield: [],
     }
 
     changeYear2017 = event => {
@@ -107,7 +107,7 @@ class ReliefPitchers extends React.Component {
 
     componentDidMount() {
         this.setState({
-            reliefPitchers: this.context.state.reliefPitchers || []
+            middleInfield: this.context.state.middleInfield || []
         })
     }
 
@@ -130,8 +130,8 @@ class ReliefPitchers extends React.Component {
             <div className={classes.dataDiv}>
                 {display2017 ? (
                     <div>
-                        <EnhancedPitcherTable2017
-                            players={this.state.reliefPitchers}
+                        <EnhancedTable2017
+                            players={this.state.middleInfield}
                         />
                     </div>
                 ) : null
@@ -139,25 +139,25 @@ class ReliefPitchers extends React.Component {
 
                 {display2018 ? (
                     <div>
-                        <EnhancedPitcherTable2018
-                            players={this.state.reliefPitchers}
+                        <EnhancedTable2018
+                            players={this.state.middleInfield}
                         />
                     </div>) : null
                 }
 
                 {display2019 ? (
                     <div>
-                        <EnhancedPitcherTable2019
-                            players={this.state.reliefPitchers}
+                        <EnhancedTable2019
+                            players={this.state.middleInfield}
                         />
                     </div>) : null
                 }
 
                 {display2020 ? (
                     <div>
-                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/20/2020.</h1>
-                        <EnhancedPitcherTable2020
-                            players={this.state.reliefPitchers}
+                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/15/2020.</h1>
+                        <EnhancedTable2020
+                            players={this.state.middleInfield}
                         />
                     </div>) : null
                 }
@@ -210,6 +210,6 @@ class ReliefPitchers extends React.Component {
     }
 }
 
-ReliefPitchers.contextType = AppContext;
+MiddleInfield.contextType = AppContext;
 
-export default withStyles(styles)(ReliefPitchers);
+export default withStyles(styles)(MiddleInfield);

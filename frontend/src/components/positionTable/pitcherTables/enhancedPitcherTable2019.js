@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import ReliefPitcherCard from '../../players/reliefPitcherCard.js';
+import PlayerCard from '../../players/playerCard.js';
 
 function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
     return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
@@ -142,10 +142,10 @@ export default function EnhancedTable(props) {
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
 
-    React.useEffect(() => { 
+    React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerGamesProjection, player.SteamerInningsPitchedProjection, player.SteamerQSProjection, player.SteamerRawKsProjection, player.SteamerERAProjection, player.SteamerFIPProjection, player.SteamerWHIPProjection, player.SteamerSavesProjection, player.SteamerFWARProjection, (((4 * player.SteamerQSProjection) + (player.SteamerRawKsProjection / 3) + (2 * player.SteamerSavesProjection) + ((player.SteamerInningsPitchedProjection / player.SteamerWHIPProjection) / 3) + ((player.SteamerInningsPitchedProjection / player.SteamerERAProjection) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.Games2019, player.InningsPitched2019, player.QS2019, player.RawKs2019, player.ERA2019, player.FIP2019, player.WHIP2019, player.Saves2019, player.FWAR2019, (((4 * player.QS2019) + (player.RawKs2019 / 3) + (2 * player.Saves2019) + ((player.InningsPitched2019 / player.WHIP2019) / 3) + ((player.InningsPitched2019 / player.ERA2019) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -184,7 +184,7 @@ export default function EnhancedTable(props) {
 
     return (
         <div className={classes.root}>
-            {playerCard ? <ReliefPitcherCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table
