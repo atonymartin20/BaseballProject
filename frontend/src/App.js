@@ -24,42 +24,16 @@ import Glossary from './components/glossary';
 
 class App extends React.Component {
     componentDidMount() {
-        this.context.getPrimaryCatchers();
-        this.context.getPrimaryFirstBase();
-        this.context.getPrimarySecondBase();
-        this.context.getPrimaryThirdBase();
-        this.context.getPrimaryShortStop();
-        this.context.getPrimaryOutfield();
-        this.context.getPrimaryDesignatedHitters();
+        this.context.getHitters();
         this.context.getPrimaryStartingPitchers();
         this.context.getPrimaryReliefPitchers();
-        setTimeout(() => {
-            this.context.getHitters();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getHitters();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllCatchers();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllFirstBase();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllSecondBase();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllShortStop();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllThirdBase();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllOutfield();
-        }, 3000);
-        setTimeout(() => {
-            this.context.getAllDesignatedHitters();
-        }, 3000);
+        this.context.getCatchers();
+        this.context.getFirstBase();
+        this.context.getSecondBase();
+        this.context.getThirdBase();
+        this.context.getShortStop();
+        this.context.getOutfield();
+        this.context.getDesignatedHitters();
     }
     render() {
         return (
