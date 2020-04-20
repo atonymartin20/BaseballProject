@@ -221,7 +221,7 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>Number({row.InningsPitched})</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}.toFixed(1)</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
