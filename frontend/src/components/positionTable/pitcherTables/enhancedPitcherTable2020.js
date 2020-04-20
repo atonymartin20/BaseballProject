@@ -221,14 +221,14 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.QualityStarts.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{Number(row.InningsPitched).toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{Number(row.QualityStarts).toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.FIP}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.WHIP}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Saves}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{Number(row.FWAR).toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PTotal.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );

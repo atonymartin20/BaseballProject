@@ -63,7 +63,7 @@ export default class AppProvider extends Component {
                                 pitchers = pitchers.concat(player)
                             }
                         })
-
+                        localStorage.setItem('pitchers', JSON.stringify(pitchers))
                         this.setState({
                             pitchers
                         })
