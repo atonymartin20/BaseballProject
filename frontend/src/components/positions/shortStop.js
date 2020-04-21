@@ -106,6 +106,7 @@ class ShortStop extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getShortStop();
         this.setState({
             shortStop: this.context.state.shortStop || []
         })

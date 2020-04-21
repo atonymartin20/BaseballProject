@@ -141,6 +141,7 @@ export default function EnhancedTable(props) {
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
+    console.log(props.players)
 
     React.useEffect(() => {
         if (props.players.length !== 0) {

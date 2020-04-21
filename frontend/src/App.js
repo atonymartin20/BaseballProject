@@ -25,7 +25,6 @@ class App extends React.Component {
         setTimeout(() => {
             this.context.getHitters();
             this.context.getPitchers();
-            this.context.getPitchers();
             this.context.getCatchers();
             this.context.getFirstBase();
             this.context.getSecondBase();

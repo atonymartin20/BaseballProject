@@ -106,6 +106,7 @@ class StartingPitchers extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getStartingPitchers();
         this.setState({
             startingPitchers: this.context.state.startingPitchers || []
         })

@@ -106,6 +106,7 @@ class Catchers extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getCatchers();
         this.setState({
             catchers: this.context.state.catchers || []
         })

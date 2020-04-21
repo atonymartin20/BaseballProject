@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -10,6 +10,7 @@ import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
+import { AppContext } from '../../context/appContext.js';
 
 function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
     return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
@@ -141,17 +142,37 @@ export default function EnhancedTable(props) {
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
+    const globalState = useContext(AppContext)
 
     React.useEffect(() => {
+        console.log(rows.length)
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
                 createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, Number(player.SteamerAVGProjection), Number(player.SteamerOBPProjection), player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, Number(player.SteamerFWARProjection), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
             )))
         }
         else {
-            setRows([
-                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-            ])
+            console.log(rows.length)
+            if(props.players.length === 0) {
+                globalState.getHitters();
+                globalState.getPitchers();
+                globalState.getCatchers();
+                globalState.getFirstBase();
+                globalState.getSecondBase();
+                globalState.getShortStop();
+                globalState.getThirdBase();
+                globalState.getMiddleInfield();
+                globalState.getCornerInfield();
+                globalState.getOutfield();
+                globalState.getDesignatedHitters();
+                globalState.getStartingPitchers();
+                globalState.getReliefPitchers();
+                setTimeout(() => {
+                    setRows(props.players.map((player, index) => (
+                        createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, Number(player.SteamerAVGProjection), Number(player.SteamerOBPProjection), player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, Number(player.SteamerFWARProjection), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
+                    )))
+                }, 1000)
+            }
         }
     }, [props.players])
 

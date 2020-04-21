@@ -106,6 +106,7 @@ class DesignatedHitter extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getDesignatedHitters();
         this.setState({
             designatedHitters: this.context.state.designatedHitters || []
         })

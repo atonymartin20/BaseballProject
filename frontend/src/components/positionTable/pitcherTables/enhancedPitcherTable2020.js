@@ -149,7 +149,6 @@ export default function EnhancedTable(props) {
             )))
         }
         else {
-            console.log('I didn\'t load properly ... my bad')
             setRows([
                 createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
             ])

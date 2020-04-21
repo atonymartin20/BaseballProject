@@ -59,6 +59,7 @@ const styles = theme => ({
         margin: '0px',
         listStyle: 'none',
         flexDirection: "column",
+        paddingBottom: '60px',
     },
     drawerListItem: {
         float: "left",
@@ -319,24 +320,22 @@ class Navbar extends React.Component {
                         </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/pitchers' className={classes.linkStyling}> */}
+                        <Link to='/pitchers' className={classes.linkStyling}>
                             <Button
                                 className={classes.drawerNavLink}
-                                disabled
                             >
                                 Pitchers
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                     <ListItem className={classes.drawerListItem}>
-                        {/* <Link to='/overall' className={classes.linkStyling}> */}
-                        <Button
-                            className={classes.drawerNavLink}
-                            disabled
-                        >
-                            Overall
+                        <Link to='/overall' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Overall
                             </Button>
-                        {/* </Link> */}
+                        </Link>
                     </ListItem>
                 </List>
             </div>
