@@ -204,7 +204,6 @@ class Navbar extends React.Component {
                         <Link to='/pitchers' className={classes.linkStyling}>
                             <Button
                                 className={classes.drawerNavLink}
-                                disabled
                             >
                                 Pitchers
                             </Button>

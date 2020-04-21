@@ -68,7 +68,6 @@ export default class AppProvider extends Component {
                         if(pitchers !== []) {
                             console.log('Pitchers acquired')
                         }
-                        localStorage.setItem('pitchers', JSON.stringify(pitchers))
                         this.setState({
                             pitchers
                         })
