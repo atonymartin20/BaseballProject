@@ -33,7 +33,7 @@ export default class AppProvider extends Component {
                             .get(endpoint)
                             .then(res => {
                                 const overall = res.data;
-
+                                console.log('Overall players set')
                                 this.setState({
                                     overall
                                 })
@@ -50,7 +50,9 @@ export default class AppProvider extends Component {
                                 hitters = hitters.concat(player)
                             }
                         })
-
+                        if(hitters !== []) {
+                            console.log('Hitters acquired')
+                        }
                         this.setState({
                             hitters
                         })
@@ -63,6 +65,9 @@ export default class AppProvider extends Component {
                                 pitchers = pitchers.concat(player)
                             }
                         })
+                        if(pitchers !== []) {
+                            console.log('Pitchers acquired')
+                        }
                         localStorage.setItem('pitchers', JSON.stringify(pitchers))
                         this.setState({
                             pitchers
@@ -76,7 +81,9 @@ export default class AppProvider extends Component {
                                 catchers = catchers.concat(player)
                             }
                         })
-
+                        if(catchers !== []) {
+                            console.log('Catchers acquired')
+                        }
                         this.setState({
                             catchers
                         });
@@ -89,7 +96,9 @@ export default class AppProvider extends Component {
                                 firstBase = firstBase.concat(player)
                             }
                         })
-
+                        if(firstBase !== []) {
+                            console.log('First Base acquired')
+                        }
                         this.setState({
                             firstBase
                         });
@@ -102,7 +111,9 @@ export default class AppProvider extends Component {
                                 secondBase = secondBase.concat(player)
                             }
                         })
-
+                        if(secondBase !== []) {
+                            console.log('Second Base acquired')
+                        }
                         this.setState({
                             secondBase
                         });
@@ -115,7 +126,9 @@ export default class AppProvider extends Component {
                                 shortStop = shortStop.concat(player)
                             }
                         })
-
+                        if(shortStop !== []) {
+                            console.log('Shortstops acquired')
+                        }
                         this.setState({
                             shortStop
                         });
@@ -128,7 +141,9 @@ export default class AppProvider extends Component {
                                 thirdBase = thirdBase.concat(player)
                             }
                         })
-
+                        if(thirdBase !== []) {
+                            console.log('Third Base acquired')
+                        }
                         this.setState({
                             thirdBase
                         });
@@ -142,7 +157,9 @@ export default class AppProvider extends Component {
                                 middleInfield = middleInfield.concat(player)
                             }
                         })
-
+                        if(middleInfield !== []) {
+                            console.log('Middle Infielders acquired')
+                        }
                         this.setState({
                             middleInfield
                         });
@@ -156,7 +173,9 @@ export default class AppProvider extends Component {
                                 cornerInfield = cornerInfield.concat(player)
                             }
                         })
-
+                        if(cornerInfield !== []) {
+                            console.log('Corner Infielders acquired')
+                        }
                         this.setState({
                             cornerInfield
                         });
@@ -170,7 +189,9 @@ export default class AppProvider extends Component {
                                 outfield = outfield.concat(player)
                             }
                         })
-
+                        if(outfield !== []) {
+                            console.log('Outfielders acquired')
+                        }
                         this.setState({
                             outfield
                         });
@@ -183,7 +204,9 @@ export default class AppProvider extends Component {
                                 designatedHitters = designatedHitters.concat(player)
                             }
                         })
-
+                        if(designatedHitters !== []) {
+                            console.log('DHs acquired')
+                        }
                         this.setState({
                             designatedHitters
                         });
@@ -196,7 +219,9 @@ export default class AppProvider extends Component {
                                 startingPitchers = startingPitchers.concat(player)
                             }
                         })
-
+                        if(startingPitchers !== []) {
+                            console.log('Starting Pitchers acquired')
+                        }
                         this.setState({
                             startingPitchers
                         })
@@ -209,7 +234,9 @@ export default class AppProvider extends Component {
                                 reliefPitchers = reliefPitchers.concat(player)
                             }
                         })
-
+                        if(reliefPitchers !== []) {
+                            console.log('Relief Pitchers acquired')
+                        }
                         this.setState({
                             reliefPitchers
                         })
