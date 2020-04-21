@@ -106,6 +106,7 @@ class Hitters extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getHitters();
         this.setState({
             hitters: this.context.state.hitters || []
         })

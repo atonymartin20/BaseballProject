@@ -106,6 +106,7 @@ class Outfield extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getOutfield();
         this.setState({
             outfield: this.context.state.outfield || []
         })

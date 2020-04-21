@@ -106,6 +106,7 @@ class SecondBase extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getSecondBase();
         this.setState({
             secondBase: this.context.state.secondBase || []
         })

@@ -106,6 +106,7 @@ class MiddleInfield extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getMiddleInfield();
         this.setState({
             middleInfield: this.context.state.middleInfield || []
         })
