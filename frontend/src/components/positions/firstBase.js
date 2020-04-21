@@ -106,6 +106,7 @@ class FirstBase extends React.Component {
     }
 
     componentDidMount() {
+        this.context.getFirstBase();
         this.setState({
             firstBase: this.context.state.firstBase || []
         })
