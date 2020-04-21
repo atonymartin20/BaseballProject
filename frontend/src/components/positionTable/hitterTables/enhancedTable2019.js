@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2019, player.BA2019, player.OBP2019, player.HR2019, player.Runs2019, player.RBI2019, player.StolenBases2019, player.FWAR2019, ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.BA2019))) / 6), ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.OBP2019) / 1.25)) / 6),player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.PA2019, Number(player.BA2019), Number(player.OBP2019), player.HR2019, player.Runs2019, player.RBI2019, player.StolenBases2019, Number(player.FWAR2019), ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.BA2019))) / 6), ((player.Runs2019 + player.RBI2019 + (6 * player.HR2019) + (6.5 * player.StolenBases2019) + ((player.PA2019 * player.OBP2019) / 1.25)) / 6),player.id, index)
             )))
         }
         else {
@@ -221,13 +221,13 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.AVG.toFixed(3)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.OBP.toFixed(3)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
                                             </TableRow>

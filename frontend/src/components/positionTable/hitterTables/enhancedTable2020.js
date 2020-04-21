@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, player.SteamerAVGProjection, player.SteamerOBPProjection, player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, player.SteamerFWARProjection, ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, Number(player.SteamerAVGProjection), Number(player.SteamerOBPProjection), player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, Number(player.SteamerFWARProjection), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
             )))
         }
         else {
@@ -221,13 +221,13 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.AVG.toFixed(3)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.OBP.toFixed(3)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
                                             </TableRow>
