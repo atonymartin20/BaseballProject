@@ -144,7 +144,7 @@ export default function EnhancedTable(props) {
     const [rows, setRows] = React.useState([]);
     const globalState = useContext(AppContext)
     console.log(globalState)
-    
+
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
@@ -152,9 +152,24 @@ export default function EnhancedTable(props) {
             )))
         }
         else {
-            setRows([
-                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-            ])
+            globalState.getHitters();
+            globalState.getPitchers();
+            globalState.getCatchers();
+            globalState.getFirstBase();
+            globalState.getSecondBase();
+            globalState.getShortStop();
+            globalState.getThirdBase();
+            globalState.getMiddleInfield();
+            globalState.getCornerInfield();
+            globalState.getOutfield();
+            globalState.getDesignatedHitters();
+            globalState.getStartingPitchers();
+            globalState.getReliefPitchers();
+            setTimeout(() => {
+                setRows(props.players.map((player, index) => (
+                    createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, Number(player.SteamerAVGProjection), Number(player.SteamerOBPProjection), player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, Number(player.SteamerFWARProjection), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
+                )))
+            }, 1000)
         }
     }, [props.players])
 
