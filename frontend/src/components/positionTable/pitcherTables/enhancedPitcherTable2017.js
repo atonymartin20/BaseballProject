@@ -145,7 +145,7 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.Games2017, player.InningsPitched2017, player.QS2017, player.RawKs2017, player.ERA2017, player.FIP2017, player.WHIP2017, player.Saves2017, player.PitcherFWAR2017, (((4 * player.QS2017) + (player.RawKs2017 / 3) + (2 * player.Saves2017) + ((player.InningsPitched2017 / player.WHIP2017) / 3) + ((player.InningsPitched2017 / player.ERA2017) / 3)) / 6), player.id, index)
+                createData(`${player.firstName} ${player.lastName}`, player.Games2017, Number(player.InningsPitched2017), Number(player.QS2017), player.RawKs2017, Number(player.ERA2017), Number(player.FIP2017), Number(player.WHIP2017), player.Saves2017, Number(player.PitcherFWAR2017), (((4 * player.QS2017) + (player.RawKs2017 / 3) + (2 * player.Saves2017) + ((player.InningsPitched2017 / player.WHIP2017) / 3) + ((player.InningsPitched2017 / player.ERA2017) / 3)) / 6), player.id, index)
             )))
         }
         else {
@@ -221,14 +221,14 @@ export default function EnhancedTable(props) {
                                                     {row.name}
                                                 </TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Games}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.QualityStarts}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.InningsPitched.toFixed(1)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.QualityStarts.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.RawKs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.ERA}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FIP}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.WHIP}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.ERA.toFixed(2)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FIP.toFixed(2)}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.WHIP.toFixed(2)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.Saves}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR}</TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
                                                 <TableCell align="right" className={classes.tableCell}>{row.PTotal.toFixed(1)}</TableCell>
                                             </TableRow>
                                         );
