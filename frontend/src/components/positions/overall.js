@@ -6,10 +6,10 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import EnhancedTable2020 from '../positionTable/hitterTables/enhancedTable2020.js';
-import EnhancedTable2019 from '../positionTable/hitterTables/enhancedTable2019.js';
-import EnhancedTable2018 from '../positionTable/hitterTables/enhancedTable2018.js';
-import EnhancedTable2017 from '../positionTable/hitterTables/enhancedTable2017.js';
+import EnhancedTable2020 from '../positionTable/overallTables/enhancedTable2020.js';
+import EnhancedTable2019 from '../positionTable/overallTables/enhancedTable2019.js';
+import EnhancedTable2018 from '../positionTable/overallTables/enhancedTable2018.js';
+import EnhancedTable2017 from '../positionTable/overallTables/enhancedTable2017.js';
 
 
 const styles = theme => ({
@@ -62,7 +62,7 @@ class Overall extends React.Component {
         display2018: false,
         display2019: false,
         display2020: true,
-        allPlayers: [],
+        overall: [],
     }
 
     changeYear2017 = event => {
@@ -107,7 +107,7 @@ class Overall extends React.Component {
 
     componentDidMount() {
         this.setState({
-            allPlayers: this.context.state.allPlayers || []
+            overall: this.context.state.overall || []
         })
     }
 
@@ -131,7 +131,7 @@ class Overall extends React.Component {
                 {display2017 ? (
                     <div>
                         <EnhancedTable2017
-                            players={this.state.allPlayers}
+                            players={this.state.overall}
                         />
                     </div>
                 ) : null
@@ -140,7 +140,7 @@ class Overall extends React.Component {
                 {display2018 ? (
                     <div>
                         <EnhancedTable2018
-                            players={this.state.allPlayers}
+                            players={this.state.overall}
                         />
                     </div>) : null
                 }
@@ -148,7 +148,7 @@ class Overall extends React.Component {
                 {display2019 ? (
                     <div>
                         <EnhancedTable2019
-                            players={this.state.allPlayers}
+                            players={this.state.overall}
                         />
                     </div>) : null
                 }
@@ -157,7 +157,7 @@ class Overall extends React.Component {
                     <div>
                         <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/17/2020.</h1>
                         <EnhancedTable2020
-                            players={this.state.allPlayers}
+                            players={this.state.overall}
                         />
                     </div>) : null
                 }
