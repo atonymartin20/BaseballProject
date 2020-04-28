@@ -178,6 +178,15 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.string('CurveUsagePercent2017', 50);
         twoWayPlayer.string('SplitterUsagePercent2017', 50);
         twoWayPlayer.string('KnuckleCurveUsagePercent2017', 50);
+        twoWayPlayer.decimal('OverallXWOBA2017', 8, 3);
+        twoWayPlayer.string('FourSeamFastballXWOBA2017', 50);
+        twoWayPlayer.string('SinkerXWOBA2017', 50);
+        twoWayPlayer.string('CutterXWOBA2017', 50);
+        twoWayPlayer.string('SliderXWOBA2017', 50);
+        twoWayPlayer.string('ChangeupXWOBA2017', 50);
+        twoWayPlayer.string('CurveXWOBA2017', 50);
+        twoWayPlayer.string('SplitterXWOBA2017', 50);
+        twoWayPlayer.string('KnuckleCurveXWOBA2017', 50);
         twoWayPlayer.decimal('PitcherFWAR2017', 8, 1);
         twoWayPlayer.integer('Games2018');
         twoWayPlayer.integer('GamesStarted2018');
@@ -225,6 +234,15 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.string('CurveUsagePercent2018', 50);
         twoWayPlayer.string('SplitterUsagePercent2018', 50);
         twoWayPlayer.string('KnuckleCurveUsagePercent2018', 50);
+        twoWayPlayer.decimal('OverallXWOBA2018', 8, 3);
+        twoWayPlayer.string('FourSeamFastballXWOBA2018', 50);
+        twoWayPlayer.string('SinkerXWOBA2018', 50);
+        twoWayPlayer.string('CutterXWOBA2018', 50);
+        twoWayPlayer.string('SliderXWOBA2018', 50);
+        twoWayPlayer.string('ChangeupXWOBA2018', 50);
+        twoWayPlayer.string('CurveXWOBA2018', 50);
+        twoWayPlayer.string('SplitterXWOBA2018', 50);
+        twoWayPlayer.string('KnuckleCurveXWOBA2018', 50);
         twoWayPlayer.decimal('PitcherFWAR2018', 8, 1);
         twoWayPlayer.integer('Games2019');
         twoWayPlayer.integer('GamesStarted2019');
@@ -272,6 +290,15 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.string('CurveUsagePercent2019', 50);
         twoWayPlayer.string('SplitterUsagePercent2019', 50);
         twoWayPlayer.string('KnuckleCurveUsagePercent2019', 50);
+        twoWayPlayer.decimal('OverallXWOBA2019', 8, 3);
+        twoWayPlayer.string('FourSeamFastballXWOBA2019', 50);
+        twoWayPlayer.string('SinkerXWOBA2019', 50);
+        twoWayPlayer.string('CutterXWOBA2019', 50);
+        twoWayPlayer.string('SliderXWOBA2019', 50);
+        twoWayPlayer.string('ChangeupXWOBA2019', 50);
+        twoWayPlayer.string('CurveXWOBA2019', 50);
+        twoWayPlayer.string('SplitterXWOBA2019', 50);
+        twoWayPlayer.string('KnuckleCurveXWOBA2019', 50);
         twoWayPlayer.decimal('PitcherFWAR2019', 8, 1);
         twoWayPlayer.integer('SteamerGamesProjection');
         twoWayPlayer.integer('SteamerGamesStartedProjection');
@@ -290,4 +317,3 @@ exports.up = function(knex, Promise) {
 exports.down = function(knex, Promise) {
     return knex.schema.dropTableIfExists('twoWayPlayer');
 };
-
