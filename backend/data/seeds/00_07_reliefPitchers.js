@@ -2890,7 +2890,7 @@ exports.seed = function (knex, Promise) {
             'RawKs2017': 26,
             'HitsPer92017': 8.8,
             'HRsPer92017': 0.9,
-            'BBPer92017': 1.8
+            'BBPer92017': 1.8,
             'KPer92017': 3.7,
             'KDividedByBB2017': 2.00,
             'Saves2017': 0,
