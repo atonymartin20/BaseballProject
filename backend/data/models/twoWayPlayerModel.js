@@ -4,7 +4,7 @@ module.exports = {
     findByID: id => {
         return db('twoWayPlayer').where({ id }).first();
     },
-    getThirdBase() {
+    getTwoWayPlayer() {
         return db('twoWayPlayer');
     }
 }
