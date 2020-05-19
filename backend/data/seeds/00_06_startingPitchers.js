@@ -16274,7 +16274,7 @@ exports.seed = function (knex, Promise) {
             'PitcherLDPercent2017': '15.5%',
             'PitcherFBPercent2017': '17.7%',
             'IFFBPercent2017': '2.8%',
-            'SoftContactPercent217': '25.4%',
+            'SoftContactPercent2017': '25.4%',
             'MediumContactPercent2017': '49.9%',
             'HardContactPercent2017': '24.7%',
             'FirstStrikePercent2017': '60.5%',
