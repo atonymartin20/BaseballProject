@@ -134,8 +134,8 @@ exports.up = function (knex, Promise) {
         overall.decimal('SteamerFWARProjection', 8, 1);
         overall.integer('Games2017');
         overall.integer('GamesStarted2017');
-        overall.decimal('InningsPitched2017', 8, 2);
-        overall.decimal('InningsPitchedPerGameStarted2017', 8, 2);
+        overall.decimal('InningsPitched2017', 8, 1);
+        overall.decimal('InningsPitchedPerGameStarted2017', 8, 1);
         overall.integer('QS2017', 50);
         overall.decimal('ERA2017', 8, 2);
         overall.integer('ERAPlus2017');
@@ -190,8 +190,8 @@ exports.up = function (knex, Promise) {
         overall.decimal('PitcherFWAR2017', 8, 1);
         overall.integer('Games2018');
         overall.integer('GamesStarted2018');
-        overall.decimal('InningsPitched2018', 8, 2);
-        overall.decimal('InningsPitchedPerGameStarted2018', 8, 2);
+        overall.decimal('InningsPitched2018', 8, 1);
+        overall.decimal('InningsPitchedPerGameStarted2018', 8, 1);
         overall.integer('QS2018', 50);
         overall.decimal('ERA2018', 8, 2);
         overall.integer('ERAPlus2018');
@@ -246,8 +246,8 @@ exports.up = function (knex, Promise) {
         overall.decimal('PitcherFWAR2018', 8, 1);
         overall.integer('Games2019');
         overall.integer('GamesStarted2019');
-        overall.decimal('InningsPitched2019', 8, 2);
-        overall.decimal('InningsPitchedPerGameStarted2019', 8, 2);
+        overall.decimal('InningsPitched2019', 8, 1);
+        overall.decimal('InningsPitchedPerGameStarted2019', 8, 1);
         overall.integer('QS2019', 50);
         overall.decimal('ERA2019', 8, 2);
         overall.integer('ERAPlus2019');

@@ -1,5 +1,5 @@
 exports.seed = function (knex, Promise) {
-  return knex('twoWayPlayer').insert([
+  return knex('overall').insert([
     {
       // id 1
       'firstName': 'Brendan',

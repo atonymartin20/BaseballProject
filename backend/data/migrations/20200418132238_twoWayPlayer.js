@@ -134,8 +134,8 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.decimal('SteamerFWARProjection', 8, 1);
         twoWayPlayer.integer('Games2017');
         twoWayPlayer.integer('GamesStarted2017');
-        twoWayPlayer.decimal('InningsPitched2017', 8, 2);
-        twoWayPlayer.decimal('InningsPitchedPerGameStarted2017', 8, 2);
+        twoWayPlayer.decimal('InningsPitched2017', 8, 1);
+        twoWayPlayer.decimal('InningsPitchedPerGameStarted2017', 8, 1);
         twoWayPlayer.integer('QS2017', 50);
         twoWayPlayer.decimal('ERA2017', 8, 2);
         twoWayPlayer.integer('ERAPlus2017');
@@ -190,8 +190,8 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.decimal('PitcherFWAR2017', 8, 1);
         twoWayPlayer.integer('Games2018');
         twoWayPlayer.integer('GamesStarted2018');
-        twoWayPlayer.decimal('InningsPitched2018', 8, 2);
-        twoWayPlayer.decimal('InningsPitchedPerGameStarted2018', 8, 2);
+        twoWayPlayer.decimal('InningsPitched2018', 8, 1);
+        twoWayPlayer.decimal('InningsPitchedPerGameStarted2018', 8, 1);
         twoWayPlayer.integer('QS2018', 50);
         twoWayPlayer.decimal('ERA2018', 8, 2);
         twoWayPlayer.integer('ERAPlus2018');
@@ -246,8 +246,8 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.decimal('PitcherFWAR2018', 8, 1);
         twoWayPlayer.integer('Games2019');
         twoWayPlayer.integer('GamesStarted2019');
-        twoWayPlayer.decimal('InningsPitched2019', 8, 2);
-        twoWayPlayer.decimal('InningsPitchedPerGameStarted2019', 8, 2);
+        twoWayPlayer.decimal('InningsPitched2019', 8, 1);
+        twoWayPlayer.decimal('InningsPitchedPerGameStarted2019', 8, 1);
         twoWayPlayer.integer('QS2019', 50);
         twoWayPlayer.decimal('ERA2019', 8, 2);
         twoWayPlayer.integer('ERAPlus2019');

@@ -12,8 +12,8 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('otherPositions', 50);
         startingPitchers.integer('Games2017');
         startingPitchers.integer('GamesStarted2017');
-        startingPitchers.decimal('InningsPitched2017', 8, 2);
-        startingPitchers.decimal('InningsPitchedPerGameStarted2017', 8, 2);
+        startingPitchers.decimal('InningsPitched2017', 8, 1);
+        startingPitchers.decimal('InningsPitchedPerGameStarted2017', 8, 1);
         startingPitchers.integer('QS2017', 50);
         startingPitchers.decimal('ERA2017', 8, 2);
         startingPitchers.integer('ERAPlus2017');
@@ -68,8 +68,8 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('PitcherFWAR2017', 8, 1);
         startingPitchers.integer('Games2018');
         startingPitchers.integer('GamesStarted2018');
-        startingPitchers.decimal('InningsPitched2018', 8, 2);
-        startingPitchers.decimal('InningsPitchedPerGameStarted2018', 8, 2);
+        startingPitchers.decimal('InningsPitched2018', 8, 1);
+        startingPitchers.decimal('InningsPitchedPerGameStarted2018', 8, 1);
         startingPitchers.integer('QS2018', 50);
         startingPitchers.decimal('ERA2018', 8, 2);
         startingPitchers.integer('ERAPlus2018');
@@ -124,8 +124,8 @@ exports.up = function (knex, Promise) {
         startingPitchers.decimal('PitcherFWAR2018', 8, 1);
         startingPitchers.integer('Games2019');
         startingPitchers.integer('GamesStarted2019');
-        startingPitchers.decimal('InningsPitched2019', 8, 2);
-        startingPitchers.decimal('InningsPitchedPerGameStarted2019', 8, 2);
+        startingPitchers.decimal('InningsPitched2019', 8, 1);
+        startingPitchers.decimal('InningsPitchedPerGameStarted2019', 8, 1);
         startingPitchers.integer('QS2019', 50);
         startingPitchers.decimal('ERA2019', 8, 2);
         startingPitchers.integer('ERAPlus2019');
