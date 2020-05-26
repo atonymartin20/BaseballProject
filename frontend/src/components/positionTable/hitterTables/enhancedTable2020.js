@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
-    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
+function createData(name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
+    return { name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -32,7 +32,7 @@ function stableSort(array, cmp) {
         if (order !== 0) return order;
         return a[1] - b[1];
     });
-    return stabilizedThis.map(el => el[0]);
+    return stabilizedThis.map((el) => el[0]);
 }
 
 function getSorting(order, orderBy) {
@@ -41,6 +41,8 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
+    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
     { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
     { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
     { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
@@ -56,31 +58,18 @@ const headCells = [
 function EnhancedTableHead(props) {
     const { classes, order, orderBy, onRequestSort } = props;
 
-    const createSortHandler = property => event => {
+    const createSortHandler = (property) => (event) => {
         onRequestSort(event, property);
     };
 
     return (
         <TableHead>
             <TableRow>
-                {headCells.map(headCell => (
-                    <TableCell
-                        key={headCell.id}
-                        align={headCell.numeric ? 'right' : 'left'}
-                        sortDirection={orderBy === headCell.id ? order : false}
-                        className={classes.tableCell}
-                    >
-                        <TableSortLabel
-                            active={orderBy === headCell.id}
-                            direction={orderBy === headCell.id ? order : 'asc'}
-                            onClick={createSortHandler(headCell.id)}
-                        >
+                {headCells.map((headCell) => (
+                    <TableCell key={headCell.id} align={headCell.numeric ? 'right' : 'left'} sortDirection={orderBy === headCell.id ? order : false} className={classes.tableCell}>
+                        <TableSortLabel active={orderBy === headCell.id} direction={orderBy === headCell.id ? order : 'asc'} onClick={createSortHandler(headCell.id)}>
                             {headCell.label}
-                            {orderBy === headCell.id ? (
-                                <span className={classes.visuallyHidden}>
-                                    {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
-                                </span>
-                            ) : null}
+                            {orderBy === headCell.id ? <span className={classes.visuallyHidden}>{order === 'desc' ? 'sorted descending' : 'sorted ascending'}</span> : null}
                         </TableSortLabel>
                     </TableCell>
                 ))}
@@ -96,7 +85,7 @@ EnhancedTableHead.propTypes = {
     orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     linkStyling: {
         textDecoration: 'none',
         color: 'black',
@@ -118,7 +107,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1.4rem',
         '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
-        }
+        },
     },
     visuallyHidden: {
         border: 0,
@@ -144,16 +133,39 @@ export default function EnhancedTable(props) {
 
     React.useEffect(() => {
         if (props.players.length !== 0) {
-            setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.SteamerPAProjection, Number(player.SteamerAVGProjection), Number(player.SteamerOBPProjection), player.SteamerHRProjection, player.SteamerRunsProjection, player.SteamerRBIProjection, player.SteamerSBProjection, Number(player.SteamerFWARProjection), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerAVGProjection))) / 6), ((player.SteamerRunsProjection + player.SteamerRBIProjection + (6 * player.SteamerHRProjection) + (6.5 * player.SteamerSBProjection) + ((player.SteamerPAProjection * player.SteamerOBPProjection))) / 6),player.id, index)
-            )))
+            setRows(
+                props.players.map((player, index) =>
+                    createData(
+                        `${player.firstName} ${player.lastName}`,
+                        player.primaryPosition,
+                        player.otherPositions,
+                        player.SteamerPAProjection,
+                        Number(player.SteamerAVGProjection),
+                        Number(player.SteamerOBPProjection),
+                        player.SteamerHRProjection,
+                        player.SteamerRunsProjection,
+                        player.SteamerRBIProjection,
+                        player.SteamerSBProjection,
+                        Number(player.SteamerFWARProjection),
+                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
+                            5.65 * player.SteamerHRProjection +
+                            6 * player.SteamerSBProjection +
+                            4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
+                            6,
+                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
+                            5.65 * player.SteamerHRProjection +
+                            6 * player.SteamerSBProjection +
+                            4 * player.SteamerPAProjection * (player.SteamerOBPProjection - 0.320)) /
+                            6,
+                        player.id,
+                        index
+                    )
+                )
+            );
+        } else {
+            setRows([createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]);
         }
-        else {
-            setRows([
-                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-            ])
-        }
-    }, [props.players])
+    }, [props.players]);
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
@@ -172,71 +184,90 @@ export default function EnhancedTable(props) {
         } else if (selectedIndex === selected.length - 1) {
             newSelected = newSelected.concat(selected.slice(0, -1));
         } else if (selectedIndex > 0) {
-            newSelected = newSelected.concat(
-                selected.slice(0, selectedIndex),
-                selected.slice(selectedIndex + 1),
-            );
+            newSelected = newSelected.concat(selected.slice(0, selectedIndex), selected.slice(selectedIndex + 1));
         }
         setSelected(newSelected);
     };
 
-    const isSelected = name => selected.indexOf(name) !== -1;
+    const isSelected = (name) => selected.indexOf(name) !== -1;
 
     return (
         <div className={classes.root}>
             {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
-                    <Table
-                        className={classes.table}
-                        aria-labelledby="tableTitle"
-                        size={'small'}
-                        aria-label="enhanced table"
-                    >
-                        <EnhancedTableHead
-                            classes={classes}
-                            order={order}
-                            orderBy={orderBy}
-                            onRequestSort={handleRequestSort}
-                            rowCount={rows.length}
-                        />
+                    <Table className={classes.table} aria-labelledby='tableTitle' size={'small'} aria-label='enhanced table'>
+                        <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                         <TableBody>
-                            {stableSort(rows, getSorting(order, orderBy))
-                                .map((row, index) => {
-                                    if (row.PAs > 0) {
-                                        const isItemSelected = isSelected(row.name);
-                                        const labelId = `enhanced-table-checkbox-${index}`;
+                            {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
+                                if (row.PAs > 0) {
+                                    const isItemSelected = isSelected(row.name);
+                                    const labelId = `enhanced-table-checkbox-${index}`;
 
-                                        return (
-                                            <TableRow
-                                                hover
-                                                onClick={event => handleClick(event, row.name)}
-                                                aria-checked={isItemSelected}
-                                                tabIndex={-1}
-                                                key={row.name}
-                                                selected={isItemSelected}
+                                    return (
+                                        <TableRow
+                                            hover
+                                            onClick={(event) => handleClick(event, row.name)}
+                                            aria-checked={isItemSelected}
+                                            tabIndex={-1}
+                                            key={row.name}
+                                            selected={isItemSelected}
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell
+                                                component='th'
+                                                id={labelId}
+                                                scope='row'
                                                 className={classes.tableRow}
+                                                onClick={() => {
+                                                    setPlayerCard(!playerCard);
+                                                    setGrabId(row.id);
+                                                }}
                                             >
-                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
-                                                    {row.name}
-                                                </TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG.toFixed(3)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP.toFixed(3)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
-                                            </TableRow>
-                                        );
-                                    }
-                                    else {
-                                        return false;
-                                    }
-                                })}
+                                                {row.name}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.primaryPosition}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.otherPositions}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.PAs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.AVG.toFixed(3)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.OBP.toFixed(3)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.HR}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.Runs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.RBIs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.SBs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.FWAR.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.PAVG.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.POBP.toFixed(1)}
+                                            </TableCell>
+                                        </TableRow>
+                                    );
+                                } else {
+                                    return false;
+                                }
+                            })}
                         </TableBody>
                     </Table>
                 </TableContainer>
