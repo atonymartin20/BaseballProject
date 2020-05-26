@@ -719,6 +719,9 @@ class PlayerCard extends React.Component {
             battedBallStats: false,
             expectedStats: false,
             baseRunningStats: false,
+            advancedStats: false,
+            opponentContactStats: false,
+            pitchUsageStats: false,   
         })
         this.setState({
             labelValue: [event.target.value],
@@ -1255,6 +1258,8 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerKPer9Projection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{}</TableCell>
+                                                <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
