@@ -115,7 +115,6 @@ class StartingPitchers extends React.Component {
     render() {
         const { classes } = this.props;
         const { display2017, display2018, display2019, display2020, } = this.state;
-
         const flipDataButton = {
             fontSize: '1.6rem',
             backgroundColor: '#9AA297'

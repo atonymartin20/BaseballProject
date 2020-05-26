@@ -4,7 +4,7 @@ import Links from '../navbar/links.js';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
 
-const styles = theme => ({
+const styles = (theme) => ({
     homepageDiv: {
         width: '100%',
         display: 'flex',
@@ -33,7 +33,7 @@ const styles = theme => ({
     websiteLinks: {
         textDecoration: 'none',
         color: 'black',
-    }
+    },
 });
 
 class Homepage extends React.Component {
@@ -45,11 +45,52 @@ class Homepage extends React.Component {
                 <Navbar />
                 <div className={classes.homepageSpacingDiv}>
                     <Links />
-                    <h1 className={classes.homepageText}>Welcome to my baseball project.  This project is designed to hold statistical data from <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Fangraphs</a>, <a href="https://baseballsavant.mlb.com" className={classes.websiteLinks} target='_blank'rel="noopener noreferrer">Baseball Savant</a>, and <a href="https://www.baseball-reference.com/" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Baseball Reference</a>.  Then, all the data can be found in one location.  All 2020 projected stats are from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.<br /><br />Catchers will be released first, and then other positions will be added as they are completed.  All players in the database are projected for at least 100 plate appearances, 10 starts, or 40 innings in 2020.<br/><br/><Link to='/glossary' className={classes.websiteLinks}>A glossary explaing all the stats used can be found here</Link>.</h1>
+                    <h1 className={classes.homepageText}>
+                        Welcome to my baseball project. This project is designed to hold statistical data from{' '}
+                        <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                            Fangraphs
+                        </a>
+                        ,{' '}
+                        <a href='https://baseballsavant.mlb.com' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                            Baseball Savant
+                        </a>
+                        , and{' '}
+                        <a href='http://brooksbaseball.net/' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                            Brooks Baseball
+                        </a>
+                        , and{' '}
+                        <a
+                            href='https://www.baseball-reference.com/'
+                            className={classes.websiteLinks}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Baseball Reference
+                        </a>
+                        . Then, all the data can be found in one location. All 2020 projected stats are from{' '}
+                        <a
+                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                            className={classes.websiteLinks}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Steamer
+                        </a>
+                        .<br />
+                        <br />
+                            Projections are the original 2020 Steamer projections before the postponement of the 2020 season due to COVID-19. 
+                            Projections may or may not be updated once a 2020 MLB season and schedule have been announced.
+                            Regardless, this will be updated for 2021 once projection systems begin to be released in late 2020 or early 2021.
+                        <br />
+                        <br />
+                        <Link to='/glossary' className={classes.websiteLinks}>
+                            A glossary explaing all the stats used can be found here.
+                        </Link>
+                    </h1>
                     <Links />
                 </div>
             </div>
-        )
+        );
     }
 }
 
