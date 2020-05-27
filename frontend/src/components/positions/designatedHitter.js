@@ -106,10 +106,17 @@ class DesignatedHitter extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getDesignatedHitters();
-        this.setState({
-            designatedHitters: this.context.state.designatedHitters || []
-        })
+        if (this.context.state.designatedHitters === []) {
+            this.context.getDesignatedHitters();
+            this.setState({
+                designatedHitters: this.context.state.designatedHitters
+            })
+        }
+        else {
+            this.setState({
+                designatedHitters: this.context.state.designatedHitters
+            })
+        }
     }
 
     render() {

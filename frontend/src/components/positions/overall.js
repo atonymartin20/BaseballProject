@@ -106,9 +106,17 @@ class Overall extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            overall: this.context.state.overall || []
-        })
+        if (this.context.state.overall === []) {
+            this.context.getAllPlayers();
+            this.setState({
+                overall: this.context.state.overall
+            })
+        }
+        else {
+            this.setState({
+                overall: this.context.state.overall
+            })
+        }
     }
 
     render() {

@@ -106,10 +106,17 @@ class ThirdBase extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getThirdBase();
-        this.setState({
-            thirdBase: this.context.state.thirdBase || []
-        })
+        if (this.context.state.thirdBase === []) {
+            this.context.getThirdBase();
+            this.setState({
+                thirdBase: this.context.state.thirdBase
+            })
+        }
+        else {
+            this.setState({
+                thirdBase: this.context.state.thirdBase
+            })
+        }
     }
 
     render() {
