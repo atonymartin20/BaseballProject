@@ -733,8 +733,8 @@ class PlayerCard extends React.Component {
         const { classes } = this.props;
         const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, PitcherKPercent2017, PitcherBBPercent2017, KMinusBBPercent2017, PitcherBABIP2017, LOBPercent2017, HRPerFBPercent2017, PitcherGBPercent2017, PitcherLDPercent2017, PitcherFBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, PitcherExitVelo2017, PitcherFlyBallLineDriveExitVelo2017, PitcherBarrelPercent2017, PitcherLaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, PitcherFWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, PitcherKPercent2018, PitcherBBPercent2018, KMinusBBPercent2018, PitcherBABIP2018, LOBPercent2018, HRPerFBPercent2018, PitcherGBPercent2018, PitcherLDPercent2018, PitcherFBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, PitcherExitVelo2018, PitcherFlyBallLineDriveExitVelo2018, PitcherBarrelPercent2018, PitcherLaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, PitcherFWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, PitcherKPercent2019, PitcherBBPercent2019, KMinusBBPercent2019, PitcherBABIP2019, LOBPercent2019, HRPerFBPercent2019, PitcherGBPercent2019, PitcherLDPercent2019, PitcherFBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, PitcherExitVelo2019, PitcherFlyBallLineDriveExitVelo2019, PitcherBarrelPercent2019, PitcherLaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, PitcherFWAR2019, SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerWHIPProjection, SteamerRawKsProjection, SteamerKPer9Projection, SteamerSavesProjection, PitcherSteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue, battedBallStats, expectedStats, baseRunningStats } = this.state;
 
-        if (primaryPosition.includes('Starting Pitcher') || otherPositions.includes('Starting Pitcher') || otherPositions.includes('Relief Pitcher') || primaryPosition.includes('Relief Pitcher')) {
-            if(otherPositions.includes('Catcher') || primaryPosition.includes('Catcher') || otherPositions.includes('First Base') || primaryPosition.includes('First Base') || otherPositions.includes('Second Base') || primaryPosition.includes('Second Base') || otherPositions.includes('Shortstop') || primaryPosition.includes('Shortstop') || otherPositions.includes('Third Base') || primaryPosition.includes('Third Base') || otherPositions.includes('Outfield') || primaryPosition.includes('Outfield') || otherPositions.includes('Designated Hitter') || primaryPosition.includes('Designated Hitter')) {
+        if (primaryPosition.includes('SP') || otherPositions.includes('SP') || otherPositions.includes('RP') || primaryPosition.includes('RP')) {
+            if(otherPositions.includes('C') || primaryPosition.includes('C') || otherPositions.includes('1B') || primaryPosition.includes('1B') || otherPositions.includes('2B') || primaryPosition.includes('2B') || otherPositions.includes('SS') || primaryPosition.includes('SS') || otherPositions.includes('3B') || primaryPosition.includes('3B') || otherPositions.includes('OF') || primaryPosition.includes('OF') || otherPositions.includes('DH') || primaryPosition.includes('DH')) {
                 // Both card structure
             }
             else {
@@ -855,7 +855,13 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCell}>{LOBPercent2017}</TableCell>
                                                     <TableCell className={classes.tableCell}>{Saves2017}</TableCell>
                                                     <TableCell className={classes.tableCell}>{PitcherFWAR2017}</TableCell>
-                                                    <TableCell className={classes.tableCell}>{(((4 * QS2017) + (RawKs2017 / 3) + (2 * Saves2017) + ((InningsPitched2017 / WHIP2017) / 3) + ((InningsPitched2017 / ERA2017) / 3)) / 6).toFixed(1)}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{(
+                                                            (10 * QS2017 +
+                                                                1.2 * RawKs2017 +
+                                                                9 * Saves2017 +
+                                                                4 * Number(InningsPitched2017) * Number(1.32 - WHIP2017) +
+                                                                Number(InningsPitched2017) * Number(4.47 - ERA2017)) /
+                                                            9).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -876,7 +882,13 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCell}>{LOBPercent2018}</TableCell>
                                                     <TableCell className={classes.tableCell}>{Saves2018}</TableCell>
                                                     <TableCell className={classes.tableCell}>{PitcherFWAR2018}</TableCell>
-                                                    <TableCell className={classes.tableCell}>{(((4 * QS2018) + (RawKs2018 / 3) + (2 * Saves2018) + ((InningsPitched2018 / WHIP2018) / 3) + ((InningsPitched2018 / ERA2018) / 3)) / 6).toFixed(1)}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{(
+                                                            (10 * QS2018 +
+                                                                1.2 * RawKs2018 +
+                                                                9 * Saves2018 +
+                                                                4 * Number(InningsPitched2018) * Number(1.32 - WHIP2018) +
+                                                                Number(InningsPitched2018) * Number(4.47 - ERA2018)) /
+                                                            9).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -918,7 +930,13 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCell}>{LOBPercent2019}</TableCell>
                                                     <TableCell className={classes.tableCell}>{Saves2019}</TableCell>
                                                     <TableCell className={classes.tableCell}>{PitcherFWAR2019}</TableCell>
-                                                    <TableCell className={classes.tableCell}>{(((4 * QS2019) + (RawKs2019 / 3) + (2 * Saves2019) + ((InningsPitched2019 / WHIP2019) / 3) + ((InningsPitched2019 / ERA2019) / 3)) / 6).toFixed(1)}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{(
+                                                            (10 * QS2019 +
+                                                                1.2 * RawKs2019 +
+                                                                9 * Saves2019 +
+                                                                4 * Number(InningsPitched2019) * Number(1.32 - WHIP2019) +
+                                                                Number(InningsPitched2019) * Number(4.47 - ERA2019)) /
+                                                            9).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -958,7 +976,13 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerSavesProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{PitcherSteamerFWARProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{(((4 * SteamerQSProjection) + (SteamerRawKsProjection / 3) + (2 * SteamerSavesProjection) + ((SteamerInningsPitchedProjection / SteamerWHIPProjection) / 3) + ((SteamerInningsPitchedProjection / SteamerERAProjection) / 3)) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{(
+                                                    (10 * Number(SteamerQSProjection) +
+                                                        1.2 * SteamerRawKsProjection +
+                                                        9 * SteamerSavesProjection +
+                                                        4 * Number(SteamerInningsPitchedProjection) * Number(1.32 - SteamerWHIPProjection) +
+                                                        Number(SteamerInningsPitchedProjection) * Number(4.47 - SteamerERAProjection)) / 
+                                                    6).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
                                     </Table>
@@ -1249,7 +1273,9 @@ class PlayerCard extends React.Component {
                                             >
                                                 <TableCell component="th" scope="row" className={classes.tableCell}>2020 Projections</TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerFIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
@@ -1258,8 +1284,6 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerKPer9Projection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{}</TableCell>
-                                                <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
@@ -1877,8 +1901,8 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}>{RBI2017}</TableCell>
                                                 <TableCell className={classes.tableCell}>{StolenBases2017}</TableCell>
                                                 <TableCell className={classes.tableCell}>{FWAR2017}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * BA2017))) / 6).toFixed(1)}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2017 + RBI2017 + (6 * HR2017) + (6.5 * StolenBases2017) + ((PA2017 * OBP2017))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2017 + RBI2017) + 5.65 * HR2017 + 6 * StolenBases2017 + (4 * PA2017 * (BA2017 - 0.250))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2017 + RBI2017) + 5.65 * HR2017 + 6 * StolenBases2017 + (4 * PA2017 * (OBP2017 - 0.320))) / 6).toFixed(1)}</TableCell>
                                             </TableRow>
                                         ) : null}
     
@@ -1900,8 +1924,8 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}>{RBI2018}</TableCell>
                                                 <TableCell className={classes.tableCell}>{StolenBases2018}</TableCell>
                                                 <TableCell className={classes.tableCell}>{FWAR2018}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2018 + RBI2018 + (6 * HR2018) + (6.5 * StolenBases2018) + ((PA2018 * BA2018))) / 6).toFixed(1)}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2018 + RBI2018 + (6 * HR2018) + (6.5 * StolenBases2018) + ((PA2018 * OBP2018))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2018 + RBI2018) + 5.65 * HR2018 + 6 * StolenBases2018 + (4 * PA2018 * (BA2018 - 0.250))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2018 + RBI2018) + 5.65 * HR2018 + 6 * StolenBases2018 + (4 * PA2018 * (OBP2018 - 0.320))) / 6).toFixed(1)}</TableCell>
                                             </TableRow>
                                         ) : null}
     
@@ -1946,8 +1970,8 @@ class PlayerCard extends React.Component {
                                                 <TableCell className={classes.tableCell}>{RBI2019}</TableCell>
                                                 <TableCell className={classes.tableCell}>{StolenBases2019}</TableCell>
                                                 <TableCell className={classes.tableCell}>{FWAR2019}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2019 + RBI2019 + (6 * HR2019) + (6.5 * StolenBases2019) + ((PA2019 * BA2019))) / 6).toFixed(1)}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((Runs2019 + RBI2019 + (6 * HR2019) + (6.5 * StolenBases2019) + ((PA2019 * OBP2019))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2019 + RBI2019) + 5.65 * HR2019 + 6 * StolenBases2019 + (4 * PA2019 * (BA2019 - 0.250))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2019 + RBI2019) + 5.65 * HR2019 + 6 * StolenBases2019 + (4 * PA2019 * (OBP2019 - 0.32))) / 6).toFixed(1)}</TableCell>
                                             </TableRow>
                                         ) : null}
     
@@ -1990,8 +2014,16 @@ class PlayerCard extends React.Component {
                                             <TableCell className={classes.tableCell}>{SteamerRBIProjection}</TableCell>
                                             <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
                                             <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerAVGProjection))) / 6).toFixed(1)}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((SteamerRunsProjection + SteamerRBIProjection + (6 * SteamerHRProjection) + (6.5 * SteamerSBProjection) + ((SteamerPAProjection * SteamerOBPProjection))) / 6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
+                            5.65 * SteamerHRProjection +
+                            6 * SteamerSBProjection +
+                            4 * SteamerPAProjection * (SteamerAVGProjection - 0.250)) /
+                            6).toFixed(1)}</TableCell>
+                                            <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
+                            5.65 * SteamerHRProjection +
+                            6 * SteamerSBProjection +
+                            4 * SteamerPAProjection * (SteamerOBPProjection - 0.320)) /
+                            6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     </TableBody>
                                 </Table>
