@@ -106,10 +106,17 @@ class Pitchers extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getPitchers();
-        this.setState({
-            pitchers: this.context.state.pitchers || []
-        })
+        if (this.context.state.pitchers === []) {
+            this.context.getPitchers();
+            this.setState({
+                pitchers: this.context.state.pitchers
+            })
+        }
+        else {
+            this.setState({
+                pitchers: this.context.state.pitchers
+            })
+        }
     }
 
     render() {

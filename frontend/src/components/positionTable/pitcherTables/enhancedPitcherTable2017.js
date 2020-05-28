@@ -41,6 +41,7 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
     { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
@@ -50,7 +51,6 @@ const headCells = [
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
-    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
 ];
 
 function EnhancedTableHead(props) {
@@ -148,7 +148,7 @@ export default function EnhancedTable(props) {
                             1.2 * player.RawKs2017 +
                             9 * player.Saves2017 +
                             (4 * Number(player.InningsPitched2017) * Number(1.32 - player.WHIP2017)) +
-                            Number(player.InningsPitched2017) * Number(4.47 - player.ERA2017)) / 9,
+                            Number(player.InningsPitched2017) * Number(4.47 - player.ERA2017)) / 10,
                         player.id,
                         index
                     )
@@ -219,6 +219,9 @@ export default function EnhancedTable(props) {
                                                 {row.name}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
+                                                {row.PTotal.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
                                                 {row.Games}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
@@ -244,9 +247,6 @@ export default function EnhancedTable(props) {
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.FWAR.toFixed(1)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.PTotal.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );

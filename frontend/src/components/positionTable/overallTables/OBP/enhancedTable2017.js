@@ -9,10 +9,31 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PlayerCard from '../../players/playerCard.js';
+import PlayerCard from '../../../players/playerCard.js';
 
-function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
-    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
+function createData(
+    name,
+    primaryPosition,
+    otherPositions,
+    PAs,
+    OBP,
+    HR,
+    Runs,
+    RBIs,
+    SBs,
+    POBP,
+    InningsPitched,
+    QualityStarts,
+    RawKs,
+    ERA,
+    WHIP,
+    Saves,
+    PTotal,
+    score,
+    id,
+    index
+) {
+    return { name, primaryPosition, otherPositions, PAs, OBP, HR, Runs, RBIs, SBs, POBP, InningsPitched, QualityStarts, RawKs, ERA, WHIP, Saves, PTotal, score, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,16 +62,21 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
+    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
+    { id: 'score', numeric: true, label: 'Score', info: 'Score' },
     { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
-    { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
     { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
     { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
     { id: 'Runs', numeric: true, label: 'Runs', info: 'Runs' },
     { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
     { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
-    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
-    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
-    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
+    { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
+    { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
+    { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
+    { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
+    { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
+    { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
 ];
 
 function EnhancedTableHead(props) {
@@ -136,7 +162,7 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('POBP');
+    const [orderBy, setOrderBy] = React.useState('score');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
@@ -145,8 +171,36 @@ export default function EnhancedTable(props) {
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(props.players.map((player, index) => (
-                createData(`${player.firstName} ${player.lastName}`, player.PA2017, Number(player.BA2017), Number(player.OBP2017), player.HR2017, player.Runs2017, player.RBI2017, player.StolenBases2017, Number(player.FWAR2017), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.BA2017))) / 6), ((player.Runs2017 + player.RBI2017 + (6 * player.HR2017) + (6.5 * player.StolenBases2017) + ((player.PA2017 * player.OBP2017))) / 6),player.id, index)
-            )))
+                createData(
+                    `${player.firstName} ${player.lastName}`,
+                    player.primaryPosition,
+                    player.otherPositions,
+                    player.PA2017,
+                    Number(player.OBP2017),
+                    player.HR2017,
+                    player.Runs2017,
+                    player.RBI2017,
+                    player.StolenBases2017,
+                    (1.75 * (player.Runs2017 + player.RBI2017) + 5.65 * player.HR2017 + 6 * player.StolenBases2017 + (4 * player.PA2017 * (player.OBP2017 - 0.32))) / 6,
+                    Number(player.InningsPitched2017),
+                    Number(player.QS2017),
+                    player.RawKs2017,
+                    Number(player.ERA2017),
+                    Number(player.WHIP2017),
+                    player.Saves2017,
+                    (10 * player.QS2017 +
+                        1.2 * player.RawKs2017 +
+                        9 * player.Saves2017 +
+                        (4 * Number(player.InningsPitched2017) * Number(1.32 - player.WHIP2017)) +
+                        Number(player.InningsPitched2017) * Number(4.47 - player.ERA2017)) / 10,
+                    ((1.75 * (player.Runs2017 + player.RBI2017) + 5.65 * player.HR2017 + 6 * player.StolenBases2017 + (4 * player.PA2017 * (player.OBP2017 - 0.32))) / 6) + ((10 * player.QS2017 +
+                        1.2 * player.RawKs2017 +
+                        9 * player.Saves2017 +
+                        (4 * Number(player.InningsPitched2017) * Number(1.32 - player.WHIP2017)) +
+                        Number(player.InningsPitched2017) * Number(4.47 - player.ERA2017)) / 10),
+                    player.id,
+                    index
+                )            )))
         }
         else {
             setRows([
@@ -156,8 +210,8 @@ export default function EnhancedTable(props) {
     }, [props.players])
 
     const handleRequestSort = (event, property) => {
-        const isAsc = orderBy === property && order === 'asc';
-        setOrder(isAsc ? 'desc' : 'asc');
+        const isAsc = orderBy === property && order === 'desc';
+        setOrder(isAsc ? 'asc' : 'desc');
         setOrderBy(property);
     };
 
@@ -203,33 +257,77 @@ export default function EnhancedTable(props) {
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy))
                                 .map((row, index) => {
-                                    if (row.PAs > 0) {
+                                    if (row.PAs > 0 || row.InningsPitched > 0) {
                                         const isItemSelected = isSelected(row.name);
                                         const labelId = `enhanced-table-checkbox-${index}`;
 
                                         return (
                                             <TableRow
                                                 hover
-                                                onClick={event => handleClick(event, row.name)}
+                                                onClick={(event) => handleClick(event, row.name)}
                                                 aria-checked={isItemSelected}
                                                 tabIndex={-1}
-                                                key={row.name}
+                                                key={`${row.name} + ${row.primaryPosition}`}
                                                 selected={isItemSelected}
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" id={labelId} scope="row" className={classes.tableRow} onClick={() => { setPlayerCard(!playerCard); setGrabId(row.id) }}>
+                                                <TableCell
+                                                    component='th'
+                                                    id={labelId}
+                                                    scope='row'
+                                                    className={classes.tableRow}
+                                                    onClick={() => {
+                                                        setPlayerCard(!playerCard);
+                                                        setGrabId(row.id);
+                                                    }}
+                                                >
                                                     {row.name}
                                                 </TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.AVG.toFixed(3)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.OBP.toFixed(3)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.HR}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.Runs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.RBIs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.SBs}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.FWAR.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.PAVG.toFixed(1)}</TableCell>
-                                                <TableCell align="right" className={classes.tableCell}>{row.POBP.toFixed(1)}</TableCell>
+                                                <TableCell align='center' className={classes.tableCell}>
+                                                    {row.primaryPosition}
+                                                </TableCell>
+                                                <TableCell align='center' className={classes.tableCell}>
+                                                    {row.otherPositions}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.score.toFixed(1)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.PAs}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.OBP.toFixed(3)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.HR}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.Runs}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.RBIs}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.SBs}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.InningsPitched.toFixed(0)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.QualityStarts.toFixed(1)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.RawKs}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.ERA.toFixed(2)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.WHIP.toFixed(2)}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.Saves}
+                                                </TableCell>
                                             </TableRow>
                                         );
                                     }

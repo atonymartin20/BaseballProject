@@ -106,10 +106,17 @@ class ReliefPitchers extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getReliefPitchers();
-        this.setState({
-            reliefPitchers: this.context.state.reliefPitchers || []
-        })
+        if (this.context.state.reliefPitchers === []) {
+            this.context.getReliefPitchers();
+            this.setState({
+                reliefPitchers: this.context.state.reliefPitchers
+            })
+        }
+        else {
+            this.setState({
+                reliefPitchers: this.context.state.reliefPitchers
+            })
+        }
     }
 
     render() {

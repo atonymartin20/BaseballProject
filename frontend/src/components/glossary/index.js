@@ -10,11 +10,20 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 
 const styles = theme => ({
+    glossaryPositionText: {
+        textAlign: 'left',
+        paddingLeft: 20,
+        width: '100%',
+        marginBottom: 10,
+        fontSize: '3.0rem',
+        fontWeight: 'bold',
+    },
     glossaryText: {
         textAlign: 'left',
         paddingLeft: 20,
         width: '100%',
         marginBottom: 10,
+        mmarginTop: 15,
     },
     glossaryWelcomeText: {
         marginTop: 20,
@@ -43,7 +52,7 @@ const styles = theme => ({
     },
     table: {
         width: 'auto',
-        marginBottom: 10,
+        marginBottom: 20,
         marginTop: 10,
     },
     tableCell: {
@@ -79,6 +88,7 @@ class Homepage extends React.Component {
                 <div className={classes.homepageSpacingDiv}>
                     <Links />
                     <h1 className={classes.glossaryWelcomeText}>Glossary:</h1>
+                    <h1 className={classes.glossaryPositionText}>Hitters</h1>
                     <h1 className={classes.glossaryText}>Traditional Stats</h1>
 
                     <TableContainer>
@@ -656,6 +666,667 @@ class Homepage extends React.Component {
                             </TableBody>
                         </Table>
                     </TableContainer>
+
+                    <h1 className={classes.glossaryPositionText}>Pitchers</h1>
+                    <h1 className={classes.glossaryText}>Traditional Stats</h1>
+
+                    <TableContainer>
+                        <Table
+                            className={classes.table}
+                            aria-labelledby="traditionalStatsTable"
+                            aria-label="traditinal stats table"
+                        >
+                            <TableHead>
+                                <TableRow className={classes.tableRow}>
+                                    <TableCell
+                                        key='Abbreviation'
+                                        className={classes.tableCell}
+                                    >
+                                        Abbreviation
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Full Term'
+                                        className={classes.tableCell}
+                                    >
+                                        Full Term
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Meaning'
+                                        className={classes.tableCell}
+                                    >
+                                        Meaning
+                                        </TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='GamesPlayed'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Games Played</TableCell>
+                                    <TableCell className={classes.tableCell}>Games Played</TableCell>
+                                    <TableCell className={classes.tableCell}>Games a player appeared in within a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='Starts'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Starts</TableCell>
+                                    <TableCell className={classes.tableCell}>Games Started</TableCell>
+                                    <TableCell className={classes.tableCell}>The amount of times a pitcher has started a game.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='InningsPitched'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Innings Pitched</TableCell>
+                                    <TableCell className={classes.tableCell}>Innings Pitched</TableCell>
+                                    <TableCell className={classes.tableCell}>The number of innings a pitcher appeared over a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='QS'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>QS</TableCell>
+                                    <TableCell className={classes.tableCell}>Quality Starts</TableCell>
+                                    <TableCell className={classes.tableCell}>A Quality Start is awarded when a starting pitcher pitches at least six innings and allows three runs or less.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='Ks'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Ks</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeouts</TableCell>
+                                    <TableCell className={classes.tableCell}>A strikeout occurs when a pitcher throws any combination of three swinging or looking strikes to a hitter. </TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='ERA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>ERA</TableCell>
+                                    <TableCell className={classes.tableCell}>Earned Run Average</TableCell>
+                                    <TableCell className={classes.tableCell}>A representation of how many runs a pitcher allows per 9 innings.  ERA is calculated by 9 X (Earned Runs divided by Innings Pitched).</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='WHIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>WHIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Walk + Hits / Innings Pitched</TableCell>
+                                    <TableCell className={classes.tableCell}>A calculation of how many base runners a pitcher allows an inning.  (Walks + Hits) / Innings Pitched.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='LOB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>LOB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Left on Base Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>What percentage of baserunners a pitcher strands on base during an inning.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='Saves'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Saves</TableCell>
+                                    <TableCell className={classes.tableCell}>Saves</TableCell>
+                                    <TableCell className={classes.tableCell}>A save is awarded when a relief pitcher finsihes a game for the winning team.  To earn the save a reliever must pitch at least three innings, enter the game with a tying run in the on-deck circle at the plate or on the bases, or enter the game with a lead of no more than three runs and pitch at least one inning.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='FWAR'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FWAR</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs Wins Above Replacement</TableCell>
+                                    <TableCell className={classes.tableCell}>Fangraphs version of the WAR statistic.  WAR is a non-standard sabermetric baseaball statistic that trys to total a player's total contributions to their team.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='PTotal'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>PTotal</TableCell>
+                                    <TableCell className={classes.tableCell}>PROF Fantasy Based Statistic for Pitchers</TableCell>
+                                    <TableCell className={classes.tableCell}>My Fantasy Baseball Statistic which helps to rate pitchers based on their Quality Starts, Strikeouts, ERA, WHIP, and Saves.</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
+                    <h1 className={classes.glossaryText}>Advanced Stats</h1>
+
+                    <TableContainer>
+                        <Table
+                            className={classes.table}
+                            aria-labelledby="advancedStatsTable"
+                            aria-label="Advanced Stats table"
+                        >
+                            <TableHead>
+                                <TableRow className={classes.tableRow}>
+                                    <TableCell
+                                        key='Abbreviation'
+                                        className={classes.tableCell}
+                                    >
+                                        Abbreviation
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Full Term'
+                                        className={classes.tableCell}
+                                    >
+                                        Full Term
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Meaning'
+                                        className={classes.tableCell}
+                                    >
+                                        Meaning
+                                        </TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='InningsPitched'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Innings</TableCell>
+                                    <TableCell className={classes.tableCell}>Innings Pitched</TableCell>
+                                    <TableCell className={classes.tableCell}>The number of innings a pitcher appeared over a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='IPPerStart'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>IP per Start</TableCell>
+                                    <TableCell className={classes.tableCell}>Innings Pitched per Start</TableCell>
+                                    <TableCell className={classes.tableCell}>The number of innings a pitcher averages per a start during a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='ERA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>ERA</TableCell>
+                                    <TableCell className={classes.tableCell}>Earned Run Average</TableCell>
+                                    <TableCell className={classes.tableCell}>A representation of how many runs a pitcher allows per 9 innings.  ERA is calculated by 9 X (Earned Runs divided by Innings Pitched).</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='ERA+'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>ERA+</TableCell>
+                                    <TableCell className={classes.tableCell}>Earned Runs Average Plus</TableCell>
+                                    <TableCell className={classes.tableCell}>>A weighted statistic where 100 is average.  Pitchers with a lower ERA will have a higher ERA+.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='FIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Fielding Independent Pitching</TableCell>
+                                    <TableCell className={classes.tableCell}>A pitching statistic that estimates a pitcher's run prevention independent of their defense.  The stat is based on Strikouts, Walks, Hit by Pitches, and Homeruns allowed.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='xFIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>xFIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Expected Fielding Independent Pitching</TableCell>
+                                    <TableCell className={classes.tableCell}>A statistic that estimates a pitcher's expected run prevention independent of their defense. The stat is based on Strikeouts, Walks, Hit by Pitches, and Fly Balls allowed.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SIERA'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SIERA</TableCell>
+                                    <TableCell className={classes.tableCell}>Skill-Interactive ERA</TableCell>
+                                    <TableCell className={classes.tableCell}>SIERA tries to figure out why a pitcher is successful.  Pitchers who are good at limiting hits and preventing runs will have a better SIERA than a FIP or xFIP.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='WHIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>WHIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Walk + Hits / Innings Pitched</TableCell>
+                                    <TableCell className={classes.tableCell}>A calculation of how many base runners a pitcher allows an inning.  (Walks + Hits) / Innings Pitched.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='H/9'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>H/9</TableCell>
+                                    <TableCell className={classes.tableCell}>Hits per 9 Innings</TableCell>
+                                    <TableCell className={classes.tableCell}>How many hits a pitcher allows per 9 innings.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='HR/9'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>HR/9</TableCell>
+                                    <TableCell className={classes.tableCell}>Homeruns per 9 Innings</TableCell>
+                                    <TableCell className={classes.tableCell}>How many homeruns a pitcher allows per 9 innings.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='BB/9'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BB/9</TableCell>
+                                    <TableCell className={classes.tableCell}>Walks per 9 Innings</TableCell>
+                                    <TableCell className={classes.tableCell}>How many walks a pitcher allows per 9 innings.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='K/9'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>K/9</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeouts per 9 Innings</TableCell>
+                                    <TableCell className={classes.tableCell}>How many strikeouts a pitcher earns per 9 innings.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='K/BB'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>K/BB</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeouts / Walks</TableCell>
+                                    <TableCell className={classes.tableCell}>A pitcher's Strikeouts divided by their walks.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='K%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>K%</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeout Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the pitcher stikes out the opposing batter in a given year.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='BB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Walk Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the pitcher walks the opposing batter in a given year.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='K-BB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>K-BB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Strikeout Percentage Minus Walk Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the pitcher stikes out the opposing batter in a given year minus the percentage of plate appearances where the pitcher walks the opposing batter in a given year.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='FirstStrike%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FirstStrike%</TableCell>
+                                    <TableCell className={classes.tableCell}>First Strike Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of plate appearances where the pitcher throws a first pitch strike.</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
+                    <h1 className={classes.glossaryText}>Opponent Contact Stats</h1>
+
+                    <TableContainer>
+                        <Table
+                            className={classes.table}
+                            aria-labelledby="opponentContactStats"
+                            aria-label="Opponent Contact Stats table"
+                        >
+                            <TableHead>
+                                <TableRow className={classes.tableRow}>
+                                    <TableCell
+                                        key='Abbreviation'
+                                        className={classes.tableCell}
+                                    >
+                                        Abbreviation
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Full Term'
+                                        className={classes.tableCell}
+                                    >
+                                        Full Term
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Meaning'
+                                        className={classes.tableCell}
+                                    >
+                                        Meaning
+                                        </TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='GB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>GB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Ground Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters hit on the ground.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='LD%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>LD%</TableCell>
+                                    <TableCell className={classes.tableCell}>Line Drive Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters hit in the air at a close to 0 degree angle.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='FB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Fly Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters hit on the fly.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='IFFB%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>IFFB%</TableCell>
+                                    <TableCell className={classes.tableCell}>Infield Fly Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of fly balls opposing batters hit in the infield.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='HR/FB'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>HR/FB</TableCell>
+                                    <TableCell className={classes.tableCell}>Homers per Fly Ball Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of fly balls opposing batters hit that result in home runs.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SoftContact%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Soft Contact %</TableCell>
+                                    <TableCell className={classes.tableCell}>Soft Contact Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters achieved soft contact.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='MediumContact%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Medium Contact %</TableCell>
+                                    <TableCell className={classes.tableCell}>Medium Contact Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters achieved medium contact.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='HardContact%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Hard Contact %</TableCell>
+                                    <TableCell className={classes.tableCell}>Hard Contact Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of batted balls opposing batters achieved hard contact.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='ExitVelo'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Exit Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Exit Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>How fast in miles per hour opposing batters hit a pitched ball.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='FB/LDExit Velo'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>FB/LD Exit Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Fly Ball and Line Drive Exit Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>How fast in miles per hour opposing batters hit a pitched ball for a line drive or fly ball.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='LaunchAngle'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Launch Angle</TableCell>
+                                    <TableCell className={classes.tableCell}>Launch Angle</TableCell>
+                                    <TableCell className={classes.tableCell}>On average the degree opponent batters hit balls.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='Barrel%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Barrel %</TableCell>
+                                    <TableCell className={classes.tableCell}>Barrel Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of times opponent batters barreled batted balls.  A barrel is the perfect combination of exit velocity and launch angle.  A barrel must have an exit velocity of at least 98 miles per hour and a launch angle of about 20 to 35 degrees.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='BABIP'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>BABIP</TableCell>
+                                    <TableCell className={classes.tableCell}>Batting Average on Balls In Play</TableCell>
+                                    <TableCell className={classes.tableCell}>The batting average on opponent batters batted balls put in play.  This excludes strike outs and home runs to give a better understanding of a player's results on balls hit in play.</TableCell>
+                                </TableRow>
+
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
+                    <h1 className={classes.glossaryText}>Pitch Usage Stats</h1>
+
+                    <TableContainer>
+                        <Table
+                            className={classes.table}
+                            aria-labelledby="pitchUsageStats"
+                            aria-label="Pitch Usage Stats table"
+                        >
+                            <TableHead>
+                                <TableRow className={classes.tableRow}>
+                                    <TableCell
+                                        key='Abbreviation'
+                                        className={classes.tableCell}
+                                    >
+                                        Abbreviation
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Full Term'
+                                        className={classes.tableCell}
+                                    >
+                                        Full Term
+                                        </TableCell>
+
+                                    <TableCell
+                                        key='Meaning'
+                                        className={classes.tableCell}
+                                    >
+                                        Meaning
+                                        </TableCell>
+                                </TableRow>
+                            </TableHead>
+
+                            <TableBody>
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='AvgFBVelo'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>AVG FB Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Average Fastball Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>The pitcher's average 4-seam fastball velocity over a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='MaxFBVelo'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>Max FB Velo</TableCell>
+                                    <TableCell className={classes.tableCell}>Nax Fastball Velocity</TableCell>
+                                    <TableCell className={classes.tableCell}>The pitcher's max 4-seam fastball velocity over a given season.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='4FBUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>4FB Usage%</TableCell>
+                                    <TableCell className={classes.tableCell}>4-Seam Fastball Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were 4-Seam Fastballs.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SIUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SI Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Sinker Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Sinkers.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='CUUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>CU Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Cutter Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Cutters.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SLUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SL Usage%</TableCell>
+                                    <TableCell className={classes.tableCell}>Slider Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Sliders.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='CHUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>CH Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Changeup Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Changeups.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='CBUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>CB Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Curveball Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Curveballs.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='SPUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>SP Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Splitter Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Splitters.</TableCell>
+                                </TableRow>
+
+                                <TableRow
+                                    tabIndex={-1}
+                                    key='KCUsage%'
+                                    className={classes.tableRow}
+                                >
+                                    <TableCell component="th" scope="row" className={classes.tableCell}>KC Usage %</TableCell>
+                                    <TableCell className={classes.tableCell}>Knuckle Curve Usage Percentage</TableCell>
+                                    <TableCell className={classes.tableCell}>The percentage of the pitcher's total pitches that were Knuckle Curves.</TableCell>
+                                </TableRow>
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
+
 
                     <Links />
                 </div>

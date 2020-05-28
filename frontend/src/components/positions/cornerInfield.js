@@ -106,10 +106,17 @@ class CornerInfield extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getCornerInfield();
-        this.setState({
-            cornerInfield: this.context.state.cornerInfield || []
-        })
+        if (this.context.state.cornerInfield === []) {
+            this.context.getCornerInfield();
+            this.setState({
+                cornerInfield: this.context.state.cornerInfield
+            })
+        }
+        else {
+            this.setState({
+                cornerInfield: this.context.state.cornerInfield
+            })
+        }
     }
 
     render() {

@@ -106,10 +106,17 @@ class Catchers extends React.Component {
     }
 
     componentDidMount() {
-        this.context.getCatchers();
-        this.setState({
-            catchers: this.context.state.catchers || []
-        })
+        if (this.context.state.catchers === []) {
+            this.context.getCatchers();
+            this.setState({
+                catchers: this.context.state.catchers
+            })
+        }
+        else {
+            this.setState({
+                catchers: this.context.state.catchers
+            }) 
+        }
     }
 
     render() {
