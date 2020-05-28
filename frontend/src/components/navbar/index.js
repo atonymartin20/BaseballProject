@@ -132,7 +132,6 @@ const styles = theme => ({
         justifyContent: 'center',
     },
     logo: {
-        fontFamily: "Rye, cursive",
         fontSize: "3.0rem",
         [theme.breakpoints.down(500)]: {
             fontSize: "2.5rem",
