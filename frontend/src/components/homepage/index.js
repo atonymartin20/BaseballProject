@@ -3,6 +3,8 @@ import Navbar from '../navbar';
 import Links from '../navbar/links.js';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../context/appContext.js';
+import './index.css';
 
 const styles = (theme) => ({
     homepageDiv: {
@@ -30,6 +32,20 @@ const styles = (theme) => ({
         marginTop: 20,
         marginBottom: 20,
     },
+    loadingContainer: {
+        width: '100%',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+    },
+    loadingText: {
+        fontSize: '2.5rem',
+        marginTop: '10px',
+    },
     websiteLinks: {
         textDecoration: 'none',
         color: 'black',
@@ -40,6 +56,14 @@ class Homepage extends React.Component {
     render() {
         const { classes } = this.props;
 
+        while(this.context.state.reliefPitchers.length === 0) {
+                    return (
+                        <div className={classes.loadingContainer}>
+                            <div className={'spinner'} />
+                            <h1 className={classes.loadingText}>Loading players.  This will only take a moment.</h1>
+                        </div>
+                    )
+            }
         return (
             <div className={classes.homepageDiv}>
                 <Navbar />
@@ -93,5 +117,7 @@ class Homepage extends React.Component {
         );
     }
 }
+
+Homepage.contextType = AppContext;
 
 export default withStyles(styles)(Homepage);
