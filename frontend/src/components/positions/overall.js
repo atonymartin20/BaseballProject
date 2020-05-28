@@ -6,13 +6,27 @@ import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import { AppContext } from '../context/appContext.js';
-import EnhancedTable2020 from '../positionTable/overallTables/enhancedTable2020.js';
-import EnhancedTable2019 from '../positionTable/overallTables/enhancedTable2019.js';
-import EnhancedTable2018 from '../positionTable/overallTables/enhancedTable2018.js';
-import EnhancedTable2017 from '../positionTable/overallTables/enhancedTable2017.js';
-
+import OBPTable2020 from '../positionTable/overallTables/OBP/enhancedTable2020.js';
+import OBPTable2019 from '../positionTable/overallTables/OBP/enhancedTable2019.js';
+import OBPTable2018 from '../positionTable/overallTables/OBP/enhancedTable2018.js';
+import OBPTable2017 from '../positionTable/overallTables/OBP/enhancedTable2017.js';
+import AVGTable2020 from '../positionTable/overallTables/AVG/enhancedTable2020.js';
+import AVGTable2019 from '../positionTable/overallTables/AVG/enhancedTable2019.js';
+import AVGTable2018 from '../positionTable/overallTables/AVG/enhancedTable2018.js';
+import AVGTable2017 from '../positionTable/overallTables/AVG/enhancedTable2017.js';
 
 const styles = theme => ({
+    AVGOBPButtonsList: {
+        display: 'flex',
+        marginTop: 0,
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+    },
+    AVGOBPButtonsListItem: {
+        paddingLeft: 8,
+        paddingRight: 8,
+        width: 'auto',
+    },
     flipDataList: {
         display: 'flex',
         marginTop: 0,
@@ -63,6 +77,8 @@ class Overall extends React.Component {
         display2019: false,
         display2020: true,
         overall: [],
+        useAVG: true,
+        useOBP: false,
     }
 
     changeYear2017 = event => {
@@ -105,6 +121,23 @@ class Overall extends React.Component {
         })
     }
 
+    useAVGTable = event => {
+        event.preventDefault();
+        this.setState({
+            useAVG: true,
+            useOBP: false,
+        });
+    }
+
+    useOBPTable = event => {
+        event.preventDefault();
+        this.setState({
+            useAVG: false,
+            useOBP: true,
+        });
+    }
+
+
     componentDidMount() {
         if (this.context.state.overall === []) {
             this.context.getAllPlayers();
@@ -121,7 +154,7 @@ class Overall extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { display2017, display2018, display2019, display2020, } = this.state;
+        const { display2017, display2018, display2019, display2020, useAVG, useOBP } = this.state;
 
         const flipDataButton = {
             fontSize: '1.6rem',
@@ -134,37 +167,78 @@ class Overall extends React.Component {
             backgroundColor: '#000080',
         }
 
+        const AVGOBPButtonStyling = {
+            fontSize: '1.6rem',
+            backgroundColor: '#9AA297'
+        }
+
+        const AVGOBPButtonStylingSelected = {
+            fontSize: '1.6rem',
+            color: 'white',
+            backgroundColor: '#000080',
+        }
+
         const data = (
             <div className={classes.dataDiv}>
-                {display2017 ? (
+                {(display2017 === true && useAVG === true)  ? (
                     <div>
-                        <EnhancedTable2017
-                            players={this.state.overall}
+                        <AVGTable2017 players={this.state.overall}
                         />
-                    </div>
-                ) : null
+                    </div>) : null
                 }
 
-                {display2018 ? (
+                {(display2017 === true && useOBP === true)  ? (
                     <div>
-                        <EnhancedTable2018
+                        <OBPTable2017 players={this.state.overall}
+                        />
+                    </div>) : null
+                }
+
+                {(display2018 === true && useAVG === true) ? (
+                    <div>
+                        <AVGTable2018
                             players={this.state.overall}
                         />
                     </div>) : null
                 }
 
-                {display2019 ? (
+                {(display2018 === true && useOBP === true) ? (
                     <div>
-                        <EnhancedTable2019
+                        <OBPTable2018
                             players={this.state.overall}
                         />
                     </div>) : null
                 }
 
-                {display2020 ? (
+                {(display2019 === true && useAVG === true) ? (
+                    <div>
+                        <AVGTable2019
+                            players={this.state.overall}
+                        />
+                    </div>) : null
+                }
+
+                {(display2019 === true && useOBP === true) ? (
+                    <div>
+                        <OBPTable2019
+                            players={this.state.overall}
+                        />
+                    </div>) : null
+                }
+
+                {(display2020 === true && useAVG === true) ? (
                     <div>
                         <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/17/2020.</h1>
-                        <EnhancedTable2020
+                        <AVGTable2020
+                            players={this.state.overall}
+                        />
+                    </div>) : null
+                }
+
+                {(display2020 === true && useOBP === true) ? (
+                    <div>
+                        <h1 className={classes.positionText}>2020 Projected Stats from <a href="https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0" className={classes.websiteLinks} target='_blank' rel="noopener noreferrer">Steamer</a>.  Last Updated 3/17/2020.</h1>
+                        <OBPTable2020
                             players={this.state.overall}
                         />
                     </div>) : null
@@ -203,12 +277,31 @@ class Overall extends React.Component {
                 </List>
             </div>
         )
+
+        const AVGOBPButtons = (
+            <div>
+                <List className={classes.AVGOBPButtonsList}>
+                    <ListItem className={classes.AVGOBPButtonsListItem} onClick={this.useAVGTable}>
+                        <Button style={this.state.useAVG ? AVGOBPButtonStylingSelected : AVGOBPButtonStyling}>
+                            Use AVG
+                        </Button>
+                    </ListItem>
+                    <ListItem className={classes.AVGOBPButtonsListItem} onClick={this.useOBPTable}>
+                        <Button style={this.state.useOBP ? AVGOBPButtonStylingSelected : AVGOBPButtonStyling}>
+                            Use OBP
+                        </Button>
+                    </ListItem>
+                </List>
+            </div>
+        )
+
         return (
             <div className={classes.positionDiv}>
                 <Navbar />
                 <div className={classes.positionSpacingDiv}>
                     <Links />
                     {flipData}
+                    {AVGOBPButtons}
 
                     <h1 className={classes.positionText}>{data}</h1>
                     <Links />
