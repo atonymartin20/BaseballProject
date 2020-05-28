@@ -41,6 +41,8 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
+    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
     { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
     { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
     { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
@@ -49,8 +51,6 @@ const headCells = [
     { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
     { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
-    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
-    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
 ];
 
 function EnhancedTableHead(props) {
@@ -215,6 +215,12 @@ export default function EnhancedTable(props) {
                                                 {row.name}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
+                                                {row.PAVG.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.POBP.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
                                                 {row.PAs}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
@@ -237,12 +243,6 @@ export default function EnhancedTable(props) {
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.FWAR.toFixed(1)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.PAVG.toFixed(1)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.POBP.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );

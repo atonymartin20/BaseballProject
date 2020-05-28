@@ -894,12 +894,11 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCell}>{Saves2017}</TableCell>
                                                     <TableCell className={classes.tableCell}>{PitcherFWAR2017}</TableCell>
                                                     <TableCell className={classes.tableCell}>{(
-                                                            (10 * QS2017 +
-                                                                1.2 * RawKs2017 +
-                                                                9 * Saves2017 +
-                                                                4 * Number(InningsPitched2017) * Number(1.32 - WHIP2017) +
-                                                                Number(InningsPitched2017) * Number(4.47 - ERA2017)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                        (10 * QS2017 +
+                                                            1.2 * RawKs2017 +
+                                                            9 * Saves2017 +
+                                                            (4 * Number(InningsPitched2017) * Number(1.32 - WHIP2017)) +
+                                                            Number(InningsPitched2017) * Number(4.47 - ERA2017)) / 10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -926,7 +925,7 @@ class PlayerCard extends React.Component {
                                                                 9 * Saves2018 +
                                                                 4 * Number(InningsPitched2018) * Number(1.32 - WHIP2018) +
                                                                 Number(InningsPitched2018) * Number(4.47 - ERA2018)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                            10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -974,7 +973,7 @@ class PlayerCard extends React.Component {
                                                                 9 * Saves2019 +
                                                                 4 * Number(InningsPitched2019) * Number(1.32 - WHIP2019) +
                                                                 Number(InningsPitched2019) * Number(4.47 - ERA2019)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                            10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -1020,7 +1019,7 @@ class PlayerCard extends React.Component {
                                                         9 * SteamerSavesProjection +
                                                         4 * Number(SteamerInningsPitchedProjection) * Number(1.32 - SteamerWHIPProjection) +
                                                         Number(SteamerInningsPitchedProjection) * Number(4.47 - SteamerERAProjection)) / 
-                                                    6).toFixed(1)}</TableCell>
+                                                    8).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
                                     </Table>
@@ -2859,7 +2858,7 @@ class PlayerCard extends React.Component {
                                                                 9 * Saves2017 +
                                                                 4 * Number(InningsPitched2017) * Number(1.32 - WHIP2017) +
                                                                 Number(InningsPitched2017) * Number(4.47 - ERA2017)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                            10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -2886,7 +2885,7 @@ class PlayerCard extends React.Component {
                                                                 9 * Saves2018 +
                                                                 4 * Number(InningsPitched2018) * Number(1.32 - WHIP2018) +
                                                                 Number(InningsPitched2018) * Number(4.47 - ERA2018)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                            10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -2934,7 +2933,7 @@ class PlayerCard extends React.Component {
                                                                 9 * Saves2019 +
                                                                 4 * Number(InningsPitched2019) * Number(1.32 - WHIP2019) +
                                                                 Number(InningsPitched2019) * Number(4.47 - ERA2019)) /
-                                                            9).toFixed(1)}</TableCell>
+                                                            10).toFixed(1)}</TableCell>
                                                 </TableRow>
                                             ) : null}
         
@@ -2980,7 +2979,7 @@ class PlayerCard extends React.Component {
                                                         9 * SteamerSavesProjection +
                                                         4 * Number(SteamerInningsPitchedProjection) * Number(1.32 - SteamerWHIPProjection) +
                                                         Number(SteamerInningsPitchedProjection) * Number(4.47 - SteamerERAProjection)) / 
-                                                    6).toFixed(1)}</TableCell>
+                                                    8).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
                                     </Table>

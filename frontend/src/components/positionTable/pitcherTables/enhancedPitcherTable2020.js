@@ -43,6 +43,7 @@ const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
     { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
     { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
+    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
     { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
@@ -52,7 +53,6 @@ const headCells = [
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
     { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
-    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
 ];
 
 function EnhancedTableHead(props) {
@@ -153,7 +153,7 @@ export default function EnhancedTable(props) {
                         1.2 * player.SteamerRawKsProjection +
                         9 * player.SteamerSavesProjection +
                         4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 6,
+                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
                         player.id,
                         index
                     )
@@ -223,11 +223,14 @@ export default function EnhancedTable(props) {
                                             >
                                                 {row.name}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
+                                            <TableCell align='center' className={classes.tableCell}>
                                                 {row.primaryPosition}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
+                                            <TableCell align='center' className={classes.tableCell}>
                                                 {row.otherPositions}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.PTotal.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.Games}
@@ -255,9 +258,6 @@ export default function EnhancedTable(props) {
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.FWAR.toFixed(1)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.PTotal.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );
