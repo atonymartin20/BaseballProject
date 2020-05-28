@@ -23,6 +23,5 @@ This is a project I have wanted to build for a while.  The point of this project
  * Regardless, this will be updated for 2021 once projection systems begin to be released in late 2020 or early 2021.
 
  # Future Updates
-
- - [ ] Add Two-Way Player Portion of Player Card - playerCard.js line 738
- - [ ] Build Overall Tables
+ - [ ] Add Graphs
+ - [ ] Add Search Functionality
