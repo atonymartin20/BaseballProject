@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
-    return { name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
+function createData(name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
+    return { name, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,8 +41,6 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
-    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
-    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
     { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
     { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
     { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
@@ -137,26 +135,16 @@ export default function EnhancedTable(props) {
                 props.players.map((player, index) =>
                     createData(
                         `${player.firstName} ${player.lastName}`,
-                        player.primaryPosition,
-                        player.otherPositions,
-                        player.SteamerPAProjection,
-                        Number(player.SteamerAVGProjection),
-                        Number(player.SteamerOBPProjection),
-                        player.SteamerHRProjection,
-                        player.SteamerRunsProjection,
-                        player.SteamerRBIProjection,
-                        player.SteamerSBProjection,
-                        Number(player.SteamerFWARProjection),
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
-                            6,
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerOBPProjection - 0.320)) /
-                            6,
+                        player.PA2020,
+                        Number(player.BA2020),
+                        Number(player.OBP2020),
+                        player.HR2020,
+                        player.Runs2020,
+                        player.RBI2020,
+                        player.StolenBases2020,
+                        Number(player.FWAR2020),
+                        (1.75 * (player.Runs2020 + player.RBI2020) + 5.65 * player.HR2020 + 6 * player.StolenBases2020 + (4 * player.PA2020 * (player.BA2020 - 0.250))) / 6,
+                        (1.75 * (player.Runs2020 + player.RBI2020) + 5.65 * player.HR2020 + 6 * player.StolenBases2020 + (4 * player.PA2020 * (player.OBP2020 - 0.32))) / 6,
                         player.id,
                         index
                     )
@@ -172,7 +160,7 @@ export default function EnhancedTable(props) {
         setOrder(isAsc ? 'asc' : 'desc');
         setOrderBy(property);
     };
-
+    
     const handleClick = (event, name) => {
         const selectedIndex = selected.indexOf(name);
         let newSelected = [];
@@ -225,12 +213,6 @@ export default function EnhancedTable(props) {
                                                 }}
                                             >
                                                 {row.name}
-                                            </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.primaryPosition}
-                                            </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.otherPositions}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.PAVG.toFixed(1)}
