@@ -91,7 +91,7 @@ class Homepage extends React.Component {
                         >
                             Baseball Reference
                         </a>
-                        . Then, all the data can be found in one location. All 2020 projected stats are from{' '}
+                        . Then, all the data can be found in one location. All 2021 projected stats are from{' '}
                         <a
                             href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
                             className={classes.websiteLinks}
@@ -102,9 +102,8 @@ class Homepage extends React.Component {
                         </a>
                         .<br />
                         <br />
-                            Projections are the original 2020 Steamer projections before the postponement of the 2020 season due to COVID-19. 
-                            Projections may or may not be updated once a 2020 MLB season and schedule have been announced.
-                            Regardless, this will be updated for 2021 once projection systems begin to be released in late 2020 or early 2021.
+                            2020 stats will begin to be updated after the end of the 2020 regular season.  2021 Projections will begin to be updated
+                            as Steamer releases them.
                         <br />
                         <br />
                         <Link to='/glossary' className={classes.websiteLinks}>
