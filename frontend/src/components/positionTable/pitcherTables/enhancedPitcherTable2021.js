@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
-    return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
+function createData(name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,6 +41,8 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
+    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
+    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
     { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
@@ -128,27 +130,30 @@ export default function EnhancedTable(props) {
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
-
+    
     React.useEffect(() => {
         if (props.players.length !== 0) {
+            console.log(props.players)
             setRows(
                 props.players.map((player, index) =>
                     createData(
                         `${player.firstName} ${player.lastName}`,
-                        player.Games2020,
-                        Number(player.InningsPitched2020),
-                        Number(player.QS2020),
-                        player.RawKs2020,
-                        Number(player.ERA2020),
-                        Number(player.FIP2020),
-                        Number(player.WHIP2020),
-                        player.Saves2020,
-                        Number(player.PitcherFWAR2020),
-                        (10 * player.QS2020 +
-                            1.2 * player.RawKs2020 +
-                            9 * player.Saves2020 +
-                            (4 * Number(player.InningsPitched2020) * Number(1.32 - player.WHIP2020)) +
-                            Number(player.InningsPitched2020) * Number(4.47 - player.ERA2020)) / 10,
+                        player.primaryPosition,
+                        player.otherPositions,
+                        player.SteamerGamesProjection,
+                        Number(player.SteamerInningsPitchedProjection),
+                        Number(player.SteamerQSProjection),
+                        player.SteamerRawKsProjection,
+                        Number(player.SteamerERAProjection),
+                        Number(player.SteamerFIPProjection),
+                        Number(player.SteamerWHIPProjection),
+                        player.SteamerSavesProjection,
+                        Number(player.PitcherSteamerFWARProjection),
+                        (10 * Number(player.SteamerQSProjection) +
+                        1.2 * player.SteamerRawKsProjection +
+                        9 * player.SteamerSavesProjection +
+                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
+                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
                         player.id,
                         index
                     )
@@ -218,6 +223,12 @@ export default function EnhancedTable(props) {
                                             >
                                                 {row.name}
                                             </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.primaryPosition}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.otherPositions}
+                                            </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.PTotal.toFixed(1)}
                                             </TableCell>
@@ -225,7 +236,7 @@ export default function EnhancedTable(props) {
                                                 {row.Games}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.InningsPitched.toFixed(1)}
+                                                {row.InningsPitched.toFixed(0)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.QualityStarts.toFixed(1)}

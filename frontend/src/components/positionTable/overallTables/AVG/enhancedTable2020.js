@@ -53,7 +53,7 @@ function stableSort(array, cmp) {
         if (order !== 0) return order;
         return a[1] - b[1];
     });
-    return stabilizedThis.map((el) => el[0]);
+    return stabilizedThis.map(el => el[0]);
 }
 
 function getSorting(order, orderBy) {
@@ -82,18 +82,31 @@ const headCells = [
 function EnhancedTableHead(props) {
     const { classes, order, orderBy, onRequestSort } = props;
 
-    const createSortHandler = (property) => (event) => {
+    const createSortHandler = property => event => {
         onRequestSort(event, property);
     };
 
     return (
         <TableHead>
             <TableRow>
-                {headCells.map((headCell) => (
-                    <TableCell key={headCell.id} align={headCell.numeric ? 'right' : 'left'} sortDirection={orderBy === headCell.id ? order : false} className={classes.tableCell}>
-                        <TableSortLabel active={orderBy === headCell.id} direction={orderBy === headCell.id ? order : 'asc'} onClick={createSortHandler(headCell.id)}>
+                {headCells.map(headCell => (
+                    <TableCell
+                        key={headCell.id}
+                        align={headCell.numeric ? 'right' : 'left'}
+                        sortDirection={orderBy === headCell.id ? order : false}
+                        className={classes.tableCell}
+                    >
+                        <TableSortLabel
+                            active={orderBy === headCell.id}
+                            direction={orderBy === headCell.id ? order : 'asc'}
+                            onClick={createSortHandler(headCell.id)}
+                        >
                             {headCell.label}
-                            {orderBy === headCell.id ? <span className={classes.visuallyHidden}>{order === 'desc' ? 'sorted descending' : 'sorted ascending'}</span> : null}
+                            {orderBy === headCell.id ? (
+                                <span className={classes.visuallyHidden}>
+                                    {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
+                                </span>
+                            ) : null}
                         </TableSortLabel>
                     </TableCell>
                 ))}
@@ -109,7 +122,7 @@ EnhancedTableHead.propTypes = {
     orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
     linkStyling: {
         textDecoration: 'none',
         color: 'black',
@@ -131,7 +144,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.4rem',
         '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
-        },
+        }
     },
     visuallyHidden: {
         border: 0,
@@ -157,52 +170,44 @@ export default function EnhancedTable(props) {
 
     React.useEffect(() => {
         if (props.players.length !== 0) {
-            setRows(
-                props.players.map((player, index) =>
-                    createData(
-                        `${player.firstName} ${player.lastName}`,
-                        player.primaryPosition,
-                        player.otherPositions,
-                        player.SteamerPAProjection,
-                        Number(player.SteamerAVGProjection),
-                        player.SteamerHRProjection,
-                        player.SteamerRunsProjection,
-                        player.SteamerRBIProjection,
-                        player.SteamerSBProjection,
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
-                            6,
-                        Number(player.SteamerInningsPitchedProjection),
-                        Number(player.SteamerQSProjection),
-                        player.SteamerRawKsProjection,
-                        Number(player.SteamerERAProjection),
-                        Number(player.SteamerWHIPProjection),
-                        player.SteamerSavesProjection,
-                        (10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
-                        ((1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                        5.65 * player.SteamerHRProjection +
-                        6 * player.SteamerSBProjection +
-                        4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
-                        6) + ((10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8),
-                        player.id,
-                        index
-                    )
-                )
-            );
-        } else {
-            setRows([createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]);
+            setRows(props.players.map((player, index) => (
+                createData(
+                    `${player.firstName} ${player.lastName}`,
+                    player.primaryPosition,
+                    player.otherPositions,
+                    player.PA2020,
+                    Number(player.BA2020),
+                    player.HR2020,
+                    player.Runs2020,
+                    player.RBI2020,
+                    player.StolenBases2020,
+                    (1.75 * (player.Runs2020 + player.RBI2020) + 5.65 * player.HR2020 + 6 * player.StolenBases2020 + (4 * player.PA2020 * (player.BA2020 - 0.250))) / 6,
+                    Number(player.InningsPitched2020),
+                    Number(player.QS2020),
+                    player.RawKs2020,
+                    Number(player.ERA2020),
+                    Number(player.WHIP2020),
+                    player.Saves2020,
+                    (10 * player.QS2020 +
+                        1.2 * player.RawKs2020 +
+                        9 * player.Saves2020 +
+                        (4 * Number(player.InningsPitched2020) * Number(1.32 - player.WHIP2020)) +
+                        Number(player.InningsPitched2020) * Number(4.47 - player.ERA2020)) / 10,
+                    ((1.75 * (player.Runs2020 + player.RBI2020) + 5.65 * player.HR2020 + 6 * player.StolenBases2020 + (4 * player.PA2020 * (player.BA2020 - 0.250))) / 6) + ((10 * player.QS2020 +
+                        1.2 * player.RawKs2020 +
+                        9 * player.Saves2020 +
+                        (4 * Number(player.InningsPitched2020) * Number(1.32 - player.WHIP2020)) +
+                        Number(player.InningsPitched2020) * Number(4.47 - player.ERA2020)) / 10),
+                    player.id,
+                    index
+                )            )))
         }
-    }, [props.players]);
+        else {
+            setRows([
+                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+            ])
+        }
+    }, [props.players])
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'desc';
@@ -221,102 +226,106 @@ export default function EnhancedTable(props) {
         } else if (selectedIndex === selected.length - 1) {
             newSelected = newSelected.concat(selected.slice(0, -1));
         } else if (selectedIndex > 0) {
-            newSelected = newSelected.concat(selected.slice(0, selectedIndex), selected.slice(selectedIndex + 1));
+            newSelected = newSelected.concat(
+                selected.slice(0, selectedIndex),
+                selected.slice(selectedIndex + 1),
+            );
         }
         setSelected(newSelected);
     };
 
-    const isSelected = (name) => selected.indexOf(name) !== -1;
-        return (
-            <div className={classes.root}>
-                {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
-                <Paper className={classes.paper}>
-                    <TableContainer>
-                        <Table className={classes.table} aria-labelledby='tableTitle' size={'small'} aria-label='enhanced table'>
-                            <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
-                            <TableBody>
-                                {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                    if (row.PAs > 0 || row.InningsPitched > 0) {
-                                        const isItemSelected = isSelected(row.name);
-                                        const labelId = `enhanced-table-checkbox-${index}`;
-    
-                                        return (
-                                            <TableRow
-                                                hover
-                                                onClick={(event) => handleClick(event, row.name)}
-                                                aria-checked={isItemSelected}
-                                                tabIndex={-1}
-                                                key={`${row.name} + ${row.primaryPosition}`}
-                                                selected={isItemSelected}
+    const isSelected = name => selected.indexOf(name) !== -1;
+
+    return (
+        <div className={classes.root}>
+            {playerCard ? <PlayerCard close={() => setPlayerCard(!playerCard)} id={grabId} /> : null}
+            <Paper className={classes.paper}>
+                <TableContainer>
+                    <Table className={classes.table} aria-labelledby='tableTitle' size={'small'} aria-label='enhanced table'>
+                        <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
+                        <TableBody>
+                            {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
+                                if (row.PAs > 0 || row.InningsPitched > 0) {
+                                    const isItemSelected = isSelected(row.name);
+                                    const labelId = `enhanced-table-checkbox-${index}`;
+
+                                    return (
+                                        <TableRow
+                                            hover
+                                            onClick={(event) => handleClick(event, row.name)}
+                                            aria-checked={isItemSelected}
+                                            tabIndex={-1}
+                                            key={`${row.name} + ${row.primaryPosition}`}
+                                            selected={isItemSelected}
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell
+                                                component='th'
+                                                id={labelId}
+                                                scope='row'
                                                 className={classes.tableRow}
+                                                onClick={() => {
+                                                    setPlayerCard(!playerCard);
+                                                    setGrabId(row.id);
+                                                }}
                                             >
-                                                <TableCell
-                                                    component='th'
-                                                    id={labelId}
-                                                    scope='row'
-                                                    className={classes.tableRow}
-                                                    onClick={() => {
-                                                        setPlayerCard(!playerCard);
-                                                        setGrabId(row.id);
-                                                    }}
-                                                >
-                                                    {row.name}
-                                                </TableCell>
-                                                <TableCell align='center' className={classes.tableCell}>
-                                                    {row.primaryPosition}
-                                                </TableCell>
-                                                <TableCell align='center' className={classes.tableCell}>
-                                                    {row.otherPositions}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.score.toFixed(1)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.PAs}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.AVG.toFixed(3)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.HR}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.Runs}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.RBIs}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.SBs}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.InningsPitched.toFixed(0)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.QualityStarts.toFixed(1)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.RawKs}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.ERA.toFixed(2)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.WHIP.toFixed(2)}
-                                                </TableCell>
-                                                <TableCell align='right' className={classes.tableCell}>
-                                                    {row.Saves}
-                                                </TableCell>
-                                            </TableRow>
-                                        );
-                                    } else {
-                                        return false;
-                                    }
-                                })}
-                            </TableBody>
-                        </Table>
-                    </TableContainer>
-                </Paper>
-            </div>
-        );
+                                                {row.name}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.primaryPosition}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.otherPositions}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.score.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.PAs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.AVG.toFixed(3)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.HR}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.Runs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.RBIs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.SBs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.InningsPitched.toFixed(0)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.QualityStarts.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.RawKs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.ERA.toFixed(2)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.WHIP.toFixed(2)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.Saves}
+                                            </TableCell>
+                                        </TableRow>
+                                    );
+                                } else {
+                                    return false;
+                                }
+                            })}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Paper>
+        </div>
+    );
 }
