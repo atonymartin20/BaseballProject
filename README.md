@@ -17,10 +17,8 @@ This is a project I have wanted to build for a while.  The point of this project
 * [Back End Site - Hosted on Heroku](https://baseball-project-adm.herokuapp.com/)
  
  # 2020 Information
- * There are currently 814 players and 133,000+ unique lines of seed data in the database for the 2020 season.
- * 2020 Projections were pulled before COVID-19 and no longer reflect the reality of a 2020 MLB season.
- * Projections may or may not be updated once a 2020 MLB season and schedule have been announced.
- * Regardless, this will be updated for 2021 once projection systems begin to be released in late 2020 or early 2021.
+ * There are currently 1,248 players and 270,000+ unique lines of seed data in the database for the 2021 season.
+ * 2021 Projections will be added when they become available.
 
  # Future Updates
  - [ ] Add Graphs
