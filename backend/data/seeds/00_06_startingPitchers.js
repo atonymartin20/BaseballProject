@@ -26618,7 +26618,7 @@ exports.seed = function (knex, Promise) {
             'FIP2020': 3.31,
             'xFIP2020': 3.05,
             'SIERA2020': 3.22,
-            'WHIP2020': 0.84
+            'WHIP2020': 0.84,
             'RawKs2020': 62,
             'HitsPer92020': 6.3,
             'HRsPer92020': 1.2,
