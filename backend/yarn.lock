@@ -1404,7 +1404,7 @@ knex-cleaner@^1.1.4:
     bluebird "^2.9.13"
     lodash "^4.17.13"
 
-knex@^0.21.0:
+knex@^0.21.12:
   version "0.21.12"
   resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.12.tgz#961bdb484311eb853030f6f49bd5bf9eca89dc51"
   integrity sha512-AEyyiTM9p/x/Pb38TPZkvphKPmn8UWxP7MdIphzjAOielOfFFeU6pjP6y3M7UJ7rxrQsCrAYHwdonLQ3l1JCDw==
