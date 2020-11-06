@@ -56,7 +56,7 @@ class Homepage extends React.Component {
     render() {
         const { classes } = this.props;
 
-        while(this.context.state.reliefPitchers.length === 0) {
+        while(this.context.state.designatedHitters.length === 0) {
                     return (
                         <div className={classes.loadingContainer}>
                             <div className={'spinner'} />
