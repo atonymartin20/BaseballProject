@@ -236,7 +236,7 @@ export default function EnhancedTable(props) {
                             <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                             <TableBody>
                                 {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                    if (row.PAs > 0 || row.InningsPitched > 0) {
+                                    if (row.PAs >= 100 || row.InningsPitched >= 40) {
                                         const isItemSelected = isSelected(row.name);
                                         const labelId = `enhanced-table-checkbox-${index}`;
     

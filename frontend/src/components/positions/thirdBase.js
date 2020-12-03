@@ -187,7 +187,7 @@ class ThirdBase extends React.Component {
                             >
                                 Steamer
                             </a>
-                            . These will be updated when available.
+                            . Updated as of 11/25/2020.
                         </h1>
                         <EnhancedTable2021 players={this.state.thirdBase} />
                     </div>
