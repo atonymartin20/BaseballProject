@@ -187,7 +187,7 @@ class ReliefPitchers extends React.Component {
                             >
                                 Steamer
                             </a>
-                            . These will be updated when available.
+                            . Updated as of 11/25/2020.
                         </h1>
                         <EnhancedPitcherTable2021 players={this.state.reliefPitchers} />
                     </div>
