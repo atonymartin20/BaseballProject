@@ -20,157 +20,157 @@ export default class AppProvider extends Component {
         pitchers: [],
         overall: [],
         teams: {
-            Angels = {
+            Angels: {
                 teamName: 'Angels',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Astros = {
+            Astros: {
                 teamName: 'Astros',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Athletics = {
+            Athletics: {
                 teamName: 'Athletics',
                 players: [],
                 teamFWAR: 0.0,
             },
-            BlueJays = {
+            BlueJays: {
                 teamName: 'Blue Jays',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Braves = {
+            Braves: {
                 teamName: 'Braves',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Brewers = {
+            Brewers: {
                 teamName: 'Brewers',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Cardinals = {
+            Cardinals: {
                 teamName: 'Cardinals',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Cubs = {
+            Cubs: {
                 teamName: 'Cubs',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Diamondbacks = {
+            Diamondbacks: {
                 teamName: 'Diamondbacks',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Dodgers = {
+            Dodgers: {
                 teamName: 'Dodgers',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Giants = {
+            Giants: {
                 teamName: 'Giants',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Indians = {
+            Indians: {
                 teamName: 'Indians',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Mariners = {
+            Mariners: {
                 teamName: 'Mariners',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Marlins = {
+            Marlins: {
                 teamName: 'Marlins',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Mets = {
+            Mets: {
                 teamName: 'Mets',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Nationals = {
+            Nationals: {
                 teamName: 'Nationals',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Orioles = {
+            Orioles: {
                 teamName: 'Orioles',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Padres = {
+            Padres: {
                 teamName: 'Padres',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Phillies = {
+            Phillies: {
                 teamName: 'Phillies',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Pirates = {
+            Pirates: {
                 teamName: 'Pirates',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Rangers = {
+            Rangers: {
                 teamName: 'Rangers',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Rays = {
+            Rays: {
                 teamName: 'Rays',
                 players: [],
                 teamFWAR: 0.0,
             },
-            RedSox = {
+            RedSox: {
                 teamName: 'Red Sox',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Reds = {
+            Reds: {
                 teamName: 'Reds',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Rockies = {
+            Rockies: {
                 teamName: 'Rockies',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Royals = {
+            Royals: {
                 teamName: 'Royals',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Tigers = {
+            Tigers: {
                 teamName: 'Tigers',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Twins = {
+            Twins: {
                 teamName: 'Twins',
                 players: [],
                 teamFWAR: 0.0,
             },
-            WhiteSox = {
+            WhiteSox: {
                 teamName: 'White Sox',
                 players: [],
                 teamFWAR: 0.0,
             },
-            Yankees = {
+            Yankees: {
                 teamName: 'Yankees',
                 players: [],
                 teamFWAR: 0.0,
             },
-            FreeAgents = {
+            FreeAgents: {
                 teamName: 'Free Agents',
                 players: [],
                 teamFWAR: 0.0,
