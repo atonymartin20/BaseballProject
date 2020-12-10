@@ -3062,6 +3062,176 @@ exports.seed = function (knex, Promise) {
         },
         {
             // id 19
+            'firstName': 'Lucas',
+            'lastName': 'Erceg',
+            'birthday': '5/1/1995',
+            'bats': 'L',
+            'throws': 'R',
+            'currentTeam': 'Brewers',
+            'imageURL': 'https://www.baseball-reference.com/req/202012090/images/headshots/0/0b5b13ad_mlbam.jpg',
+            'primaryPosition': '3B',
+            'otherPositions': '',
+            'GamesPlayed2017': 0,
+            'BA2017': 0,
+            'OBP2017': 0,
+            'SLG2017': 0,
+            'PA2017': 0,
+            'Doubles2017': 0,
+            'HR2017': 0,
+            'Runs2017': 0,
+            'RBI2017': 0,
+            'LineupSlot2017': '',
+            'GBPercent2017': '',
+            'LDPercent2017': '',
+            'FBPercent2017': '',
+            'PullPercent2017': '',
+            'CenterPercent2017': '',
+            'OppoPercent2017': '',
+            'HRPerFB2017': '',
+            'HardHitPercent2017': '',
+            'ExitVelo2017': 0,
+            'FlyBallLineDriveExitVelo2017': 0,
+            'LaunchAngle2017': 0,
+            'BarrelPercent2017': '',
+            'BABIP2017': 0,
+            'WOBA2017': 0,
+            'xWOBA2017': 0,
+            'xBA2017': 0,
+            'AvgHRDistance2017': 0,
+            'WRCPlus2017': 0,
+            'OPSPlus2017': 0,
+            'BBPercent2017': '',
+            'KPercent2017': '',
+            'ChaseRate2017': '',
+            'ContactPercent2017': '',
+            'SprintSpeed2017': 0,
+            'StolenBases2017': 0,
+            'StolenBasePercent2017': '',
+            'FWAR2017': 0,
+            'GamesPlayed2018': 0,
+            'BA2018': 0,
+            'OBP2018': 0,
+            'SLG2018': 0,
+            'PA2018': 0,
+            'Doubles2018': 0,
+            'HR2018': 0,
+            'Runs2018': 0,
+            'RBI2018': 0,
+            'LineupSlot2018': '',
+            'GBPercent2018': '',
+            'LDPercent2018': '',
+            'FBPercent2018': '',
+            'PullPercent2018': '',
+            'CenterPercent2018': '',
+            'OppoPercent2018': '',
+            'HRPerFB2018': '',
+            'HardHitPercent2018': '',
+            'ExitVelo2018': 0,
+            'FlyBallLineDriveExitVelo2018': 0,
+            'LaunchAngle2018': 0,
+            'BarrelPercent2018': '',
+            'BABIP2018': 0,
+            'WOBA2018': 0,
+            'xWOBA2018': 0,
+            'xBA2018': 0,
+            'AvgHRDistance2018': 0,
+            'WRCPlus2018': 0,
+            'OPSPlus2018': 0,
+            'BBPercent2018': '',
+            'KPercent2018': '',
+            'ChaseRate2018': '',
+            'ContactPercent2018': '',
+            'SprintSpeed2018': 0,
+            'StolenBases2018': 0,
+            'StolenBasePercent2018': '',
+            'FWAR2018': 0,
+            'GamesPlayed2019': 0,
+            'BA2019': 0,
+            'OBP2019': 0,
+            'SLG2019': 0,
+            'PA2019': 0,
+            'Doubles2019': 0,
+            'HR2019': 0,
+            'Runs2019': 0,
+            'RBI2019': 0,
+            'LineupSlot2019': '',
+            'GBPercent2019': '',
+            'LDPercent2019': '',
+            'FBPercent2019': '',
+            'PullPercent2019': '',
+            'CenterPercent2019': '',
+            'OppoPercent2019': '',
+            'HRPerFB2019': '',
+            'HardHitPercent2019': '',
+            'ExitVelo2019': 0,
+            'FlyBallLineDriveExitVelo2019': 0,
+            'LaunchAngle2019': 0,
+            'BarrelPercent2019': '',
+            'BABIP2019': 0,
+            'WOBA2019': 0,
+            'xWOBA2019': 0,
+            'xBA2019': 0,
+            'AvgHRDistance2019': 0,
+            'WRCPlus2019': 0,
+            'OPSPlus2019': 0,
+            'BBPercent2019': '',
+            'KPercent2019': '',
+            'ChaseRate2019': '',
+            'ContactPercent2019': '',
+            'SprintSpeed2019': 0,
+            'StolenBases2019': 0,
+            'StolenBasePercent2019': '',
+            'FWAR2019': 0,
+            'GamesPlayed2020': 0,
+            'BA2020': 0,
+            'OBP2020': 0,
+            'SLG2020': 0,
+            'PA2020': 0,
+            'Doubles2020': 0,
+            'HR2020': 0,
+            'Runs2020': 0,
+            'RBI2020': 0,
+            'LineupSlot2020': '',
+            'GBPercent2020': '',
+            'LDPercent2020': '',
+            'FBPercent2020': '',
+            'PullPercent2020': '',
+            'CenterPercent2020': '',
+            'OppoPercent2020': '',
+            'HRPerFB2020': '',
+            'HardHitPercent2020': '',
+            'ExitVelo2020': 0,
+            'FlyBallLineDriveExitVelo2020': 0,
+            'LaunchAngle2020': 0,
+            'BarrelPercent2020': '',
+            'BABIP2020': 0,
+            'WOBA2020': 0,
+            'xWOBA2020': 0,
+            'xBA2020': 0,
+            'AvgHRDistance2020': 0,
+            'WRCPlus2020': 0,
+            'OPSPlus2020': 0,
+            'BBPercent2020': '',
+            'KPercent2020': '',
+            'ChaseRate2020': '',
+            'ContactPercent2020': '',
+            'SprintSpeed2020': 0,
+            'StolenBases2020': 0,
+            'StolenBasePercent2020': '',
+            'FWAR2020': 0,
+            'SteamerPAProjection': 151,
+            'SteamerAVGProjection': .223,
+            'SteamerOBPProjection': .283,
+            'SteamerSLGProjection': .378,
+            'SteamerDoublesProjection': 6,
+            'SteamerHRProjection': 5,
+            'SteamerRunsProjection': 16,
+            'SteamerRBIProjection': 17,
+            'SteamerSBProjection': 1,
+            'SteamerFWARProjection': -0.1,
+        },
+        {
+            // id 20
             'firstName': 'Eduardo',
             'lastName': 'Escobar',
             'birthday': '1/5/1989',
@@ -3231,7 +3401,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.3,
         },
         {
-            // id 20
+            // id 21
             'firstName': 'Phillip',
             'lastName': 'Evans',
             'birthday': '9/10/1992',
@@ -3401,7 +3571,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.1,
         },
         {
-            // id 21
+            // id 22
             'firstName': 'Maikel',
             'lastName': 'Franco',
             'birthday': '9/26/1992',
@@ -3571,7 +3741,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.6,
         },
         {
-            // id 22
+            // id 23
             'firstName': 'Todd',
             'lastName': 'Frazier',
             'birthday': '2/12/1986',
@@ -3741,7 +3911,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.5,
         },
         {
-            // id 23
+            // id 24
             'firstName': 'Marwin',
             'lastName': 'Gonzalez',
             'birthday': '3/14/1989',
@@ -3911,7 +4081,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.6,
         },
         {
-            // id 24
+            // id 25
             'firstName': "Ke'Bryan",
             'lastName': 'Hayes',
             'birthday': '1/28/1997',
@@ -4081,7 +4251,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 3.0,
         },
         {
-            // id 25
+            // id 26
             'firstName': 'Brock',
             'lastName': 'Holt',
             'birthday': '6/11/1988',
@@ -4251,7 +4421,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.1,
         },
         {
-            // id 26
+            // id 27
             'firstName': 'Carter',
             'lastName': 'Kieboom',
             'birthday': '9/3/1997',
@@ -4421,7 +4591,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.1,
         },
         {
-            // id 27
+            // id 28
             'firstName': 'Isiah',
             'lastName': 'Kiner-Falefa',
             'birthday': '3/23/1995',
@@ -4591,7 +4761,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.5,
         },
         {
-            // id 28
+            // id 29
             'firstName': 'Jake',
             'lastName': 'Lamb',
             'birthday': '10/9/1990',
@@ -4761,7 +4931,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.7,
         },
         {
-            // id 29
+            // id 30
             'firstName': 'Evan',
             'lastName': 'Longoria',
             'birthday': '10/7/1985',
@@ -4931,7 +5101,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.3,
         },
         {
-            // id 30
+            // id 31
             'firstName': 'Dawel',
             'lastName': 'Lugo',
             'birthday': '12/31/1994',
@@ -5101,7 +5271,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.0,
         },
         {
-            // id 31
+            // id 32
             'firstName': 'Manny',
             'lastName': 'Machado',
             'birthday': '7/6/1992',
@@ -5271,7 +5441,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 4.5,
         },
         {
-            // id 32
+            // id 33
             'firstName': 'Vimael',
             'lastName': 'Machin',
             'birthday': '9/25/1993',
@@ -5441,7 +5611,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.5,
         },
         {
-            // id 33
+            // id 34
             'firstName': 'Wyatt',
             'lastName': 'Mathisen',
             'birthday': '12/30/1993',
@@ -5611,7 +5781,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.0,
         },
         {
-            // id 34
+            // id 35
             'firstName': 'Brad',
             'lastName': 'Miller',
             'birthday': '10/18/1989',
@@ -5781,7 +5951,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.4,
         },
         {
-            // id 35
+            // id 36
             'firstName': 'Yoan',
             'lastName': 'Moncada',
             'birthday': '5/27/1995',
@@ -5939,19 +6109,19 @@ exports.seed = function (knex, Promise) {
             'StolenBases2020': 0,
             'StolenBasePercent2020': '0.0%',
             'FWAR2020': 1.6,
-            'SteamerPAProjection': 662,
-            'SteamerAVGProjection': .252,
+            'SteamerPAProjection': 650,
+            'SteamerAVGProjection': .253,
             'SteamerOBPProjection': .335,
-            'SteamerSLGProjection': .442,
-            'SteamerDoublesProjection': 29,
+            'SteamerSLGProjection': .443,
+            'SteamerDoublesProjection': 28,
             'SteamerHRProjection': 24,
-            'SteamerRunsProjection': 88,
-            'SteamerRBIProjection': 80,
-            'SteamerSBProjection': 8,
+            'SteamerRunsProjection': 87,
+            'SteamerRBIProjection': 79,
+            'SteamerSBProjection': 7,
             'SteamerFWARProjection': 3.3,
         },
         {
-            // id 36
+            // id 37
             'firstName': 'Isaac',
             'lastName': 'Paredes',
             'birthday': '2/18/1999',
@@ -6121,7 +6291,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.7,
         },
         {
-            // id 37
+            // id 38
             'firstName': 'Jose',
             'lastName': 'Ramirez',
             'birthday': '12/17/1992',
@@ -6291,7 +6461,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 5.3,
         },
         {
-            // id 38
+            // id 39
             'firstName': 'Anthony',
             'lastName': 'Rendon',
             'birthday': '6/6/1990',
@@ -6461,7 +6631,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 5.5,
         },
         {
-            // id 39
+            // id 40
             'firstName': 'JT',
             'lastName': 'Riddle',
             'birthday': '10/12/1991',
@@ -6631,7 +6801,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.0,
         },
         {
-            // id 40
+            // id 41
             'firstName': 'Austin',
             'lastName': 'Riley',
             'birthday': '4/2/1997',
@@ -6801,7 +6971,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.9,
         },
         {
-            // id 41
+            // id 42
             'firstName': 'Edwin',
             'lastName': 'Rios',
             'birthday': '4/21/1994',
@@ -6971,7 +7141,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.1,
         },
         {
-            // id 42
+            // id 43
             'firstName': 'Rio',
             'lastName': 'Ruiz',
             'birthday': '5/22/1994',
@@ -7141,7 +7311,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.4,
         },
         {
-            // id 43
+            // id 44
             'firstName': 'Yolmer',
             'lastName': 'Sanchez',
             'birthday': '6/29/1992',
@@ -7311,7 +7481,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.2,
         },
         {
-            // id 44
+            // id 45
             'firstName': 'Kyle',
             'lastName': 'Seager',
             'birthday': '11/3/1987',
@@ -7481,7 +7651,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 2.2,
         },
         {
-            // id 45
+            // id 46
             'firstName': 'Travis',
             'lastName': 'Shaw',
             'birthday': '4/16/1990',
@@ -7651,7 +7821,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.5,
         },
         {
-            // id 46
+            // id 47
             'firstName': 'Eric',
             'lastName': 'Sogard',
             'birthday': '5/22/1986',
@@ -7821,7 +7991,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.3,
         },
         {
-            // id 47
+            // id 48
             'firstName': 'Eugenio',
             'lastName': 'Suarez',
             'birthday': '7/18/1991',
@@ -7991,7 +8161,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 2.5,
         },
         {
-            // id 48
+            // id 49
             'firstName': 'Abraham',
             'lastName': 'Toro',
             'birthday': '12/20/1996',
@@ -8161,7 +8331,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 0.1,
         },
         {
-            // id 49
+            // id 50
             'firstName': 'Justin',
             'lastName': 'Turner',
             'birthday': '11/23/1984',
@@ -8331,7 +8501,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 3.2,
         },
         {
-            // id 50
+            // id 51
             'firstName': 'Luis',
             'lastName': 'Urias',
             'birthday': '6/3/1997',
@@ -8489,19 +8659,19 @@ exports.seed = function (knex, Promise) {
             'StolenBases2020': 2,
             'StolenBasePercent2020': '50.0%',
             'FWAR2020': 0.0,
-            'SteamerPAProjection': 572,
-            'SteamerAVGProjection': .249,
-            'SteamerOBPProjection': .334,
-            'SteamerSLGProjection': .391,
+            'SteamerPAProjection': 559,
+            'SteamerAVGProjection': .250,
+            'SteamerOBPProjection': .335,
+            'SteamerSLGProjection': .393,
             'SteamerDoublesProjection': 24,
-            'SteamerHRProjection': 14,
-            'SteamerRunsProjection': 63,
-            'SteamerRBIProjection': 60,
-            'SteamerSBProjection': 7,
+            'SteamerHRProjection': 13,
+            'SteamerRunsProjection': 62,
+            'SteamerRBIProjection': 59,
+            'SteamerSBProjection': 6,
             'SteamerFWARProjection': 1.6,
         },
         {
-            // id 51
+            // id 52
             'firstName': 'Gio',
             'lastName': 'Urshela',
             'birthday': '10/11/1991',
@@ -8671,7 +8841,7 @@ exports.seed = function (knex, Promise) {
             'SteamerFWARProjection': 1.9,
         },
         {
-            // id 52
+            // id 53
             'firstName': 'Joey',
             'lastName': 'Wendle',
             'birthday': '4/26/1990',
