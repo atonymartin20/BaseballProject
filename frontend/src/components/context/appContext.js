@@ -401,160 +401,160 @@ export default class AppProvider extends Component {
                     },
                     divideIntoTeams: () => {
                         let teams = {
-                            Angels = {
-                                teamName = 'Angels',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Angels: {
+                                teamName: 'Angels',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Astros = {
-                                teamName = 'Astros',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Astros: {
+                                teamName: 'Astros',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Athletics = {
-                                teamName = 'Athletics',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Athletics: {
+                                teamName: 'Athletics',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            BlueJays = {
-                                teamName = 'Blue Jays',
-                                players = [],
-                                teamFWAR = 0.0,
+                            BlueJays: {
+                                teamName: 'Blue Jays',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Braves = {
-                                teamName = 'Braves',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Braves: {
+                                teamName: 'Braves',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Brewers = {
-                                teamName = 'Brewers',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Brewers: {
+                                teamName: 'Brewers',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Cardinals = {
-                                teamName = 'Cardinals',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Cardinals: {
+                                teamName: 'Cardinals',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Cubs = {
-                                teamName = 'Cubs',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Cubs: {
+                                teamName: 'Cubs',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Diamondbacks = {
-                                teamName = 'Diamondbacks',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Diamondbacks: {
+                                teamName: 'Diamondbacks',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Dodgers = {
-                                teamName = 'Dodgers',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Dodgers: {
+                                teamName: 'Dodgers',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Giants = {
-                                teamName = 'Giants',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Giants: {
+                                teamName: 'Giants',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Indians = {
-                                teamName = 'Indians',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Indians: {
+                                teamName: 'Indians',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Mariners = {
-                                teamName = 'Mariners',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Mariners: {
+                                teamName: 'Mariners',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Marlins = {
-                                teamName = 'Marlins',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Marlins: {
+                                teamName: 'Marlins',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Mets = {
-                                teamName = 'Mets',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Mets: {
+                                teamName: 'Mets',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Nationals = {
-                                teamName = 'Nationals',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Nationals: {
+                                teamName: 'Nationals',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Orioles = {
-                                teamName = 'Orioles',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Orioles: {
+                                teamName: 'Orioles',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Padres = {
-                                teamName = 'Padres',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Padres: {
+                                teamName: 'Padres',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Phillies = {
-                                teamName = 'Phillies',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Phillies: {
+                                teamName: 'Phillies',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Pirates = {
-                                teamName = 'Pirates',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Pirates: {
+                                teamName: 'Pirates',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Rangers = {
-                                teamName = 'Rangers',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Rangers: {
+                                teamName: 'Rangers',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Rays = {
-                                teamName = 'Rays',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Rays: {
+                                teamName: 'Rays',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            RedSox = {
-                                teamName = 'Red Sox',
-                                players = [],
-                                teamFWAR = 0.0,
+                            RedSox: {
+                                teamName: 'Red Sox',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Reds = {
-                                teamName = 'Reds',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Reds: {
+                                teamName: 'Reds',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Rockies = {
-                                teamName = 'Rockies',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Rockies: {
+                                teamName: 'Rockies',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Royals = {
-                                teamName = 'Royals',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Royals: {
+                                teamName: 'Royals',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Tigers = {
-                                teamName = 'Tigers',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Tigers: {
+                                teamName: 'Tigers',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Twins = {
-                                teamName = 'Twins',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Twins: {
+                                teamName: 'Twins',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            WhiteSox = {
-                                teamName = 'White Sox',
-                                players = [],
-                                teamFWAR = 0.0,
+                            WhiteSox: {
+                                teamName: 'White Sox',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            Yankees = {
-                                teamName = 'Yankees',
-                                players = [],
-                                teamFWAR = 0.0,
+                            Yankees: {
+                                teamName: 'Yankees',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
-                            FreeAgents = {
-                                teamName = 'Free Agents',
-                                players = [],
-                                teamFWAR = 0.0,
+                            FreeAgents: {
+                                teamName: 'Free Agents',
+                                players: [],
+                                teamFWAR: 0.0,
                             },
                         }
 
