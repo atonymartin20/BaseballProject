@@ -18,6 +18,8 @@ import Pitchers from './components/positions/pitchers.js';
 import Overall from './components/positions/overall.js';
 import PlayerCard from './components/players/playerCard.js';
 import Glossary from './components/glossary';
+import Teams from './components/teams/index.js';
+import TeamPage from './components/teams/teamPage.js';
 
 class App extends React.Component {
     componentDidMount() {
@@ -36,8 +38,8 @@ class App extends React.Component {
             this.context.getDesignatedHitters();
             this.context.getStartingPitchers();
             this.context.getReliefPitchers();
+            this.context.divideIntoTeams();
         }, 3500);
-
 
         while (this.context.state.overall === []) {
             this.context.getAllPlayers();
@@ -55,6 +57,7 @@ class App extends React.Component {
                 this.context.getDesignatedHitters();
                 this.context.getStartingPitchers();
                 this.context.getReliefPitchers();
+                this.context.divideIntoTeams();
             }, 3500);
         }
     }
@@ -122,6 +125,10 @@ class App extends React.Component {
                         <Overall />
                     </Route>
                     <Route path='/overall/:id' render={(props) => <PlayerCard {...props} />} />
+                    <Route exact path='/teams'>
+                        <Teams />
+                    </Route>
+                    <Route path='/teams/:team' render={(props) => <TeamPage {...props} />} />
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
