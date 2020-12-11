@@ -3222,13 +3222,13 @@ exports.seed = function (knex, Promise) {
             'SteamerPAProjection': 616,
             'SteamerAVGProjection': .246,
             'SteamerOBPProjection': .341,
-            'SteamerSLGProjection': .485,
+            'SteamerSLGProjection': .486,
             'SteamerDoublesProjection': 27,
             'SteamerHRProjection': 33,
-            'SteamerRunsProjection': 83,
+            'SteamerRunsProjection': 84,
             'SteamerRBIProjection': 90,
             'SteamerSBProjection': 3,
-            'SteamerFWARProjection': 1.6,
+            'SteamerFWARProjection': 1.7,
         },
         {
             // id 20
