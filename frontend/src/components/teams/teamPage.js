@@ -86,6 +86,7 @@ class TeamsPage extends React.Component {
     render() {
         const { classes } = this.props;
         const { displayHitters, displayPitchers } = this.state;
+        console.log(props)
 
         const flipDataButton = {
             fontSize: '1.6rem',
@@ -103,7 +104,7 @@ class TeamsPage extends React.Component {
                 {displayHitters ? (
                     <div>
                         <h1 className={classes.positionText}>
-                            {team.teamName} Hitters
+                            {props.team.teamName} Hitters
                         </h1>
                         <EnhancedHitterTable2021 players={this.state.hitters} />
                     </div>
@@ -112,7 +113,7 @@ class TeamsPage extends React.Component {
                 {displayPitchers ? (
                     <div>
                         <h1 className={classes.positionText}>
-                            {team.teamName} Pitchers
+                            {props.team.teamName} Pitchers
                         </h1>
                         <EnhancedPitcherTable2021 players={this.state.pitchers} />
                     </div>
