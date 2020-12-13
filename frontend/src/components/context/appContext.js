@@ -23,161 +23,224 @@ export default class AppProvider extends Component {
             Angels: {
                 teamName: 'Angels',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Astros: {
                 teamName: 'Astros',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Athletics: {
                 teamName: 'Athletics',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             BlueJays: {
                 teamName: 'Blue Jays',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Braves: {
                 teamName: 'Braves',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Brewers: {
                 teamName: 'Brewers',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Cardinals: {
                 teamName: 'Cardinals',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Cubs: {
                 teamName: 'Cubs',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Diamondbacks: {
                 teamName: 'Diamondbacks',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Dodgers: {
                 teamName: 'Dodgers',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Giants: {
                 teamName: 'Giants',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Indians: {
                 teamName: 'Indians',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Mariners: {
                 teamName: 'Mariners',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Marlins: {
                 teamName: 'Marlins',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Mets: {
                 teamName: 'Mets',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Nationals: {
                 teamName: 'Nationals',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Orioles: {
                 teamName: 'Orioles',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Padres: {
                 teamName: 'Padres',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Phillies: {
                 teamName: 'Phillies',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Pirates: {
                 teamName: 'Pirates',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Rangers: {
                 teamName: 'Rangers',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Rays: {
                 teamName: 'Rays',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             RedSox: {
                 teamName: 'Red Sox',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Reds: {
                 teamName: 'Reds',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Rockies: {
                 teamName: 'Rockies',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Royals: {
                 teamName: 'Royals',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Tigers: {
                 teamName: 'Tigers',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Twins: {
                 teamName: 'Twins',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             WhiteSox: {
                 teamName: 'White Sox',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             Yankees: {
                 teamName: 'Yankees',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
             FreeAgents: {
                 teamName: 'Free Agents',
                 players: [],
+                hitters: [],
+                pitchers: [],
                 teamFWAR: 0.0,
             },
         },
         NoTeams: [],
         NoTeamsFWAR: 0.0,
+        RetiredForeignPlayers: [],
     };
 
     render() {
@@ -404,156 +467,218 @@ export default class AppProvider extends Component {
                             Angels: {
                                 teamName: 'Angels',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Astros: {
                                 teamName: 'Astros',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Athletics: {
                                 teamName: 'Athletics',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             BlueJays: {
                                 teamName: 'Blue Jays',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Braves: {
                                 teamName: 'Braves',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Brewers: {
                                 teamName: 'Brewers',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Cardinals: {
                                 teamName: 'Cardinals',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Cubs: {
                                 teamName: 'Cubs',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Diamondbacks: {
                                 teamName: 'Diamondbacks',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Dodgers: {
                                 teamName: 'Dodgers',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Giants: {
                                 teamName: 'Giants',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Indians: {
                                 teamName: 'Indians',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Mariners: {
                                 teamName: 'Mariners',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Marlins: {
                                 teamName: 'Marlins',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Mets: {
                                 teamName: 'Mets',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Nationals: {
                                 teamName: 'Nationals',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Orioles: {
                                 teamName: 'Orioles',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Padres: {
                                 teamName: 'Padres',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Phillies: {
                                 teamName: 'Phillies',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Pirates: {
                                 teamName: 'Pirates',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Rangers: {
                                 teamName: 'Rangers',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Rays: {
                                 teamName: 'Rays',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             RedSox: {
                                 teamName: 'Red Sox',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Reds: {
                                 teamName: 'Reds',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Rockies: {
                                 teamName: 'Rockies',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Royals: {
                                 teamName: 'Royals',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Tigers: {
                                 teamName: 'Tigers',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Twins: {
                                 teamName: 'Twins',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             WhiteSox: {
                                 teamName: 'White Sox',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             Yankees: {
                                 teamName: 'Yankees',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                             FreeAgents: {
                                 teamName: 'Free Agents',
                                 players: [],
+                                hitters: [],
+                                pitchers: [],
                                 teamFWAR: 0.0,
                             },
                         }
@@ -561,10 +686,12 @@ export default class AppProvider extends Component {
                         let NoTeams = [];
                         let NoTeamsFWAR = 0.0;
 
+                        let RetiredForeignPlayers = [];
+
                         this.state.overall.forEach(player => {
                             if(player.currentTeam.includes('Angels')) {
                                 teams['Angels']['players'] = teams['Angels']['players'].concat(player)
-                                teams['Angels']['teamFWAR'] += player
+                                teams['Angels']['teamFWAR'] += player.PitcherSteamerFWARProjection + player.SteamerFWARProjection
                             }
                             else if(player.currentTeam.includes('Astros')) {
                                 teams['Astros']['players'] = teams['Astros']['players'].concat(player)
@@ -623,7 +750,7 @@ export default class AppProvider extends Component {
                                 teams['Mets']['teamFWAR'] += player
                             }
                             else if(player.currentTeam.includes('Nationals')) {
-                                teams['Nationals']['players'] = teams['National']['players'].concat(player)
+                                teams['Nationals']['players'] = teams['Nationals']['players'].concat(player)
                                 teams['Nationals']['teamFWAR'] += player
                             }
                             else if(player.currentTeam.includes('Orioles')) {
@@ -686,6 +813,10 @@ export default class AppProvider extends Component {
                                 teams['FreeAgents']['players'] = teams['FreeAgents']['players'].concat(player)
                                 teams['FreeAgents']['teamFWAR'] += player
                             }
+
+                            else if(player.currentTeam.includes('Retired') || player.currentTeam.includes('Korea') || player.currentTeam.includes('Japan')) {
+                                RetiredForeignPlayers = RetiredForeignPlayers.concat(player)
+                            }
                             else {
                                 NoTeams = NoTeams.concat(player)
                                 NoTeamsFWAR += player
@@ -696,12 +827,17 @@ export default class AppProvider extends Component {
                             console.log(NoTeams)
                         }
 
+                        if(RetiredForeignPlayers !== []) {
+                            console.log(RetiredForeignPlayers)
+                        }
+
                         console.log(teams)
 
                         this.setState({
                             teams,
                             NoTeams,
-                            NoTeamsFWAR
+                            NoTeamsFWAR,
+                            RetiredForeignPlayers,
                         })
                     }
                 }}
