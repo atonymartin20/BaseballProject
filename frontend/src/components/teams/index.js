@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import { Redirect } from 'react-router-dom';
 
-function createData(teamName, players, teamFWAR) {
-    return { teamName, players, teamFWAR };
+function createData(teamName, players, hitters, pitchers, hitterFWAR, pitcherFWAR, teamFWAR) {
+    return { teamName, players, hitters, pitchers, hitterFWAR, pitcherFWAR, teamFWAR };
 }
 
 function desc(a, b, orderBy) {
@@ -41,6 +41,11 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'teamName', numeric: false, label: 'Team Name', info: 'Team Name' },
+    { id: 'players', numberic: true, label: 'Players', info: 'Players' },
+    { id: 'hitters', numeric: true, label: 'Hitters', info: 'Hitters' },
+    { id: 'pitchers', numeric: true, label: 'Pitchers', info: 'Pitchers' },
+    { id: 'hitterFWAR', numeric: true, label: 'Hitter FWAR', info: 'Hitter FWAR'},
+    { id: 'pitcherFWAR', numeric: true, label: 'PitcherFWAR', info: 'Pitcher FWAR'},
     { id: 'teamFWAR', numeric: true, label: 'Team FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
@@ -114,25 +119,30 @@ const useStyles = makeStyles((theme) => ({
 export default function Teams(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('POBP');
+    const [orderBy, setOrderBy] = React.useState('teamFWAR');
     const [selected, setSelected] = React.useState([]);
     const [redirect, setRedirect] = React.useState(false);
     const [rows, setRows] = React.useState([]);
-
     React.useEffect(() => {
-        if (this.context.state.teams.length !== 0) {
+        if (props.teams.length !== 0) {
             setRows(
-                this.context.state.teams.map((team, index) =>
+                Object.entries(props.teams).map(([key, value], index) =>
                     createData(
-                        team.teamName,
-                        team.teamFWAR,
+                        value['teamName'],
+                        value['players'].length,
+                        value['hitters'].length,
+                        value['pitchers'].length,
+                        value['hitterFWAR'],
+                        value['pitcherFWAR'],
+                        value['teamFWAR'],
+                        index
                     )
                 )
             );
         } else {
             setRows([createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]);
         }
-    }, [this.context.state.teams]);
+    }, [props.teams]);
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'desc';
@@ -160,7 +170,7 @@ export default function Teams(props) {
 
     return (
         <div className={classes.root}>
-            {redirect ? <Redirect to='/teams/:team' team={team} /> : null}
+            {redirect ? <Redirect to='/teams/:team' team={'teamName'} /> : null}
             <Paper className={classes.paper}>
                 <TableContainer>
                     <Table className={classes.table} aria-labelledby='tableTitle' size={'small'} aria-label='teams table'>
@@ -191,6 +201,21 @@ export default function Teams(props) {
                                                 }}
                                             >
                                                 {row.teamName}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.players}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.hitters}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.pitchers}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.hitterFWAR.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.pitcherFWAR.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.teamFWAR.toFixed(1)}
