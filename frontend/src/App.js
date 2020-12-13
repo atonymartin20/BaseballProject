@@ -126,7 +126,7 @@ class App extends React.Component {
                     </Route>
                     <Route path='/overall/:id' render={(props) => <PlayerCard {...props} />} />
                     <Route exact path='/teams'>
-                        <Teams />
+                        <Teams teams={this.context.state.teams} />
                     </Route>
                     <Route path='/teams/:team' render={(props) => <TeamPage {...props} />} />
                     <Route exact path='/glossary'>
