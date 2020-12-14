@@ -25,6 +25,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Astros: {
@@ -32,6 +34,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Athletics: {
@@ -46,6 +50,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Braves: {
@@ -53,6 +59,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Brewers: {
@@ -60,6 +68,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Cardinals: {
@@ -67,6 +77,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Cubs: {
@@ -74,6 +86,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Diamondbacks: {
@@ -81,6 +95,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Dodgers: {
@@ -88,6 +104,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Giants: {
@@ -95,6 +113,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Indians: {
@@ -102,6 +122,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Mariners: {
@@ -109,6 +131,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Marlins: {
@@ -116,6 +140,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Mets: {
@@ -123,6 +149,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Nationals: {
@@ -137,6 +165,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Padres: {
@@ -144,6 +174,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Phillies: {
@@ -151,6 +183,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Pirates: {
@@ -158,6 +192,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Rangers: {
@@ -165,6 +201,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Rays: {
@@ -172,6 +210,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             RedSox: {
@@ -179,6 +219,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Reds: {
@@ -186,6 +228,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Rockies: {
@@ -193,6 +237,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Royals: {
@@ -200,6 +246,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Tigers: {
@@ -207,6 +255,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Twins: {
@@ -214,6 +264,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             WhiteSox: {
@@ -221,6 +273,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             Yankees: {
@@ -228,6 +282,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
             FreeAgents: {
@@ -235,6 +291,8 @@ export default class AppProvider extends Component {
                 players: [],
                 hitters: [],
                 pitchers: [],
+                hitterFWAR: 0.0,
+                pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
             },
         },
@@ -469,6 +527,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Astros: {
@@ -476,6 +536,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Athletics: {
@@ -483,6 +545,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             BlueJays: {
@@ -490,6 +554,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Braves: {
@@ -497,6 +563,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Brewers: {
@@ -504,6 +572,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Cardinals: {
@@ -511,6 +581,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Cubs: {
@@ -518,6 +590,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Diamondbacks: {
@@ -525,6 +599,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Dodgers: {
@@ -532,6 +608,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Giants: {
@@ -539,6 +617,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Indians: {
@@ -546,6 +626,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Mariners: {
@@ -553,6 +635,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Marlins: {
@@ -560,6 +644,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Mets: {
@@ -567,6 +653,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Nationals: {
@@ -574,6 +662,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Orioles: {
@@ -581,6 +671,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Padres: {
@@ -588,6 +680,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Phillies: {
@@ -595,6 +689,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Pirates: {
@@ -602,6 +698,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Rangers: {
@@ -609,6 +707,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Rays: {
@@ -616,6 +716,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             RedSox: {
@@ -623,6 +725,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Reds: {
@@ -630,6 +734,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Rockies: {
@@ -637,6 +743,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Royals: {
@@ -644,6 +752,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Tigers: {
@@ -651,6 +761,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Twins: {
@@ -658,6 +770,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             WhiteSox: {
@@ -665,6 +779,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             Yankees: {
@@ -672,6 +788,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                             FreeAgents: {
@@ -679,6 +797,8 @@ export default class AppProvider extends Component {
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
+                                hitterFWAR: 0.0,
+                                pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
                             },
                         }
@@ -693,11 +813,13 @@ export default class AppProvider extends Component {
                                 teams['Angels']['players'] = teams['Angels']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Angels']['hitters'] = teams['Angels']['hitters'].concat(player)
+                                    teams['Angels']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Angels']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Angels']['pitchers'] = teams['Angels']['pitchers'].concat(player)
+                                    teams['Angels']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Angels']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }
                             }
@@ -705,330 +827,390 @@ export default class AppProvider extends Component {
                                 teams['Astros']['players'] = teams['Astros']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Astros']['hitters'] = teams['Astros']['hitters'].concat(player)
+                                    teams['Astros']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Astros']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Astros']['pitchers'] = teams['Astros']['pitchers'].concat(player)
+                                    teams['Astros']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Astros']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Athletics')) {
                                 teams['Athletics']['players'] = teams['Athletics']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Athletics']['hitters'] = teams['Athletics']['hitters'].concat(player)
+                                    teams['Athletics']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Athletics']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Athletics']['pitchers'] = teams['Athletics']['pitchers'].concat(player)
+                                    teams['Athletics']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Athletics']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Blue Jays')) {
                                 teams['BlueJays']['players'] = teams['BlueJays']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['BlueJays']['hitters'] = teams['BlueJays']['hitters'].concat(player)
+                                    teams['BlueJays']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['BlueJays']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['BlueJays']['pitchers'] = teams['BlueJays']['pitchers'].concat(player)
+                                    teams['BlueJays']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['BlueJays']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Braves')) {
                                 teams['Braves']['players'] = teams['Braves']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Braves']['hitters'] = teams['Braves']['hitters'].concat(player)
+                                    teams['Braves']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Braves']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Braves']['pitchers'] = teams['Braves']['pitchers'].concat(player)
+                                    teams['Braves']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Braves']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Brewers')) {
                                 teams['Brewers']['players'] = teams['Brewers']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Brewers']['hitters'] = teams['Brewers']['hitters'].concat(player)
+                                    teams['Brewers']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Brewers']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Brewers']['pitchers'] = teams['Brewers']['pitchers'].concat(player)
+                                    teams['Brewers']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Brewers']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Cardinals')) {
                                 teams['Cardinals']['players'] = teams['Cardinals']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Cardinals']['hitters'] = teams['Cardinals']['hitters'].concat(player)
+                                    teams['Cardinals']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Cardinals']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Cardinals']['pitchers'] = teams['Cardinals']['pitchers'].concat(player)
+                                    teams['Cardinals']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Cardinals']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Cubs')) {
                                 teams['Cubs']['players'] = teams['Cubs']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Cubs']['hitters'] = teams['Cubs']['hitters'].concat(player)
+                                    teams['Cubs']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Cubs']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Cubs']['pitchers'] = teams['Cubs']['pitchers'].concat(player)
+                                    teams['Cubs']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Cubs']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Diamondbacks')) {
                                 teams['Diamondbacks']['players'] = teams['Diamondbacks']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Diamondbacks']['hitters'] = teams['Diamondbacks']['hitters'].concat(player)
+                                    teams['Diamondbacks']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Diamondbacks']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Diamondbacks']['pitchers'] = teams['Diamondbacks']['pitchers'].concat(player)
+                                    teams['Diamondbacks']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Diamondbacks']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Dodgers')) {
                                 teams['Dodgers']['players'] = teams['Dodgers']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Dodgers']['hitters'] = teams['Dodgers']['hitters'].concat(player)
+                                    teams['Dodgers']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Dodgers']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Dodgers']['pitchers'] = teams['Dodgers']['pitchers'].concat(player)
+                                    teams['Dodgers']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Dodgers']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Giants')) {
                                 teams['Giants']['players'] = teams['Giants']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Giants']['hitters'] = teams['Giants']['hitters'].concat(player)
+                                    teams['Giants']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Giants']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Giants']['pitchers'] = teams['Giants']['pitchers'].concat(player)
+                                    teams['Giants']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Giants']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Indians')) {
                                 teams['Indians']['players'] = teams['Indians']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Indians']['hitters'] = teams['Indians']['hitters'].concat(player)
+                                    teams['Indians']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Indians']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Indians']['pitchers'] = teams['Indians']['pitchers'].concat(player)
+                                    teams['Indians']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Indians']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Mariners')) {
                                 teams['Mariners']['players'] = teams['Mariners']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Mariners']['hitters'] = teams['Mariners']['hitters'].concat(player)
+                                    teams['Mariners']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Mariners']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Mariners']['pitchers'] = teams['Mariners']['pitchers'].concat(player)
+                                    teams['Mariners']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Mariners']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Marlins')) {
                                 teams['Marlins']['players'] = teams['Marlins']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Marlins']['hitters'] = teams['Marlins']['hitters'].concat(player)
+                                    teams['Marlins']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Marlins']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Marlins']['pitchers'] = teams['Marlins']['pitchers'].concat(player)
+                                    teams['Marlins']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Marlins']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Mets')) {
                                 teams['Mets']['players'] = teams['Mets']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Mets']['hitters'] = teams['Mets']['hitters'].concat(player)
+                                    teams['Mets']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Mets']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Mets']['pitchers'] = teams['Mets']['pitchers'].concat(player)
+                                    teams['Mets']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Mets']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Nationals')) {
                                 teams['Nationals']['players'] = teams['Nationals']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Nationals']['hitters'] = teams['Nationals']['hitters'].concat(player)
+                                    teams['Nationals']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Nationals']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Nationals']['pitchers'] = teams['Nationals']['pitchers'].concat(player)
+                                    teams['Nationals']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Nationals']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Orioles')) {
                                 teams['Orioles']['players'] = teams['Orioles']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Orioles']['hitters'] = teams['Orioles']['hitters'].concat(player)
+                                    teams['Orioles']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Orioles']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Orioles']['pitchers'] = teams['Orioles']['pitchers'].concat(player)
+                                    teams['Orioles']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Orioles']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Padres')) {
                                 teams['Padres']['players'] = teams['Padres']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Padres']['hitters'] = teams['Padres']['hitters'].concat(player)
+                                    teams['Padres']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Padres']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Padres']['pitchers'] = teams['Padres']['pitchers'].concat(player)
+                                    teams['Padres']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Padres']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Phillies')) {
                                 teams['Phillies']['players'] = teams['Phillies']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Phillies']['hitters'] = teams['Phillies']['hitters'].concat(player)
+                                    teams['Phillies']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Phillies']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Phillies']['pitchers'] = teams['Phillies']['pitchers'].concat(player)
+                                    teams['Phillies']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Phillies']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Pirates')) {
                                 teams['Pirates']['players'] = teams['Pirates']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Pirates']['hitters'] = teams['Pirates']['hitters'].concat(player)
+                                    teams['Pirates']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Pirates']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Pirates']['pitchers'] = teams['Pirates']['pitchers'].concat(player)
+                                    teams['Pirates']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Pirates']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Rangers')) {
                                 teams['Rangers']['players'] = teams['Rangers']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Rangers']['hitters'] = teams['Rangers']['hitters'].concat(player)
+                                    teams['Rangers']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Rangers']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Rangers']['pitchers'] = teams['Rangers']['pitchers'].concat(player)
+                                    teams['Rangers']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Rangers']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Rays')) {
                                 teams['Rays']['players'] = teams['Rays']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Rays']['hitters'] = teams['Rays']['hitters'].concat(player)
+                                    teams['Rays']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Rays']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Rays']['pitchers'] = teams['Rays']['pitchers'].concat(player)
+                                    teams['Rays']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Rays']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Red Sox')) {
                                 teams['RedSox']['players'] = teams['RedSox']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['RedSox']['hitters'] = teams['RedSox']['hitters'].concat(player)
+                                    teams['RedSox']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['RedSox']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
-                                
+
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['RedSox']['pitchers'] = teams['RedSox']['pitchers'].concat(player)
+                                    teams['RedSox']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['RedSox']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Reds')) {
                                 teams['Reds']['players'] = teams['Reds']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Reds']['hitters'] = teams['Reds']['hitters'].concat(player)
+                                    teams['Reds']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Reds']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Reds']['pitchers'] = teams['Reds']['pitchers'].concat(player)
+                                    teams['Reds']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Reds']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Rockies')) {
                                 teams['Rockies']['players'] = teams['Rockies']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Rockies']['hitters'] = teams['Rockies']['hitters'].concat(player)
+                                    teams['Rockies']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Rockies']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Rockies']['pitchers'] = teams['Rockies']['pitchers'].concat(player)
+                                    teams['Rockies']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Rockies']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Royals')) {
                                 teams['Royals']['players'] = teams['Royals']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Royals']['hitters'] = teams['Royals']['hitters'].concat(player)
+                                    teams['Royals']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Royals']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Royals']['pitchers'] = teams['Royals']['pitchers'].concat(player)
+                                    teams['Royals']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Royals']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Tigers')) {
                                 teams['Tigers']['players'] = teams['Tigers']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Tigers']['hitters'] = teams['Tigers']['hitters'].concat(player)
+                                    teams['Tigers']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Tigers']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Tigers']['pitchers'] = teams['Tigers']['pitchers'].concat(player)
+                                    teams['Tigers']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Tigers']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Twins')) {
                                 teams['Twins']['players'] = teams['Twins']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Twins']['hitters'] = teams['Twins']['hitters'].concat(player)
+                                    teams['Twins']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Twins']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Twins']['pitchers'] = teams['Twins']['pitchers'].concat(player)
+                                    teams['Twins']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Twins']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('White Sox')) {
                                 teams['WhiteSox']['players'] = teams['WhiteSox']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['WhiteSox']['hitters'] = teams['WhiteSox']['hitters'].concat(player)
+                                    teams['WhiteSox']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['WhiteSox']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['WhiteSox']['pitchers'] = teams['WhiteSox']['pitchers'].concat(player)
+                                    teams['WhiteSox']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['WhiteSox']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Yankees')) {
                                 teams['Yankees']['players'] = teams['Yankees']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['Yankees']['hitters'] = teams['Yankees']['hitters'].concat(player)
+                                    teams['Yankees']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['Yankees']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['Yankees']['pitchers'] = teams['Yankees']['pitchers'].concat(player)
+                                    teams['Yankees']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Yankees']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Free Agent')) {
                                 teams['FreeAgents']['players'] = teams['FreeAgents']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
                                     teams['FreeAgents']['hitters'] = teams['FreeAgents']['hitters'].concat(player)
+                                    teams['FreeAgents']['hitterFWAR'] += Number(player.SteamerFWARProjection)
                                     teams['FreeAgents']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
                                     teams['FreeAgents']['pitchers'] = teams['FreeAgents']['pitchers'].concat(player)
+                                    teams['FreeAgents']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['FreeAgents']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
 
@@ -1044,12 +1226,6 @@ export default class AppProvider extends Component {
                         if(NoTeams !== []) {
                             console.log(NoTeams)
                         }
-
-                        if(RetiredForeignPlayers !== []) {
-                            console.log(RetiredForeignPlayers)
-                        }
-
-                        console.log(teams)
 
                         this.setState({
                             teams,
