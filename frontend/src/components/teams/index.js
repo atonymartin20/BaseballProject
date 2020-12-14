@@ -10,6 +10,8 @@ import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import { Redirect } from 'react-router-dom';
+import Navbar from '../navbar';
+import Links from '../navbar/links.js';
 
 function createData(teamName, players, hitters, pitchers, hitterFWAR, pitcherFWAR, teamFWAR) {
     return { teamName, players, hitters, pitchers, hitterFWAR, pitcherFWAR, teamFWAR };
@@ -41,12 +43,12 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'teamName', numeric: false, label: 'Team Name', info: 'Team Name' },
+    { id: 'teamFWAR', numeric: true, label: 'Team FWAR', info: 'Fangraphs Wins Above Replacement' },
     { id: 'players', numberic: true, label: 'Players', info: 'Players' },
     { id: 'hitters', numeric: true, label: 'Hitters', info: 'Hitters' },
     { id: 'pitchers', numeric: true, label: 'Pitchers', info: 'Pitchers' },
     { id: 'hitterFWAR', numeric: true, label: 'Hitter FWAR', info: 'Hitter FWAR'},
     { id: 'pitcherFWAR', numeric: true, label: 'PitcherFWAR', info: 'Pitcher FWAR'},
-    { id: 'teamFWAR', numeric: true, label: 'Team FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function TeamsHead(props) {
@@ -60,7 +62,7 @@ function TeamsHead(props) {
         <TableHead>
             <TableRow>
                 {headCells.map((headCell) => (
-                    <TableCell key={headCell.id} align={headCell.numeric ? 'right' : 'left'} sortDirection={orderBy === headCell.id ? order : false} className={classes.tableCell}>
+                    <TableCell key={headCell.id} align='center' sortDirection={orderBy === headCell.id ? order : false} className={classes.tableCell}>
                         <TableSortLabel active={orderBy === headCell.id} direction={orderBy === headCell.id ? order : 'asc'} onClick={createSortHandler(headCell.id)}>
                             {headCell.label}
                             {orderBy === headCell.id ? <span className={classes.visuallyHidden}>{order === 'desc' ? 'sorted descending' : 'sorted ascending'}</span> : null}
@@ -86,13 +88,27 @@ const useStyles = makeStyles((theme) => ({
     },
     root: {
         width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
     paper: {
-        width: '100%',
-        marginBottom: theme.spacing(2),
+        width: '97%',
+        backgroundColor: '#f8fbfd',
+        marginTop: 70,
+        padding: 20,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
     },
     table: {
         width: '100%',
+        maxWidth: '1400px',
+        margin: '0 auto',
+        marginTop: '15px',
+        marginBottom: '15px',
+        border: '1px solid #E9ECEE',
+        borderRadius: '4px',
     },
     tableCell: {
         fontSize: '1.4rem',
@@ -123,15 +139,23 @@ export default function Teams(props) {
     const [selected, setSelected] = React.useState([]);
     const [redirect, setRedirect] = React.useState(false);
     const [rows, setRows] = React.useState([]);
+    const [redirectTeamName, setRedirectTeamName] = React.useState('');
+    const [redirectTeamPlayers, setRedirectTeamPlayers] = React.useState([]);
+    const [redirectTeamHitters, setRedirectTeamHitters] = React.useState([]);
+    const [redirectTeamPitchers, setRedirectTeamPitchers] = React.useState([]);
+    const [redirectTeamHitterFWAR, setRedirectTeamHitterFWAR] = React.useState(0.0);
+    const [redirectTeamPitcherFWAR, setRedirectTeamPitcherFWAR] = React.useState(0.0);
+
+
     React.useEffect(() => {
         if (props.teams.length !== 0) {
             setRows(
                 Object.entries(props.teams).map(([key, value], index) =>
                     createData(
                         value['teamName'],
-                        value['players'].length,
-                        value['hitters'].length,
-                        value['pitchers'].length,
+                        value['players'],
+                        value['hitters'],
+                        value['pitchers'],
                         value['hitterFWAR'],
                         value['pitcherFWAR'],
                         value['teamFWAR'],
@@ -170,8 +194,10 @@ export default function Teams(props) {
 
     return (
         <div className={classes.root}>
-            {redirect ? <Redirect to='/teams/:team' team={'teamName'} /> : null}
+            <Navbar />
+            {redirect ? <Redirect to={{ pathname:'/teams/:team', state: { team: {redirectTeamName}, players: {redirectTeamPlayers}, hitters: {redirectTeamHitters}, pitchers: {redirectTeamPitchers}, hitterFWAR: {redirectTeamHitterFWAR}, pitcherFWAR: {redirectTeamPitcherFWAR} }}} /> : null}
             <Paper className={classes.paper}>
+                <Links />
                 <TableContainer>
                     <Table className={classes.table} aria-labelledby='tableTitle' size={'small'} aria-label='teams table'>
                         <TeamsHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
@@ -197,28 +223,35 @@ export default function Teams(props) {
                                                 scope='row'
                                                 className={classes.tableRow}
                                                 onClick={() => {
+                                                    setRedirectTeamName(row.teamName);
+                                                    setRedirectTeamPlayers(row.players);
+                                                    setRedirectTeamHitters(row.hitters);
+                                                    setRedirectTeamPitchers(row.pitchers);
+                                                    setRedirectTeamHitterFWAR(row.hitterFWAR);
+                                                    setRedirectTeamPitcherFWAR(row.pitcherFWAR);
                                                     setRedirect(!redirect);
                                                 }}
+                                                align='center'
                                             >
                                                 {row.teamName}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.players}
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.teamFWAR.toFixed(1)}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.hitters}
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.players.length}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.pitchers}
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.hitters.length}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
+                                            <TableCell align='center' className={classes.tableCell}>
+                                                {row.pitchers.length}
+                                            </TableCell>
+                                            <TableCell align='center' className={classes.tableCell}>
                                                 {row.hitterFWAR.toFixed(1)}
                                             </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
+                                            <TableCell align='center' className={classes.tableCell}>
                                                 {row.pitcherFWAR.toFixed(1)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.teamFWAR.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );
@@ -229,6 +262,7 @@ export default function Teams(props) {
                         </TableBody>
                     </Table>
                 </TableContainer>
+                <Links />
             </Paper>
         </div>
     );
