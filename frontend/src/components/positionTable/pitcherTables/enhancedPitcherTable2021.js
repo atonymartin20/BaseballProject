@@ -133,7 +133,6 @@ export default function EnhancedTable(props) {
     
     React.useEffect(() => {
         if (props.players.length !== 0) {
-            console.log(props.players)
             setRows(
                 props.players.map((player, index) =>
                     createData(
