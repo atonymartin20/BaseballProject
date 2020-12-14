@@ -7,7 +7,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { AppContext } from '../context/appContext.js';
 import EnhancedPitcherTable2021 from '../positionTable/pitcherTables/enhancedPitcherTable2021.js';
-import EnhancedHitterTable2021 from '../positionTable/hitterTables/enhancedTable2021.js';
+import EnhancedTable2021 from '../positionTable/hitterTables/enhancedTable2021.js';
 
 const styles = (theme) => ({
     flipDataList: {
@@ -43,23 +43,30 @@ const styles = (theme) => ({
         lineHeight: 1.25,
     },
     positionText: {
-        marginTop: 20,
+        marginTop: 5,
         marginBottom: 20,
+        paddingLeft: 50,
         width: '100%',
     },
+    tableContainer: {
+        width: '100%',
+    },
+    positionTextContainer: {
+        width: '100%',
+        marginBottom: 20,
+    }
 });
 
 class TeamsPage extends React.Component {
     state = {
+        teamName: '',
+        players: [],
+        hitters: [],
+        pitchers: [],
+        hitterFWAR: 0.0,
+        pitcherFWAR: 0.0,
         displayHitters: true,
         displayPitchers: false,
-        display2017: false,
-        display2018: false,
-        display2019: false,
-        display2020: false,
-        display2021: true,
-        pitchers: [],
-        hitters: [],
     };
 
     changePlayers = (event) => {
@@ -70,23 +77,23 @@ class TeamsPage extends React.Component {
         });
     };
 
-    grabHitters = () => {
-
-    }
-
-    grabPitchers = () => {
-
-    }
-
     componentDidMount() {
-        this.grabHitters();
-        this.grabPitchers();
+        if(this.props.location.state.team.redirectTeamName) {
+            console.log(this.props.location.state.pitcherFWAR.redirectTeamPitcherFWAR.toFixed(1))
+            this.setState({
+                teamName: this.props.location.state.team.redirectTeamName,
+                players: this.props.location.state.players.redirectTeamPlayers,
+                hitters: this.props.location.state.hitters.redirectTeamHitters,
+                pitchers: this.props.location.state.pitchers.redirectTeamPitchers,
+                hitterFWAR: this.props.location.state.hitterFWAR.redirectTeamHitterFWAR.toFixed(1),
+                pitcherFWAR: this.props.location.state.pitcherFWAR.redirectTeamPitcherFWAR.toFixed(1),
+            })
+        }
     }
 
     render() {
         const { classes } = this.props;
         const { displayHitters, displayPitchers } = this.state;
-        console.log(props)
 
         const flipDataButton = {
             fontSize: '1.6rem',
@@ -102,18 +109,18 @@ class TeamsPage extends React.Component {
         const data = (
             <div className={classes.dataDiv}>
                 {displayHitters ? (
-                    <div>
+                    <div className={classes.tableContainer}>
                         <h1 className={classes.positionText}>
-                            {props.team.teamName} Hitters
+                            {this.state.teamName} Hitters - {this.state.hitterFWAR} FWAR
                         </h1>
-                        <EnhancedHitterTable2021 players={this.state.hitters} />
+                        <EnhancedTable2021 players={this.state.hitters} />
                     </div>
                 ) : null}
 
                 {displayPitchers ? (
-                    <div>
+                    <div className={classes.tableContainer}>
                         <h1 className={classes.positionText}>
-                            {props.team.teamName} Pitchers
+                            {this.state.teamName} Pitchers - {this.state.pitcherFWAR} FWAR
                         </h1>
                         <EnhancedPitcherTable2021 players={this.state.pitchers} />
                     </div>
@@ -140,7 +147,7 @@ class TeamsPage extends React.Component {
                     <Links />
                     {flipData}
 
-                    <h1 className={classes.positionText}>{data}</h1>
+                    <h1 className={classes.positionTextContainer}>{data}</h1>
                     <Links />
                 </div>
             </div>
