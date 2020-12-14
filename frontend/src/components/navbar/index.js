@@ -336,6 +336,15 @@ class Navbar extends React.Component {
                             </Button>
                         </Link>
                     </ListItem>
+                    <ListItem className={classes.drawerListItem}>
+                        <Link to='/teams' className={classes.linkStyling}>
+                            <Button
+                                className={classes.drawerNavLink}
+                            >
+                                Teams
+                            </Button>
+                        </Link>
+                    </ListItem>
                 </List>
             </div>
         )
