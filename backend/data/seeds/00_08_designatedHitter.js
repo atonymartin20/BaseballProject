@@ -160,15 +160,15 @@ exports.seed = function (knex, Promise) {
             'StolenBasePercent2020': '0.0%',
             'FWAR2020': 0.1,
             'SteamerPAProjection': 552,
-            'SteamerAVGProjection': .277,
+            'SteamerAVGProjection': .278,
             'SteamerOBPProjection': .369,
-            'SteamerSLGProjection': .568,
+            'SteamerSLGProjection': .569,
             'SteamerDoublesProjection': 25,
             'SteamerHRProjection': 37,
             'SteamerRunsProjection': 85,
             'SteamerRBIProjection': 98,
             'SteamerSBProjection': 3,
-            'SteamerFWARProjection': 3.4,
+            'SteamerFWARProjection': 3.5,
         },
         {
             // id 2
