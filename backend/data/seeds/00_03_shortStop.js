@@ -2541,14 +2541,14 @@ exports.seed = function (knex, Promise) {
             'FWAR2020': 0.6,
             'SteamerPAProjection': 644,
             'SteamerAVGProjection': .249,
-            'SteamerOBPProjection': .325,
-            'SteamerSLGProjection': .454,
+            'SteamerOBPProjection': .326,
+            'SteamerSLGProjection': .455,
             'SteamerDoublesProjection': 29,
             'SteamerHRProjection': 28,
             'SteamerRunsProjection': 80,
-            'SteamerRBIProjection': 86,
+            'SteamerRBIProjection': 87,
             'SteamerSBProjection': 6,
-            'SteamerFWARProjection': 3.2,
+            'SteamerFWARProjection': 3.3,
         },
         {
             // id 16
