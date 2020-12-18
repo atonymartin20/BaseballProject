@@ -239,13 +239,13 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 26,
             'SteamerInningsPitchedProjection': 141.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.16,
-            'SteamerFIPProjection': 5.47,
-            'SteamerWHIPProjection': 1.48,
-            'SteamerRawKsProjection': 137,
-            'SteamerKPer9Projection': 8.77,
+            'SteamerERAProjection': 4.51,
+            'SteamerFIPProjection': 4.68,
+            'SteamerWHIPProjection': 1.35,
+            'SteamerRawKsProjection': 146,
+            'SteamerKPer9Projection': 9.31,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 1.1,
+            'PitcherSteamerFWARProjection': 2.2,
         },
         {
             // id 2
@@ -733,13 +733,13 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 23,
             'SteamerInningsPitchedProjection': 121.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.79,
-            'SteamerFIPProjection': 4.98,
-            'SteamerWHIPProjection': 1.44,
-            'SteamerRawKsProjection': 103,
-            'SteamerKPer9Projection': 7.68,
+            'SteamerERAProjection': 4.97,
+            'SteamerFIPProjection': 5.14,
+            'SteamerWHIPProjection': 1.46,
+            'SteamerRawKsProjection': 105,
+            'SteamerKPer9Projection': 7.77,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 1.4,
+            'PitcherSteamerFWARProjection': 1.2,
         },
         {
             // id 4
@@ -3693,17 +3693,17 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': 0.0,
-            'SteamerGamesProjection': 8,
-            'SteamerGamesStartedProjection': 8,
-            'SteamerInningsPitchedProjection': 46.0,
+            'SteamerGamesProjection': 11,
+            'SteamerGamesStartedProjection': 11,
+            'SteamerInningsPitchedProjection': 66.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.80,
-            'SteamerFIPProjection': 6.01,
-            'SteamerWHIPProjection': 1.59,
-            'SteamerRawKsProjection': 0,
-            'SteamerKPer9Projection': 6.93,
-            'SteamerSavesProjection': 36,
-            'PitcherSteamerFWARProjection': 0.1,
+            'SteamerERAProjection': 4.13,
+            'SteamerFIPProjection': 4.22,
+            'SteamerWHIPProjection': 1.25,
+            'SteamerRawKsProjection': 65,
+            'SteamerKPer9Projection': 8.88,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 1.2,
         },
         {
             // id 16
@@ -10366,11 +10366,11 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 29,
             'SteamerInningsPitchedProjection': 170.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.02,
-            'SteamerFIPProjection': 5.08,
+            'SteamerERAProjection': 5.03,
+            'SteamerFIPProjection': 5.07,
             'SteamerWHIPProjection': 1.44,
             'SteamerRawKsProjection': 126,
-            'SteamerKPer9Projection': 6.67,
+            'SteamerKPer9Projection': 6.69,
             'SteamerSavesProjection': 0,
             'PitcherSteamerFWARProjection': 1.7,
         },
@@ -10609,15 +10609,15 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': 0.5,
-            'SteamerGamesProjection': 31,
+            'SteamerGamesProjection': 21,
             'SteamerGamesStartedProjection': 21,
-            'SteamerInningsPitchedProjection': 125.0,
+            'SteamerInningsPitchedProjection': 115.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.77,
-            'SteamerFIPProjection': 4.82,
+            'SteamerERAProjection': 4.82,
+            'SteamerFIPProjection': 4.85,
             'SteamerWHIPProjection': 1.42,
-            'SteamerRawKsProjection': 116,
-            'SteamerKPer9Projection': 8.32,
+            'SteamerRawKsProjection': 105,
+            'SteamerKPer9Projection': 8.23,
             'SteamerSavesProjection': 0,
             'PitcherSteamerFWARProjection': 1.6,
         },
@@ -14071,16 +14071,263 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 26,
             'SteamerInningsPitchedProjection': 149.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.52,
-            'SteamerFIPProjection': 4.58,
-            'SteamerWHIPProjection': 1.37,
-            'SteamerRawKsProjection': 136,
-            'SteamerKPer9Projection': 8.24,
+            'SteamerERAProjection': 4.69,
+            'SteamerFIPProjection': 4.72,
+            'SteamerWHIPProjection': 1.38,
+            'SteamerRawKsProjection': 137,
+            'SteamerKPer9Projection': 8.26,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 2.4,
+            'PitcherSteamerFWARProjection': 2.1,
         },
         {
             // id 58
+            'firstName': 'Jhoan',
+            'lastName': 'Duran',
+            'birthday': '1/8/1998',
+            'bats': 'R',
+            'throws': 'R',
+            'currentTeam': 'Twins',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/9/90545b3f_mlbam.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 15,
+            'SteamerGamesStartedProjection': 5,
+            'SteamerInningsPitchedProjection': 38.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.23,
+            'SteamerFIPProjection': 4.30,
+            'SteamerWHIPProjection': 1.29,
+            'SteamerRawKsProjection': 39,
+            'SteamerKPer9Projection': 9.12,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 0.5,
+        },
+        {
+            // id 59
             'firstName': 'Zach',
             'lastName': 'Eflin',
             'birthday': '4/8/1994',
@@ -14327,7 +14574,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 59
+            // id 60
             'firstName': 'Nathan',
             'lastName': 'Eovaldi',
             'birthday': '2/13/1990',
@@ -14574,7 +14821,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.0,
         },
         {
-            // id 60
+            // id 61
             'firstName': 'Robbie',
             'lastName': 'Erlin',
             'birthday': '10/8/1990',
@@ -14821,7 +15068,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 61
+            // id 62
             'firstName': 'Paolo',
             'lastName': 'Espino',
             'birthday': '1/10/1987',
@@ -15068,7 +15315,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 62
+            // id 63
             'firstName': 'Marco',
             'lastName': 'Estrada',
             'birthday': '7/5/1983',
@@ -15315,7 +15562,254 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 63
+            // id 64
+            'firstName': 'Alex',
+            'lastName': 'Faedo',
+            'birthday': '11/12/1995',
+            'bats': 'R',
+            'throws': 'R',
+            'currentTeam': 'Tigers',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/5/5198a973_mlbam.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 5,
+            'SteamerGamesStartedProjection': 5,
+            'SteamerInningsPitchedProjection': 28.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.13,
+            'SteamerFIPProjection': 4.22,
+            'SteamerWHIPProjection': 1.25,
+            'SteamerRawKsProjection': 28,
+            'SteamerKPer9Projection': 8.88,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 0.5,
+        },
+        {
+            // id 65
             'firstName': 'Erick',
             'lastName': 'Fedde',
             'birthday': '2/25/1993',
@@ -15562,7 +16056,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 64
+            // id 66
             'firstName': 'Mike',
             'lastName': 'Fiers',
             'birthday': '6/15/1985',
@@ -15809,7 +16303,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 65
+            // id 67
             'firstName': 'Jack',
             'lastName': 'Flaherty',
             'birthday': '10/15/1995',
@@ -16056,7 +16550,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.0,
         },
         {
-            // id 66
+            // id 68
             'firstName': 'Josh',
             'lastName': 'Fleming',
             'birthday': '5/18/1996',
@@ -16303,7 +16797,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 67
+            // id 69
             'firstName': 'Chris',
             'lastName': 'Flexen',
             'birthday': '7/1/1994',
@@ -16550,7 +17044,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 68
+            // id 70
             'firstName': 'Mike',
             'lastName': 'Foltynewicz',
             'birthday': '10/7/1991',
@@ -16797,7 +17291,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 69
+            // id 71
             'firstName': 'Kyle',
             'lastName': 'Freeland',
             'birthday': '5/14/1993',
@@ -17044,7 +17538,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 70
+            // id 72
             'firstName': 'Max',
             'lastName': 'Fried',
             'birthday': '1/18/1994',
@@ -17291,7 +17785,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.0,
         },
         {
-            // id 71
+            // id 73
             'firstName': 'Michael',
             'lastName': 'Fulmer',
             'birthday': '3/15/1993',
@@ -17538,7 +18032,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 72
+            // id 74
             'firstName': 'Zac',
             'lastName': 'Gallen',
             'birthday': '8/3/1995',
@@ -17785,7 +18279,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.1,
         },
         {
-            // id 73
+            // id 75
             'firstName': 'Deivi',
             'lastName': 'Garcia',
             'birthday': '5/19/1999',
@@ -18032,7 +18526,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 74
+            // id 76
             'firstName': 'Braxton',
             'lastName': 'Garrett',
             'birthday': '8/5/1997',
@@ -18279,7 +18773,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },        
         {
-            // id 75
+            // id 77
             'firstName': 'Kevin',
             'lastName': 'Gausman',
             'birthday': '1/6/1991',
@@ -18526,7 +19020,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.9,
         },
         {
-            // id 76
+            // id 78
             'firstName': 'Domingo',
             'lastName': 'German',
             'birthday': '8/4/1992',
@@ -18773,7 +19267,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 77
+            // id 79
             'firstName': 'Kyle',
             'lastName': 'Gibson',
             'birthday': '10/23/1987',
@@ -19011,16 +19505,16 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 31,
             'SteamerInningsPitchedProjection': 184.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.47,
-            'SteamerFIPProjection': 4.55,
+            'SteamerERAProjection': 4.48,
+            'SteamerFIPProjection': 4.56,
             'SteamerWHIPProjection': 1.41,
             'SteamerRawKsProjection': 161,
-            'SteamerKPer9Projection': 7.88,
+            'SteamerKPer9Projection': 7.86,
             'SteamerSavesProjection': 0,
             'PitcherSteamerFWARProjection': 2.6,
         },
         {
-            // id 78
+            // id 80
             'firstName': 'Lucas',
             'lastName': 'Giolito',
             'birthday': '7/14/1994',
@@ -19267,7 +19761,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.1,
         },
         {
-            // id 79
+            // id 81
             'firstName': 'Tyler',
             'lastName': 'Glasnow',
             'birthday': '8/23/1993',
@@ -19514,7 +20008,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.6,
         },
         {
-            // id 80
+            // id 82
             'firstName': 'Zack',
             'lastName': 'Godley',
             'birthday': '4/21/1990',
@@ -19761,7 +20255,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 81
+            // id 83
             'firstName': 'Tony',
             'lastName': 'Gonsolin',
             'birthday': '5/14/1994',
@@ -20008,7 +20502,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 82
+            // id 84
             'firstName': 'Marco',
             'lastName': 'Gonzales',
             'birthday': '2/16/1992',
@@ -20255,7 +20749,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.6,
         },
         {
-            // id 83
+            // id 85
             'firstName': 'Chi Chi',
             'lastName': 'Gonzalez',
             'birthday': '1/15/1992',
@@ -20502,7 +20996,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 84
+            // id 86
             'firstName': 'MacKenzie',
             'lastName': 'Gore',
             'birthday': '2/24/1999',
@@ -20749,7 +21243,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 85
+            // id 87
             'firstName': 'Jon',
             'lastName': 'Gray',
             'birthday': '11/5/1991',
@@ -20996,7 +21490,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 86
+            // id 88
             'firstName': 'Sonny',
             'lastName': 'Gray',
             'birthday': '11/7/1989',
@@ -21243,7 +21737,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.4,
         },
         {
-            // id 87
+            // id 89
             'firstName': 'Zack',
             'lastName': 'Greinke',
             'birthday': '10/21/1983',
@@ -21490,7 +21984,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.5,
         },
         {
-            // id 88
+            // id 90
             'firstName': 'Robert',
             'lastName': 'Gsellman',
             'birthday': '7/18/1993',
@@ -21737,7 +22231,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': -0.2,
         },
         {
-            // id 89
+            // id 91
             'firstName': 'Cole',
             'lastName': 'Hamels',
             'birthday': '12/27/1983',
@@ -21984,7 +22478,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 90
+            // id 92
             'firstName': 'J.A.',
             'lastName': 'Happ',
             'birthday': '10/19/1982',
@@ -22231,7 +22725,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 91
+            // id 93
             'firstName': 'Kyle',
             'lastName': 'Hart',
             'birthday': '11/23/1992',
@@ -22478,7 +22972,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.1,
         },
         {
-            // id 92
+            // id 94
             'firstName': 'Matt',
             'lastName': 'Harvey',
             'birthday': '3/27/1989',
@@ -22725,7 +23219,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 93
+            // id 95
             'firstName': 'Andrew',
             'lastName': 'Heaney',
             'birthday': '6/5/1991',
@@ -22972,7 +23466,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.7,
         },
         {
-            // id 94
+            // id 96
             'firstName': 'Kyle',
             'lastName': 'Hendricks',
             'birthday': '12/7/1989',
@@ -23219,7 +23713,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.9,
         },
         {
-            // id 95
+            // id 97
             'firstName': 'Carlos',
             'lastName': 'Hernandez',
             'birthday': '3/11/1997',
@@ -23466,7 +23960,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 96
+            // id 98
             'firstName': 'Elieser',
             'lastName': 'Hernandez',
             'birthday': '5/3/1995',
@@ -23713,7 +24207,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 97
+            // id 99
             'firstName': 'Felix',
             'lastName': 'Hernandez',
             'birthday': '4/8/1986',
@@ -23960,7 +24454,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 98
+            // id 100
             'firstName': 'Rich',
             'lastName': 'Hill',
             'birthday': '3/11/1980',
@@ -24207,7 +24701,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 99
+            // id 101
             'firstName': 'Sean',
             'lastName': 'Hjelle',
             'birthday': '5/7/1997',
@@ -24454,7 +24948,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 100
+            // id 102
             'firstName': 'Grant',
             'lastName': 'Holmes',
             'birthday': '3/22/1996',
@@ -24701,7 +25195,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 101
+            // id 103
             'firstName': 'Brent',
             'lastName': 'Honeywell',
             'birthday': '3/31/1995',
@@ -24948,7 +25442,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.7,
         },
         {
-            // id 102
+            // id 104
             'firstName': 'Tanner',
             'lastName': 'Houck',
             'birthday': '6/29/1996',
@@ -25195,7 +25689,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 103
+            // id 105
             'firstName': 'Adrian',
             'lastName': 'Houser',
             'birthday': '2/2/1993',
@@ -25442,7 +25936,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 104
+            // id 106
             'firstName': 'Spencer',
             'lastName': 'Howard',
             'birthday': '7/28/1996',
@@ -25689,7 +26183,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 105
+            // id 107
             'firstName': 'Dakota',
             'lastName': 'Hudson',
             'birthday': '9/15/1994',
@@ -25936,7 +26430,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 106
+            // id 108
             'firstName': 'Kwang',
             'lastName': 'Hyun Kim',
             'birthday': '7/22/1988',
@@ -26183,7 +26677,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.2,
         },
         {
-            // id 107
+            // id 109
             'firstName': 'Cristian',
             'lastName': 'Javier',
             'birthday': '3/26/1997',
@@ -26430,7 +26924,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.0,
         },
         {
-            // id 108
+            // id 110
             'firstName': 'Daulton',
             'lastName': 'Jefferies',
             'birthday': '8/2/1995',
@@ -26677,7 +27171,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 109
+            // id 111
             'firstName': 'Damon',
             'lastName': 'Jones',
             'birthday': '9/30/1994',
@@ -26924,7 +27418,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 110
+            // id 112
             'firstName': 'Jakob',
             'lastName': 'Junis',
             'birthday': '9/16/1992',
@@ -27171,7 +27665,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.1,
         },
         {
-            // id 111
+            // id 113
             'firstName': 'Ariel',
             'lastName': 'Jurado',
             'birthday': '1/30/1996',
@@ -27418,7 +27912,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 112
+            // id 114
             'firstName': 'Brad',
             'lastName': 'Keller',
             'birthday': '7/27/1995',
@@ -27665,7 +28159,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.7,
         },
         {
-            // id 113
+            // id 115
             'firstName': 'Mitch',
             'lastName': 'Keller',
             'birthday': '4/4/1996',
@@ -27912,7 +28406,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 114
+            // id 116
             'firstName': 'Merrill',
             'lastName': 'Kelly',
             'birthday': '10/14/1988',
@@ -28159,7 +28653,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 115
+            // id 117
             'firstName': 'Clayton',
             'lastName': 'Kershaw',
             'birthday': '3/19/1988',
@@ -28406,7 +28900,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.4,
         },
         {
-            // id 116
+            // id 118
             'firstName': 'Dallas',
             'lastName': 'Keuchel',
             'birthday': '1/1/1988',
@@ -28653,7 +29147,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 117
+            // id 119
             'firstName': 'Yusei',
             'lastName': 'Kikuchi',
             'birthday': '6/17/1991',
@@ -28900,7 +29394,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.3,
         },
         {
-            // id 118
+            // id 120
             'firstName': 'Corey',
             'lastName': 'Kluber',
             'birthday': '4/10/1986',
@@ -29147,7 +29641,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.6,
         },
         {
-            // id 119
+            // id 121
             'firstName': 'Michael',
             'lastName': 'Kopech',
             'birthday': '4/30/1996',
@@ -29394,7 +29888,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 120
+            // id 122
             'firstName': 'Dean',
             'lastName': 'Kremer',
             'birthday': '1/7/1996',
@@ -29632,16 +30126,16 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 28,
             'SteamerInningsPitchedProjection': 159.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.23,
-            'SteamerFIPProjection': 5.39,
-            'SteamerWHIPProjection': 1.47,
-            'SteamerRawKsProjection': 144,
-            'SteamerKPer9Projection': 8.14,
+            'SteamerERAProjection': 5.04,
+            'SteamerFIPProjection': 5.10,
+            'SteamerWHIPProjection': 1.43,
+            'SteamerRawKsProjection': 154,
+            'SteamerKPer9Projection': 8.68,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 1.1,
+            'PitcherSteamerFWARProjection': 1.6,
         },
         {
-            // id 121
+            // id 123
             'firstName': 'Chad',
             'lastName': 'Kuhl',
             'birthday': '9/10/1992',
@@ -29888,7 +30382,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 122
+            // id 124
             'firstName': 'Peter',
             'lastName': 'Lambert',
             'birthday': '4/18/1997',
@@ -30135,7 +30629,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 123
+            // id 125
             'firstName': 'Dinelson',
             'lastName': 'Lamet',
             'birthday': '7/18/1992',
@@ -30382,7 +30876,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.6,
         },
         {
-            // id 124
+            // id 126
             'firstName': 'Eric',
             'lastName': 'Lauer',
             'birthday': '6/3/1995',
@@ -30629,7 +31123,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 125
+            // id 127
             'firstName': 'Mike',
             'lastName': 'Leake',
             'birthday': '11/12/1987',
@@ -30876,7 +31370,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.1,
         },
         {
-            // id 126
+            // id 128
             'firstName': 'Wade',
             'lastName': 'LeBlanc',
             'birthday': '8/7/1984',
@@ -31123,7 +31617,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 127
+            // id 129
             'firstName': 'Jon',
             'lastName': 'Lester',
             'birthday': '1/7/1984',
@@ -31370,7 +31864,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.7,
         },
         {
-            // id 128
+            // id 130
             'firstName': 'Josh',
             'lastName': 'Lindblom',
             'birthday': '6/15/1987',
@@ -31617,7 +32111,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.9,
         },
         {
-            // id 129
+            // id 131
             'firstName': 'Jorge',
             'lastName': 'Lopez',
             'birthday': '2/10/1993',
@@ -31851,20 +32345,20 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': 0.3,
-            'SteamerGamesProjection': 36,
+            'SteamerGamesProjection': 24,
             'SteamerGamesStartedProjection': 6,
-            'SteamerInningsPitchedProjection': 65.0,
+            'SteamerInningsPitchedProjection': 53.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.09,
-            'SteamerFIPProjection': 5.16,
-            'SteamerWHIPProjection': 1.44,
-            'SteamerRawKsProjection': 53,
-            'SteamerKPer9Projection': 7.32,
+            'SteamerERAProjection': 5.17,
+            'SteamerFIPProjection': 5.22,
+            'SteamerWHIPProjection': 1.45,
+            'SteamerRawKsProjection': 43,
+            'SteamerKPer9Projection': 7.28,
             'SteamerSavesProjection': 0,
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 130
+            // id 132
             'firstName': 'Pablo',
             'lastName': 'Lopez',
             'birthday': '3/7/1996',
@@ -32111,7 +32605,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.6,
         },
         {
-            // id 131
+            // id 133
             'firstName': 'Reynaldo',
             'lastName': 'Lopez',
             'birthday': '1/4/1994',
@@ -32358,7 +32852,254 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 132
+            // id 134
+            'firstName': 'Zac',
+            'lastName': 'Lowther',
+            'birthday': '4/30/1996',
+            'bats': 'L',
+            'throws': 'L',
+            'currentTeam': 'Orioles',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/4/49fb3eb6_mlbam.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 10,
+            'SteamerGamesStartedProjection': 10,
+            'SteamerInningsPitchedProjection': 56.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.13,
+            'SteamerFIPProjection': 4.22,
+            'SteamerWHIPProjection': 1.25,
+            'SteamerRawKsProjection': 56,
+            'SteamerKPer9Projection': 8.88,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 1.1,
+        },
+        {
+            // id 135
             'firstName': 'Joey',
             'lastName': 'Lucchesi',
             'birthday': '6/6/1993',
@@ -32605,7 +33346,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 133
+            // id 136
             'firstName': 'Jesus',
             'lastName': 'Luzardo',
             'birthday': '9/30/1997',
@@ -32852,7 +33593,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.4,
         },
         {
-            // id 134
+            // id 137
             'firstName': 'Jordan',
             'lastName': 'Lyles',
             'birthday': '10/19/1990',
@@ -33090,16 +33831,16 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 29,
             'SteamerInningsPitchedProjection': 166.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.41,
-            'SteamerFIPProjection': 5.41,
+            'SteamerERAProjection': 5.42,
+            'SteamerFIPProjection': 5.42,
             'SteamerWHIPProjection': 1.48,
-            'SteamerRawKsProjection': 132,
-            'SteamerKPer9Projection': 7.14,
+            'SteamerRawKsProjection': 131,
+            'SteamerKPer9Projection': 7.10,
             'SteamerSavesProjection': 0,
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 135
+            // id 138
             'firstName': 'Lance',
             'lastName': 'Lynn',
             'birthday': '5/12/1987',
@@ -33346,7 +34087,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.2,
         },
         {
-            // id 136
+            // id 139
             'firstName': 'Kenta',
             'lastName': 'Maeda',
             'birthday': '4/11/1988',
@@ -33593,7 +34334,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.9,
         },
         {
-            // id 137
+            // id 140
             'firstName': 'Tyler',
             'lastName': 'Mahle',
             'birthday': '9/29/1994',
@@ -33840,7 +34581,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 138
+            // id 141
             'firstName': 'Sean',
             'lastName': 'Manaea',
             'birthday': '2/1/1992',
@@ -34087,7 +34828,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 139
+            // id 142
             'firstName': 'Matt',
             'lastName': 'Manning',
             'birthday': '1/28/1998',
@@ -34334,7 +35075,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 140
+            // id 143
             'firstName': 'Nick',
             'lastName': 'Margevicius',
             'birthday': '6/18/1996',
@@ -34581,7 +35322,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 141
+            // id 144
             'firstName': 'German',
             'lastName': 'Marquez',
             'birthday': '2/22/1995',
@@ -34828,7 +35569,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.8,
         },
         {
-            // id 142
+            // id 145
             'firstName': 'Corbin',
             'lastName': 'Martin',
             'birthday': '12/28/1995',
@@ -35075,7 +35816,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 143
+            // id 146
             'firstName': 'Carlos',
             'lastName': 'Martinez',
             'birthday': '9/21/1991',
@@ -35322,7 +36063,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.6,
         },
         {
-            // id 144
+            // id 147
             'firstName': 'Steven',
             'lastName': 'Matz',
             'birthday': '5/29/1991',
@@ -35569,7 +36310,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 145
+            // id 148
             'firstName': 'Dustin',
             'lastName': 'May',
             'birthday': '9/6/1997',
@@ -35816,7 +36557,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 146
+            // id 149
             'firstName': 'Chris',
             'lastName': 'Mazza',
             'birthday': '10/17/1989',
@@ -36063,7 +36804,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 147
+            // id 150
             'firstName': 'Shane',
             'lastName': 'McClanahan',
             'birthday': '4/28/1997',
@@ -36310,7 +37051,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 148
+            // id 151
             'firstName': 'Lance',
             'lastName': 'McCullers Jr.',
             'birthday': '10/2/1993',
@@ -36557,7 +37298,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.2,
         },
         {
-            // id 149
+            // id 152
             'firstName': 'Triston',
             'lastName': 'McKenzie',
             'birthday': '8/2/1997',
@@ -36804,7 +37545,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 150
+            // id 153
             'firstName': 'John',
             'lastName': 'Means',
             'birthday': '4/24/1993',
@@ -37042,16 +37783,16 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 29,
             'SteamerInningsPitchedProjection': 170.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.90,
-            'SteamerFIPProjection': 5.10,
-            'SteamerWHIPProjection': 1.32,
-            'SteamerRawKsProjection': 151,
-            'SteamerKPer9Projection': 8.03,
+            'SteamerERAProjection': 4.84,
+            'SteamerFIPProjection': 4.98,
+            'SteamerWHIPProjection': 1.31,
+            'SteamerRawKsProjection': 159,
+            'SteamerKPer9Projection': 8.44,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 2.0,
+            'PitcherSteamerFWARProjection': 2.3,
         },
         {
-            // id 151
+            // id 154
             'firstName': 'Adonis',
             'lastName': 'Medina',
             'birthday': '12/18/1996',
@@ -37298,7 +38039,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 152
+            // id 155
             'firstName': 'Humberto',
             'lastName': 'Mejia',
             'birthday': '3/3/1997',
@@ -37545,7 +38286,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': -0.1,
         },
         {
-            // id 153
+            // id 156
             'firstName': 'Miles',
             'lastName': 'Mikolas',
             'birthday': '8/23/1988',
@@ -37792,7 +38533,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 154
+            // id 157
             'firstName': 'Wade',
             'lastName': 'Miley',
             'birthday': '11/13/1986',
@@ -38039,7 +38780,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 155
+            // id 158
             'firstName': 'Tyson',
             'lastName': 'Miller',
             'birthday': '7/29/1995',
@@ -38286,7 +39027,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 156
+            // id 159
             'firstName': 'Alec',
             'lastName': 'Mills',
             'birthday': '11/30/1991',
@@ -38533,7 +39274,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 157
+            // id 160
             'firstName': 'Tommy',
             'lastName': 'Milone',
             'birthday': '2/16/1987',
@@ -38780,7 +39521,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 158
+            // id 161
             'firstName': 'Mike',
             'lastName': 'Minor',
             'birthday': '12/26/1987',
@@ -39027,7 +39768,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 159
+            // id 162
             'firstName': 'Casey',
             'lastName': 'Mize',
             'birthday': '5/1/1997',
@@ -39274,7 +40015,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.1,
         },
         {
-            // id 160
+            // id 163
             'firstName': 'Frankie',
             'lastName': 'Montas',
             'birthday': '3/21/1993',
@@ -39521,7 +40262,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.3,
         },
         {
-            // id 161
+            // id 164
             'firstName': 'Jordan',
             'lastName': 'Montgomery',
             'birthday': '12/27/1992',
@@ -39768,7 +40509,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.3,
         },
         {
-            // id 162
+            // id 165
             'firstName': 'Matt',
             'lastName': 'Moore',
             'birthday': '6/18/1989',
@@ -40015,7 +40756,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 163
+            // id 166
             'firstName': 'Charlie',
             'lastName': 'Morton',
             'birthday': '11/12/1983',
@@ -40262,7 +41003,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.0,
         },
         {
-            // id 164
+            // id 167
             'firstName': 'Joe',
             'lastName': 'Musgrove',
             'birthday': '12/4/1992',
@@ -40509,7 +41250,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.0,
         },
         {
-            // id 165
+            // id 168
             'firstName': 'Sean',
             'lastName': 'Newcomb',
             'birthday': '6/12/1993',
@@ -40756,7 +41497,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 166
+            // id 169
             'firstName': 'Ljay',
             'lastName': 'Newsome',
             'birthday': '11/8/1996',
@@ -41003,7 +41744,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 167
+            // id 170
             'firstName': 'Aaron',
             'lastName': 'Nola',
             'birthday': '6/4/1993',
@@ -41250,7 +41991,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.8,
         },
         {
-            // id 168
+            // id 171
             'firstName': 'Ivan',
             'lastName': 'Nova',
             'birthday': '1/12/1987',
@@ -41497,7 +42238,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 169
+            // id 172
             'firstName': 'Jake',
             'lastName': 'Odorizzi',
             'birthday': '3/27/1990',
@@ -41744,7 +42485,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 170
+            // id 173
             'firstName': 'Johan',
             'lastName': 'Oviedo',
             'birthday': '3/2/1998',
@@ -41991,7 +42732,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': -0.1,
         },
         {
-            // id 171
+            // id 174
             'firstName': 'Chris',
             'lastName': 'Paddack',
             'birthday': '1/8/1996',
@@ -42238,7 +42979,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.5,
         },
         {
-            // id 172
+            // id 175
             'firstName': 'James',
             'lastName': 'Paxton',
             'birthday': '11/6/1988',
@@ -42485,7 +43226,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.4,
         },
         {
-            // id 173
+            // id 176
             'firstName': 'Nate',
             'lastName': 'Pearson',
             'birthday': '8/20/1996',
@@ -42732,7 +43473,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.6,
         },
         {
-            // id 174
+            // id 177
             'firstName': 'Martin',
             'lastName': 'Perez',
             'birthday': '4/4/1991',
@@ -42979,7 +43720,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.1,
         },
         {
-            // id 175
+            // id 178
             'firstName': 'Dillon',
             'lastName': 'Peters',
             'birthday': '8/31/1992',
@@ -43226,7 +43967,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 176
+            // id 179
             'firstName': 'David',
             'lastName': 'Peterson',
             'birthday': '9/3/1995',
@@ -43473,7 +44214,254 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 177
+            // id 180
+            'firstName': 'Tyler',
+            'lastName': 'Phillips',
+            'birthday': '10/27/1997',
+            'bats': 'R',
+            'throws': 'R',
+            'currentTeam': 'Rangers',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/4/4fa4e97a_mlbam.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 16,
+            'SteamerGamesStartedProjection': 6,
+            'SteamerInningsPitchedProjection': 48.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.21,
+            'SteamerFIPProjection': 4.28,
+            'SteamerWHIPProjection': 1.28,
+            'SteamerRawKsProjection': 48,
+            'SteamerKPer9Projection': 9.07,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 0.7,
+        },
+        {
+            // id 181
             'firstName': 'Michael',
             'lastName': 'Pineda',
             'birthday': '1/18/1989',
@@ -43720,7 +44708,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 178
+            // id 182
             'firstName': 'Nick',
             'lastName': 'Pivetta',
             'birthday': '2/14/1993',
@@ -43967,7 +44955,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.9,
         },
         {
-            // id 179
+            // id 183
             'firstName': 'Zach',
             'lastName': 'Plesac',
             'birthday': '1/21/1995',
@@ -44214,7 +45202,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 180
+            // id 184
             'firstName': 'Cody',
             'lastName': 'Ponce',
             'birthday': '4/25/1994',
@@ -44461,7 +45449,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 181
+            // id 185
             'firstName': 'Daniel',
             'lastName': 'Ponce de Leon',
             'birthday': '1/16/1992',
@@ -44708,7 +45696,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 182
+            // id 186
             'firstName': 'Rick',
             'lastName': 'Porcello',
             'birthday': '12/27/1988',
@@ -44955,7 +45943,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.9,
         },
         {
-            // id 183
+            // id 187
             'firstName': 'David',
             'lastName': 'Price',
             'birthday': '8/26/1985',
@@ -45202,7 +46190,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.9,
         },
         {
-            // id 184
+            // id 188
             'firstName': 'Robbie',
             'lastName': 'Ray',
             'birthday': '10/1/1991',
@@ -45449,7 +46437,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 185
+            // id 189
             'firstName': 'Garrett',
             'lastName': 'Richards',
             'birthday': '5/27/1988',
@@ -45696,7 +46684,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 186
+            // id 190
             'firstName': 'Tanner',
             'lastName': 'Roark',
             'birthday': '10/5/1986',
@@ -45943,7 +46931,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 187
+            // id 191
             'firstName': 'Carlos',
             'lastName': 'Rodon',
             'birthday': '12/10/1992',
@@ -46190,7 +47178,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 188
+            // id 192
             'firstName': 'Eduardo',
             'lastName': 'Rodriguez',
             'birthday': '4/7/1993',
@@ -46437,7 +47425,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.2,
         },
         {
-            // id 189
+            // id 193
             'firstName': 'Trevor',
             'lastName': 'Rogers',
             'birthday': '11/13/1997',
@@ -46684,7 +47672,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.1,
         },
         {
-            // id 190
+            // id 194
             'firstName': 'Tyson',
             'lastName': 'Ross',
             'birthday': '4/22/1987',
@@ -46931,7 +47919,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 191
+            // id 195
             'firstName': 'Joe',
             'lastName': 'Ryan',
             'birthday': '6/5/1996',
@@ -47178,7 +48166,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 192
+            // id 196
             'firstName': 'Hyun Jin',
             'lastName': 'Ryu',
             'birthday': '3/25/1987',
@@ -47412,11 +48400,20 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': 1.9,
-
-            
+            'SteamerGamesProjection': 32,
+            'SteamerGamesStartedProjection': 32,
+            'SteamerInningsPitchedProjection': 196.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.16,
+            'SteamerFIPProjection': 4.20,
+            'SteamerWHIPProjection': 1.28,
+            'SteamerRawKsProjection': 177,
+            'SteamerKPer9Projection': 8.10,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 3.2,
         },
         {
-            // id 193
+            // id 197
             'firstName': 'Danny',
             'lastName': 'Salazar',
             'birthday': '1/11/1990',
@@ -47663,7 +48660,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 194
+            // id 198
             'firstName': 'Chris',
             'lastName': 'Sale',
             'birthday': '3/30/1989',
@@ -47910,7 +48907,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.7,
         },
         {
-            // id 195
+            // id 199
             'firstName': 'Jeff',
             'lastName': 'Samardzija',
             'birthday': '1/23/1985',
@@ -48157,7 +49154,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.1,
         },
         {
-            // id 196
+            // id 200
             'firstName': 'Aaron',
             'lastName': 'Sanchez',
             'birthday': '7/1/1992',
@@ -48404,7 +49401,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 197
+            // id 201
             'firstName': 'Anibal',
             'lastName': 'Sanchez',
             'birthday': '2/27/1984',
@@ -48651,7 +49648,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 198
+            // id 202
             'firstName': 'Sixto',
             'lastName': 'Sanchez',
             'birthday': '7/29/1998',
@@ -48898,7 +49895,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.4,
         },
         {
-            // id 199
+            // id 203
             'firstName': 'Patrick',
             'lastName': 'Sandoval',
             'birthday': '10/18/1996',
@@ -49145,7 +50142,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 200
+            // id 204
             'firstName': 'Ervin',
             'lastName': 'Santana',
             'birthday': '12/12/1982',
@@ -49392,7 +50389,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 201
+            // id 205
             'firstName': 'Tony',
             'lastName': 'Santillan',
             'birthday': '4/15/1997',
@@ -49639,7 +50636,254 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 202
+            // id 206
+            'firstName': 'Mac',
+            'lastName': 'Sceroler',
+            'birthday': '4/9/1995',
+            'bats': 'R',
+            'throws': 'R',
+            'currentTeam': 'Orioles',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/b/b29bf7c8_milb.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 35,
+            'SteamerGamesStartedProjection': 0,
+            'SteamerInningsPitchedProjection': 35.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.54,
+            'SteamerFIPProjection': 4.51,
+            'SteamerWHIPProjection': 1.40,
+            'SteamerRawKsProjection': 38,
+            'SteamerKPer9Projection': 9.78,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 0.1,
+        },
+        {
+            // id 207
             'firstName': 'Max',
             'lastName': 'Scherzer',
             'birthday': '7/27/1984',
@@ -49886,7 +51130,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 4.9,
         },
         {
-            // id 203
+            // id 208
             'firstName': 'Connor',
             'lastName': 'Seabold',
             'birthday': '1/24/1996',
@@ -50133,7 +51377,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 204
+            // id 209
             'firstName': 'Antonio',
             'lastName': 'Senzatela',
             'birthday': '1/21/1995',
@@ -50380,7 +51624,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 205
+            // id 210
             'firstName': 'Luis',
             'lastName': 'Severino',
             'birthday': '2/20/1994',
@@ -50627,7 +51871,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 206
+            // id 211
             'firstName': 'Justus',
             'lastName': 'Sheffield',
             'birthday': '5/13/1996',
@@ -50874,7 +52118,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.7,
         },
         {
-            // id 207
+            // id 212
             'firstName': 'Matt',
             'lastName': 'Shoemaker',
             'birthday': '9/27/1986',
@@ -51121,7 +52365,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 208
+            // id 213
             'firstName': 'Brady',
             'lastName': 'Singer',
             'birthday': '8/4/1996',
@@ -51368,7 +52612,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 209
+            // id 214
             'firstName': 'Tarik',
             'lastName': 'Skubal',
             'birthday': '11/20/1996',
@@ -51615,7 +52859,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.6,
         },
         {
-            // id 210
+            // id 215
             'firstName': 'Caleb',
             'lastName': 'Smith',
             'birthday': '7/28/1991',
@@ -51862,7 +53106,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 211
+            // id 216
             'firstName': 'Drew',
             'lastName': 'Smyly',
             'birthday': '6/13/1989',
@@ -52109,7 +53353,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.0,
         },
         {
-            // id 212
+            // id 217
             'firstName': 'Blake',
             'lastName': 'Snell',
             'birthday': '12/4/1992',
@@ -52356,7 +53600,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.7,
         },
         {
-            // id 213
+            // id 218
             'firstName': 'Mike',
             'lastName': 'Soroka',
             'birthday': '8/4/1997',
@@ -52603,7 +53847,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.9,
         },
         {
-            // id 214
+            // id 219
             'firstName': 'Jonathan',
             'lastName': 'Stiever',
             'birthday': '5/12/1997',
@@ -52850,7 +54094,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 215
+            // id 220
             'firstName': 'Dan',
             'lastName': 'Straily',
             'birthday': '12/1/1988',
@@ -53097,7 +54341,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': -0.2,
         },
         {
-            // id 216
+            // id 221
             'firstName': 'Stephen',
             'lastName': 'Strasburg',
             'birthday': '7/20/1988',
@@ -53344,7 +54588,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.4,
         },
         {
-            // id 217
+            // id 222
             'firstName': 'Ross',
             'lastName': 'Stripling',
             'birthday': '11/23/1989',
@@ -53591,7 +54835,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 218
+            // id 223
             'firstName': 'Marcus',
             'lastName': 'Stroman',
             'birthday': '5/1/1991',
@@ -53838,7 +55082,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.7,
         },
         {
-            // id 219
+            // id 224
             'firstName': 'Jose',
             'lastName': 'Suarez',
             'birthday': '1/3/1998',
@@ -54085,7 +55329,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.2,
         },
         {
-            // id 220
+            // id 225
             'firstName': 'Noah',
             'lastName': 'Syndergaard',
             'birthday': '8/29/1992',
@@ -54332,7 +55576,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 221
+            // id 226
             'firstName': 'Jameson',
             'lastName': 'Taillon',
             'birthday': '11/18/1991',
@@ -54579,7 +55823,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 222
+            // id 227
             'firstName': 'Masahiro',
             'lastName': 'Tanaka',
             'birthday': '11/1/1988',
@@ -54826,7 +56070,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.1,
         },
         {
-            // id 223
+            // id 228
             'firstName': 'Julio',
             'lastName': 'Teheran',
             'birthday': '1/27/1991',
@@ -55073,7 +56317,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': -0.2,
         },
         {
-            // id 224
+            // id 229
             'firstName': 'Trent',
             'lastName': 'Thornton',
             'birthday': '9/30/1993',
@@ -55320,7 +56564,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.4,
         },
         {
-            // id 225
+            // id 230
             'firstName': 'Touki',
             'lastName': 'Toussaint',
             'birthday': '6/20/1996',
@@ -55567,7 +56811,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.1,
         },
         {
-            // id 226
+            // id 231
             'firstName': 'Spencer',
             'lastName': 'Turnbull',
             'birthday': '9/18/1992',
@@ -55814,7 +57058,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 227
+            // id 232
             'firstName': 'Jose',
             'lastName': 'Urena',
             'birthday': '9/12/1991',
@@ -56061,7 +57305,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 228
+            // id 233
             'firstName': 'Julio',
             'lastName': 'Urias',
             'birthday': '8/12/1996',
@@ -56308,7 +57552,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.8,
         },
         {
-            // id 229
+            // id 234
             'firstName': 'Jose',
             'lastName': 'Urquidy',
             'birthday': '5/1/1995',
@@ -56555,7 +57799,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.7,
         },
         {
-            // id 230
+            // id 235
             'firstName': 'Framber',
             'lastName': 'Valdez',
             'birthday': '11/19/1993',
@@ -56802,7 +58046,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.5,
         },
         {
-            // id 231
+            // id 236
             'firstName': 'Jason',
             'lastName': 'Vargas',
             'birthday': '2/2/1983',
@@ -57049,7 +58293,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 232
+            // id 237
             'firstName': 'Vince',
             'lastName': 'Velasquez',
             'birthday': '6/7/1992',
@@ -57296,7 +58540,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.5,
         },
         {
-            // id 233
+            // id 238
             'firstName': 'Justin',
             'lastName': 'Verlander',
             'birthday': '2/20/1983',
@@ -57543,7 +58787,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 234
+            // id 239
             'firstName': 'Austin',
             'lastName': 'Voth',
             'birthday': '6/26/1992',
@@ -57790,13 +59034,13 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.5,
         },
         {
-            // id 235
+            // id 240
             'firstName': 'Michael',
             'lastName': 'Wacha',
             'birthday': '7/1/1991',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Rays',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/d/d7ade773_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
@@ -58037,7 +59281,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.8,
         },
         {
-            // id 236
+            // id 241
             'firstName': 'Adam',
             'lastName': 'Wainwright',
             'birthday': '8/30/1981',
@@ -58284,7 +59528,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.3,
         },
         {
-            // id 237
+            // id 242
             'firstName': 'Taijuan',
             'lastName': 'Walker',
             'birthday': '8/13/1992',
@@ -58531,7 +59775,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 238
+            // id 243
             'firstName': 'Luke',
             'lastName': 'Weaver',
             'birthday': '8/21/1993',
@@ -58778,7 +60022,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 239
+            // id 244
             'firstName': 'Logan',
             'lastName': 'Webb',
             'birthday': '11/18/1996',
@@ -59025,7 +60269,254 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.4,
         },
         {
-            // id 240
+            // id 245
+            'firstName': 'Tyler',
+            'lastName': 'Wells',
+            'birthday': '8/26/1994',
+            'bats': 'R',
+            'throws': 'R',
+            'currentTeam': 'Orioles',
+            'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/2/2a9fd3d8_milb.jpg',
+            'primaryPosition': 'SP',
+            'otherPositions': '',
+            'Games2017': 0,
+            'GamesStarted2017': 0,
+            'InningsPitched2017': 0.0,
+            'InningsPitchedPerGameStarted2017': 0.0,
+            'QS2017': 0,
+            'ERA2017': 0.0,
+            'ERAPlus2017': 0,
+            'FIP2017': 0.0,
+            'xFIP2017': 0.0,
+            'SIERA2017': 0.0,
+            'WHIP2017': 0.0,
+            'RawKs2017': 0,
+            'HitsPer92017': 0.0,
+            'HRsPer92017': 0.0,
+            'BBPer92017': 0.0,
+            'KPer92017': 0.0,
+            'KDividedByBB2017': 0.0,
+            'Saves2017': 0,
+            'PitcherKPercent2017': '',
+            'PitcherBBPercent2017': '',
+            'KMinusBBPercent2017': '',
+            'PitcherBABIP2017': .0,
+            'LOBPercent2017': '',
+            'HRPerFBPercent2017': '',
+            'PitcherGBPercent2017': '',
+            'PitcherLDPercent2017': '',
+            'PitcherFBPercent2017': '',
+            'IFFBPercent2017': '',
+            'SoftContactPercent2017': '',
+            'MediumContactPercent2017': '',
+            'HardContactPercent2017': '',
+            'FirstStrikePercent2017': '',
+            'PitcherExitVelo2017': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2017': 0.0,
+            'PitcherBarrelPercent2017': '',
+            'PitcherLaunchAngle2017': 0.0,
+            'AVGFastballVelo2017': 0.0,
+            'MaxFastballVelo2017': 0.0,
+            'FourSeamFastballUsagePercent2017': '',
+            'SinkerUsagePercent2017': '',
+            'CutterUsagePercent2017': '',
+            'SliderUsagePercent2017': '',
+            'ChangeupUsagePercent2017': '',
+            'CurveUsagePercent2017': '',
+            'SplitterUsagePercent2017': '',
+            'KnuckleCurveUsagePercent2017': '',
+            'OverallXWOBA2017': .0,
+            'FourSeamFastballXWOBA2017': '',
+            'SinkerXWOBA2017': '',
+            'CutterXWOBA2017': '',
+            'SliderXWOBA2017': '',
+            'ChangeupXWOBA2017': '',
+            'CurveXWOBA2017': '',
+            'SplitterXWOBA2017': '',
+            'KnuckleCurveXWOBA2017': '',
+            'PitcherFWAR2017': 0.0,
+            'Games2018': 0,
+            'GamesStarted2018': 0,
+            'InningsPitched2018': 0.0,
+            'InningsPitchedPerGameStarted2018': 0.0,
+            'QS2018': 0,
+            'ERA2018': 0.0,
+            'ERAPlus2018': 0,
+            'FIP2018': 0.0,
+            'xFIP2018': 0.0,
+            'SIERA2018': 0.0,
+            'WHIP2018': 0.0,
+            'RawKs2018': 0,
+            'HitsPer92018': 0.0,
+            'HRsPer92018': 0.0,
+            'BBPer92018': 0.0,
+            'KPer92018': 0.0,
+            'KDividedByBB2018': 0.0,
+            'Saves2018': 0,
+            'PitcherKPercent2018': '',
+            'PitcherBBPercent2018': '',
+            'KMinusBBPercent2018': '',
+            'PitcherBABIP2018': .0,
+            'LOBPercent2018': '',
+            'HRPerFBPercent2018': '',
+            'PitcherGBPercent2018': '',
+            'PitcherLDPercent2018': '',
+            'PitcherFBPercent2018': '',
+            'IFFBPercent2018': '',
+            'SoftContactPercent2018': '',
+            'MediumContactPercent2018': '',
+            'HardContactPercent2018': '',
+            'FirstStrikePercent2018': '',
+            'PitcherExitVelo2018': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2018': 0.0,
+            'PitcherBarrelPercent2018': '',
+            'PitcherLaunchAngle2018': 0.0,
+            'AVGFastballVelo2018': 0.0,
+            'MaxFastballVelo2018': 0.0,
+            'FourSeamFastballUsagePercent2018': '',
+            'SinkerUsagePercent2018': '',
+            'CutterUsagePercent2018': '',
+            'SliderUsagePercent2018': '',
+            'ChangeupUsagePercent2018': '',
+            'CurveUsagePercent2018': '',
+            'SplitterUsagePercent2018': '',
+            'KnuckleCurveUsagePercent2018': '',
+            'OverallXWOBA2018': .0,
+            'FourSeamFastballXWOBA2018': '',
+            'SinkerXWOBA2018': '',
+            'CutterXWOBA2018': '',
+            'SliderXWOBA2018': '',
+            'ChangeupXWOBA2018': '',
+            'CurveXWOBA2018': '',
+            'SplitterXWOBA2018': '',
+            'KnuckleCurveXWOBA2018': '',
+            'PitcherFWAR2018': 0.0,
+            'Games2019': 0,
+            'GamesStarted2019': 0,
+            'InningsPitched2019': 0.0,
+            'InningsPitchedPerGameStarted2019': 0.0,
+            'QS2019': 0,
+            'ERA2019': 0.0,
+            'ERAPlus2019': 0,
+            'FIP2019': 0.0,
+            'xFIP2019': 0.0,
+            'SIERA2019': 0.0,
+            'WHIP2019': 0.0,
+            'RawKs2019': 0,
+            'HitsPer92019': 0.0,
+            'HRsPer92019': 0.0,
+            'BBPer92019': 0.0,
+            'KPer92019': 0.0,
+            'KDividedByBB2019': 0.0,
+            'Saves2019': 0,
+            'PitcherKPercent2019': '',
+            'PitcherBBPercent2019': '',
+            'KMinusBBPercent2019': '',
+            'PitcherBABIP2019': .0,
+            'LOBPercent2019': '',
+            'HRPerFBPercent2019': '',
+            'PitcherGBPercent2019': '',
+            'PitcherLDPercent2019': '',
+            'PitcherFBPercent2019': '',
+            'IFFBPercent2019': '',
+            'SoftContactPercent2019': '',
+            'MediumContactPercent2019': '',
+            'HardContactPercent2019': '',
+            'FirstStrikePercent2019': '',
+            'PitcherExitVelo2019': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2019': 0.0,
+            'PitcherBarrelPercent2019': '',
+            'PitcherLaunchAngle2019': 0.0,
+            'AVGFastballVelo2019': 0.0,
+            'MaxFastballVelo2019': 0.0,
+            'FourSeamFastballUsagePercent2019': '',
+            'SinkerUsagePercent2019': '',
+            'CutterUsagePercent2019': '',
+            'SliderUsagePercent2019': '',
+            'ChangeupUsagePercent2019': '',
+            'CurveUsagePercent2019': '',
+            'SplitterUsagePercent2019': '',
+            'KnuckleCurveUsagePercent2019': '',
+            'OverallXWOBA2019': .0,
+            'FourSeamFastballXWOBA2019': '',
+            'SinkerXWOBA2019': '',
+            'CutterXWOBA2019': '',
+            'SliderXWOBA2019': '',
+            'ChangeupXWOBA2019': '',
+            'CurveXWOBA2019': '',
+            'SplitterXWOBA2019': '',
+            'KnuckleCurveXWOBA2019': '',
+            'PitcherFWAR2019': 0.0,
+            'Games2020': 0,
+            'GamesStarted2020': 0,
+            'InningsPitched2020': 0.0,
+            'InningsPitchedPerGameStarted2020': 0.0,
+            'QS2020': 0,
+            'ERA2020': 0.0,
+            'ERAPlus2020': 0,
+            'FIP2020': 0.0,
+            'xFIP2020': 0.0,
+            'SIERA2020': 0.0,
+            'WHIP2020': 0.0,
+            'RawKs2020': 0,
+            'HitsPer92020': 0.0,
+            'HRsPer92020': 0.0,
+            'BBPer92020': 0.0,
+            'KPer92020': 0.0,
+            'KDividedByBB2020': 0.0,
+            'Saves2020': 0,
+            'PitcherKPercent2020': '',
+            'PitcherBBPercent2020': '',
+            'KMinusBBPercent2020': '',
+            'PitcherBABIP2020': .0,
+            'LOBPercent2020': '',
+            'HRPerFBPercent2020': '',
+            'PitcherGBPercent2020': '',
+            'PitcherLDPercent2020': '',
+            'PitcherFBPercent2020': '',
+            'IFFBPercent2020': '',
+            'SoftContactPercent2020': '',
+            'MediumContactPercent2020': '',
+            'HardContactPercent2020': '',
+            'FirstStrikePercent2020': '',
+            'PitcherExitVelo2020': 0.0,
+            'PitcherFlyBallLineDriveExitVelo2020': 0.0,
+            'PitcherBarrelPercent2020': '',
+            'PitcherLaunchAngle2020': 0.0,
+            'AVGFastballVelo2020': 0.0,
+            'MaxFastballVelo2020': 0.0,
+            'FourSeamFastballUsagePercent2020': '',
+            'SinkerUsagePercent2020': '',
+            'CutterUsagePercent2020': '',
+            'SliderUsagePercent2020': '',
+            'ChangeupUsagePercent2020': '',
+            'CurveUsagePercent2020': '',
+            'SplitterUsagePercent2020': '',
+            'KnuckleCurveUsagePercent2020': '',
+            'OverallXWOBA2020': .0,
+            'FourSeamFastballXWOBA2020': '',
+            'SinkerXWOBA2020': '',
+            'CutterXWOBA2020': '',
+            'SliderXWOBA2020': '',
+            'ChangeupXWOBA2020': '',
+            'CurveXWOBA2020': '',
+            'SplitterXWOBA2020': '',
+            'KnuckleCurveXWOBA2020': '',
+            'PitcherFWAR2020': 0.0,
+            'SteamerGamesProjection': 26,
+            'SteamerGamesStartedProjection': 3,
+            'SteamerInningsPitchedProjection': 42.0,
+            'SteamerQSProjection': 0.0,
+            'SteamerERAProjection': 4.35,
+            'SteamerFIPProjection': 4.38,
+            'SteamerWHIPProjection': 1.33,
+            'SteamerRawKsProjection': 44,
+            'SteamerKPer9Projection': 9.38,
+            'SteamerSavesProjection': 0,
+            'PitcherSteamerFWARProjection': 0.4,
+        },
+        {
+            // id 246
             'firstName': 'Zack',
             'lastName': 'Wheeler',
             'birthday': '5/30/1990',
@@ -59272,7 +60763,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 3.1,
         },
         {
-            // id 241
+            // id 247
             'firstName': 'Forrest',
             'lastName': 'Whitley',
             'birthday': '9/15/1997',
@@ -59519,7 +61010,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.3,
         },
         {
-            // id 242
+            // id 248
             'firstName': 'Trevor',
             'lastName': 'Williams',
             'birthday': '4/25/1992',
@@ -59766,7 +61257,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 243
+            // id 249
             'firstName': 'Asher',
             'lastName': 'Wojciechowski',
             'birthday': '12/21/1988',
@@ -60013,7 +61504,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 244
+            // id 250
             'firstName': 'Brandon',
             'lastName': 'Woodruff',
             'birthday': '2/10/1993',
@@ -60260,7 +61751,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 4.1,
         },
         {
-            // id 245
+            // id 251
             'firstName': 'Kyle',
             'lastName': 'Wright',
             'birthday': '10/2/1995',
@@ -60507,7 +61998,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.6,
         },
         {
-            // id 246
+            // id 252
             'firstName': 'Jimmy',
             'lastName': 'Yacabonis',
             'birthday': '3/21/1992',
@@ -60754,7 +62245,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.0,
         },
         {
-            // id 247
+            // id 253
             'firstName': 'Jordan',
             'lastName': 'Yamamoto',
             'birthday': '5/11/1996',
@@ -61001,7 +62492,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.1,
         },
         {
-            // id 248
+            // id 254
             'firstName': 'Ryan',
             'lastName': 'Yarbrough',
             'birthday': '12/31/1991',
@@ -61248,7 +62739,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 1.2,
         },
         {
-            // id 249
+            // id 255
             'firstName': 'Huascar',
             'lastName': 'Ynoa',
             'birthday': '5/28/1998',
@@ -61495,7 +62986,7 @@ exports.seed = function (knex, Promise) {
             'PitcherSteamerFWARProjection': 0.1,
         },
         {
-            // id 250
+            // id 256
             'firstName': 'Bruce',
             'lastName': 'Zimmermann',
             'birthday': '2/9/1995',
@@ -61729,20 +63220,20 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': -0.1,
-            'SteamerGamesProjection': 31,
+            'SteamerGamesProjection': 24,
             'SteamerGamesStartedProjection': 19,
-            'SteamerInningsPitchedProjection': 122.0,
+            'SteamerInningsPitchedProjection': 118.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 5.28,
-            'SteamerFIPProjection': 5.52,
-            'SteamerWHIPProjection': 1.52,
-            'SteamerRawKsProjection': 98,
-            'SteamerKPer9Projection': 7.24,
+            'SteamerERAProjection': 4.14,
+            'SteamerFIPProjection': 4.23,
+            'SteamerWHIPProjection': 1.26,
+            'SteamerRawKsProjection': 117,
+            'SteamerKPer9Projection': 8.92,
             'SteamerSavesProjection': 0,
-            'PitcherSteamerFWARProjection': 0.5,
+            'PitcherSteamerFWARProjection': 2.1,
         },
         {
-            // id 251
+            // id 257
             'firstName': 'Jordan',
             'lastName': 'Zimmermann',
             'birthday': '5/23/1986',
