@@ -2462,7 +2462,7 @@ exports.seed = function (knex, Promise) {
             'SteamerGamesStartedProjection': 0,
             'SteamerInningsPitchedProjection': 15.0,
             'SteamerQSProjection': 0.0,
-            'SteamerERAProjection': 4.77,
+            'SteamerERAProjection': 4.78,
             'SteamerFIPProjection': 4.99,
             'SteamerWHIPProjection': 1.44,
             'SteamerRawKsProjection': 15,
