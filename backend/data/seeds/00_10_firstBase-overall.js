@@ -6621,7 +6621,7 @@ exports.seed = function (knex, Promise) {
             'FWAR2020': -0.4,
             'SteamerPAProjection': 134,
             'SteamerAVGProjection': .230,
-            'SteamerOBPProjection': .316,
+            'SteamerOBPProjection': .317,
             'SteamerSLGProjection': .423,
             'SteamerDoublesProjection': 6,
             'SteamerHRProjection': 5,
