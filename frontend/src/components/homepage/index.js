@@ -57,12 +57,69 @@ class Homepage extends React.Component {
         const { classes } = this.props;
 
         while(this.context.state.designatedHitters.length === 0) {
-                    return (
-                        <div className={classes.loadingContainer}>
-                            <div className={'spinner'} />
-                            <h1 className={classes.loadingText}>Loading players.  This will only take a moment.</h1>
+            let seconds = 0;
+            setInterval(function () {
+                seconds++;
+            }, 1000);
+            while(seconds < 6) {
+                return (
+                    <div className={classes.loadingContainer}>
+                        <div className={'spinner'} />
+                        <h1 className={classes.loadingText}>Loading players.  This will only take a moment.</h1>
+                    </div>
+                )
+            }
+            if (seconds >= 6) {
+                return (
+                    <div className={classes.homepageDiv}>
+                        <Navbar />
+                        <div className={classes.homepageSpacingDiv}>
+                            <Links />
+                            <h1 className={classes.homepageText}>
+                                Welcome to my baseball project. This project is designed to hold statistical data from{' '}
+                                <a href='https://www.fangraphs.com/' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                                    Fangraphs
+                                </a>
+                                ,{' '}
+                                <a href='https://baseballsavant.mlb.com' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                                    Baseball Savant
+                                </a>
+                                , and{' '}
+                                <a href='http://brooksbaseball.net/' className={classes.websiteLinks} target='_blank' rel='noopener noreferrer'>
+                                    Brooks Baseball
+                                </a>
+                                , and{' '}
+                                <a
+                                    href='https://www.baseball-reference.com/'
+                                    className={classes.websiteLinks}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Baseball Reference
+                                </a>
+                                . Then, all the data can be found in one location. All 2021 projected stats are from{' '}
+                                <a
+                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                                    className={classes.websiteLinks}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Steamer
+                                </a>
+                                .<br />
+                                <br />
+                                    2020 stats will begin to be updated after the end of the 2020 regular season.  2021 Projections will begin to be updated
+                                    as Steamer releases them.
+                                <br />
+                                <br />
+                                <Link to='/glossary' className={classes.websiteLinks}>
+                                    A glossary explaing all the stats used can be found here.
+                                </Link>
+                            </h1>
+                            <Links />
                         </div>
-                    )
+                    </div>
+                );            }
             }
         return (
             <div className={classes.homepageDiv}>
