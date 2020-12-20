@@ -20,6 +20,7 @@ import PlayerCard from './components/players/playerCard.js';
 import Glossary from './components/glossary';
 import Teams from './components/teams/index.js';
 import TeamPage from './components/teams/teamPage.js';
+import Standings from './components/standings/index.js';
 
 class App extends React.Component {
     componentDidMount() {
@@ -129,6 +130,9 @@ class App extends React.Component {
                         <Teams teams={this.context.state.teams} />
                     </Route>
                     <Route path='/teams/:team' render={(props) => <TeamPage {...props} />} />
+                    <Route exact path='/standings'>
+                        <Standings teams={this.context.state.teams} />
+                    </Route>
                     <Route exact path='/glossary'>
                         <Glossary />
                     </Route>
