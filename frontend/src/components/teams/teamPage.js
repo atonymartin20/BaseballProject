@@ -6,8 +6,8 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { AppContext } from '../context/appContext.js';
-import EnhancedPitcherTable2021 from '../positionTable/pitcherTables/enhancedPitcherTable2021.js';
-import EnhancedTable2021 from '../positionTable/hitterTables/enhancedTable2021.js';
+import EnhancedPitcherTable2021 from './enhancedPitcherTable2021.js';
+import EnhancedTable2021 from './enhancedTable2021.js';
 
 const styles = (theme) => ({
     flipDataList: {
@@ -79,14 +79,13 @@ class TeamsPage extends React.Component {
 
     componentDidMount() {
         if(this.props.location.state.team.redirectTeamName) {
-            console.log(this.props.location.state.pitcherFWAR.redirectTeamPitcherFWAR.toFixed(1))
             this.setState({
                 teamName: this.props.location.state.team.redirectTeamName,
                 players: this.props.location.state.players.redirectTeamPlayers,
                 hitters: this.props.location.state.hitters.redirectTeamHitters,
                 pitchers: this.props.location.state.pitchers.redirectTeamPitchers,
-                hitterFWAR: this.props.location.state.hitterFWAR.redirectTeamHitterFWAR.toFixed(1),
-                pitcherFWAR: this.props.location.state.pitcherFWAR.redirectTeamPitcherFWAR.toFixed(1),
+                hitterFWAR: this.props.location.state.hitterFWAR.redirectTeamHitterFWAR,
+                pitcherFWAR: this.props.location.state.pitcherFWAR.redirectTeamPitcherFWAR,
             })
         }
     }
