@@ -156,9 +156,9 @@ export default function Teams(props) {
                         value['players'],
                         value['hitters'],
                         value['pitchers'],
-                        value['hitterFWAR'],
-                        value['pitcherFWAR'],
-                        value['teamFWAR'],
+                        value['hitterFWAR'].toFixed(1),
+                        value['pitcherFWAR'].toFixed(1),
+                        value['teamFWAR'].toFixed(1),
                         index
                     )
                 )
@@ -236,7 +236,7 @@ export default function Teams(props) {
                                                 {row.teamName}
                                             </TableCell>
                                             <TableCell align='center' className={classes.tableCell}>
-                                                {row.teamFWAR.toFixed(1)}
+                                                {row.teamFWAR}
                                             </TableCell>
                                             <TableCell align='center' className={classes.tableCell}>
                                                 {row.players.length}
@@ -248,10 +248,10 @@ export default function Teams(props) {
                                                 {row.pitchers.length}
                                             </TableCell>
                                             <TableCell align='center' className={classes.tableCell}>
-                                                {row.hitterFWAR.toFixed(1)}
+                                                {row.hitterFWAR}
                                             </TableCell>
                                             <TableCell align='center' className={classes.tableCell}>
-                                                {row.pitcherFWAR.toFixed(1)}
+                                                {row.pitcherFWAR}
                                             </TableCell>
                                         </TableRow>
                                     );
