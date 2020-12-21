@@ -108,8 +108,7 @@ class Homepage extends React.Component {
                                 </a>
                                 .<br />
                                 <br />
-                                    2020 stats will begin to be updated after the end of the 2020 regular season.  2021 Projections will begin to be updated
-                                    as Steamer releases them.
+                                    2020 stats have been updated and 2021 Projections are up to date as of December 10th 2020.
                                 <br />
                                 <br />
                                 <Link to='/glossary' className={classes.websiteLinks}>
