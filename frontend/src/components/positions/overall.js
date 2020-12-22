@@ -255,7 +255,7 @@ class Overall extends React.Component {
                             >
                                 Steamer
                             </a>
-                            . Updated as of 11/25/2020.
+                            . Updated as of 12/10/2020.
                         </h1>
                         <AVGTable2021 players={this.state.overall} />
                     </div>

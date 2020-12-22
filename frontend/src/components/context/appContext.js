@@ -28,6 +28,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL West',
             },
             Astros: {
                 teamName: 'Astros',
@@ -37,6 +38,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL West',
             },
             Athletics: {
                 teamName: 'Athletics',
@@ -44,6 +46,7 @@ export default class AppProvider extends Component {
                 hitters: [],
                 pitchers: [],
                 teamFWAR: 0.0,
+                division: 'AL West',
             },
             BlueJays: {
                 teamName: 'Blue Jays',
@@ -53,6 +56,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL East',
             },
             Braves: {
                 teamName: 'Braves',
@@ -62,6 +66,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL East',
             },
             Brewers: {
                 teamName: 'Brewers',
@@ -71,6 +76,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL Central',
             },
             Cardinals: {
                 teamName: 'Cardinals',
@@ -80,6 +86,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL Central',
             },
             Cubs: {
                 teamName: 'Cubs',
@@ -89,6 +96,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL Central',
             },
             Diamondbacks: {
                 teamName: 'Diamondbacks',
@@ -98,6 +106,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL West',
             },
             Dodgers: {
                 teamName: 'Dodgers',
@@ -107,6 +116,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL West',
             },
             Giants: {
                 teamName: 'Giants',
@@ -116,6 +126,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL West',
             },
             Indians: {
                 teamName: 'Indians',
@@ -125,6 +136,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL Central',
             },
             Mariners: {
                 teamName: 'Mariners',
@@ -134,6 +146,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL West',
             },
             Marlins: {
                 teamName: 'Marlins',
@@ -143,6 +156,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL East',
             },
             Mets: {
                 teamName: 'Mets',
@@ -152,6 +166,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL East',
             },
             Nationals: {
                 teamName: 'Nationals',
@@ -159,6 +174,7 @@ export default class AppProvider extends Component {
                 hitters: [],
                 pitchers: [],
                 teamFWAR: 0.0,
+                division: 'NL East',
             },
             Orioles: {
                 teamName: 'Orioles',
@@ -168,6 +184,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL East',
             },
             Padres: {
                 teamName: 'Padres',
@@ -177,6 +194,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL West',
             },
             Phillies: {
                 teamName: 'Phillies',
@@ -186,6 +204,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL East',
             },
             Pirates: {
                 teamName: 'Pirates',
@@ -195,6 +214,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL Central',
             },
             Rangers: {
                 teamName: 'Rangers',
@@ -204,6 +224,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL West',
             },
             Rays: {
                 teamName: 'Rays',
@@ -213,6 +234,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL East',
             },
             RedSox: {
                 teamName: 'Red Sox',
@@ -222,6 +244,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL East',
             },
             Reds: {
                 teamName: 'Reds',
@@ -231,6 +254,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL Central',
             },
             Rockies: {
                 teamName: 'Rockies',
@@ -240,6 +264,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'NL West',
             },
             Royals: {
                 teamName: 'Royals',
@@ -249,6 +274,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL Central',
             },
             Tigers: {
                 teamName: 'Tigers',
@@ -258,6 +284,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL Central',
             },
             Twins: {
                 teamName: 'Twins',
@@ -267,6 +294,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL Central',
             },
             WhiteSox: {
                 teamName: 'White Sox',
@@ -276,6 +304,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL Central',
             },
             Yankees: {
                 teamName: 'Yankees',
@@ -285,6 +314,7 @@ export default class AppProvider extends Component {
                 hitterFWAR: 0.0,
                 pitcherFWAR: 0.0,
                 teamFWAR: 0.0,
+                division: 'AL East',
             },
             FreeAgents: {
                 teamName: 'Free Agents',
@@ -530,6 +560,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL West',
                             },
                             Astros: {
                                 teamName: 'Astros',
@@ -539,6 +570,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL West',
                             },
                             Athletics: {
                                 teamName: 'Athletics',
@@ -548,6 +580,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL West',
                             },
                             BlueJays: {
                                 teamName: 'Blue Jays',
@@ -557,6 +590,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL East',
                             },
                             Braves: {
                                 teamName: 'Braves',
@@ -566,6 +600,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL East',
                             },
                             Brewers: {
                                 teamName: 'Brewers',
@@ -575,6 +610,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL Central',
                             },
                             Cardinals: {
                                 teamName: 'Cardinals',
@@ -584,6 +620,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL Central',
                             },
                             Cubs: {
                                 teamName: 'Cubs',
@@ -593,6 +630,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL Central',
                             },
                             Diamondbacks: {
                                 teamName: 'Diamondbacks',
@@ -602,6 +640,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL West',
                             },
                             Dodgers: {
                                 teamName: 'Dodgers',
@@ -611,6 +650,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL West',
                             },
                             Giants: {
                                 teamName: 'Giants',
@@ -620,6 +660,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL West',
                             },
                             Indians: {
                                 teamName: 'Indians',
@@ -629,6 +670,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL Central',
                             },
                             Mariners: {
                                 teamName: 'Mariners',
@@ -638,6 +680,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL West',
                             },
                             Marlins: {
                                 teamName: 'Marlins',
@@ -647,6 +690,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL East',
                             },
                             Mets: {
                                 teamName: 'Mets',
@@ -656,6 +700,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL East',
                             },
                             Nationals: {
                                 teamName: 'Nationals',
@@ -665,6 +710,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL East',
                             },
                             Orioles: {
                                 teamName: 'Orioles',
@@ -674,6 +720,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL East',
                             },
                             Padres: {
                                 teamName: 'Padres',
@@ -683,6 +730,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL West',
                             },
                             Phillies: {
                                 teamName: 'Phillies',
@@ -692,6 +740,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL East',
                             },
                             Pirates: {
                                 teamName: 'Pirates',
@@ -701,6 +750,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL Central',
                             },
                             Rangers: {
                                 teamName: 'Rangers',
@@ -710,6 +760,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL West',
                             },
                             Rays: {
                                 teamName: 'Rays',
@@ -719,6 +770,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL East',
                             },
                             RedSox: {
                                 teamName: 'Red Sox',
@@ -728,6 +780,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL East',
                             },
                             Reds: {
                                 teamName: 'Reds',
@@ -737,6 +790,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL Central',
                             },
                             Rockies: {
                                 teamName: 'Rockies',
@@ -746,6 +800,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'NL West',
                             },
                             Royals: {
                                 teamName: 'Royals',
@@ -755,6 +810,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL Central',
                             },
                             Tigers: {
                                 teamName: 'Tigers',
@@ -764,6 +820,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL Central',
                             },
                             Twins: {
                                 teamName: 'Twins',
@@ -773,6 +830,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL Central',
                             },
                             WhiteSox: {
                                 teamName: 'White Sox',
@@ -782,6 +840,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL Central',
                             },
                             Yankees: {
                                 teamName: 'Yankees',
@@ -791,6 +850,7 @@ export default class AppProvider extends Component {
                                 hitterFWAR: 0.0,
                                 pitcherFWAR: 0.0,
                                 teamFWAR: 0.0,
+                                division: 'AL East',
                             },
                             FreeAgents: {
                                 teamName: 'Free Agents',
@@ -1223,7 +1283,7 @@ export default class AppProvider extends Component {
                             }
                         })
 
-                        if(NoTeams !== []) {
+                        if(NoTeams.length > 0) {
                             console.log(NoTeams)
                         }
 
