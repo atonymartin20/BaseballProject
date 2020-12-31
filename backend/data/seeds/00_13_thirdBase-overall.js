@@ -1526,7 +1526,7 @@ exports.seed = function (knex, Promise) {
             'SteamerDoublesProjection': 31,
             'SteamerHRProjection': 27,
             'SteamerRunsProjection': 91,
-            'SteamerRBIProjection': 83,
+            'SteamerRBIProjection': 84,
             'SteamerSBProjection': 4,
             'SteamerFWARProjection': 3.3,
         },
