@@ -187,7 +187,7 @@ class Catchers extends React.Component {
                             >
                                 Steamer
                             </a>
-                            . Updated as of 12/10/2020.
+                            . Updated as of 12/25/2020.
                         </h1>
                         <EnhancedTable2021 players={this.state.catchers} />
                     </div>
