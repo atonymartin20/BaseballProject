@@ -33142,7 +33142,7 @@ exports.seed = function (knex, Promise) {
             'SteamerPAProjection': 572,
             'SteamerAVGProjection': .238,
             'SteamerOBPProjection': .327,
-            'SteamerSLGProjection': .453,
+            'SteamerSLGProjection': .452,
             'SteamerDoublesProjection': 21,
             'SteamerHRProjection': 28,
             'SteamerRunsProjection': 73,
