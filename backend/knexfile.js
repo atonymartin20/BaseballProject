@@ -22,7 +22,6 @@ module.exports = {
     pool: {
       min: 1,
       max: 20,
-      "propagateCreateError": false // <- default is true, set to false
     },
     migrations: {
       directory: './data/migrations',
