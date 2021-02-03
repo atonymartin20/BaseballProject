@@ -21,7 +21,8 @@ module.exports = {
     connection: process.env.DATABASE_URL,
     pool: {
       min: 1,
-      max: 20
+      max: 20,
+      "propagateCreateError": false // <- default is true, set to false
     },
     migrations: {
       directory: './data/migrations',
