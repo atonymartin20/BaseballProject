@@ -198,7 +198,7 @@ class FirstBase extends React.Component {
                             >
                                 Steamer
                             </a>
-                            . Updated as of 2/3/2021.
+                            . Updated as of 3/11/2021.
                         </h1>
                         <EnhancedTable2021 players={this.state.firstBase} />
                     </div>
