@@ -20406,7 +20406,7 @@ exports.seed = function (knex, Promise) {
             'SplitterXWOBA2020': '',
             'KnuckleCurveXWOBA2020': '',
             'PitcherFWAR2020': 0.0,
-            'SteamerGamesProjection': 28
+            'SteamerGamesProjection': 28,
             'SteamerGamesStartedProjection': 0,
             'SteamerInningsPitchedProjection': 28.0,
             'SteamerQSProjection': 0.0,
