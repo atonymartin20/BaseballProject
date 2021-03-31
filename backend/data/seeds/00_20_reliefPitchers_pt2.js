@@ -38382,7 +38382,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '10/3/1991',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Indians',
+            'currentTeam': 'Orioles',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/2/2f5c6a9a_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': 'SP',
