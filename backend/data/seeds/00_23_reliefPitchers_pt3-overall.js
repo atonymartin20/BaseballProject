@@ -23622,7 +23622,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/8/1994',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Braves',
+            'currentTeam': 'Brewers',
             'imageURL': 'https://www.baseball-reference.com/req/202010270/images/headshots/8/82f12c0d_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
