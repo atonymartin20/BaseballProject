@@ -38360,7 +38360,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '9/3/1991',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Blue Jays',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/4/4294dc2d_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
