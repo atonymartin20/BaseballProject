@@ -33830,7 +33830,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/1/1989',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Yankees',
+            'currentTeam': 'Korea',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/3/3f84f75f_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
