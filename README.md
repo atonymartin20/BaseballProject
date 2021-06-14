@@ -16,9 +16,9 @@ This is a project I have wanted to build for a while.  The point of this project
 * [Front End Site - Hosted on Netlify](https://baseball-project-adm.netlify.com/)
 * [Back End Site - Hosted on Heroku](https://baseball-project-adm.herokuapp.com/)
  
- # 2020 Information
- * There are currently 1,248 players and 270,000+ unique lines of seed data in the database for the 2021 season.
- * 2021 Projections will be added when they become available.
+ # 2021 Information
+ * There are currently 1,361 players and 356,000+ unique lines of seed data in the database for the 2021 season.
+ * 2022 Projections will be added when they become available.
 
  # Future Updates
  - [ ] Add Graphs
