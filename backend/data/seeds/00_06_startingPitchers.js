@@ -40172,7 +40172,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '8/7/1984',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Rangers',
+            'currentTeam': 'Cardinals',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/4/4bb18454_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
