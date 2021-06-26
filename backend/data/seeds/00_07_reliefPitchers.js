@@ -33226,7 +33226,7 @@ exports.seed = function (knex, Promise) {
 		    'birthday': '11/4/1997',
 		    'bats': 'R',
 		    'throws': 'R',
-		    'currentTeam': 'Rangers',
+		    'currentTeam': 'Diamondbacks',
 		    'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/7/7aa6c313_mlbam.jpg',
 		    'primaryPosition': 'RP',
 		    'otherPositions': '',
