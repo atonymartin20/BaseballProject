@@ -49232,7 +49232,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '10/10/1990',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Pirates',
             'imageURL': 'https://www.baseball-reference.com/req/202012150/images/headshots/6/68bd3b08_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
