@@ -10306,7 +10306,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '3/16/1995',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Blue Jays',
+            'currentTeam': 'Brewers',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/e/e57a4c36_mlbam.jpg',
             'primaryPosition': '1B',
             'otherPositions': '',
