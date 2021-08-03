@@ -10100,7 +10100,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/20/1996',
             'bats': 'S',
             'throws': 'R',
-            'currentTeam': 'Astros',
+            'currentTeam': 'Mariners',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/d/d4ac8874_mlbam.jpg',
             'primaryPosition': '3B',
             'otherPositions': '',
