@@ -4951,7 +4951,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/14/1991',
             'bats': 'L',
             'throws': 'R',
-            'currentTeam': 'Pirates',
+            'currentTeam': 'Padres',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/b/b26acf0e_mlbam.jpg',
             'primaryPosition': '2B',
             'otherPositions': 'OF',
