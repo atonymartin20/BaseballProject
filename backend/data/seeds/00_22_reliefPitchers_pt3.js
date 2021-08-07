@@ -19938,7 +19938,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '11/3/1987',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Cubs',
+            'currentTeam': 'White Sox',
             'imageURL': 'https://www.baseball-reference.com/req/202010270/images/headshots/7/788ff229_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
