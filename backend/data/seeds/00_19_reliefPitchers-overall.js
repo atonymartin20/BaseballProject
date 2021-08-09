@@ -7858,7 +7858,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '8/10/1993',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Mets',
+            'currentTeam': 'Pirates',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/2/2e627856_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
