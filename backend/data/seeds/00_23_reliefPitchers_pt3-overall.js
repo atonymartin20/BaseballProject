@@ -8462,7 +8462,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '9/4/1992',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Angels',
+            'currentTeam': 'Rays',
             'imageURL': 'https://www.baseball-reference.com/req/202010270/images/headshots/5/569a0d8c_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
