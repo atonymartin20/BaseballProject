@@ -31414,7 +31414,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/21/1991',
             'bats': 'S',
             'throws': 'R',
-            'currentTeam': 'Padres',
+            'currentTeam': 'Marlins',
             'imageURL': 'https://www.baseball-reference.com/req/202010270/images/headshots/d/dcd442d3_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
