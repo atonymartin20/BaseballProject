@@ -44400,7 +44400,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '8/27/1988',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Diamondbacks',
+            'currentTeam': 'Free Agent',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/3/395df6ad_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
