@@ -7533,7 +7533,6 @@ exports.seed = function (knex, Promise) {
             'SteamerSBProjection': 0,
             'SteamerFWARProjection': 0.0,
         },
-
         {
             'firstName': 'Eric',
             'lastName': 'Haase',
