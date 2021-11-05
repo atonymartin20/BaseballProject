@@ -521,7 +521,7 @@ exports.seed = function (knex, Promise) {
             'FourSeamFastballUsagePercent2019': '37.6%',
             'SinkerUsagePercent2019': '11.9%',
             'CutterUsagePercent2019': '8.4%',
-            'SliderUsagePercent2019': '22..1%',
+            'SliderUsagePercent2019': '22.1%',
             'ChangeupUsagePercent2019': '10.6%',
             'CurveUsagePercent2019': '9.5%',
             'SplitterUsagePercent2019': '',

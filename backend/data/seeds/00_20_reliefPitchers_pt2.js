@@ -16279,7 +16279,7 @@ exports.seed = function (knex, Promise) {
             'SplitterUsagePercent2018': '',
             'KnuckleCurveUsagePercent2018': '',
             'OverallXWOBA2018': .339,
-            'FourSeamFastballXWOBA2018': '..65',
+            'FourSeamFastballXWOBA2018': '.365',
             'SinkerXWOBA2018': '',
             'CutterXWOBA2018': '',
             'SliderXWOBA2018': '.341',
