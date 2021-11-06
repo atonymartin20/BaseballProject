@@ -21686,7 +21686,7 @@ exports.seed = function (knex, Promise) {
 			'PitcherLDPercent2020': '26.3%',
 			'PitcherFBPercent2020': '36.8%',
 			'IFFBPercent2020': '28.6%',
-			'SoftContactPercent2020': '20.%',
+			'SoftContactPercent2020': '20.0%',
 			'MediumContactPercent2020': '60.0%',
 			'HardContactPercent2020': '20.0%',
 			'FirstStrikePercent2020': '69.6%',

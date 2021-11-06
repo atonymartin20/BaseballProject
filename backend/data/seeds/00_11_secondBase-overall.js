@@ -15909,7 +15909,7 @@ exports.seed = function (knex, Promise) {
             'WRCPlus2020': 63,
             'OPSPlus2020': 65,
             'BBPercent2020': '4.2%',
-            'KPercent2020': '15.0.%',
+            'KPercent2020': '15.0%',
             'ChaseRate2020': '40.8%',
             'ContactPercent2020': '81.1%',
             'SprintSpeed2020': 28.2,
