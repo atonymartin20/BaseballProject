@@ -11,8 +11,9 @@ const outfieldRouter = require('./routers/outfieldRouter');
 const startingPitcherRouter = require('./routers/startingPitcherRouter');
 const reliefPitcherRouter = require('./routers/reliefPitcherRouter');
 const designatedHitterRouter = require('./routers/designatedHitterRouter');
-const overallRouter = require('./routers/overallRouter')
-const twoWayPlayerRouter = require('./routers/twoWayPlayerRouter')
+const overallRouter = require('./routers/overallRouter');
+const twoWayPlayerRouter = require('./routers/twoWayPlayerRouter');
+const retiredPlayersRouter = require('./routers/retiredPlayersRouter');
 
 
 const cors = require('cors');
@@ -33,6 +34,7 @@ app.use('/api/reliefPitcher', reliefPitcherRouter);
 app.use('/api/designatedHitter', designatedHitterRouter);
 app.use('/api/overall', overallRouter);
 app.use('/api/twoWayPlayer', twoWayPlayerRouter);
+app.use('/api/retiredPlayers', retiredPlayersRouter);
 
 
 app.get('/', (req, res) => {
