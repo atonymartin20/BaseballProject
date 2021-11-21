@@ -232,15 +232,15 @@ exports.up = function (knex, Promise) {
         thirdBase.integer('StolenBases2022');
         thirdBase.string('StolenBasePercent2022', 50);
         thirdBase.decimal('FWAR2022', 8, 1);
-        thirdBase.integer('SteamerPAProjection');
-        thirdBase.decimal('SteamerAVGProjection', 8, 3);
-        thirdBase.decimal('SteamerOBPProjection', 8, 3);
-        thirdBase.decimal('SteamerSLGProjection', 8, 3);
-        thirdBase.integer('SteamerDoublesProjection', 50);
-        thirdBase.integer('SteamerHRProjection', 50);
-        thirdBase.integer('SteamerRunsProjection', 50);
-        thirdBase.integer('SteamerRBIProjection', 50);
-        thirdBase.integer('SteamerSBProjection');
+        thirdBase.integer('TheBatXPAProjection');
+        thirdBase.decimal('TheBatXAVGProjection', 8, 3);
+        thirdBase.decimal('TheBatXOBPProjection', 8, 3);
+        thirdBase.decimal('TheBatXSLGProjection', 8, 3);
+        thirdBase.integer('TheBatXDoublesProjection', 50);
+        thirdBase.integer('TheBatXHRProjection', 50);
+        thirdBase.integer('TheBatXRunsProjection', 50);
+        thirdBase.integer('TheBatXRBIProjection', 50);
+        thirdBase.integer('TheBatXSBProjection');
         thirdBase.decimal('SteamerFWARProjection', 8, 1);
     })
 };
