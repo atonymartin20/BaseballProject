@@ -128,8 +128,8 @@ export default class AppProvider extends Component {
                 teamFWAR: 0.0,
                 division: 'NL West',
             },
-            Indians: {
-                teamName: 'Indians',
+            Guardians: {
+                teamName: 'Guardians',
                 players: [],
                 hitters: [],
                 pitchers: [],
@@ -662,8 +662,8 @@ export default class AppProvider extends Component {
                                 teamFWAR: 0.0,
                                 division: 'NL West',
                             },
-                            Indians: {
-                                teamName: 'Indians',
+                            Guardians: {
+                                teamName: 'Guardians',
                                 players: [],
                                 hitters: [],
                                 pitchers: [],
@@ -1013,18 +1013,18 @@ export default class AppProvider extends Component {
                                     teams['Giants']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                     teams['Giants']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
-                            else if(player.currentTeam.includes('Indians')) {
-                                teams['Indians']['players'] = teams['Indians']['players'].concat(player)
+                            else if(player.currentTeam.includes('Guardians')) {
+                                teams['Guardians']['players'] = teams['Guardians']['players'].concat(player)
                                 if(player.otherPositions.includes('C') || player.primaryPosition.includes('C') || player.otherPositions.includes('1B') || player.primaryPosition.includes('1B') || player.otherPositions.includes('2B') || player.primaryPosition.includes('2B') || player.otherPositions.includes('SS') || player.primaryPosition.includes('SS') || player.otherPositions.includes('3B') || player.primaryPosition.includes('3B') || player.otherPositions.includes('OF') || player.primaryPosition.includes('OF') || player.otherPositions.includes('DH') || player.primaryPosition.includes('DH')) {
-                                    teams['Indians']['hitters'] = teams['Indians']['hitters'].concat(player)
-                                    teams['Indians']['hitterFWAR'] += Number(player.SteamerFWARProjection)
-                                    teams['Indians']['teamFWAR'] += Number(player.SteamerFWARProjection)
+                                    teams['Guardians']['hitters'] = teams['Guardians']['hitters'].concat(player)
+                                    teams['Guardians']['hitterFWAR'] += Number(player.SteamerFWARProjection)
+                                    teams['Guardians']['teamFWAR'] += Number(player.SteamerFWARProjection)
                                 }
                                 
                                 if(player.otherPositions.includes('SP') || player.primaryPosition.includes('SP') || player.otherPositions.includes('RP') || player.primaryPosition.includes('RP')) {
-                                    teams['Indians']['pitchers'] = teams['Indians']['pitchers'].concat(player)
-                                    teams['Indians']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
-                                    teams['Indians']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
+                                    teams['Guardians']['pitchers'] = teams['Guardians']['pitchers'].concat(player)
+                                    teams['Guardians']['pitcherFWAR'] += Number(player.PitcherSteamerFWARProjection)
+                                    teams['Guardians']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
                             else if(player.currentTeam.includes('Mariners')) {
                                 teams['Mariners']['players'] = teams['Mariners']['players'].concat(player)
