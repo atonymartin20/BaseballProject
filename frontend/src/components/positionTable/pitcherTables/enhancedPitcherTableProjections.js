@@ -9,31 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PlayerCard from '../../../players/playerCard.js';
+import PlayerCard from '../../players/playerCard.js';
 
-function createData(
-    name,
-    primaryPosition,
-    otherPositions,
-    PAs,
-    AVG,
-    HR,
-    Runs,
-    RBIs,
-    SBs,
-    PAVG,
-    InningsPitched,
-    QualityStarts,
-    RawKs,
-    ERA,
-    WHIP,
-    Saves,
-    PTotal,
-    score,
-    id,
-    index
-) {
-    return { name, primaryPosition, otherPositions, PAs, AVG, HR, Runs, RBIs, SBs, PAVG, InningsPitched, QualityStarts, RawKs, ERA, WHIP, Saves, PTotal, score, id, index };
+function createData(name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -53,7 +32,7 @@ function stableSort(array, cmp) {
         if (order !== 0) return order;
         return a[1] - b[1];
     });
-    return stabilizedThis.map(el => el[0]);
+    return stabilizedThis.map((el) => el[0]);
 }
 
 function getSorting(order, orderBy) {
@@ -64,49 +43,33 @@ const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
     { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
     { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
-    { id: 'score', numeric: true, label: 'Score', info: 'Score' },
-    { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
-    { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
-    { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
-    { id: 'Runs', numeric: true, label: 'Runs', info: 'Runs' },
-    { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
-    { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
+    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
+    { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
     { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
     { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
+    { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
+    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function EnhancedTableHead(props) {
     const { classes, order, orderBy, onRequestSort } = props;
 
-    const createSortHandler = property => event => {
+    const createSortHandler = (property) => (event) => {
         onRequestSort(event, property);
     };
 
     return (
         <TableHead>
             <TableRow>
-                {headCells.map(headCell => (
-                    <TableCell
-                        key={headCell.id}
-                        align={headCell.numeric ? 'right' : 'left'}
-                        sortDirection={orderBy === headCell.id ? order : false}
-                        className={classes.tableCell}
-                    >
-                        <TableSortLabel
-                            active={orderBy === headCell.id}
-                            direction={orderBy === headCell.id ? order : 'asc'}
-                            onClick={createSortHandler(headCell.id)}
-                        >
+                {headCells.map((headCell) => (
+                    <TableCell key={headCell.id} align={headCell.numeric ? 'right' : 'left'} sortDirection={orderBy === headCell.id ? order : false} className={classes.tableCell}>
+                        <TableSortLabel active={orderBy === headCell.id} direction={orderBy === headCell.id ? order : 'asc'} onClick={createSortHandler(headCell.id)}>
                             {headCell.label}
-                            {orderBy === headCell.id ? (
-                                <span className={classes.visuallyHidden}>
-                                    {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
-                                </span>
-                            ) : null}
+                            {orderBy === headCell.id ? <span className={classes.visuallyHidden}>{order === 'desc' ? 'sorted descending' : 'sorted ascending'}</span> : null}
                         </TableSortLabel>
                     </TableCell>
                 ))}
@@ -122,7 +85,7 @@ EnhancedTableHead.propTypes = {
     orderBy: PropTypes.string.isRequired,
 };
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     linkStyling: {
         textDecoration: 'none',
         color: 'black',
@@ -144,7 +107,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1.4rem',
         '&:nth-of-type(even)': {
             backgroundColor: '#e0e3df',
-        }
+        },
     },
     visuallyHidden: {
         border: 0,
@@ -162,52 +125,43 @@ const useStyles = makeStyles(theme => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('score');
+    const [orderBy, setOrderBy] = React.useState('PTotal');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
-
+    
     React.useEffect(() => {
         if (props.players.length !== 0) {
-            setRows(props.players.map((player, index) => (
-                createData(
-                    `${player.firstName} ${player.lastName}`,
-                    player.primaryPosition,
-                    player.otherPositions,
-                    player.PA2021,
-                    Number(player.BA2021),
-                    player.HR2021,
-                    player.Runs2021,
-                    player.RBI2021,
-                    player.StolenBases2021,
-                    (1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.BA2021 - 0.250))) / 6,
-                    Number(player.InningsPitched2021),
-                    Number(player.QS2021),
-                    player.RawKs2021,
-                    Number(player.ERA2021),
-                    Number(player.WHIP2021),
-                    player.Saves2021,
-                    (10 * player.QS2021 +
-                        1.2 * player.RawKs2021 +
-                        9 * player.Saves2021 +
-                        (4 * Number(player.InningsPitched2021) * Number(1.32 - player.WHIP2021)) +
-                        Number(player.InningsPitched2021) * Number(4.47 - player.ERA2021)) / 10,
-                    ((1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.BA2021 - 0.250))) / 6) + ((10 * player.QS2021 +
-                        1.2 * player.RawKs2021 +
-                        9 * player.Saves2021 +
-                        (4 * Number(player.InningsPitched2021) * Number(1.32 - player.WHIP2021)) +
-                        Number(player.InningsPitched2021) * Number(4.47 - player.ERA2021)) / 10),
-                    player.id,
-                    index
-                )            )))
+            setRows(
+                props.players.map((player, index) =>
+                    createData(
+                        `${player.firstName} ${player.lastName}`,
+                        player.primaryPosition,
+                        player.otherPositions,
+                        player.SteamerGamesProjection,
+                        Number(player.SteamerInningsPitchedProjection),
+                        Number(player.SteamerQSProjection),
+                        player.SteamerRawKsProjection,
+                        Number(player.SteamerERAProjection),
+                        Number(player.SteamerFIPProjection),
+                        Number(player.SteamerWHIPProjection),
+                        player.SteamerSavesProjection,
+                        Number(player.PitcherSteamerFWARProjection),
+                        (10 * Number(player.SteamerQSProjection) +
+                        1.2 * player.SteamerRawKsProjection +
+                        9 * player.SteamerSavesProjection +
+                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
+                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
+                        player.id,
+                        index
+                    )
+                )
+            );
+        } else {
+            setRows([createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]);
         }
-        else {
-            setRows([
-                createData('Failed to Load.  Please try again later.', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-            ])
-        }
-    }, [props.players])
+    }, [props.players]);
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'desc';
@@ -226,15 +180,12 @@ export default function EnhancedTable(props) {
         } else if (selectedIndex === selected.length - 1) {
             newSelected = newSelected.concat(selected.slice(0, -1));
         } else if (selectedIndex > 0) {
-            newSelected = newSelected.concat(
-                selected.slice(0, selectedIndex),
-                selected.slice(selectedIndex + 1),
-            );
+            newSelected = newSelected.concat(selected.slice(0, selectedIndex), selected.slice(selectedIndex + 1));
         }
         setSelected(newSelected);
     };
 
-    const isSelected = name => selected.indexOf(name) !== -1;
+    const isSelected = (name) => selected.indexOf(name) !== -1;
 
     return (
         <div className={classes.root}>
@@ -245,7 +196,7 @@ export default function EnhancedTable(props) {
                         <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                if (row.PAs > 0 || row.InningsPitched > 0) {
+                                if (row.InningsPitched >= 40) {
                                     const isItemSelected = isSelected(row.name);
                                     const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -255,7 +206,7 @@ export default function EnhancedTable(props) {
                                             onClick={(event) => handleClick(event, row.name)}
                                             aria-checked={isItemSelected}
                                             tabIndex={-1}
-                                            key={`${row.name} + ${row.primaryPosition}`}
+                                            key={row.name}
                                             selected={isItemSelected}
                                             className={classes.tableRow}
                                         >
@@ -278,25 +229,10 @@ export default function EnhancedTable(props) {
                                                 {row.otherPositions}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.score.toFixed(1)}
+                                                {row.PTotal.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.PAs}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.AVG.toFixed(3)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.HR}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.Runs}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.RBIs}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.SBs}
+                                                {row.Games}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.InningsPitched.toFixed(0)}
@@ -311,10 +247,16 @@ export default function EnhancedTable(props) {
                                                 {row.ERA.toFixed(2)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
+                                                {row.FIP.toFixed(2)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
                                                 {row.WHIP.toFixed(2)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.Saves}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.FWAR.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );

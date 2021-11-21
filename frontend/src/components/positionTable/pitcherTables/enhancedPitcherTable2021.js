@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
-    return { name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
+function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,8 +41,6 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
-    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
-    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
     { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
@@ -130,29 +128,27 @@ export default function EnhancedTable(props) {
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
     const [rows, setRows] = React.useState([]);
-    
+
     React.useEffect(() => {
         if (props.players.length !== 0) {
             setRows(
                 props.players.map((player, index) =>
                     createData(
                         `${player.firstName} ${player.lastName}`,
-                        player.primaryPosition,
-                        player.otherPositions,
-                        player.SteamerGamesProjection,
-                        Number(player.SteamerInningsPitchedProjection),
-                        Number(player.SteamerQSProjection),
-                        player.SteamerRawKsProjection,
-                        Number(player.SteamerERAProjection),
-                        Number(player.SteamerFIPProjection),
-                        Number(player.SteamerWHIPProjection),
-                        player.SteamerSavesProjection,
-                        Number(player.PitcherSteamerFWARProjection),
-                        (10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
+                        player.Games2021,
+                        Number(player.InningsPitched2021),
+                        Number(player.QS2021),
+                        player.RawKs2021,
+                        Number(player.ERA2021),
+                        Number(player.FIP2021),
+                        Number(player.WHIP2021),
+                        player.Saves2021,
+                        Number(player.PitcherFWAR2021),
+                        (10 * player.QS2021 +
+                            1.2 * player.RawKs2021 +
+                            9 * player.Saves2021 +
+                            (4 * Number(player.InningsPitched2021) * Number(1.32 - player.WHIP2021)) +
+                            Number(player.InningsPitched2021) * Number(4.47 - player.ERA2021)) / 10,
                         player.id,
                         index
                     )
@@ -196,7 +192,7 @@ export default function EnhancedTable(props) {
                         <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                if (row.InningsPitched >= 40) {
+                                if (row.InningsPitched > 0) {
                                     const isItemSelected = isSelected(row.name);
                                     const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -222,12 +218,6 @@ export default function EnhancedTable(props) {
                                             >
                                                 {row.name}
                                             </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.primaryPosition}
-                                            </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.otherPositions}
-                                            </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.PTotal.toFixed(1)}
                                             </TableCell>
@@ -235,7 +225,7 @@ export default function EnhancedTable(props) {
                                                 {row.Games}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.InningsPitched.toFixed(0)}
+                                                {row.InningsPitched.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.QualityStarts.toFixed(1)}
