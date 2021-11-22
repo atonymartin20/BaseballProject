@@ -6,8 +6,8 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { AppContext } from '../context/appContext.js';
-import EnhancedPitcherTable2021 from './enhancedPitcherTable2021.js';
-import EnhancedTable2021 from './enhancedTable2021.js';
+import EnhancedPitcherTableProjections from './enhancedPitcherTableProjections.js';
+import EnhancedTableProjections from './enhancedTableProjections.js';
 
 const styles = (theme) => ({
     flipDataList: {
@@ -112,7 +112,7 @@ class TeamsPage extends React.Component {
                         <h1 className={classes.positionText}>
                             {this.state.teamName} Hitters - {this.state.hitterFWAR} FWAR
                         </h1>
-                        <EnhancedTable2021 players={this.state.hitters} />
+                        <EnhancedTableProjections players={this.state.hitters} />
                     </div>
                 ) : null}
 
@@ -121,7 +121,7 @@ class TeamsPage extends React.Component {
                         <h1 className={classes.positionText}>
                             {this.state.teamName} Pitchers - {this.state.pitcherFWAR} FWAR
                         </h1>
-                        <EnhancedPitcherTable2021 players={this.state.pitchers} />
+                        <EnhancedPitcherTableProjections players={this.state.pitchers} />
                     </div>
                 ) : null}
             </div>

@@ -9,10 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PlayerCard from '../players/playerCard.js';
+import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, primaryPosition, otherPositions, Games, Starts, InningsPitched, QualityStarts, ERA, FIP, WHIP, RawKs, KPer9, Saves, FWAR, id, index) {
-    return { name, primaryPosition, otherPositions, Games, Starts, InningsPitched, QualityStarts, ERA, FIP, WHIP, RawKs, KPer9,Saves, FWAR, id, index };
+function createData(name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -43,17 +43,16 @@ const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
     { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
     { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
-    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
+    { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
-    { id: 'Starts', numeric: true, label: 'Starts', info: 'Starts' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
     { id: 'QualityStarts', numeric: true, label: 'QS', info: 'Quality Starts' },
+    { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
     { id: 'FIP', numeric: true, label: 'FIP', info: 'Fielding Independent Pitching' },
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
-    { id: 'RawKs', numeric: true, label: 'Ks', info: 'Raw K Totals' },
-    { id: 'K/9', numeric: true, label: 'K/9', info: 'Ks per 9' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
+    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function EnhancedTableHead(props) {
@@ -126,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('FWAR');
+    const [orderBy, setOrderBy] = React.useState('PTotal');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
@@ -140,17 +139,20 @@ export default function EnhancedTable(props) {
                         `${player.firstName} ${player.lastName}`,
                         player.primaryPosition,
                         player.otherPositions,
-                        player.SteamerGamesProjection,
-                        player.SteamerGamesStartedProjection,
-                        Number(player.SteamerInningsPitchedProjection),
-                        Number(player.SteamerQSProjection),
-                        Number(player.SteamerERAProjection),
-                        Number(player.SteamerFIPProjection),
-                        Number(player.SteamerWHIPProjection),
-                        player.SteamerRawKsProjection,
-                        player.SteamerKPer9Projection,
-                        player.SteamerSavesProjection,
+                        player.TheBatGamesProjection,
+                        Number(player.TheBatInningsPitchedProjection),
+                        Number(player.TheBatQSProjection),
+                        player.TheBatRawKsProjection,
+                        Number(player.TheBatERAProjection),
+                        Number(player.TheBatFIPProjection),
+                        Number(player.TheBatWHIPProjection),
+                        player.TheBatSavesProjection,
                         Number(player.PitcherSteamerFWARProjection),
+                        (10 * Number(player.TheBatQSProjection) +
+                        1.2 * player.TheBatRawKsProjection +
+                        9 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8,
                         player.id,
                         index
                     )
@@ -194,7 +196,7 @@ export default function EnhancedTable(props) {
                         <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                if (row.InningsPitched > 1.0) {
+                                if (row.InningsPitched >= 40) {
                                     const isItemSelected = isSelected(row.name);
                                     const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -227,19 +229,19 @@ export default function EnhancedTable(props) {
                                                 {row.otherPositions}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.FWAR.toFixed(1)}
+                                                {row.PTotal.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.Games}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.Starts}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.InningsPitched.toFixed(0)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.QualityStarts.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.RawKs}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.ERA.toFixed(2)}
@@ -251,13 +253,10 @@ export default function EnhancedTable(props) {
                                                 {row.WHIP.toFixed(2)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.RawKs}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.KPer9}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
                                                 {row.Saves}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.FWAR.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );

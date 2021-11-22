@@ -61,7 +61,7 @@ class Homepage extends React.Component {
             setInterval(function () {
                 seconds++;
             }, 1000);
-            while(seconds < 6) {
+            while(seconds < 5) {
                 return (
                     <div className={classes.loadingContainer}>
                         <div className={'spinner'} />
@@ -69,7 +69,7 @@ class Homepage extends React.Component {
                     </div>
                 )
             }
-            if (seconds >= 6) {
+            if (seconds >= 5) {
                 return (
                     <div className={classes.homepageDiv}>
                         <Navbar />
@@ -97,18 +97,31 @@ class Homepage extends React.Component {
                                 >
                                     Baseball Reference
                                 </a>
-                                . Then, all the data can be found in one location. All 2021 projected stats are from{' '}
+                                . Then, all the data can be found in one location. All 2022 projected stats are from{' '}
                                 <a
-                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebat&team=0&lg=all&players=0'
                                     className={classes.websiteLinks}
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
-                                    Steamer
-                                </a>
-                                .<br />
+                                    The Bat
+                                </a>, <a
+                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
+                                    className={classes.websiteLinks}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    The Bat X
+                                </a>, and <a
+                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
+                                    className={classes.websiteLinks}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    Steamer</a>.
                                 <br />
-                                    2020 stats have been updated and 2021 Projections are up to date as of December 10th 2020.
+                                <br />
+                                    2021 stats are currently being updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
                                 <br />
                                 <br />
                                 <Link to='/glossary' className={classes.websiteLinks}>
@@ -147,19 +160,31 @@ class Homepage extends React.Component {
                         >
                             Baseball Reference
                         </a>
-                        . Then, all the data can be found in one location. All 2021 projected stats are from{' '}
+                        . Then, all the data can be found in one location. All 2022 projected stats are from{' '}
                         <a
-                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebat&team=0&lg=all&players=0'
                             className={classes.websiteLinks}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
-                            Steamer
-                        </a>
-                        .<br />
+                            The Bat
+                        </a>, <a
+                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
+                            className={classes.websiteLinks}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            The Bat X
+                        </a>, and <a
+                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
+                            className={classes.websiteLinks}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Steamer</a>.
                         <br />
-                            2020 stats will begin to be updated after the end of the 2020 regular season.  2021 Projections will begin to be updated
-                            as Steamer releases them.
+                        <br />
+                            2021 stats are currently being updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
                         <br />
                         <br />
                         <Link to='/glossary' className={classes.websiteLinks}>

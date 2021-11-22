@@ -346,16 +346,16 @@ exports.up = function (knex, Promise) {
         startingPitchers.string('SplitterXWOBA2022', 50);
         startingPitchers.string('KnuckleCurveXWOBA2022', 50);
         startingPitchers.decimal('PitcherFWAR2022', 8, 1);
-        startingPitchers.integer('SteamerGamesProjection');
-        startingPitchers.integer('SteamerGamesStartedProjection');
-        startingPitchers.decimal('SteamerInningsPitchedProjection', 8, 1);
-        startingPitchers.decimal('SteamerQSProjection', 8, 1);
-        startingPitchers.decimal('SteamerERAProjection', 8, 2);
-        startingPitchers.decimal('SteamerFIPProjection', 8, 2);
-         startingPitchers.decimal('SteamerWHIPProjection', 8, 2);
-        startingPitchers.integer('SteamerRawKsProjection');
-        startingPitchers.decimal('SteamerKPer9Projection', 8, 2);
-        startingPitchers.integer('SteamerSavesProjection');
+        startingPitchers.integer('TheBatGamesProjection');
+        startingPitchers.integer('TheBatGamesStartedProjection');
+        startingPitchers.decimal('TheBatInningsPitchedProjection', 8, 1);
+        startingPitchers.decimal('TheBatQSProjection', 8, 1);
+        startingPitchers.decimal('TheBatERAProjection', 8, 2);
+        startingPitchers.decimal('TheBatFIPProjection', 8, 2);
+        startingPitchers.decimal('TheBatWHIPProjection', 8, 2);
+        startingPitchers.integer('TheBatRawKsProjection');
+        startingPitchers.decimal('TheBatKPer9Projection', 8, 2);
+        startingPitchers.integer('TheBatSavesProjection');
         startingPitchers.decimal('PitcherSteamerFWARProjection', 8, 1);
     })
 };

@@ -6,11 +6,13 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { AppContext } from '../context/appContext.js';
+import OBPTableProjections from '../positionTable/overallTables/OBP/enhancedTableProjections.js';
 import OBPTable2021 from '../positionTable/overallTables/OBP/enhancedTable2021.js';
 import OBPTable2020 from '../positionTable/overallTables/OBP/enhancedTable2020.js';
 import OBPTable2019 from '../positionTable/overallTables/OBP/enhancedTable2019.js';
 import OBPTable2018 from '../positionTable/overallTables/OBP/enhancedTable2018.js';
 import OBPTable2017 from '../positionTable/overallTables/OBP/enhancedTable2017.js';
+import AVGTableProjections from '../positionTable/overallTables/AVG/enhancedTableProjections.js';
 import AVGTable2021 from '../positionTable/overallTables/AVG/enhancedTable2021.js';
 import AVGTable2020 from '../positionTable/overallTables/AVG/enhancedTable2020.js';
 import AVGTable2019 from '../positionTable/overallTables/AVG/enhancedTable2019.js';
@@ -79,6 +81,7 @@ class Overall extends React.Component {
         display2019: false,
         display2020: false,
         display2021: true,
+        displayProjections: false,
         overall: [],
         useAVG: true,
         useOBP: false,
@@ -92,6 +95,7 @@ class Overall extends React.Component {
             display2019: false,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -103,6 +107,7 @@ class Overall extends React.Component {
             display2019: false,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -114,6 +119,7 @@ class Overall extends React.Component {
             display2019: true,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -125,6 +131,7 @@ class Overall extends React.Component {
             display2019: false,
             display2020: true,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -136,8 +143,22 @@ class Overall extends React.Component {
             display2019: false,
             display2020: false,
             display2021: true,
+            displayProjections: false,
         });
     };
+
+    changeToProjections = (event) => {
+        event.preventDefault();
+        this.setState({
+            display2017: false,
+            display2018: false,
+            display2019: false,
+            display2020: false,
+            display2021: false,
+            displayProjections: true,
+        });
+    }
+
     useAVGTable = (event) => {
         event.preventDefault();
         this.setState({
@@ -169,7 +190,7 @@ class Overall extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { display2017, display2018, display2019, display2020, display2021, useAVG, useOBP } = this.state;
+        const { display2017, display2018, display2019, display2020, display2021, displayProjections, useAVG, useOBP } = this.state;
 
         const flipDataButton = {
             fontSize: '1.6rem',
@@ -245,37 +266,75 @@ class Overall extends React.Component {
 
                 {display2021 === true && useAVG === true ? (
                     <div>
-                        <h1 className={classes.positionText}>
-                            2021 Projected Stats from{' '}
-                            <a
-                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
-                                className={classes.websiteLinks}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                                Steamer
-                            </a>
-                            . Updated as of 3/11/2021.
-                        </h1>
                         <AVGTable2021 players={this.state.overall} />
                     </div>
                 ) : null}
 
                 {display2021 === true && useOBP === true ? (
                     <div>
+                        <OBPTable2021 players={this.state.overall} />
+                    </div>
+                ) : null}
+
+                {displayProjections === true && useAVG === true? (
+                    <div>
                         <h1 className={classes.positionText}>
-                            2021 Projected Stats from{' '}
+                            2022 Projected Stats from{' '}
                             <a
-                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebat&team=0&lg=all&players=0'
                                 className={classes.websiteLinks}
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >
-                                Steamer
-                            </a>
-                            . Updated as of 3/11/2021.
+                                The Bat
+                            </a>, <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                The Bat X
+                            </a>, and <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                Steamer</a>
+                            . These will be updated after they are released.
                         </h1>
-                        <OBPTable2021 players={this.state.overall} />
+                        <AVGTableProjections players={this.state.overall} />
+                    </div>
+                ) : null}
+
+                {displayProjections === true && useOBP === true ? (
+                    <div>
+                        <h1 className={classes.positionText}>
+                            2022 Projected Stats from{' '}
+                            <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebat&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                The Bat
+                            </a>, <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                The Bat X
+                            </a>, and <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                Steamer</a>
+                            . These will be updated after they are released.
+                        </h1>
+                        <OBPTableProjections players={this.state.overall} />
                     </div>
                 ) : null}
             </div>
@@ -298,6 +357,9 @@ class Overall extends React.Component {
                     </ListItem>
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2021}>
                         <Button style={display2021 ? flipDataButtonSelected : flipDataButton}>2021 Stats</Button>
+                    </ListItem>
+                    <ListItem className={classes.flipDataListItem} onClick={this.changeToProjections}>
+                        <Button style={displayProjections ? flipDataButtonSelected : flipDataButton}>2022 Projections</Button>
                     </ListItem>
                 </List>
             </div>

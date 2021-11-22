@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import { AppContext } from '../context/appContext.js';
+import EnhancedTableProjections from '../positionTable/hitterTables/enhancedTableProjections.js';
 import EnhancedTable2021 from '../positionTable/hitterTables/enhancedTable2021.js';
 import EnhancedTable2020 from '../positionTable/hitterTables/enhancedTable2020.js';
 import EnhancedTable2019 from '../positionTable/hitterTables/enhancedTable2019.js';
@@ -63,6 +64,7 @@ class Hitters extends React.Component {
         display2019: false,
         display2020: false,
         display2021: true,
+        displayProjections: false,
         hitters: [],
     };
 
@@ -74,6 +76,7 @@ class Hitters extends React.Component {
             display2019: false,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -85,6 +88,7 @@ class Hitters extends React.Component {
             display2019: false,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -96,6 +100,7 @@ class Hitters extends React.Component {
             display2019: true,
             display2020: false,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -107,6 +112,7 @@ class Hitters extends React.Component {
             display2019: false,
             display2020: true,
             display2021: false,
+            displayProjections: false,
         });
     };
 
@@ -118,8 +124,21 @@ class Hitters extends React.Component {
             display2019: false,
             display2020: false,
             display2021: true,
+            displayProjections: false,
         });
     };
+
+    changeToProjections = (event) => {
+        event.preventDefault();
+        this.setState({
+            display2017: false,
+            display2018: false,
+            display2019: false,
+            display2020: false,
+            display2021: false,
+            displayProjections: true,
+        });
+    }
 
     componentDidMount() {
         if (this.context.state.hitters === []) {
@@ -136,7 +155,7 @@ class Hitters extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { display2017, display2018, display2019, display2020, display2021 } = this.state;
+        const { display2017, display2018, display2019, display2020, display2021, displayProjections } = this.state;
 
         const flipDataButton = {
             fontSize: '1.6rem',
@@ -177,19 +196,38 @@ class Hitters extends React.Component {
 
                 {display2021 ? (
                     <div>
+                        <EnhancedTable2021 players={this.state.hitters} />
+                    </div>
+                ) : null}
+
+                {displayProjections ? (
+                    <div>
                         <h1 className={classes.positionText}>
-                            2021 Projected Stats from{' '}
+                            2022 Projected Stats from{' '}
                             <a
-                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=bat&type=steamer&team=0&lg=all&players=0'
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebat&team=0&lg=all&players=0'
                                 className={classes.websiteLinks}
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >
-                                Steamer
-                            </a>
-                            . Updated as of 3/11/2021.
+                                The Bat
+                            </a>, <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                The Bat X
+                            </a>, and <a
+                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
+                                className={classes.websiteLinks}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                            >
+                                Steamer</a>
+                            . These will be updated after they are released.
                         </h1>
-                        <EnhancedTable2021 players={this.state.hitters} />
+                        <EnhancedTableProjections players={this.state.hitters} />
                     </div>
                 ) : null}
             </div>
@@ -212,6 +250,9 @@ class Hitters extends React.Component {
                     </ListItem>
                     <ListItem className={classes.flipDataListItem} onClick={this.changeYear2021}>
                         <Button style={display2021 ? flipDataButtonSelected : flipDataButton}>2021 Stats</Button>
+                    </ListItem>
+                    <ListItem className={classes.flipDataListItem} onClick={this.changeToProjections}>
+                        <Button style={displayProjections ? flipDataButtonSelected : flipDataButton}>2022 Projections</Button>
                     </ListItem>
                 </List>
             </div>

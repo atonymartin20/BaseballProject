@@ -9,10 +9,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
-import PlayerCard from '../players/playerCard.js';
+import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, primaryPosition, otherPositions, PAs, AVG, OBP, SLG, Doubles, HR, Runs, RBIs, SBs, FWAR, id, index) {
-    return { name, primaryPosition, otherPositions, PAs, AVG, OBP, SLG, Doubles, HR, Runs, RBIs, SBs, FWAR, id, index };
+function createData(name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index) {
+    return { name, primaryPosition, otherPositions, PAs, AVG, OBP, HR, Runs, RBIs, SBs, FWAR, PAVG, POBP, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -43,16 +43,16 @@ const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
     { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
     { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
-    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
+    { id: 'PAVG', numeric: true, label: 'PAVG', info: 'PROF Fantasy Based Statistic Using Average' },
+    { id: 'POBP', numeric: true, label: 'POBP', info: 'PROF Fantasy Based Statistic Using On Base Percentage' },
     { id: 'PAs', numeric: true, label: 'PAs', info: 'Plate Appearances' },
     { id: 'AVG', numeric: true, label: 'AVG', info: 'Batting Average' },
     { id: 'OBP', numeric: true, label: 'OBP', info: 'On Base Percentage' },
-    { id: 'SLG', numeric: true, label: 'SLG', info: 'Slugging Percentage' },
-    { id: '2Bs', numeric: true, label: '2Bs', info: 'Doubles' },
     { id: 'HR', numeric: true, label: 'HR', info: 'Home Runs' },
     { id: 'Runs', numeric: true, label: 'Runs', info: 'Runs' },
     { id: 'RBIs', numeric: true, label: 'RBIs', info: 'Runs Batted In' },
     { id: 'SBs', numeric: true, label: 'SBs', info: 'Stolen Bases' },
+    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function EnhancedTableHead(props) {
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
 export default function EnhancedTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('desc');
-    const [orderBy, setOrderBy] = React.useState('FWAR');
+    const [orderBy, setOrderBy] = React.useState('POBP');
     const [selected, setSelected] = React.useState([]);
     const [grabId, setGrabId] = React.useState();
     const [playerCard, setPlayerCard] = React.useState(false);
@@ -139,16 +139,24 @@ export default function EnhancedTable(props) {
                         `${player.firstName} ${player.lastName}`,
                         player.primaryPosition,
                         player.otherPositions,
-                        player.SteamerPAProjection,
-                        Number(player.SteamerAVGProjection),
-                        Number(player.SteamerOBPProjection),
-                        Number(player.SteamerSLGProjection),
-                        player.SteamerDoublesProjection,
-                        player.SteamerHRProjection,
-                        player.SteamerRunsProjection,
-                        player.SteamerRBIProjection,
-                        player.SteamerSBProjection,
+                        player.TheBatXPAProjection,
+                        Number(player.TheBatXAVGProjection),
+                        Number(player.TheBatXOBPProjection),
+                        player.TheBatXHRProjection,
+                        player.TheBatXRunsProjection,
+                        player.TheBatXRBIProjection,
+                        player.TheBatXSBProjection,
                         Number(player.SteamerFWARProjection),
+                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.65 * player.TheBatXHRProjection +
+                            6 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.250)) /
+                            6,
+                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.65 * player.TheBatXHRProjection +
+                            6 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.320)) /
+                            6,
                         player.id,
                         index
                     )
@@ -192,7 +200,7 @@ export default function EnhancedTable(props) {
                         <EnhancedTableHead classes={classes} order={order} orderBy={orderBy} onRequestSort={handleRequestSort} rowCount={rows.length} />
                         <TableBody>
                             {stableSort(rows, getSorting(order, orderBy)).map((row, index) => {
-                                if (row.PAs > 1) {
+                                if (row.PAs >= 100) {
                                     const isItemSelected = isSelected(row.name);
                                     const labelId = `enhanced-table-checkbox-${index}`;
 
@@ -225,7 +233,10 @@ export default function EnhancedTable(props) {
                                                 {row.otherPositions}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
-                                                {row.FWAR.toFixed(1)}
+                                                {row.PAVG.toFixed(1)}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.POBP.toFixed(1)}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.PAs}
@@ -235,12 +246,6 @@ export default function EnhancedTable(props) {
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.OBP.toFixed(3)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.SLG.toFixed(3)}
-                                            </TableCell>
-                                            <TableCell align='right' className={classes.tableCell}>
-                                                {row.Doubles}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.HR}
@@ -253,6 +258,9 @@ export default function EnhancedTable(props) {
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.SBs}
+                                            </TableCell>
+                                            <TableCell align='right' className={classes.tableCell}>
+                                                {row.FWAR.toFixed(1)}
                                             </TableCell>
                                         </TableRow>
                                     );

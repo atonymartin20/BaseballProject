@@ -232,15 +232,15 @@ exports.up = function (knex, Promise) {
         catchers.integer('StolenBases2022');
         catchers.string('StolenBasePercent2022', 50);
         catchers.decimal('FWAR2022', 8, 1);
-        catchers.integer('SteamerPAProjection');
-        catchers.decimal('SteamerAVGProjection', 8, 3);
-        catchers.decimal('SteamerOBPProjection', 8, 3);
-        catchers.decimal('SteamerSLGProjection', 8, 3);
-        catchers.integer('SteamerDoublesProjection', 50);
-        catchers.integer('SteamerHRProjection', 50);
-        catchers.integer('SteamerRunsProjection', 50);
-        catchers.integer('SteamerRBIProjection', 50);
-        catchers.integer('SteamerSBProjection');
+        catchers.integer('TheBatXPAProjection');
+        catchers.decimal('TheBatXAVGProjection', 8, 3);
+        catchers.decimal('TheBatXOBPProjection', 8, 3);
+        catchers.decimal('TheBatXSLGProjection', 8, 3);
+        catchers.integer('TheBatXDoublesProjection', 50);
+        catchers.integer('TheBatXHRProjection', 50);
+        catchers.integer('TheBatXRunsProjection', 50);
+        catchers.integer('TheBatXRBIProjection', 50);
+        catchers.integer('TheBatXSBProjection');
         catchers.decimal('SteamerFWARProjection', 8, 1);
     })
 };
