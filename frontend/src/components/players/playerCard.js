@@ -299,15 +299,52 @@ class PlayerCard extends React.Component {
         StolenBases2020: '',
         StolenBasePercent2020: '',
         FWAR2020: '',
-        SteamerPAProjection: '',
-        SteamerAVGProjection: '',
-        SteamerOBPProjection: '',
-        SteamerSLGProjection: '',
-        SteamerDoublesProjection: '',
-        SteamerHRProjection: '',
-        SteamerRunsProjection: '',
-        SteamerRBIProjection: '',
-        SteamerSBProjection: '',
+        GamesPlayed2021: '',
+        BA2021: '',
+        OBP2021: '',
+        SLG2021: '',
+        PA2021: '',
+        Doubles2021: '',
+        HR2021: '',
+        Runs2021: '',
+        RBI2021: '',
+        LineupSlot2021: '',
+        GBPercent2021: '',
+        LDPercent2021: '',
+        FBPercent2021: '',
+        PullPercent2021: '',
+        CenterPercent2021: '',
+        OppoPercent2021: '',
+        HRPERFB2021: '',
+        HardHitPercent2021: '',
+        ExitVelo2021: '',
+        FlyBallLineDriveExitVelo2021: '',
+        LaunchAngle2021: '',
+        BarrelPercent2021: '',
+        BABIP2021: '',
+        WOBA2021: '',
+        xWOBA2021: '',
+        xBA2021: '',
+        AvgHRDistance2021: '',
+        WRCPlus2021: '',
+        OPSPlus2021: '',
+        BBPercent2021: '',
+        KPercent2021: '',
+        ChaseRate2021: '',
+        ContactPercent2021: '',
+        SprintSpeed2021: '',
+        StolenBases2021: '',
+        StolenBasePercent2021: '',
+        FWAR2021: '',
+        TheBatXPAProjection: '',
+        TheBatXAVGProjection: '',
+        TheBatXOBPProjection: '',
+        TheBatXSLGProjection: '',
+        TheBatXDoublesProjection: '',
+        TheBatXHRProjection: '',
+        TheBatXRunsProjection: '',
+        TheBatXRBIProjection: '',
+        TheBatXSBProjection: '',
         SteamerFWARProjection: '',
         Games2017: 0,
         GamesStarted2017: 0,
@@ -497,16 +534,63 @@ class PlayerCard extends React.Component {
         SplitterUsagePercent2020: '',
         KnuckleCurveUsagePercent2020: '',
         PitcherFWAR2020: 0.0,
-        SteamerGamesProjection: 0,
-        SteamerGamesStartedProjection: 0,
-        SteamerInningsPitchedProjection: 0.0,
-        SteamerQSProjection: 0.0,
-        SteamerERAProjection: 0.0,
-        SteamerFIPProjection: 0.0,
-        SteamerWHIPProjection: 0.0,
-        SteamerRawKsProjection: 0,
-        SteamerKPer9Projection: 0.0,
-        SteamerSavesProjection: 0,
+        Games2021: 0,
+        GamesStarted2021: 0,
+        InningsPitched2021: 0.0,
+        InningsPitchedPerGameStarted2021: 0.0,
+        QS2021: 0,
+        ERA2021: 0.0,
+        ERAPlus2021: 0,
+        FIP2021: 0.0,
+        xFIP2021: 0.0,
+        SIERA2021: 0.0,
+        WHIP2021: 0.0,
+        RawKs2021: 0,
+        HitsPer92021: 0.0,
+        HRsPer92021: 0.0,
+        BBPer92021: 0.0,
+        KPer92021: 0.0,
+        KDividedByBB2021: 0.0,
+        Saves2021: 0,
+        PitcherKPercent2021: '',
+        PitcherBBPercent2021: '',
+        KMinusBBPercent2021: '',
+        PitcherBABIP2021: .0,
+        LOBPercent2021: '',
+        HRPerFBPercent2021: '',
+        PitcherGBPercent2021: '',
+        PitcherLDPercent2021: '',
+        PitcherFBPercent2021: '',
+        IFFBPercent2021: '',
+        SoftContactPercent2021: '',
+        MediumContactPercent2021: '',
+        HardContactPercent2021: '',
+        FirstStrikePercent2021: '',
+        PitcherExitVelo2021: 0.0,
+        PitcherFlyBallLineDriveExitVelo2021: 0.0,
+        PitcherBarrelPercent2021: '',
+        PitcherLaunchAngle2021: 0.0,
+        AVGFastballVelo2021: 0.0,
+        MaxFastballVelo2021: 0.0,
+        FourSeamFastballUsagePercent2021: '',
+        SinkerUsagePercent2021: '',
+        CutterUsagePercent2021: '',
+        SliderUsagePercent2021: '',
+        ChangeupUsagePercent2021: '',
+        CurveUsagePercent2021: '',
+        SplitterUsagePercent2021: '',
+        KnuckleCurveUsagePercent2021: '',
+        PitcherFWAR2021: 0.0,
+        TheBatGamesProjection: 0,
+        TheBatGamesStartedProjection: 0,
+        TheBatInningsPitchedProjection: 0.0,
+        TheBatQSProjection: 0.0,
+        TheBatERAProjection: 0.0,
+        TheBatFIPProjection: 0.0,
+        TheBatWHIPProjection: 0.0,
+        TheBatRawKsProjection: 0,
+        TheBatKPer9Projection: 0.0,
+        TheBatSavesProjection: 0,
         PitcherSteamerFWARProjection: 0.0,
         traditionalStats: true,
         battedBallStats: false,
@@ -680,15 +764,52 @@ class PlayerCard extends React.Component {
             StolenBases2020: this.context.state.overall[foundIndex].StolenBases2020,
             StolenBasePercent2020: this.context.state.overall[foundIndex].StolenBasePercent2020,
             FWAR2020: this.context.state.overall[foundIndex].FWAR2020,
-            SteamerPAProjection: this.context.state.overall[foundIndex].SteamerPAProjection,
-            SteamerAVGProjection: this.context.state.overall[foundIndex].SteamerAVGProjection,
-            SteamerOBPProjection: this.context.state.overall[foundIndex].SteamerOBPProjection,
-            SteamerSLGProjection: this.context.state.overall[foundIndex].SteamerSLGProjection,
-            SteamerDoublesProjection: this.context.state.overall[foundIndex].SteamerDoublesProjection,
-            SteamerHRProjection: this.context.state.overall[foundIndex].SteamerHRProjection,
-            SteamerRunsProjection: this.context.state.overall[foundIndex].SteamerRunsProjection,
-            SteamerRBIProjection: this.context.state.overall[foundIndex].SteamerRBIProjection,
-            SteamerSBProjection: this.context.state.overall[foundIndex].SteamerSBProjection,
+            GamesPlayed2021: this.context.state.overall[foundIndex].GamesPlayed2021,
+            BA2021: this.context.state.overall[foundIndex].BA2021,
+            OBP2021: this.context.state.overall[foundIndex].OBP2021,
+            SLG2021: this.context.state.overall[foundIndex].SLG2021,
+            PA2021: this.context.state.overall[foundIndex].PA2021,
+            Doubles2021: this.context.state.overall[foundIndex].Doubles2021,
+            HR2021: this.context.state.overall[foundIndex].HR2021,
+            Runs2021: this.context.state.overall[foundIndex].Runs2021,
+            RBI2021: this.context.state.overall[foundIndex].RBI2021,
+            LineupSlot2021: this.context.state.overall[foundIndex].LineupSlot2021,
+            GBPercent2021: this.context.state.overall[foundIndex].GBPercent2021,
+            LDPercent2021: this.context.state.overall[foundIndex].LDPercent2021,
+            FBPercent2021: this.context.state.overall[foundIndex].FBPercent2021,
+            PullPercent2021: this.context.state.overall[foundIndex].PullPercent2021,
+            CenterPercent2021: this.context.state.overall[foundIndex].CenterPercent2021,
+            OppoPercent2021: this.context.state.overall[foundIndex].OppoPercent2021,
+            HRPerFB2021: this.context.state.overall[foundIndex].HRPerFB2021,
+            HardHitPercent2021: this.context.state.overall[foundIndex].HardHitPercent2021,
+            ExitVelo2021: this.context.state.overall[foundIndex].ExitVelo2021,
+            FlyBallLineDriveExitVelo2021: this.context.state.overall[foundIndex].FlyBallLineDriveExitVelo2021,
+            LaunchAngle2021: this.context.state.overall[foundIndex].LaunchAngle2021,
+            BarrelPercent2021: this.context.state.overall[foundIndex].BarrelPercent2021,
+            BABIP2021: this.context.state.overall[foundIndex].BABIP2021,
+            WOBA2021: this.context.state.overall[foundIndex].WOBA2021,
+            xWOBA2021: this.context.state.overall[foundIndex].xWOBA2021,
+            xBA2021: this.context.state.overall[foundIndex].xBA2021,
+            AvgHRDistance2021: this.context.state.overall[foundIndex].AvgHRDistance2021,
+            WRCPlus2021: this.context.state.overall[foundIndex].WRCPlus2021,
+            OPSPlus2021: this.context.state.overall[foundIndex].OPSPlus2021,
+            BBPercent2021: this.context.state.overall[foundIndex].BBPercent2021,
+            KPercent2021: this.context.state.overall[foundIndex].KPercent2021,
+            ChaseRate2021: this.context.state.overall[foundIndex].ChaseRate2021,
+            ContactPercent2021: this.context.state.overall[foundIndex].ContactPercent2021,
+            SprintSpeed2021: this.context.state.overall[foundIndex].SprintSpeed2021,
+            StolenBases2021: this.context.state.overall[foundIndex].StolenBases2021,
+            StolenBasePercent2021: this.context.state.overall[foundIndex].StolenBasePercent2021,
+            FWAR2021: this.context.state.overall[foundIndex].FWAR2021,
+            TheBatXPAProjection: this.context.state.overall[foundIndex].TheBatXPAProjection,
+            TheBatXAVGProjection: this.context.state.overall[foundIndex].TheBatXAVGProjection,
+            TheBatXOBPProjection: this.context.state.overall[foundIndex].TheBatXOBPProjection,
+            TheBatXSLGProjection: this.context.state.overall[foundIndex].TheBatXSLGProjection,
+            TheBatXDoublesProjection: this.context.state.overall[foundIndex].TheBatXDoublesProjection,
+            TheBatXHRProjection: this.context.state.overall[foundIndex].TheBatXHRProjection,
+            TheBatXRunsProjection: this.context.state.overall[foundIndex].TheBatXRunsProjection,
+            TheBatXRBIProjection: this.context.state.overall[foundIndex].TheBatXRBIProjection,
+            TheBatXSBProjection: this.context.state.overall[foundIndex].TheBatXSBProjection,
             SteamerFWARProjection: this.context.state.overall[foundIndex].SteamerFWARProjection,
             Games2017: this.context.state.overall[foundIndex].Games2017,
             GamesStarted2017: this.context.state.overall[foundIndex].GamesStarted2017,
@@ -878,16 +999,63 @@ class PlayerCard extends React.Component {
             SplitterUsagePercent2020: this.context.state.overall[foundIndex].SplitterUsagePercent2020,
             KnuckleCurveUsagePercent2020: this.context.state.overall[foundIndex].KnuckleCurveUsagePercent2020,
             PitcherFWAR2020: this.context.state.overall[foundIndex].PitcherFWAR2020,
-            SteamerGamesProjection: this.context.state.overall[foundIndex].SteamerGamesProjection,
-            SteamerGamesStartedProjection: this.context.state.overall[foundIndex].SteamerGamesStartedProjection,
-            SteamerInningsPitchedProjection: this.context.state.overall[foundIndex].SteamerInningsPitchedProjection,
-            SteamerQSProjection: this.context.state.overall[foundIndex].SteamerQSProjection,
-            SteamerERAProjection: this.context.state.overall[foundIndex].SteamerERAProjection,
-            SteamerFIPProjection: this.context.state.overall[foundIndex].SteamerFIPProjection,
-            SteamerWHIPProjection: this.context.state.overall[foundIndex].SteamerWHIPProjection,
-            SteamerRawKsProjection: this.context.state.overall[foundIndex].SteamerRawKsProjection,
-            SteamerKPer9Projection: this.context.state.overall[foundIndex].SteamerKPer9Projection,
-            SteamerSavesProjection: this.context.state.overall[foundIndex].SteamerSavesProjection,
+            Games2021: this.context.state.overall[foundIndex].Games2021,
+            GamesStarted2021: this.context.state.overall[foundIndex].GamesStarted2021,
+            InningsPitched2021: this.context.state.overall[foundIndex].InningsPitched2021,
+            InningsPitchedPerGameStarted2021: this.context.state.overall[foundIndex].InningsPitchedPerGameStarted2021,
+            QS2021: this.context.state.overall[foundIndex].QS2021,
+            ERA2021: this.context.state.overall[foundIndex].ERA2021,
+            ERAPlus2021: this.context.state.overall[foundIndex].ERAPlus2021,
+            FIP2021: this.context.state.overall[foundIndex].FIP2021,
+            xFIP2021: this.context.state.overall[foundIndex].xFIP2021,
+            SIERA2021: this.context.state.overall[foundIndex].SIERA2021,
+            WHIP2021: this.context.state.overall[foundIndex].WHIP2021,
+            RawKs2021: this.context.state.overall[foundIndex].RawKs2021,
+            HitsPer92021: this.context.state.overall[foundIndex].HitsPer92021,
+            HRsPer92021: this.context.state.overall[foundIndex].HRsPer92021,
+            BBPer92021: this.context.state.overall[foundIndex].BBPer92021,
+            KPer92021: this.context.state.overall[foundIndex].KPer92021,
+            KDividedByBB2021: this.context.state.overall[foundIndex].KDividedByBB2021,
+            Saves2021: this.context.state.overall[foundIndex].Saves2021,
+            PitcherKPercent2021: this.context.state.overall[foundIndex].PitcherKPercent2021,
+            PitcherBBPercent2021: this.context.state.overall[foundIndex].PitcherBBPercent2021,
+            KMinusBBPercent2021: this.context.state.overall[foundIndex].KMinusBBPercent2021,
+            PitcherBABIP2021: this.context.state.overall[foundIndex].PitcherBABIP2021,
+            LOBPercent2021: this.context.state.overall[foundIndex].LOBPercent2021,
+            HRPerFBPercent2021: this.context.state.overall[foundIndex].HRPerFBPercent2021,
+            PitcherGBPercent2021: this.context.state.overall[foundIndex].PitcherGBPercent2021,
+            PitcherLDPercent2021: this.context.state.overall[foundIndex].PitcherLDPercent2021,
+            PitcherFBPercent2021: this.context.state.overall[foundIndex].PitcherFBPercent2021,
+            IFFBPercent2021: this.context.state.overall[foundIndex].IFFBPercent2021,
+            SoftContactPercent2021: this.context.state.overall[foundIndex].SoftContactPercent2021,
+            MediumContactPercent2021: this.context.state.overall[foundIndex].MediumContactPercent2021,
+            HardContactPercent2021: this.context.state.overall[foundIndex].HardContactPercent2021,
+            FirstStrikePercent2021: this.context.state.overall[foundIndex].FirstStrikePercent2021,
+            PitcherExitVelo2021: this.context.state.overall[foundIndex].PitcherExitVelo2021,
+            PitcherFlyBallLineDriveExitVelo2021: this.context.state.overall[foundIndex].PitcherFlyBallLineDriveExitVelo2021,
+            PitcherBarrelPercent2021: this.context.state.overall[foundIndex].PitcherBarrelPercent2021,
+            PitcherLaunchAngle2021: this.context.state.overall[foundIndex].PitcherLaunchAngle2021,
+            AVGFastballVelo2021: this.context.state.overall[foundIndex].AVGFastballVelo2021,
+            MaxFastballVelo2021: this.context.state.overall[foundIndex].MaxFastballVelo2021,
+            FourSeamFastballUsagePercent2021: this.context.state.overall[foundIndex].FourSeamFastballUsagePercent2021,
+            SinkerUsagePercent2021: this.context.state.overall[foundIndex].SinkerUsagePercent2021,
+            CutterUsagePercent2021: this.context.state.overall[foundIndex].CutterUsagePercent2021,
+            SliderUsagePercent2021: this.context.state.overall[foundIndex].SliderUsagePercent2021,
+            ChangeupUsagePercent2021: this.context.state.overall[foundIndex].ChangeupUsagePercent2021,
+            CurveUsagePercent2021: this.context.state.overall[foundIndex].CurveUsagePercent2021,
+            SplitterUsagePercent2021: this.context.state.overall[foundIndex].SplitterUsagePercent2021,
+            KnuckleCurveUsagePercent2021: this.context.state.overall[foundIndex].KnuckleCurveUsagePercent2021,
+            PitcherFWAR2021: this.context.state.overall[foundIndex].PitcherFWAR2021,
+            TheBatGamesProjection: this.context.state.overall[foundIndex].TheBatGamesProjection,
+            TheBatGamesStartedProjection: this.context.state.overall[foundIndex].TheBatGamesStartedProjection,
+            TheBatInningsPitchedProjection: this.context.state.overall[foundIndex].TheBatInningsPitchedProjection,
+            TheBatQSProjection: this.context.state.overall[foundIndex].TheBatQSProjection,
+            TheBatERAProjection: this.context.state.overall[foundIndex].TheBatERAProjection,
+            TheBatFIPProjection: this.context.state.overall[foundIndex].TheBatFIPProjection,
+            TheBatWHIPProjection: this.context.state.overall[foundIndex].TheBatWHIPProjection,
+            TheBatRawKsProjection: this.context.state.overall[foundIndex].TheBatRawKsProjection,
+            TheBatKPer9Projection: this.context.state.overall[foundIndex].TheBatKPer9Projection,
+            TheBatSavesProjection: this.context.state.overall[foundIndex].TheBatSavesProjection,
             PitcherSteamerFWARProjection: this.context.state.overall[foundIndex].PitcherSteamerFWARProjection,
             showHitterCard: true,
             showPitcherCard: false,
@@ -940,8 +1108,9 @@ class PlayerCard extends React.Component {
     }
     render() {
         const { classes } = this.props;
-        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, GamesPlayed2020, BA2020, OBP2020, SLG2020, PA2020, Doubles2020, HR2020, Runs2020, RBI2020, LineupSlot2020, GBPercent2020, LDPercent2020, FBPercent2020, PullPercent2020, CenterPercent2020, OppoPercent2020, HRPerFB2020, HardHitPercent2020, ExitVelo2020, FlyBallLineDriveExitVelo2020, LaunchAngle2020, BarrelPercent2020, BABIP2020, WOBA2020, xWOBA2020, xBA2020, AvgHRDistance2020, WRCPlus2020, OPSPlus2020, BBPercent2020, KPercent2020, ChaseRate2020, ContactPercent2020, SprintSpeed2020, StolenBases2020, StolenBasePercent2020, FWAR2020, SteamerPAProjection, SteamerAVGProjection, SteamerOBPProjection, SteamerSLGProjection, SteamerDoublesProjection, SteamerHRProjection, SteamerRunsProjection, SteamerRBIProjection, SteamerSBProjection, SteamerFWARProjection, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, PitcherKPercent2017, PitcherBBPercent2017, KMinusBBPercent2017, PitcherBABIP2017, LOBPercent2017, HRPerFBPercent2017, PitcherGBPercent2017, PitcherLDPercent2017, PitcherFBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, PitcherExitVelo2017, PitcherFlyBallLineDriveExitVelo2017, PitcherBarrelPercent2017, PitcherLaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, PitcherFWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, PitcherKPercent2018, PitcherBBPercent2018, KMinusBBPercent2018, PitcherBABIP2018, LOBPercent2018, HRPerFBPercent2018, PitcherGBPercent2018, PitcherLDPercent2018, PitcherFBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, PitcherExitVelo2018, PitcherFlyBallLineDriveExitVelo2018, PitcherBarrelPercent2018, PitcherLaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, PitcherFWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, PitcherKPercent2019, PitcherBBPercent2019, KMinusBBPercent2019, PitcherBABIP2019, LOBPercent2019, HRPerFBPercent2019, PitcherGBPercent2019, PitcherLDPercent2019, PitcherFBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, PitcherExitVelo2019, PitcherFlyBallLineDriveExitVelo2019, PitcherBarrelPercent2019, PitcherLaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, PitcherFWAR2019, Games2020, GamesStarted2020, InningsPitched2020, InningsPitchedPerGameStarted2020, QS2020, ERA2020, ERAPlus2020, FIP2020, xFIP2020, SIERA2020, WHIP2020, RawKs2020, HitsPer92020, HRsPer92020, BBPer92020, KPer92020, KDividedByBB2020, Saves2020, PitcherKPercent2020, PitcherBBPercent2020, KMinusBBPercent2020, PitcherBABIP2020, LOBPercent2020, HRPerFBPercent2020, PitcherGBPercent2020, PitcherLDPercent2020, PitcherFBPercent2020, IFFBPercent2020, SoftContactPercent2020, MediumContactPercent2020, HardContactPercent2020, FirstStrikePercent2020, PitcherExitVelo2020, PitcherFlyBallLineDriveExitVelo2020, PitcherBarrelPercent2020, PitcherLaunchAngle2020, AVGFastballVelo2020, MaxFastballVelo2020, FourSeamFastballUsagePercent2020, SinkerUsagePercent2020, CutterUsagePercent2020, SliderUsagePercent2020, ChangeupUsagePercent2020, CurveUsagePercent2020, SplitterUsagePercent2020, KnuckleCurveUsagePercent2020, PitcherFWAR2020
-            , SteamerGamesProjection, SteamerGamesStartedProjection, SteamerInningsPitchedProjection, SteamerQSProjection, SteamerERAProjection, SteamerFIPProjection, SteamerWHIPProjection, SteamerRawKsProjection, SteamerKPer9Projection, SteamerSavesProjection, PitcherSteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue, battedBallStats, expectedStats, baseRunningStats } = this.state;
+
+        const { firstName, lastName, birthday, bats, throws, currentTeam, imageURL, primaryPosition, otherPositions, GamesPlayed2017, BA2017, OBP2017, SLG2017, PA2017, Doubles2017, HR2017, Runs2017, RBI2017, LineupSlot2017, GBPercent2017, LDPercent2017, FBPercent2017, PullPercent2017, CenterPercent2017, OppoPercent2017, HRPerFB2017, HardHitPercent2017, ExitVelo2017, FlyBallLineDriveExitVelo2017, LaunchAngle2017, BarrelPercent2017, BABIP2017, WOBA2017, xWOBA2017, xBA2017, AvgHRDistance2017, WRCPlus2017, OPSPlus2017, BBPercent2017, KPercent2017, ChaseRate2017, ContactPercent2017, SprintSpeed2017, StolenBases2017, StolenBasePercent2017, FWAR2017, GamesPlayed2018, BA2018, OBP2018, SLG2018, PA2018, Doubles2018, HR2018, Runs2018, RBI2018, LineupSlot2018, GBPercent2018, LDPercent2018, FBPercent2018, PullPercent2018, CenterPercent2018, OppoPercent2018, HRPerFB2018, HardHitPercent2018, ExitVelo2018, FlyBallLineDriveExitVelo2018, LaunchAngle2018, BarrelPercent2018, BABIP2018, WOBA2018, xWOBA2018, xBA2018, AvgHRDistance2018, WRCPlus2018, OPSPlus2018, BBPercent2018, KPercent2018, ChaseRate2018, ContactPercent2018, SprintSpeed2018, StolenBases2018, StolenBasePercent2018, FWAR2018, GamesPlayed2019, BA2019, OBP2019, SLG2019, PA2019, Doubles2019, HR2019, Runs2019, RBI2019, LineupSlot2019, GBPercent2019, LDPercent2019, FBPercent2019, PullPercent2019, CenterPercent2019, OppoPercent2019, HRPerFB2019, HardHitPercent2019, ExitVelo2019, FlyBallLineDriveExitVelo2019, LaunchAngle2019, BarrelPercent2019, BABIP2019, WOBA2019, xWOBA2019, xBA2019, AvgHRDistance2019, WRCPlus2019, OPSPlus2019, BBPercent2019, KPercent2019, ChaseRate2019, ContactPercent2019, SprintSpeed2019, StolenBases2019, StolenBasePercent2019, FWAR2019, GamesPlayed2020, BA2020, OBP2020, SLG2020, PA2020, Doubles2020, HR2020, Runs2020, RBI2020, LineupSlot2020, GBPercent2020, LDPercent2020, FBPercent2020, PullPercent2020, CenterPercent2020, OppoPercent2020, HRPerFB2020, HardHitPercent2020, ExitVelo2020, FlyBallLineDriveExitVelo2020, LaunchAngle2020, BarrelPercent2020, BABIP2020, WOBA2020, xWOBA2020, xBA2020, AvgHRDistance2020, WRCPlus2020, OPSPlus2020, BBPercent2020, KPercent2020, ChaseRate2020, ContactPercent2020, SprintSpeed2020, StolenBases2020, StolenBasePercent2020, FWAR2020, GamesPlayed2021, BA2021, OBP2021, SLG2021, PA2021, Doubles2021, HR2021, Runs2021, RBI2021, LineupSlot2021, GBPercent2021, LDPercent2021, FBPercent2021, PullPercent2021, CenterPercent2021, OppoPercent2021, HRPerFB2021, HardHitPercent2021, ExitVelo2021, FlyBallLineDriveExitVelo2021, LaunchAngle2021, BarrelPercent2021, BABIP2021, WOBA2021, xWOBA2021, xBA2021, AvgHRDistance2021, WRCPlus2021, OPSPlus2021, BBPercent2021, KPercent2021, ChaseRate2021, ContactPercent2021, SprintSpeed2021, StolenBases2021, StolenBasePercent2021, FWAR2021, TheBatXPAProjection, TheBatXAVGProjection, TheBatXOBPProjection, TheBatXSLGProjection, TheBatXDoublesProjection, TheBatXHRProjection, TheBatXRunsProjection, TheBatXRBIProjection, TheBatXSBProjection, SteamerFWARProjection, Games2017, GamesStarted2017, InningsPitched2017, InningsPitchedPerGameStarted2017, QS2017, ERA2017, ERAPlus2017, FIP2017, xFIP2017, SIERA2017, WHIP2017, RawKs2017, HitsPer92017, HRsPer92017, BBPer92017, KPer92017, KDividedByBB2017, Saves2017, PitcherKPercent2017, PitcherBBPercent2017, KMinusBBPercent2017, PitcherBABIP2017, LOBPercent2017, HRPerFBPercent2017, PitcherGBPercent2017, PitcherLDPercent2017, PitcherFBPercent2017, IFFBPercent2017, SoftContactPercent2017, MediumContactPercent2017, HardContactPercent2017, FirstStrikePercent2017, PitcherExitVelo2017, PitcherFlyBallLineDriveExitVelo2017, PitcherBarrelPercent2017, PitcherLaunchAngle2017, AVGFastballVelo2017, MaxFastballVelo2017, FourSeamFastballUsagePercent2017, SinkerUsagePercent2017, CutterUsagePercent2017, SliderUsagePercent2017, ChangeupUsagePercent2017, CurveUsagePercent2017, SplitterUsagePercent2017, KnuckleCurveUsagePercent2017, PitcherFWAR2017, Games2018, GamesStarted2018, InningsPitched2018, InningsPitchedPerGameStarted2018, QS2018, ERA2018, ERAPlus2018, FIP2018, xFIP2018, SIERA2018, WHIP2018, RawKs2018, HitsPer92018, HRsPer92018, BBPer92018, KPer92018, KDividedByBB2018, Saves2018, PitcherKPercent2018, PitcherBBPercent2018, KMinusBBPercent2018, PitcherBABIP2018, LOBPercent2018, HRPerFBPercent2018, PitcherGBPercent2018, PitcherLDPercent2018, PitcherFBPercent2018, IFFBPercent2018, SoftContactPercent2018, MediumContactPercent2018, HardContactPercent2018, FirstStrikePercent2018, PitcherExitVelo2018, PitcherFlyBallLineDriveExitVelo2018, PitcherBarrelPercent2018, PitcherLaunchAngle2018, AVGFastballVelo2018, MaxFastballVelo2018, FourSeamFastballUsagePercent2018, SinkerUsagePercent2018, CutterUsagePercent2018, SliderUsagePercent2018, ChangeupUsagePercent2018, CurveUsagePercent2018, SplitterUsagePercent2018, KnuckleCurveUsagePercent2018, PitcherFWAR2018, Games2019, GamesStarted2019, InningsPitched2019, InningsPitchedPerGameStarted2019, QS2019, ERA2019, ERAPlus2019, FIP2019, xFIP2019, SIERA2019, WHIP2019, RawKs2019, HitsPer92019, HRsPer92019, BBPer92019, KPer92019, KDividedByBB2019, Saves2019, PitcherKPercent2019, PitcherBBPercent2019, KMinusBBPercent2019, PitcherBABIP2019, LOBPercent2019, HRPerFBPercent2019, PitcherGBPercent2019, PitcherLDPercent2019, PitcherFBPercent2019, IFFBPercent2019, SoftContactPercent2019, MediumContactPercent2019, HardContactPercent2019, FirstStrikePercent2019, PitcherExitVelo2019, PitcherFlyBallLineDriveExitVelo2019, PitcherBarrelPercent2019, PitcherLaunchAngle2019, AVGFastballVelo2019, MaxFastballVelo2019, FourSeamFastballUsagePercent2019, SinkerUsagePercent2019, CutterUsagePercent2019, SliderUsagePercent2019, ChangeupUsagePercent2019, CurveUsagePercent2019, SplitterUsagePercent2019, KnuckleCurveUsagePercent2019, PitcherFWAR2019, Games2020, GamesStarted2020, InningsPitched2020, InningsPitchedPerGameStarted2020, QS2020, ERA2020, ERAPlus2020, FIP2020, xFIP2020, SIERA2020, WHIP2020, RawKs2020, HitsPer92020, HRsPer92020, BBPer92020, KPer92020, KDividedByBB2020, Saves2020, PitcherKPercent2020, PitcherBBPercent2020, KMinusBBPercent2020, PitcherBABIP2020, LOBPercent2020, HRPerFBPercent2020, PitcherGBPercent2020, PitcherLDPercent2020, PitcherFBPercent2020, IFFBPercent2020, SoftContactPercent2020, MediumContactPercent2020, HardContactPercent2020, FirstStrikePercent2020, PitcherExitVelo2020, PitcherFlyBallLineDriveExitVelo2020, PitcherBarrelPercent2020, PitcherLaunchAngle2020, AVGFastballVelo2020, MaxFastballVelo2020, FourSeamFastballUsagePercent2020, SinkerUsagePercent2020, CutterUsagePercent2020, SliderUsagePercent2020, ChangeupUsagePercent2020, CurveUsagePercent2020, SplitterUsagePercent2020, KnuckleCurveUsagePercent2020, PitcherFWAR2020, Games2021, GamesStarted2021, InningsPitched2021, InningsPitchedPerGameStarted2021, QS2021, ERA2021, ERAPlus2021, FIP2021, xFIP2021, SIERA2021, WHIP2021, RawKs2021, HitsPer92021, HRsPer92021, BBPer92021, KPer92021, KDividedByBB2021, Saves2021, PitcherKPercent2021, PitcherBBPercent2021, KMinusBBPercent2021, PitcherBABIP2021, LOBPercent2021, HRPerFBPercent2021, PitcherGBPercent2021, PitcherLDPercent2021, PitcherFBPercent2021, IFFBPercent2021, SoftContactPercent2021, MediumContactPercent2021, HardContactPercent2021, FirstStrikePercent2021, PitcherExitVelo2021, PitcherFlyBallLineDriveExitVelo2021, PitcherBarrelPercent2021, PitcherLaunchAngle2021, AVGFastballVelo2021, MaxFastballVelo2021, FourSeamFastballUsagePercent2021, SinkerUsagePercent2021, CutterUsagePercent2021, SliderUsagePercent2021, ChangeupUsagePercent2021, CurveUsagePercent2021, SplitterUsagePercent2021, KnuckleCurveUsagePercent2021, PitcherFWAR2021,
+            TheBatGamesProjection, TheBatGamesStartedProjection, TheBatInningsPitchedProjection, TheBatQSProjection, TheBatERAProjection, TheBatFIPProjection, TheBatWHIPProjection, TheBatRawKsProjection, TheBatKPer9Projection, TheBatSavesProjection, PitcherSteamerFWARProjection, traditionalStats, advancedStats, opponentContactStats, pitchUsageStats, labelValue, battedBallStats, expectedStats, baseRunningStats } = this.state;
 
         if (primaryPosition.includes('SP') || otherPositions.includes('SP') || otherPositions.includes('RP') || primaryPosition.includes('RP')) {
             if(otherPositions.includes('C') || primaryPosition.includes('C') || otherPositions.includes('1B') || primaryPosition.includes('1B') || otherPositions.includes('2B') || primaryPosition.includes('2B') || otherPositions.includes('SS') || primaryPosition.includes('SS') || otherPositions.includes('3B') || primaryPosition.includes('3B') || otherPositions.includes('OF') || primaryPosition.includes('OF') || otherPositions.includes('DH') || primaryPosition.includes('DH')) {
@@ -1167,7 +1336,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -1194,7 +1363,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 === 0 && (Games2019> 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                            {(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -1215,28 +1384,76 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Games2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{GamesStarted2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitched2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{QS2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{RawKs2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WHIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{LOBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Saves2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFWAR2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{(
+                                                            (10 * QS2021 +
+                                                                1.2 * RawKs2021 +
+                                                                9 * Saves2021 +
+                                                                4 * Number(InningsPitched2021) * Number(1.32 - WHIP2021) +
+                                                                Number(InningsPitched2021) * Number(4.47 - ERA2021)) /
+                                                            10).toFixed(1)}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
                                             <TableRow
                                                 tabIndex={-1}
-                                                key='Projected 2021'
+                                                key='Projected 2022'
                                                 className={classes.tableRow}
                                             >
                                                 <TableCell component="th" scope="row" className={classes.tableCell}>2021 Projections</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerGamesProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerGamesStartedProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerQSProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerRawKsProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatGamesProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatGamesStartedProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatInningsPitchedProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatQSProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatRawKsProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatERAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatWHIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerSavesProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatSavesProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{PitcherSteamerFWARProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{(
-                                                    (10 * Number(SteamerQSProjection) +
-                                                        1.2 * SteamerRawKsProjection +
-                                                        9 * SteamerSavesProjection +
-                                                        4 * Number(SteamerInningsPitchedProjection) * Number(1.32 - SteamerWHIPProjection) +
-                                                        Number(SteamerInningsPitchedProjection) * Number(4.47 - SteamerERAProjection)) / 
+                                                    (10 * Number(TheBatQSProjection) +
+                                                        1.2 * TheBatRawKsProjection +
+                                                        9 * TheBatSavesProjection +
+                                                        4 * Number(TheBatInningsPitchedProjection) * Number(1.32 - TheBatWHIPProjection) +
+                                                        Number(TheBatInningsPitchedProjection) * Number(4.47 - TheBatERAProjection)) / 
                                                     8).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
@@ -1521,7 +1738,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -1548,7 +1765,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                            {(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
                                                 <TableRow
                                                     hover
                                                     tabIndex={-1}
@@ -1575,24 +1792,80 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCellNoPA}></TableCell>
                                                 </TableRow>
                                             ) : null}
+
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitched2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitchedPerGameStarted2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERAPlus2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{xFIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SIERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WHIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HitsPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HRsPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BBPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KDividedByBB2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherKPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KMinusBBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FirstStrikePercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
                                             <TableRow
                                                 tabIndex={-1}
-                                                key='Projected 2021'
+                                                key='Projected 2022'
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021 Projections</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2022 Projections</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatInningsPitchedProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatERAProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerFIPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatFIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatWHIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerKPer9Projection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatKPer9Projection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
@@ -1834,7 +2107,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -1857,7 +2130,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                            {(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
                                                 <TableRow
                                                     hover
                                                     tabIndex={-1}
@@ -1865,6 +2138,53 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherGBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherLDPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{IFFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HRPerFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SoftContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{MediumContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HardContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFlyBallLineDriveExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherLaunchAngle2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBarrelPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBABIP2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -2082,7 +2402,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -2111,6 +2431,47 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCell}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{AVGFastballVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{MaxFastballVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FourSeamFastballUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SinkerUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{CutterUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SliderUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ChangeupUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{CurveUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SplitterUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KnuckleCurveUsagePercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -2368,7 +2729,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(PA2020 > 0) ? (
+                                            {(PA2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -2413,32 +2774,79 @@ class PlayerCard extends React.Component {
                                                     <TableCell className={classes.tableCellNoPA}></TableCell>
                                                 </TableRow>
                                             ) : null}
+
+                                            {(PA2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{GamesPlayed2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{OBP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SLG2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Doubles2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HR2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Runs2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{RBI2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{StolenBases2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FWAR2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{((1.75 * (Runs2021 + RBI2021) + 5.65 * HR2021 + 6 * StolenBases2021 + (4 * PA2021 * (BA2021 - 0.250))) / 6).toFixed(1)}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{((1.75 * (Runs2021 + RBI2021) + 5.65 * HR2021 + 6 * StolenBases2021 + (4 * PA2021 * (OBP2021 - 0.32))) / 6).toFixed(1)}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
                                             <TableRow
                                                 tabIndex={-1}
-                                                key='Projected 2021'
+                                                key='Projected 2022'
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2022</TableCell>
                                                 <TableCell className={classes.tableCell}>Projections</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerPAProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerAVGProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerOBPProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerSLGProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerDoublesProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerHRProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerRunsProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerRBIProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXPAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXAVGProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXOBPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXSLGProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXDoublesProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXHRProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXRunsProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXRBIProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatXSBProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
-                                5.65 * SteamerHRProjection +
-                                6 * SteamerSBProjection +
-                                4 * SteamerPAProjection * (SteamerAVGProjection - 0.250)) /
+                                                <TableCell className={classes.tableCell}>{((1.75 * (TheBatXRunsProjection + TheBatXRBIProjection) +
+                                5.65 * TheBatXHRProjection +
+                                6 * TheBatXSBProjection +
+                                4 * TheBatXPAProjection * (TheBatXAVGProjection - 0.250)) /
                                 6).toFixed(1)}</TableCell>
-                                                <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
-                                5.65 * SteamerHRProjection +
-                                6 * SteamerSBProjection +
-                                4 * SteamerPAProjection * (SteamerOBPProjection - 0.320)) /
+                                                <TableCell className={classes.tableCell}>{((1.75 * (TheBatXRunsProjection + TheBatXRBIProjection) +
+                                5.65 * TheBatXHRProjection +
+                                6 * TheBatXSBProjection +
+                                4 * TheBatXPAProjection * (TheBatXOBPProjection - 0.320)) /
                                 6).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
@@ -2700,7 +3108,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(PA2020 > 0) ? (
+                                            {(PA2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -2725,7 +3133,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(PA2020 === 0 && (PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                            {(PA2020 === 0 && (PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
                                                 <TableRow
                                                     hover
                                                     tabIndex={-1}
@@ -2733,6 +3141,57 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(PA2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{GBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{LDPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PullPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{CenterPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{OppoPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HRPerFB2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HardHitPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FlyBallLineDriveExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{LaunchAngle2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BarrelPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{AvgHRDistance2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ChaseRate2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ContactPercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -2973,7 +3432,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(PA2020 > 0) ? (
+                                            {(PA2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -3003,6 +3462,51 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(PA2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{xBA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BABIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{OBP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SLG2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WOBA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{xWOBA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{LineupSlot2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WRCPlus2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{OPSPlus2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KPercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -3132,7 +3636,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(PA2020 > 0) ? (
+                                            {(PA2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -3153,6 +3657,33 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(PA2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SprintSpeed2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{StolenBases2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{StolenBasePercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -3488,7 +4019,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -3515,7 +4046,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                            {(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -3536,28 +4067,76 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Games2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{GamesStarted2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitched2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{QS2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{RawKs2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WHIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{LOBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{Saves2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFWAR2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{(
+                                                            (10 * QS2021 +
+                                                                1.2 * RawKs2021 +
+                                                                9 * Saves2021 +
+                                                                4 * Number(InningsPitched2021) * Number(1.32 - WHIP2021) +
+                                                                Number(InningsPitched2021) * Number(4.47 - ERA2021)) /
+                                                            10).toFixed(1)}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
                                             <TableRow
                                                 tabIndex={-1}
-                                                key='Projected 2021'
+                                                key='Projected 2022'
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021 Projections</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerGamesProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerGamesStartedProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerQSProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerRawKsProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2022 Projections</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatGamesProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatGamesStartedProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatInningsPitchedProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatQSProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatRawKsProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatERAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatWHIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerSavesProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatSavesProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{PitcherSteamerFWARProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{(
-                                                    (10 * Number(SteamerQSProjection) +
-                                                        1.2 * SteamerRawKsProjection +
-                                                        9 * SteamerSavesProjection +
-                                                        4 * Number(SteamerInningsPitchedProjection) * Number(1.32 - SteamerWHIPProjection) +
-                                                        Number(SteamerInningsPitchedProjection) * Number(4.47 - SteamerERAProjection)) / 
+                                                    (10 * Number(TheBatQSProjection) +
+                                                        1.2 * TheBatRawKsProjection +
+                                                        9 * TheBatSavesProjection +
+                                                        4 * Number(TheBatInningsPitchedProjection) * Number(1.32 - TheBatWHIPProjection) +
+                                                        Number(TheBatInningsPitchedProjection) * Number(4.47 - TheBatERAProjection)) / 
                                                     8).toFixed(1)}</TableCell>
                                             </TableRow>
                                         </TableBody>
@@ -3842,7 +4421,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -3869,7 +4448,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                            {(Games2020 === 0 && (Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
                                                 <TableRow
                                                     hover
                                                     tabIndex={-1}
@@ -3897,24 +4476,79 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
         
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitched2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{InningsPitchedPerGameStarted2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ERAPlus2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{xFIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SIERA2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{WHIP2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HitsPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HRsPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{BBPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KPer92021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KDividedByBB2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherKPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KMinusBBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FirstStrikePercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
                                             <TableRow
                                                 tabIndex={-1}
-                                                key='Projected 2021'
+                                                key='Projected 2022'
                                                 className={classes.tableRow}
                                             >
-                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021 Projections</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerInningsPitchedProjection}</TableCell>
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2022 Projections</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatInningsPitchedProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerERAProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatERAProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerFIPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatFIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerWHIPProjection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatWHIPProjection}</TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
                                                 <TableCell className={classes.tableCell}></TableCell>
-                                                <TableCell className={classes.tableCell}>{SteamerKPer9Projection}</TableCell>
+                                                <TableCell className={classes.tableCell}>{TheBatKPer9Projection}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
                                                 <TableCell className={classes.tableCell}>{}</TableCell>
@@ -4156,7 +4790,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -4187,6 +4821,53 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherGBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherLDPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{IFFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HRPerFBPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SoftContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{MediumContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{HardContactPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherFlyBallLineDriveExitVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherLaunchAngle2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBarrelPercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{PitcherBABIP2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2020'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -4404,7 +5085,7 @@ class PlayerCard extends React.Component {
                                                 </TableRow>
                                             ) : null}
 
-{(Games2020 > 0) ? (
+                                            {(Games2020 > 0) ? (
                                                 <TableRow
                                                     tabIndex={-1}
                                                     key='2020'
@@ -4433,6 +5114,48 @@ class PlayerCard extends React.Component {
                                                     className={classes.tableRow}
                                                 >
                                                     <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                    <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                    <TableCell className={classes.tableCell}>Innings</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+
+                                            {(Games2021 > 0) ? (
+                                                <TableRow
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                    <TableCell className={classes.tableCell}>{AVGFastballVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{MaxFastballVelo2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{FourSeamFastballUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SinkerUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{CutterUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SliderUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{ChangeupUsagePercent2021
+                                                    }</TableCell>
+                                                    <TableCell className={classes.tableCell}>{CurveUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{SplitterUsagePercent2021}</TableCell>
+                                                    <TableCell className={classes.tableCell}>{KnuckleCurveUsagePercent2021}</TableCell>
+                                                </TableRow>
+                                            ) : null}
+        
+                                            {(Games2021 === 0 && (Games2020 > 0 || Games2019 > 0 || Games2018 > 0 || Games2017 > 0)) ? (
+                                                <TableRow
+                                                    hover
+                                                    tabIndex={-1}
+                                                    key='2021'
+                                                    className={classes.tableRow}
+                                                >
+                                                    <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                     <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -4718,7 +5441,7 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
-{(PA2020 > 0) ? (
+                                        {(PA2020 > 0) ? (
                                             <TableRow
                                                 tabIndex={-1}
                                                 key='2020'
@@ -4764,32 +5487,78 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
+                                        {(PA2021 > 0) ? (
+                                            <TableRow
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                <TableCell className={classes.tableCell}>{GamesPlayed2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{PA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{BA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{OBP2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{SLG2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{Doubles2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{HR2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{Runs2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{RBI2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{StolenBases2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{FWAR2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2021 + RBI2021) + 5.65 * HR2021 + 6 * StolenBases2021 + (4 * PA2021 * (BA2021 - 0.250))) / 6).toFixed(1)}</TableCell>
+                                                <TableCell className={classes.tableCell}>{((1.75 * (Runs2021 + RBI2021) + 5.65 * HR2021 + 6 * StolenBases2021 + (4 * PA2021 * (OBP2021 - 0.32))) / 6).toFixed(1)}</TableCell>
+                                            </TableRow>
+                                        ) : null}
+    
+                                        {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                            <TableRow
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            </TableRow>
+                                        ) : null}
+
                                         <TableRow
                                             tabIndex={-1}
-                                            key='Projected 2021'
+                                            key='Projected 2022'
                                             className={classes.tableRow}
                                         >
-                                            <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                            <TableCell component="th" scope="row" className={classes.tableCell}>2022</TableCell>
                                             <TableCell className={classes.tableCell}>Projections</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerPAProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerAVGProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerOBPProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerSLGProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerDoublesProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerHRProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerRunsProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerRBIProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{SteamerSBProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXPAProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXAVGProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXOBPProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXSLGProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXDoublesProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXHRProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXRunsProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXRBIProjection}</TableCell>
+                                            <TableCell className={classes.tableCell}>{TheBatXSBProjection}</TableCell>
                                             <TableCell className={classes.tableCell}>{SteamerFWARProjection}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
-                            5.65 * SteamerHRProjection +
-                            6 * SteamerSBProjection +
-                            4 * SteamerPAProjection * (SteamerAVGProjection - 0.250)) /
+                                            <TableCell className={classes.tableCell}>{((1.75 * (TheBatXRunsProjection + TheBatXRBIProjection) +
+                            5.65 * TheBatXHRProjection +
+                            6 * TheBatXSBProjection +
+                            4 * TheBatXPAProjection * (TheBatXAVGProjection - 0.250)) /
                             6).toFixed(1)}</TableCell>
-                                            <TableCell className={classes.tableCell}>{((1.75 * (SteamerRunsProjection + SteamerRBIProjection) +
-                            5.65 * SteamerHRProjection +
-                            6 * SteamerSBProjection +
-                            4 * SteamerPAProjection * (SteamerOBPProjection - 0.320)) /
+                                            <TableCell className={classes.tableCell}>{((1.75 * (TheBatXRunsProjection + TheBatXRBIProjection) +
+                            5.65 * TheBatXHRProjection +
+                            6 * TheBatXSBProjection +
+                            4 * TheBatXPAProjection * (TheBatXOBPProjection - 0.320)) /
                             6).toFixed(1)}</TableCell>
                                         </TableRow>
                                     </TableBody>
@@ -5051,7 +5820,7 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
-{(PA2020 > 0) ? (
+                                        {(PA2020 > 0) ? (
                                             <TableRow
                                                 tabIndex={-1}
                                                 key='2020'
@@ -5076,7 +5845,7 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
-{(PA2020 === 0 && (PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                        {(PA2020 === 0 && (PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
                                             <TableRow
                                                 hover
                                                 tabIndex={-1}
@@ -5084,6 +5853,57 @@ class PlayerCard extends React.Component {
                                                 className={classes.tableRow}
                                             >
                                                 <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            </TableRow>
+                                        ) : null}
+
+                                        {(PA2021 > 0) ? (
+                                            <TableRow
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                <TableCell className={classes.tableCell}>{GBPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{LDPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{FBPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{PullPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{CenterPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{OppoPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{HRPerFB2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{HardHitPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{ExitVelo2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{FlyBallLineDriveExitVelo2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{LaunchAngle2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{BarrelPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{AvgHRDistance2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{ChaseRate2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{ContactPercent2021}</TableCell>
+                                            </TableRow>
+                                        ) : null}
+
+                                        {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                            <TableRow
+                                                hover
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -5324,7 +6144,7 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
-{(PA2020 > 0) ? (
+                                        {(PA2020 > 0) ? (
                                             <TableRow
                                                 tabIndex={-1}
                                                 key='2020'
@@ -5354,6 +6174,51 @@ class PlayerCard extends React.Component {
                                                 className={classes.tableRow}
                                             >
                                                 <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>At</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Bats</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                                <TableCell className={classes.tableCellNoPA}></TableCell>
+                                            </TableRow>
+                                        ) : null}
+
+                                        {(PA2021 > 0) ? (
+                                            <TableRow
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                <TableCell className={classes.tableCell}>{BA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{xBA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{BABIP2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{OBP2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{SLG2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{WOBA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{xWOBA2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{LineupSlot2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{WRCPlus2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{OPSPlus2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{BBPercent2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{KPercent2021}</TableCell>
+                                            </TableRow>
+                                        ) : null}
+    
+                                        {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                            <TableRow
+                                                hover
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>League</TableCell>
@@ -5483,7 +6348,7 @@ class PlayerCard extends React.Component {
                                             </TableRow>
                                         ) : null}
 
-{(PA2020 > 0) ? (
+                                        {(PA2020 > 0) ? (
                                             <TableRow
                                                 tabIndex={-1}
                                                 key='2020'
@@ -5504,6 +6369,33 @@ class PlayerCard extends React.Component {
                                                 className={classes.tableRow}
                                             >
                                                 <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2020</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>No</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>Major</TableCell>
+                                                <TableCell className={classes.tableCellNoPA}>League</TableCell>
+                                            </TableRow>
+                                        ) : null}
+
+                                        {(PA2021 > 0) ? (
+                                            <TableRow
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCell}>2021</TableCell>
+                                                <TableCell className={classes.tableCell}>{SprintSpeed2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{StolenBases2021}</TableCell>
+                                                <TableCell className={classes.tableCell}>{StolenBasePercent2021}</TableCell>
+                                            </TableRow>
+                                        ) : null}
+    
+                                        {(PA2021 === 0 && (PA2020 > 0 || PA2019 > 0 || PA2018 > 0 || PA2017 > 0)) ? (
+                                            <TableRow
+                                                hover
+                                                tabIndex={-1}
+                                                key='2021'
+                                                className={classes.tableRow}
+                                            >
+                                                <TableCell component="th" scope="row" className={classes.tableCellNoPA}>2021</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>No</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>Major</TableCell>
                                                 <TableCell className={classes.tableCellNoPA}>League</TableCell>
