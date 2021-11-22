@@ -144,7 +144,7 @@ export default function EnhancedTable(props) {
                         player.StolenBases2021,
                         Number(player.FWAR2021),
                         (1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.BA2021 - 0.250))) / 6,
-                        (1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.32))) / 6,
+                        (1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.320))) / 6,
                         player.id,
                         index
                     )

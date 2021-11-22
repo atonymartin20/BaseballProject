@@ -163,37 +163,37 @@ export default function EnhancedTable(props) {
                         `${player.firstName} ${player.lastName}`,
                         player.primaryPosition,
                         player.otherPositions,
-                        player.SteamerPAProjection,
-                        Number(player.SteamerAVGProjection),
-                        player.SteamerHRProjection,
-                        player.SteamerRunsProjection,
-                        player.SteamerRBIProjection,
-                        player.SteamerSBProjection,
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
+                        player.TheBatXPAProjection,
+                        Number(player.TheBatXAVGProjection),
+                        player.TheBatXHRProjection,
+                        player.TheBatXRunsProjection,
+                        player.TheBatXRBIProjection,
+                        player.TheBatXSBProjection,
+                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.65 * player.TheBatXHRProjection +
+                            6 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.25)) /
                             6,
-                        Number(player.SteamerInningsPitchedProjection),
-                        Number(player.SteamerQSProjection),
-                        player.SteamerRawKsProjection,
-                        Number(player.SteamerERAProjection),
-                        Number(player.SteamerWHIPProjection),
-                        player.SteamerSavesProjection,
-                        (10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
-                        ((1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                        5.65 * player.SteamerHRProjection +
-                        6 * player.SteamerSBProjection +
-                        4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
-                        6) + ((10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8),
+                        Number(player.TheBatInningsPitchedProjection),
+                        Number(player.TheBatQSProjection),
+                        player.TheBatRawKsProjection,
+                        Number(player.TheBatERAProjection),
+                        Number(player.TheBatWHIPProjection),
+                        player.TheBatSavesProjection,
+                        (10 * Number(player.TheBatQSProjection) +
+                        1.2 * player.TheBatRawKsProjection +
+                        9 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8,
+                        ((1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                        5.65 * player.TheBatXHRProjection +
+                        6 * player.TheBatXSBProjection +
+                        4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.25)) /
+                        6) + ((10 * Number(player.TheBatQSProjection) +
+                        1.2 * player.TheBatRawKsProjection +
+                        9 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8),
                         player.id,
                         index
                     )

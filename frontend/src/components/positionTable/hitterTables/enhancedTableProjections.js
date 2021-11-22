@@ -139,23 +139,23 @@ export default function EnhancedTable(props) {
                         `${player.firstName} ${player.lastName}`,
                         player.primaryPosition,
                         player.otherPositions,
-                        player.SteamerPAProjection,
-                        Number(player.SteamerAVGProjection),
-                        Number(player.SteamerOBPProjection),
-                        player.SteamerHRProjection,
-                        player.SteamerRunsProjection,
-                        player.SteamerRBIProjection,
-                        player.SteamerSBProjection,
+                        player.TheBatXPAProjection,
+                        Number(player.TheBatXAVGProjection),
+                        Number(player.TheBatXOBPProjection),
+                        player.TheBatXHRProjection,
+                        player.TheBatXRunsProjection,
+                        player.TheBatXRBIProjection,
+                        player.TheBatXSBProjection,
                         Number(player.SteamerFWARProjection),
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerAVGProjection - 0.25)) /
+                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.65 * player.TheBatXHRProjection +
+                            6 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.250)) /
                             6,
-                        (1.75 * (player.SteamerRunsProjection + player.SteamerRBIProjection) +
-                            5.65 * player.SteamerHRProjection +
-                            6 * player.SteamerSBProjection +
-                            4 * player.SteamerPAProjection * (player.SteamerOBPProjection - 0.320)) /
+                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.65 * player.TheBatXHRProjection +
+                            6 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.320)) /
                             6,
                         player.id,
                         index

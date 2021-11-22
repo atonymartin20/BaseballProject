@@ -139,20 +139,20 @@ export default function EnhancedTable(props) {
                         `${player.firstName} ${player.lastName}`,
                         player.primaryPosition,
                         player.otherPositions,
-                        player.SteamerGamesProjection,
-                        Number(player.SteamerInningsPitchedProjection),
-                        Number(player.SteamerQSProjection),
-                        player.SteamerRawKsProjection,
-                        Number(player.SteamerERAProjection),
-                        Number(player.SteamerFIPProjection),
-                        Number(player.SteamerWHIPProjection),
-                        player.SteamerSavesProjection,
+                        player.TheBatGamesProjection,
+                        Number(player.TheBatInningsPitchedProjection),
+                        Number(player.TheBatQSProjection),
+                        player.TheBatRawKsProjection,
+                        Number(player.TheBatERAProjection),
+                        Number(player.TheBatFIPProjection),
+                        Number(player.TheBatWHIPProjection),
+                        player.TheBatSavesProjection,
                         Number(player.PitcherSteamerFWARProjection),
-                        (10 * Number(player.SteamerQSProjection) +
-                        1.2 * player.SteamerRawKsProjection +
-                        9 * player.SteamerSavesProjection +
-                        4 * Number(player.SteamerInningsPitchedProjection) * Number(1.32 - player.SteamerWHIPProjection) +
-                        Number(player.SteamerInningsPitchedProjection) * Number(4.47 - player.SteamerERAProjection)) / 8,
+                        (10 * Number(player.TheBatQSProjection) +
+                        1.2 * player.TheBatRawKsProjection +
+                        9 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8,
                         player.id,
                         index
                     )
