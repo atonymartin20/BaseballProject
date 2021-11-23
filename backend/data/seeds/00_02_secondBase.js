@@ -13812,7 +13812,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 1.5,
+            'SteamerFWARProjection': 0.0,
         },
         {
             'firstName': 'Owen',

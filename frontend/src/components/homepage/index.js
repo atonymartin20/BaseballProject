@@ -58,10 +58,10 @@ class Homepage extends React.Component {
 
         while(this.context.state.designatedHitters.length === 0) {
             let seconds = 0;
-            setInterval(function () {
-                seconds++;
-            }, 1000);
-            while(seconds < 5) {
+            while(seconds <= 5) {
+                setInterval(function () {
+                    seconds++;
+                }, 1000);
                 return (
                     <div className={classes.loadingContainer}>
                         <div className={'spinner'} />
@@ -121,7 +121,7 @@ class Homepage extends React.Component {
                                     Steamer</a>.
                                 <br />
                                 <br />
-                                    2021 stats are currently being updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
+                                    2021 stats have been updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
                                 <br />
                                 <br />
                                 <Link to='/glossary' className={classes.websiteLinks}>
@@ -131,8 +131,9 @@ class Homepage extends React.Component {
                             <Links />
                         </div>
                     </div>
-                );            }
+                );
             }
+        }
         return (
             <div className={classes.homepageDiv}>
                 <Navbar />
@@ -184,7 +185,7 @@ class Homepage extends React.Component {
                             Steamer</a>.
                         <br />
                         <br />
-                            2021 stats are currently being updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
+                            2021 stats have been updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
                         <br />
                         <br />
                         <Link to='/glossary' className={classes.websiteLinks}>

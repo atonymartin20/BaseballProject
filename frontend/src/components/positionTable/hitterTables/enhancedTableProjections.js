@@ -147,16 +147,8 @@ export default function EnhancedTable(props) {
                         player.TheBatXRBIProjection,
                         player.TheBatXSBProjection,
                         Number(player.SteamerFWARProjection),
-                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
-                            5.65 * player.TheBatXHRProjection +
-                            6 * player.TheBatXSBProjection +
-                            4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.250)) /
-                            6,
-                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
-                            5.65 * player.TheBatXHRProjection +
-                            6 * player.TheBatXSBProjection +
-                            4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.320)) /
-                            6,
+                        (1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) + 5.75 * player.TheBatXHRProjection + 8.85 * player.TheBatXSBProjection + 4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.245)) / 6,
+                        (1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) + 5.75 * player.TheBatXHRProjection + 8.85 * player.TheBatXSBProjection + 4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.315)) / 6,
                         player.id,
                         index
                     )
@@ -210,7 +202,7 @@ export default function EnhancedTable(props) {
                                             onClick={(event) => handleClick(event, row.name)}
                                             aria-checked={isItemSelected}
                                             tabIndex={-1}
-                                            key={row.name}
+                                            key={row.name + row.id}
                                             selected={isItemSelected}
                                             className={classes.tableRow}
                                         >

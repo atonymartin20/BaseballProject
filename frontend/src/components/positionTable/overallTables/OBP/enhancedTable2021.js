@@ -148,23 +148,23 @@ export default function EnhancedTable(props) {
                         player.Runs2021,
                         player.RBI2021,
                         player.StolenBases2021,
-                        (1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.32))) / 6,
+                        (1.71 * (player.Runs2021 + player.RBI2021) + 5.75 * player.HR2021 + 8.85 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.315))) / 6,
                         Number(player.InningsPitched2021),
                         Number(player.QS2021),
                         player.RawKs2021,
                         Number(player.ERA2021),
                         Number(player.WHIP2021),
                         player.Saves2021,
-                        (10 * player.QS2021 +
-                            1.2 * player.RawKs2021 +
-                            9 * player.Saves2021 +
-                            (4 * Number(player.InningsPitched2021) * Number(1.32 - player.WHIP2021)) +
-                            Number(player.InningsPitched2021) * Number(4.47 - player.ERA2021)) / 10,
-                        ((1.75 * (player.Runs2021 + player.RBI2021) + 5.65 * player.HR2021 + 6 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.32))) / 6) + ((10 * player.QS2021 +
-                            1.2 * player.RawKs2021 +
-                            9 * player.Saves2021 +
-                            (4 * Number(player.InningsPitched2021) * Number(1.32 - player.WHIP2021)) +
-                            Number(player.InningsPitched2021) * Number(4.47 - player.ERA2021)) / 10),
+                        (12 * player.QS2021 +
+                            1.25 * player.RawKs2021 +
+                            14.25 * player.Saves2021 +
+                            (4 * Number(player.InningsPitched2021) * Number(1.31 - player.WHIP2021)) +
+                            Number(player.InningsPitched2021) * Number(4.43 - player.ERA2021)) / 7.9,
+                        ((1.71 * (player.Runs2021 + player.RBI2021) + 5.75 * player.HR2021 + 8.85 * player.StolenBases2021 + (4 * player.PA2021 * (player.OBP2021 - 0.315))) / 6) + ((12 * player.QS2021 +
+                            1.25 * player.RawKs2021 +
+                            14.25 * player.Saves2021 +
+                            (4 * Number(player.InningsPitched2021) * Number(1.31 - player.WHIP2021)) +
+                            Number(player.InningsPitched2021) * Number(4.43 - player.ERA2021)) / 7.9),
                         player.id,
                         index
                     )
@@ -218,7 +218,7 @@ export default function EnhancedTable(props) {
                                             onClick={(event) => handleClick(event, row.name)}
                                             aria-checked={isItemSelected}
                                             tabIndex={-1}
-                                            key={`${row.name} + ${row.primaryPosition}`}
+                                            key={`${row.name} + ${row.primaryPosition} + ${row.id}`}
                                             selected={isItemSelected}
                                             className={classes.tableRow}
                                         >
