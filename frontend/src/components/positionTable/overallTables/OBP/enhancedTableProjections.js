@@ -169,10 +169,10 @@ export default function EnhancedTable(props) {
                         player.TheBatXRunsProjection,
                         player.TheBatXRBIProjection,
                         player.TheBatXSBProjection,
-                        (1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
-                            5.65 * player.TheBatXHRProjection +
-                            6 * player.TheBatXSBProjection +
-                            4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.320)) /
+                        (1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                            5.75 * player.TheBatXHRProjection +
+                            8.85 * player.TheBatXSBProjection +
+                            4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.315)) /
                             6,
                         Number(player.TheBatInningsPitchedProjection),
                         Number(player.TheBatQSProjection),
@@ -180,20 +180,20 @@ export default function EnhancedTable(props) {
                         Number(player.TheBatERAProjection),
                         Number(player.TheBatWHIPProjection),
                         player.TheBatSavesProjection,
-                        (10 * Number(player.TheBatQSProjection) +
-                        1.2 * player.TheBatRawKsProjection +
-                        9 * player.TheBatSavesProjection +
-                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
-                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8,
-                        ((1.75 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
-                        5.65 * player.TheBatXHRProjection +
-                        6 * player.TheBatXSBProjection +
-                        4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.320)) /
-                        6) + ((10 * Number(player.TheBatQSProjection) +
-                        1.2 * player.TheBatRawKsProjection +
-                        9 * player.TheBatSavesProjection +
-                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
-                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8),
+                        (12 * Number(player.TheBatQSProjection) +
+                        1.25 * player.TheBatRawKsProjection +
+                        14.25 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.31 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.43 - player.TheBatERAProjection)) / 7.9,
+                        ((1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) +
+                        5.75 * player.TheBatXHRProjection +
+                        8.85 * player.TheBatXSBProjection +
+                        4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.315)) /
+                        6) + ((12 * Number(player.TheBatQSProjection) +
+                        1.25 * player.TheBatRawKsProjection +
+                        14.25 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.31 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.43 - player.TheBatERAProjection)) / 7.9),
                         player.id,
                         index
                     )
@@ -246,7 +246,7 @@ export default function EnhancedTable(props) {
                                                 onClick={(event) => handleClick(event, row.name)}
                                                 aria-checked={isItemSelected}
                                                 tabIndex={-1}
-                                                key={`${row.name} + ${row.primaryPosition}`}
+                                                key={`${row.name} + ${row.primaryPosition} + ${row.id}`}
                                                 selected={isItemSelected}
                                                 className={classes.tableRow}
                                             >

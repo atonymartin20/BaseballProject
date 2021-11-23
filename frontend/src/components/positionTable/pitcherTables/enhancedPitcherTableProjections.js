@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import PlayerCard from '../../players/playerCard.js';
 
-function createData(name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
-    return { name, primaryPosition, otherPositions, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
+function createData(name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index) {
+    return { name, Games, InningsPitched, QualityStarts, RawKs, ERA, FIP, WHIP, Saves, FWAR, PTotal, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -41,8 +41,6 @@ function getSorting(order, orderBy) {
 
 const headCells = [
     { id: 'name', numeric: false, label: 'Name', info: 'Name' },
-    { id: 'primaryPosition', numeric: false, label: 'Primary Pos.', info: 'Primary Position' },
-    { id: 'otherPositions', numeric: false, label: 'Other Pos.', info: 'Other Positions' },
     { id: 'PTotal', numeric: true, label: 'PTotal', info: 'PROF Fantasy Based Statistic Using All Pitching Stats' },
     { id: 'Games', numeric: true, label: 'Games', info: 'Games' },
     { id: 'InningsPitched', numeric: true, label: 'IP', info: 'Innings Pitched' },
@@ -137,8 +135,6 @@ export default function EnhancedTable(props) {
                 props.players.map((player, index) =>
                     createData(
                         `${player.firstName} ${player.lastName}`,
-                        player.primaryPosition,
-                        player.otherPositions,
                         player.TheBatGamesProjection,
                         Number(player.TheBatInningsPitchedProjection),
                         Number(player.TheBatQSProjection),
@@ -148,11 +144,11 @@ export default function EnhancedTable(props) {
                         Number(player.TheBatWHIPProjection),
                         player.TheBatSavesProjection,
                         Number(player.PitcherSteamerFWARProjection),
-                        (10 * Number(player.TheBatQSProjection) +
-                        1.2 * player.TheBatRawKsProjection +
-                        9 * player.TheBatSavesProjection +
-                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.32 - player.TheBatWHIPProjection) +
-                        Number(player.TheBatInningsPitchedProjection) * Number(4.47 - player.TheBatERAProjection)) / 8,
+                        (12 * Number(player.TheBatQSProjection) +
+                        1.25 * player.TheBatRawKsProjection +
+                        14.25 * player.TheBatSavesProjection +
+                        4 * Number(player.TheBatInningsPitchedProjection) * Number(1.31 - player.TheBatWHIPProjection) +
+                        Number(player.TheBatInningsPitchedProjection) * Number(4.43 - player.TheBatERAProjection)) / 7.9,
                         player.id,
                         index
                     )
@@ -206,7 +202,7 @@ export default function EnhancedTable(props) {
                                             onClick={(event) => handleClick(event, row.name)}
                                             aria-checked={isItemSelected}
                                             tabIndex={-1}
-                                            key={row.name}
+                                            key={row.name + row.id}
                                             selected={isItemSelected}
                                             className={classes.tableRow}
                                         >
@@ -221,12 +217,6 @@ export default function EnhancedTable(props) {
                                                 }}
                                             >
                                                 {row.name}
-                                            </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.primaryPosition}
-                                            </TableCell>
-                                            <TableCell align='center' className={classes.tableCell}>
-                                                {row.otherPositions}
                                             </TableCell>
                                             <TableCell align='right' className={classes.tableCell}>
                                                 {row.PTotal.toFixed(1)}
