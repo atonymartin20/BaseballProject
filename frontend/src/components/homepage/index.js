@@ -58,10 +58,10 @@ class Homepage extends React.Component {
 
         while(this.context.state.designatedHitters.length === 0) {
             let seconds = 0;
-            while(seconds <= 5) {
-                setInterval(function () {
-                    seconds++;
-                }, 1000);
+            setInterval(function () {
+                seconds++;
+            }, 1000);
+            if (seconds < 5) {
                 return (
                     <div className={classes.loadingContainer}>
                         <div className={'spinner'} />
@@ -69,6 +69,7 @@ class Homepage extends React.Component {
                     </div>
                 )
             }
+            
             if (seconds >= 5) {
                 return (
                     <div className={classes.homepageDiv}>
