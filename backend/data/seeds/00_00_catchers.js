@@ -22119,7 +22119,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/20/1993',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Brewers',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/201911262/images/headshots/e/e61c39e8_mlbam.jpg',
             'primaryPosition': 'C',
             'otherPositions': '',
