@@ -21128,7 +21128,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/21/1990',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'White Sox',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/7/7d245886_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
