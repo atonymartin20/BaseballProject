@@ -20624,7 +20624,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '4/17/1995',
             'bats': 'L',
             'throws': 'R',
-            'currentTeam': 'Angels',
+            'currentTeam': 'Free Agent',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/5/5dcedcd6_mlbam.jpg',
             'primaryPosition': '2B',
             'otherPositions': '',
