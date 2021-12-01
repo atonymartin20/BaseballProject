@@ -10030,7 +10030,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '10/6/1996',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Rockies',
+            'currentTeam': 'Mets',
             'imageURL': 'https://www.baseball-reference.com/req/202010270/images/headshots/a/a41cde76_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
