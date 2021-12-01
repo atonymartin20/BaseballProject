@@ -27572,7 +27572,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/8/1996',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Guardians',
+            'currentTeam': 'Diamondbacks',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/9/95534d56_milb.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
