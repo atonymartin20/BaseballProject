@@ -25782,7 +25782,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/2/1990',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Mets',
+            'currentTeam': 'Pirates',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/c/c55b6894_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
