@@ -2193,7 +2193,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/13/1993',
             'bats': 'S',
             'throws': 'R',
-            'currentTeam': 'Braves',
+            'currentTeam': 'Phillies',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/4/48c88445_mlbam.jpg',
             'primaryPosition': '2B',
             'otherPositions': '',
