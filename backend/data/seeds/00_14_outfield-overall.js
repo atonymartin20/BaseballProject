@@ -30623,7 +30623,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '4/10/1992',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Tigers',
+            'currentTeam': 'Royals',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/6/6eab178b_mlbam.jpg',
             'primaryPosition': 'OF',
             'otherPositions': '',
