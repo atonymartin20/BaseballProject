@@ -2922,7 +2922,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '5/30/1995',
             'bats': 'S',
             'throws': 'R',
-            'currentTeam': 'Padres',
+            'currentTeam': 'Royals',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/3/30e5387c_mlbam.jpg',
             'primaryPosition': '2B',
             'otherPositions': '',
