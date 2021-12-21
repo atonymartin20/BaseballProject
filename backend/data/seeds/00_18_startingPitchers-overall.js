@@ -11820,7 +11820,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '11/15/1992',
             'bats': 'S',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Twins',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/d/d2958f28_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
