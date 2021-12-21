@@ -15042,7 +15042,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '4/14/1990',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Blue Jays',
+            'currentTeam': 'Tigers',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/3/3a680457_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
