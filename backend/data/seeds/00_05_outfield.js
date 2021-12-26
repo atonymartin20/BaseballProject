@@ -46175,7 +46175,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/7/1991',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Mets',
+            'currentTeam': 'Free Agent',
             'imageURL': 'https://www.baseball-reference.com/req/202111020/images/headshots/6/67768ac9_mlbam.jpg',
             'primaryPosition': 'OF',
             'otherPositions': '',
