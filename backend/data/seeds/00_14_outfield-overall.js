@@ -7053,7 +7053,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '5/8/1994',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Marlins',
+            'currentTeam': 'Free Agent',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/3/3f8d7ae6_mlbam.jpg',
             'primaryPosition': 'OF',
             'otherPositions': '',
