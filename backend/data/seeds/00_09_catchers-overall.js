@@ -1950,7 +1950,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '7/14/1989',
             'bats': 'L',
             'throws': 'R',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Yankees',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/c/c08a68c8_mlbam.jpg',
             'primaryPosition': 'C',
             'otherPositions': '',
