@@ -12399,7 +12399,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/3/1990',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Korea',
             'imageURL': 'https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/a/a74a7805_mlbam.jpg',
             'primaryPosition': 'OF',
             'otherPositions': '',
