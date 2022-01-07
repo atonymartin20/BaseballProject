@@ -46904,7 +46904,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/12/1995',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Rangers',
+            'currentTeam': 'Korea',
             'imageURL': 'https://www.baseball-reference.com/req/202111020/images/headshots/5/5ce841fc_mlbam.jpg',
             'primaryPosition': 'OF',
             'otherPositions': '',
