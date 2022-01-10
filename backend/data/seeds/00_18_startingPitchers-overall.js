@@ -6450,7 +6450,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '10/1/1995',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Twins',
+            'currentTeam': 'Korea',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/8/8a1da0aa_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': '',
