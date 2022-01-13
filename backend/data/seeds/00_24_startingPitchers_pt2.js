@@ -10746,7 +10746,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '12/26/1989',
             'bats': 'L',
             'throws': 'L',
-            'currentTeam': 'Free Agent',
+            'currentTeam': 'Korea',
             'imageURL': 'https://www.baseball-reference.com/req/202108020/images/headshots/6/66e4d325_mlbam.jpg',
             'primaryPosition': 'SP',
             'otherPositions': 'RP',
