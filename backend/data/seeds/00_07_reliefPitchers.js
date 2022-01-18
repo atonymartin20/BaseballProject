@@ -30436,7 +30436,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '2/16/1992',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Marlins',
+            'currentTeam': 'Taiwan',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/8/8044d8a1_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
