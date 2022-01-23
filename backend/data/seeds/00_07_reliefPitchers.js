@@ -48336,7 +48336,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '8/14/1991',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Red Sox',
+            'currentTeam': 'Taiwan',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/5/5ca14585_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
