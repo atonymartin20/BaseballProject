@@ -1274,7 +1274,7 @@ export default class AppProvider extends Component {
                                     teams['FreeAgents']['teamFWAR'] += Number(player.PitcherSteamerFWARProjection)
                                 }                            }
 
-                            else if(player.currentTeam.includes('Retired') || player.currentTeam.includes('Korea') || player.currentTeam.includes('Japan') || player.currentTeam.includes('Mexico')) {
+                            else if(player.currentTeam.includes('Retired') || player.currentTeam.includes('Korea') || player.currentTeam.includes('Japan') || player.currentTeam.includes('Mexico') || player.currentTeam.includes('Taiwan')) {
                                 RetiredForeignPlayers = RetiredForeignPlayers.concat(player)
                             }
                             else {
