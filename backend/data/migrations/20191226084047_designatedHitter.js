@@ -241,7 +241,7 @@ exports.up = function (knex, Promise) {
         designatedHitter.integer('TheBatXRunsProjection', 50);
         designatedHitter.integer('TheBatXRBIProjection', 50);
         designatedHitter.integer('TheBatXSBProjection');
-        designatedHitter.decimal('SteamerFWARProjection', 8, 1);
+        designatedHitter.decimal('TheBatXFWARProjection', 8, 1);
     })
 };
 

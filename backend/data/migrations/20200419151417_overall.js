@@ -242,7 +242,7 @@ exports.up = function (knex, Promise) {
         overall.integer('TheBatXRunsProjection', 50);
         overall.integer('TheBatXRBIProjection', 50);
         overall.integer('TheBatXSBProjection');
-        overall.decimal('SteamerFWARProjection', 8, 1);
+        overall.decimal('TheBatXFWARProjection', 8, 1);
         overall.integer('Games2017');
         overall.integer('GamesStarted2017');
         overall.decimal('InningsPitched2017', 8, 1);
@@ -589,7 +589,7 @@ exports.up = function (knex, Promise) {
         overall.integer('TheBatRawKsProjection');
         overall.decimal('TheBatKPer9Projection', 8, 2);
         overall.integer('TheBatSavesProjection');
-        overall.decimal('PitcherSteamerFWARProjection', 8, 1);
+        overall.decimal('PitcherTheBatFWARProjection', 8, 1);
     })
 };
 

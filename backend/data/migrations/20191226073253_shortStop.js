@@ -241,7 +241,7 @@ exports.up = function (knex, Promise) {
         shortStop.integer('TheBatXRunsProjection', 50);
         shortStop.integer('TheBatXRBIProjection', 50);
         shortStop.integer('TheBatXSBProjection');
-        shortStop.decimal('SteamerFWARProjection', 8, 1);
+        shortStop.decimal('TheBatXFWARProjection', 8, 1);
     })
 };
 

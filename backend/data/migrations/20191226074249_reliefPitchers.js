@@ -356,7 +356,7 @@ exports.up = function (knex, Promise) {
         reliefPitchers.integer('TheBatRawKsProjection');
         reliefPitchers.decimal('TheBatKPer9Projection', 8, 2);
         reliefPitchers.integer('TheBatSavesProjection');
-        reliefPitchers.decimal('PitcherSteamerFWARProjection', 8, 1);
+        reliefPitchers.decimal('PitcherTheBatFWARProjection', 8, 1);
     })
 };
 
