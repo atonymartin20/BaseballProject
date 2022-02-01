@@ -241,7 +241,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Nick',
@@ -484,7 +484,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Sergio',
@@ -727,7 +727,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Tim',
@@ -970,7 +970,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Elvis',
@@ -1213,7 +1213,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Jonathan',
@@ -1456,7 +1456,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Humberto',
@@ -1699,7 +1699,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Javier',
@@ -1942,7 +1942,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Jose',
@@ -2185,7 +2185,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Tim',
@@ -2428,7 +2428,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Bo',
@@ -2671,7 +2671,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Xander',
@@ -2914,7 +2914,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Harold',
@@ -3157,7 +3157,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Carlos',
@@ -3400,7 +3400,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Brandon',
@@ -3643,7 +3643,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'J.P.',
@@ -3886,7 +3886,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Oneil',
@@ -4129,7 +4129,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Paul',
@@ -4372,7 +4372,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Jeter',
@@ -4615,7 +4615,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Alcides',
@@ -4858,7 +4858,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Thairo',
@@ -5101,7 +5101,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Kyle',
@@ -5344,7 +5344,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Wander',
@@ -5587,7 +5587,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Mike',
@@ -5830,7 +5830,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Freddy',
@@ -6073,7 +6073,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Andres',
@@ -6316,7 +6316,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Niko',
@@ -6559,7 +6559,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Didi',
@@ -6802,7 +6802,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Kyle',
@@ -7045,7 +7045,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Jose',
@@ -7288,7 +7288,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Ha-Seong',
@@ -7531,7 +7531,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Isiah',
@@ -7774,7 +7774,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Pete',
@@ -8017,7 +8017,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Royce',
@@ -8260,7 +8260,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Francisco',
@@ -8503,7 +8503,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Nicky',
@@ -8746,7 +8746,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Gavin',
@@ -8989,7 +8989,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Vimael',
@@ -9232,7 +9232,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Deven',
@@ -9475,7 +9475,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Richie',
@@ -9718,7 +9718,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Kevin',
@@ -9961,7 +9961,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Geraldo',
@@ -10204,7 +10204,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Luis',
@@ -10447,7 +10447,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'JT',
@@ -10690,7 +10690,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Miguel',
@@ -10933,7 +10933,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Amed',
@@ -11176,7 +11176,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Corey',
@@ -11419,7 +11419,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Zack',
@@ -11662,7 +11662,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Andrelton',
@@ -11905,7 +11905,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Edmundo',
@@ -12148,7 +12148,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Trevor',
@@ -12391,7 +12391,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Dansby',
@@ -12634,7 +12634,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Fernando',
@@ -12877,7 +12877,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Gleyber',
@@ -13120,7 +13120,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Cole',
@@ -13363,7 +13363,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Trea',
@@ -13606,7 +13606,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Ramon',
@@ -13849,7 +13849,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Andrew',
@@ -14092,7 +14092,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Tyler',
@@ -14335,7 +14335,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         {
             'firstName': 'Taylor',
@@ -14578,7 +14578,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
         },
         // {
         //     'firstName': '',
@@ -14821,7 +14821,7 @@ exports.seed = function (knex, Promise) {
         //     'TheBatXRunsProjection': 0,
         //     'TheBatXRBIProjection': 0,
         //     'TheBatXSBProjection': 0,
-        //     'SteamerFWARProjection': 0.0,
+        //     'TheBatXFWARProjection': 0.0,
         // },
     ]);
 };

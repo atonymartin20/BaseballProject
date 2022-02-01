@@ -240,7 +240,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
             'Games2017': 0,
             'GamesStarted2017': 0,
             'InningsPitched2017': 0.0,
@@ -587,7 +587,7 @@ exports.seed = function (knex, Promise) {
             'TheBatRawKsProjection': 0,
             'TheBatKPer9Projection': 0.00,
             'TheBatSavesProjection': 0,
-			'PitcherSteamerFWARProjection': 0.0,
+			'PitcherTheBatFWARProjection': 0.0,
         },
         {
             'firstName': 'Shohei',
@@ -829,7 +829,7 @@ exports.seed = function (knex, Promise) {
             'TheBatXRunsProjection': 0,
             'TheBatXRBIProjection': 0,
             'TheBatXSBProjection': 0,
-            'SteamerFWARProjection': 0.0,
+            'TheBatXFWARProjection': 0.0,
             'Games2017': 0,
             'GamesStarted2017': 0,
             'InningsPitched2017': 0.0,
@@ -1176,7 +1176,7 @@ exports.seed = function (knex, Promise) {
             'TheBatRawKsProjection': 0,
             'TheBatKPer9Projection': 0.00,
             'TheBatSavesProjection': 0,
-			'PitcherSteamerFWARProjection': 0.0,
+			'PitcherTheBatFWARProjection': 0.0,
         },
         // {
         //     'firstName': '',
@@ -1419,7 +1419,7 @@ exports.seed = function (knex, Promise) {
         //     'TheBatXRunsProjection': 0,
         //     'TheBatXRBIProjection': 0,
         //     'TheBatXSBProjection': 0,
-        //     'SteamerFWARProjection': 0.0,
+        //     'TheBatXFWARProjection': 0.0,
         //     'Games2017': 0,
         //     'GamesStarted2017': 0,
         //     'InningsPitched2017': 0.0,
@@ -1766,7 +1766,7 @@ exports.seed = function (knex, Promise) {
         //     'TheBatRawKsProjection': 0,
         //     'TheBatKPer9Projection': 0.00,
         //     'TheBatSavesProjection': 0,
-        //     'PitcherSteamerFWARProjection': 0.0,
+        //     'PitcherTheBatFWARProjection': 0.0,
         // },
     ]);
 };
