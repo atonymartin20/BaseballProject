@@ -143,7 +143,7 @@ export default function EnhancedTable(props) {
                         Number(player.TheBatFIPProjection),
                         Number(player.TheBatWHIPProjection),
                         player.TheBatSavesProjection,
-                        Number(player.PitcherSteamerFWARProjection),
+                        Number(player.PitcherTheBatFWARProjection),
                         (12 * Number(player.TheBatQSProjection) +
                         1.25 * player.TheBatRawKsProjection +
                         14.25 * player.TheBatSavesProjection +

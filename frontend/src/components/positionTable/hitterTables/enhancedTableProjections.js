@@ -146,7 +146,7 @@ export default function EnhancedTable(props) {
                         player.TheBatXRunsProjection,
                         player.TheBatXRBIProjection,
                         player.TheBatXSBProjection,
-                        Number(player.SteamerFWARProjection),
+                        Number(player.TheBatXFWARProjection),
                         (1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) + 5.75 * player.TheBatXHRProjection + 8.85 * player.TheBatXSBProjection + 4 * player.TheBatXPAProjection * (player.TheBatXAVGProjection - 0.245)) / 6,
                         (1.71 * (player.TheBatXRunsProjection + player.TheBatXRBIProjection) + 5.75 * player.TheBatXHRProjection + 8.85 * player.TheBatXSBProjection + 4 * player.TheBatXPAProjection * (player.TheBatXOBPProjection - 0.315)) / 6,
                         player.id,
