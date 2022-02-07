@@ -150,7 +150,7 @@ export default function EnhancedTable(props) {
                         player.TheBatRawKsProjection,
                         player.TheBatKPer9Projection,
                         player.TheBatSavesProjection,
-                        Number(player.PitcherSteamerFWARProjection),
+                        Number(player.PitcherTheBatFWARProjection),
                         player.id,
                         index
                     )

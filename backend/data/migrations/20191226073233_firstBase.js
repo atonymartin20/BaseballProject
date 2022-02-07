@@ -241,7 +241,7 @@ exports.up = function (knex, Promise) {
         firstBase.integer('TheBatXRunsProjection', 50);
         firstBase.integer('TheBatXRBIProjection', 50);
         firstBase.integer('TheBatXSBProjection');
-        firstBase.decimal('SteamerFWARProjection', 8, 1);
+        firstBase.decimal('TheBatXFWARProjection', 8, 1);
     })
 };
 

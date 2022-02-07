@@ -241,7 +241,7 @@ exports.up = function (knex, Promise) {
         retiredPlayers.integer('TheBatXRunsProjection', 50);
         retiredPlayers.integer('TheBatXRBIProjection', 50);
         retiredPlayers.integer('TheBatXSBProjection');
-        retiredPlayers.decimal('SteamerFWARProjection', 8, 1);
+        retiredPlayers.decimal('TheBatXFWARProjection', 8, 1);
         retiredPlayers.integer('Games2017');
         retiredPlayers.integer('GamesStarted2017');
         retiredPlayers.decimal('InningsPitched2017', 8, 1);
@@ -588,7 +588,7 @@ exports.up = function (knex, Promise) {
         retiredPlayers.integer('TheBatRawKsProjection');
         retiredPlayers.decimal('TheBatKPer9Projection', 8, 2);
         retiredPlayers.integer('TheBatSavesProjection');
-        retiredPlayers.decimal('PitcherSteamerFWARProjection', 8, 1);
+        retiredPlayers.decimal('PitcherTheBatFWARProjection', 8, 1);
     })
 };
 

@@ -30,10 +30,11 @@ function createData(
     Saves,
     PTotal,
     score,
+    FWAR,
     id,
     index
 ) {
-    return { name, primaryPosition, otherPositions, PAs, OBP, HR, Runs, RBIs, SBs, POBP, InningsPitched, QualityStarts, RawKs, ERA, WHIP, Saves, PTotal, score, id, index };
+    return { name, primaryPosition, otherPositions, PAs, OBP, HR, Runs, RBIs, SBs, POBP, InningsPitched, QualityStarts, RawKs, ERA, WHIP, Saves, PTotal, score, FWAR, id, index };
 }
 
 function desc(a, b, orderBy) {
@@ -77,6 +78,7 @@ const headCells = [
     { id: 'ERA', numeric: true, label: 'ERA', info: 'Earned Run Average' },
     { id: 'WHIP', numeric: true, label: 'WHIP', info: 'Walks + Hits/ Innings Pitched' },
     { id: 'Saves', numeric: true, label: 'Saves', info: 'Saves' },
+    { id: 'FWAR', numeric: true, label: 'FWAR', info: 'Fangraphs Wins Above Replacement' },
 ];
 
 function EnhancedTableHead(props) {
@@ -194,6 +196,7 @@ export default function EnhancedTable(props) {
                         14.25 * player.TheBatSavesProjection +
                         4 * Number(player.TheBatInningsPitchedProjection) * Number(1.31 - player.TheBatWHIPProjection) +
                         Number(player.TheBatInningsPitchedProjection) * Number(4.43 - player.TheBatERAProjection)) / 7.9),
+                        Number(player.TheBatXFWARProjection) + Number(player.PitcherTheBatFWARProjection),
                         player.id,
                         index
                     )
@@ -306,6 +309,9 @@ export default function EnhancedTable(props) {
                                                 </TableCell>
                                                 <TableCell align='right' className={classes.tableCell}>
                                                     {row.Saves}
+                                                </TableCell>
+                                                <TableCell align='right' className={classes.tableCell}>
+                                                    {row.FWAR}
                                                 </TableCell>
                                             </TableRow>
                                         );

@@ -242,7 +242,7 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.integer('TheBatXRunsProjection', 50);
         twoWayPlayer.integer('TheBatXRBIProjection', 50);
         twoWayPlayer.integer('TheBatXSBProjection');
-        twoWayPlayer.decimal('SteamerFWARProjection', 8, 1);
+        twoWayPlayer.decimal('TheBatXFWARProjection', 8, 1);
         twoWayPlayer.integer('Games2017');
         twoWayPlayer.integer('GamesStarted2017');
         twoWayPlayer.decimal('InningsPitched2017', 8, 1);
@@ -589,7 +589,7 @@ exports.up = function(knex, Promise) {
         twoWayPlayer.integer('TheBatRawKsProjection');
         twoWayPlayer.decimal('TheBatKPer9Projection', 8, 2);
         twoWayPlayer.integer('TheBatSavesProjection');
-        twoWayPlayer.decimal('PitcherSteamerFWARProjection', 8, 1);
+        twoWayPlayer.decimal('PitcherTheBatFWARProjection', 8, 1);
     })
 };
 

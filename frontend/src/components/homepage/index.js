@@ -106,23 +106,17 @@ class Homepage extends React.Component {
                                     rel='noopener noreferrer'
                                 >
                                     The Bat
-                                </a>, <a
+                                </a> and <a
                                     href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
                                     className={classes.websiteLinks}
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >
                                     The Bat X
-                                </a>, and <a
-                                    href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
-                                    className={classes.websiteLinks}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
-                                    Steamer</a>.
+                                </a>.
                                 <br />
                                 <br />
-                                    2021 stats have been updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
+                                    2021 stats have been updated and 2022 Projections will be added once The Bat and The Bat X release them.
                                 <br />
                                 <br />
                                 <Link to='/glossary' className={classes.websiteLinks}>
@@ -170,23 +164,17 @@ class Homepage extends React.Component {
                             rel='noopener noreferrer'
                         >
                             The Bat
-                        </a>, <a
+                        </a> and <a
                             href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
                             className={classes.websiteLinks}
                             target='_blank'
                             rel='noopener noreferrer'
                         >
                             The Bat X
-                        </a>, and <a
-                            href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
-                            className={classes.websiteLinks}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        >
-                            Steamer</a>.
+                        </a>.
                         <br />
                         <br />
-                            2021 stats have been updated and 2022 Projections will be added once The Bat, The Bat X, and Steamer release them.
+                            2021 stats have been updated and 2022 Projections will be added once The Bat and The Bat X release them.
                         <br />
                         <br />
                         <Link to='/glossary' className={classes.websiteLinks}>

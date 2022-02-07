@@ -211,21 +211,14 @@ class StartingPitchers extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat
-                            </a>, <a
+                            </a> and <a
                                 href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=thebatx&team=0&lg=all&players=0'
                                 className={classes.websiteLinks}
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>, and <a
-                                href='https://www.fangraphs.com/projections.aspx?pos=all&stats=pit&type=steamer&team=0&lg=all&players=0'
-                                className={classes.websiteLinks}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                                Steamer</a>
-                            . These will be updated after they are released.
+                            </a>. These will be updated after they are released.
                         </h1>
                         <EnhancedPitcherTableProjections players={this.state.startingPitchers} />
                     </div>
