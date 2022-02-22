@@ -63,8 +63,8 @@ class ShortStop extends React.Component {
         display2018: false,
         display2019: false,
         display2020: false,
-        display2021: true,
-        displayProjections: false,
+        display2021: false,
+        displayProjections: true,
         shortStop: [],
     };
 
@@ -218,7 +218,7 @@ class ShortStop extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>. These will be updated after they are released.
+                            </a>. Last Update: 2/12/2022
                         </h1>
                         <EnhancedTableProjections players={this.state.shortStop} />
                     </div>
