@@ -40827,7 +40827,7 @@ exports.seed = function (knex, Promise) {
             'firstName': 'Cedric',
             'lastName': 'Mullins',
             'birthday': '10/1/1994',
-            'bats': 'S',
+            'bats': 'L',
             'throws': 'L',
             'currentTeam': 'Orioles',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/2/24bf4355_mlbam.jpg',
