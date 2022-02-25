@@ -53,15 +53,25 @@ const styles = (theme) => ({
 });
 
 class Homepage extends React.Component {
+    state = {
+        proceed: 'no',
+    }
+
+    holdingPattern = () => {
+        this.setState({
+            proceed: 'yes'
+        })
+    }
+
+    componentDidMount() {
+        setTimeout(this.holdingPattern, 4000);
+    }
+
     render() {
         const { classes } = this.props;
 
-        while(this.context.state.designatedHitters.length === 0) {
-            let seconds = 0;
-            setInterval(function () {
-                seconds++;
-            }, 1000);
-            if (seconds < 5) {
+        if(this.context.state.designatedHitters.length === 0) {
+            if (this.state.proceed === 'no') {
                 return (
                     <div className={classes.loadingContainer}>
                         <div className={'spinner'} />
@@ -70,7 +80,7 @@ class Homepage extends React.Component {
                 )
             }
             
-            if (seconds >= 5) {
+            if (this.state.proceed === 'yes') {
                 return (
                     <div className={classes.homepageDiv}>
                         <Navbar />
