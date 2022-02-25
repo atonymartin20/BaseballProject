@@ -64,7 +64,9 @@ class Homepage extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(this.holdingPattern, 4000);
+        if(this.context.state.designatedHitters.length === 0) {
+            setTimeout(this.holdingPattern, 4000);
+        }
     }
 
     render() {
