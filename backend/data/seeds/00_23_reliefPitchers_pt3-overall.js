@@ -17190,7 +17190,7 @@ exports.seed = function (knex, Promise) {
             'birthday': '2/19/1993',
             'bats': 'R',
             'throws': 'R',
-            'currentTeam': 'Korea',
+            'currentTeam': 'Royals',
             'imageURL': 'https://www.baseball-reference.com/req/202007270/images/headshots/0/089d933f_mlbam.jpg',
             'primaryPosition': 'RP',
             'otherPositions': '',
