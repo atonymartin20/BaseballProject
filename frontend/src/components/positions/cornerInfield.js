@@ -218,7 +218,7 @@ class CornerInfield extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>. Last Update: 2/11/2022
+                            </a>. Last Update: 3/25/2022
                         </h1>
                         <EnhancedTableProjections players={this.state.cornerInfield} />
                     </div>
