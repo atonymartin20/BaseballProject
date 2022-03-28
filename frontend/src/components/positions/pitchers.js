@@ -218,7 +218,7 @@ class Pitchers extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>. Last Update: 2/20/2022
+                            </a>. Last Update: 3/27/2022
                         </h1>
                         <EnhancedPitcherTableProjections players={this.state.pitchers} />
                     </div>

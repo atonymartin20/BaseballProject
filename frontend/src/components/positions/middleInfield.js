@@ -218,7 +218,7 @@ class MiddleInfield extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>. Last Update: 2/12/2022
+                            </a>. Last Update: 3/24/2022
                         </h1>
                         <EnhancedTableProjections players={this.state.middleInfield} />
                     </div>

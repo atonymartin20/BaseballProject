@@ -218,7 +218,7 @@ class Catchers extends React.Component {
                                 rel='noopener noreferrer'
                             >
                                 The Bat X
-                            </a>. Last Update: 2/10/2022
+                            </a>. Last Update: 3/20/2022
                         </h1>
                         <EnhancedTableProjections players={this.state.catchers} />
                     </div>
